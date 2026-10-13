@@ -12,11 +12,11 @@ npm run dev
 
 Preview at http://localhost:8080. To package on Windows, run `python scripts/package-upload.py` after building and checking. `npm run package:upload` uses `python3` for compatibility with the included GitHub workflow.
 
-`data/site.json` preserves the recovered official download/Discord links, rules, policies, gallery, status endpoint, release information, and supporter settings. `scripts/finish.mjs` applies the fixed eight-person beta roster, artwork placement, privacy disclosure, Crafatar CSP allowance, and disclosed Wabbanode affiliate link after the main build. Future player records never alter this roster.
+`data/site.json` preserves the recovered official download/Discord links, rules, policies, gallery, status endpoint, release information, and supporter settings. `scripts/finish.mjs` applies the fixed eight-person beta roster, artwork placement, privacy disclosure, Minotar CSP allowance, and disclosed Wabbanode affiliate link after the main build. Future player records never alter this roster.
 
 The hero is `public/assets/art/orrery-ravine.webp`; the thank-you illustration is `tester-tools.webp`. All six official gameplay gallery images now appear on the Modpack page. The attached hosting banner is not used because it promotes an individual excluded from the tester credits; the hosting link uses a matching text section without an unverified discount claim.
 
-Player heads request public UUIDs from Crafatar on each page visit; skin updates follow provider caching without rebuilding. Initials appear on load failures, including blocked requests. No referrer is sent. Privacy details appear on the Privacy page. Public HTML, accessible labels, imported CurseForge content, and dynamically inserted text use normal hyphens instead of em dashes.
+Player heads request public UUIDs from Minotar on each page visit; skin updates follow provider caching without rebuilding. Initials appear on load failures, including blocked requests. No referrer is sent. Privacy details appear on the Privacy page. Public HTML, accessible labels, imported CurseForge content, and dynamically inserted text use normal hyphens instead of em dashes.
 
 CurseForge synchronization remains in `scripts/sync-curseforge.mjs` and `.github/workflows`. Set `CURSEFORGE_API_KEY` privately to run it; no API key was supplied or embedded. Authenticated synchronization succeeded on October 13, 2026, importing release notes and all six official gallery images. The latest stable release is 1.2.4; the server is explicitly configured to follow the latest release. Supporter packages and playtime rewards remain TBA.
 
@@ -30,3 +30,5 @@ Validation completed:
 - Desktop and mobile screenshots are saved under `docs`.
 
 This update is packaged locally; no Cloudflare deployment was performed. The recovered starter policies are retained, with avatar and affiliate disclosures added.
+
+Follow-up: removed roster-management copy, fixed multiplayer label spacing, and replaced the avatar provider with Minotar after all eight UUID heads matched current Mojang skin pixels. Terms and privacy now clarify eligibility, submitted content, security reports, credit removal, privacy requests, retention purposes, and international providers. Comparison sources: https://craftdownunder.co/terms, https://craftdownunder.co/privacy, https://moddedmc.net/terms, https://moddedmc.net/privacy. No unverified retention deadlines, jurisdiction, analytics, or payment promises were added.

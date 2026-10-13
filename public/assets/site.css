@@ -11,3 +11,7 @@
 @media(max-width:600px){.tester-list{grid-template-columns:1fr}.hero-art{object-position:65% center}.hero:after{background:#11171499}.intro-note,.hosting-card{padding:24px}}
 @media(min-width:901px){.pillar:nth-child(7){grid-template-columns:160px 1fr 2fr}}
 @media(min-width:601px) and (max-width:900px){.pillar:nth-child(7){grid-template-columns:150px 1fr}.pillar:nth-child(7) p{grid-column:2}}
+
+/* Give the multiline multiplayer label its own row at every width. */
+.pillar:nth-child(7){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:12px 36px}.pillar:nth-child(7) .pillar-number{grid-column:1/-1}.pillar:nth-child(7) h3{margin:0;min-width:0}.pillar:nth-child(7) p{grid-column:2;margin:0;min-width:0}
+@media(max-width:900px){.pillar:nth-child(7){grid-template-columns:1fr}.pillar:nth-child(7) p{grid-column:1}}
