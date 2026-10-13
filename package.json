@@ -1,0 +1,16 @@
+{
+  "name": "mythforge-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/serve.mjs",
+    "package:upload": "npm run build && npm run check && python3 scripts/package-upload.py",
+    "sync:curseforge": "node scripts/sync-curseforge.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

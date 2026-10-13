@@ -1,0 +1,266 @@
+{
+  "brand": "Mythforge",
+  "subtitle": "Beyond the Horizon",
+  "siteUrl": "https://mythforge.win",
+  "serverAddress": "play.mythforge.win",
+  "minecraftVersion": "1.21.1",
+  "loader": "NeoForge",
+  "loaderVersion": "21.1.249",
+  "javaVersion": "21",
+  "currentVersion": "1.2.4",
+  "recommendedRam": "9-10 GB",
+  "links": {
+    "curseforge": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon",
+    "discord": "https://discord.gg/QQwdEgFMFg",
+    "store": null,
+    "contact": "https://discord.gg/QQwdEgFMFg"
+  },
+  "status": {
+    "endpoint": "https://api.mcstatus.io/v2/status/java/play.mythforge.win?query=false",
+    "timeoutMs": 10000,
+    "refreshMs": 60000,
+    "provider": "mcstatus.io"
+  },
+  "art": {
+    "logo": null,
+    "icon": "assets/art/modpack-icon.png",
+    "hero": "assets/art/orrery-ravine.webp",
+    "boss": "assets/art/epic-enemies.jpg",
+    "screenshots": [
+      {
+        "src": "assets/art/curseforge/2049989.png",
+        "alt": "Cozy Decorations.png",
+        "caption": "Cozy Decorations.png"
+      },
+      {
+        "src": "assets/art/curseforge/2049990.png",
+        "alt": "Creative Applications.png",
+        "caption": "Creative Applications.png"
+      },
+      {
+        "src": "assets/art/curseforge/2049991.jpg",
+        "alt": "Epic Enemies.jfif",
+        "caption": "Epic Enemies.jfif"
+      },
+      {
+        "src": "assets/art/curseforge/2049992.jpg",
+        "alt": "Ponderous.jfif",
+        "caption": "Ponderous.jfif"
+      },
+      {
+        "src": "assets/art/curseforge/2049993.png",
+        "alt": "Varied Decorations.png",
+        "caption": "Varied Decorations.png"
+      },
+      {
+        "src": "assets/art/curseforge/2049994.jpg",
+        "alt": "Wonderful Rivers.jfif",
+        "caption": "Wonderful Rivers.jfif"
+      }
+    ],
+    "sectionBackground": null
+  },
+  "supporterPackages": [
+    {
+      "name": "Community Supporter",
+      "tag": "COSMETICS & IDENTITY",
+      "description": "A place for name colors, a supporter prefix, and cosmetic extras.",
+      "features": [
+        "Proposed cosmetic rewards",
+        "Contents and pricing to be announced"
+      ],
+      "price": null,
+      "url": null,
+      "active": false,
+      "id": "community"
+    },
+    {
+      "name": "Horizon Supporter",
+      "tag": "EVERYDAY CONVENIENCE",
+      "description": "A place for useful conveniences that can also have playtime unlocks.",
+      "features": [
+        "Proposed homes and claim allowances",
+        "Contents and pricing to be announced"
+      ],
+      "price": null,
+      "url": null,
+      "active": false,
+      "id": "horizon"
+    },
+    {
+      "name": "Forge Supporter",
+      "tag": "KEEP THE WORLD TURNING",
+      "description": "A place for a broader supporter package once the details are settled.",
+      "features": [
+        "Proposed utility and access rewards",
+        "Contents and pricing to be announced"
+      ],
+      "price": null,
+      "url": null,
+      "active": false,
+      "id": "forge"
+    }
+  ],
+  "playtimeUnlocks": [
+    {
+      "title": "Make yourself at home",
+      "text": "Additional homes and expanded claim limits are potential playtime rewards."
+    },
+    {
+      "title": "Travel a little lighter",
+      "text": "Conveniences such as /enderchest and /fly are proposed playtime rewards. Unlock hours, restrictions, and progression requirements will be published before launch."
+    },
+    {
+      "title": "Build your next system",
+      "text": "Periodically claimable utility kits, such as an AE2 starter kit, may be available through progression."
+    }
+  ],
+  "rulesDraft": false,
+  "rules": [
+    {
+      "title": "Respect other players",
+      "text": "Treat other players respectfully. Harassment, threats, hate speech, discrimination, impersonation, and sharing private personal information are not allowed."
+    },
+    {
+      "title": "No griefing or theft",
+      "text": "Do not damage, steal from, trap, or interfere with another player’s builds, items, creatures, or machines without permission. This applies to unclaimed builds as well as claims. Do not use explosions, fluids, mobs, or machinery to bypass protection."
+    },
+    {
+      "title": "No cheating or exploit abuse",
+      "text": "Do not use unauthorized cheats, duplication bugs, or exploits that bypass progression or permissions. Intended abilities and items included in Mythforge are allowed unless staff has restricted them. Report bugs privately and do not distribute exploited items."
+    },
+    {
+      "title": "PvP requires consent",
+      "text": "PvP requires agreement from everyone involved. Consent to one fight is not permission for repeated attacks, spawn camping, trapping, or taking someone’s belongings. Respect a player’s request to stop."
+    },
+    {
+      "title": "Claims and abandoned bases",
+      "text": "Claim the land you use and be careful when granting access. Do not surround another claim, block its access, or claim land solely to prevent someone’s expansion. Staff handles abandoned bases and claim disputes; an empty base is not permission to loot or demolish it."
+    },
+    {
+      "title": "Automation and server performance",
+      "text": "Do not intentionally cause lag or crashes. Keep farms, entities, machines, and chunk loading reasonable. Staff may pause or adjust systems causing measurable performance problems. Do not bypass imposed limits or re-create a disabled setup."
+    },
+    {
+      "title": "Playtime and AFK systems",
+      "text": "Do not use macros, movement loops, or other tricks to evade AFK detection or inflate rewards. Follow the published conditions of any reward system when it is enabled."
+    },
+    {
+      "title": "Chat and community conduct",
+      "text": "Avoid spam, repeated unwanted messages or teleport requests, unsolicited advertising, explicit sexual content, and scams. Keep usernames, skins, build names, and public messages appropriate for a shared community."
+    },
+    {
+      "title": "Staff decisions and appeals",
+      "text": "Follow staff instructions during an incident. Moderation may include warnings, mutes, temporary restrictions, or bans depending on severity. Do not evade sanctions with another account. Contact staff privately through Discord to appeal and provide relevant evidence."
+    }
+  ],
+  "changelog": [
+    {
+      "version": "1.2.4",
+      "date": "2026-10-13",
+      "title": "Mythforge - Beyond the Horizon-1.2.4.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368",
+      "notes": "Added Mods\n\n\nAkashic Tome\n\nPatchouli\n\nGalosphere\n\nGalosphere: Spellbooks\n\nBorn in Chaos\n\nCataclysm of Chaos\n\nLoot Integrations: Born in Chaos\n\nANARCHY Minibosses\n\nCreate: Mechanical Botany\n\nMore RPG Classes - Skill Tree\n\nReliquified Artifacts\n\nArs Sable\n\nCreate Collision Fix\n\nSphere Projector\n\nSilverLib\n\n\nAdded Datapacks\n\n\nHostile Neural Networks: Extra Data Models\n\nAnti Enderman Grief\n\nOne Player Sleep\n\nSupplementaries Compat\n\nCataclysm Compat\n\n\nRemoved Mods\n\n\nAbyssal Ocean / Hadal Depths\n\nRemoved an incompatible MoreRelics addon introduced during development.\n\n\nProgression & Guides\n\n\nRemoved the main quest progression and its old rewards.\n\nRemoved automatic quest-book handouts.\n\nRemoved quest requirements from Refuge travel.\n\nUpdated Refuge NPCs with simple greetings and travel options.\n\nPlayers now receive an Akashic Tome containing 17 mod guides.\n\nFixed the AE2 and Spectrum guides inside the Tome.\n\nFixed blank guidebook entries and added clearer book names.\n\nAdvanced Peripherals and Mine Cells no longer give separate books automatically. Their guides remain in the Tome.\n\n\nGacha Changes\n\n\nWardens now reward Minor Gamba tokens.\n\nKept the 30-minute reward cooldown.\n\nUpdated token names, descriptions, and tooltips.\n\nRemoved the old custom tokens and Refuge gacha machine.\n\n\nFixes & Improvements\n\n\nFixed &ldquo;Second Chances&rdquo; and &ldquo;Going Up?&rdquo; unlocking when unrelated blocks were placed.\n\nRemoved the overlapping Accessories shortcut from the inventory.\n\nDisabled the Create Aeronautics Structures Telegram welcome message.\n\nDisabled the CSC whitelist reminder.\n\nDiscovery traders now disappear after 40 minutes of loaded time.\n\nEnabled obstacle avoidance for Discovery aircraft and patrols.\n\nImproved claim protection and limited excessive chunk loading.\n\nRestricted selected capture mechanics, remote access features, and problematic items.\n\nUpdated Reliquified Artifacts to resolve its compatibility crash.\n\nUpdated numerous existing mods, including ModernFix, Quark, BetterEnd, Ice and Fire, and several RPG Series addons.\n\n\nPack Cleanup\n\n\nRemoved unused quest scripts and old campaign files.\n\nRemoved leftover configs from uninstalled mods.\n\nCleaned out obsolete settings, temporary files, and old backups.\n\nDisabled the unused KubeJS web server."
+    },
+    {
+      "version": "1.2.3",
+      "date": "2026-10-05",
+      "title": "Mythforge - Beyond the Horizon-1.2.3.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9073646",
+      "notes": "DRAMATICALLY improved performance, and staged for the multiplayer hardening thats to come."
+    },
+    {
+      "version": "1.2.2",
+      "date": "2026-10-04",
+      "title": "Mythforge - Beyond the Horizon-1.2.2.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9058165",
+      "notes": "Hotfix because of version mismatch. Fixes crashing from tooltips."
+    },
+    {
+      "version": "1.2.1",
+      "date": "2026-10-04",
+      "title": "Mythforge - Beyond the Horizon-1.2.1.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9053808",
+      "notes": "Removed Chipped and Chisels and bits to cut literally millions of EMI dings.\nFixed crafting recipes not showing?\nOther lag reduction... maybe?"
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-10-03",
+      "title": "Mythforge_1.2.0.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9042597",
+      "notes": "Mythforge: Beyond the Horizon - Update from 1.0.4.3\n\nMain changes\n\n\n\nReplaced the previous quest book with a WIP notice while quests undergo further development.\n\n\n\n\nAdded a custom main menu with layered animated artwork and updated branding.\n\n\n\n\nAdded the Refuge dimension, custom NPCs, dialogue, and protection scripts.\n\n\n\n\nDisabled the automatic starting class scroll.\n\n\n\n\nChanged the recommended RAM allocation from 10 GB to 8 GB.\n\n\n\n\nGameplay adjustments\n\n\n\nDisabled Nameless Trinkets crafting.\n\n\n\n\nDisabled the Illuminati Pet&rsquo;s item-generation ability.\n\n\n\n\nDisabled the End Portal and Juggernaut pets and removed their crafting recipes.\n\n\n\n\nUpdated RPG equipment and spell-scroll loot settings.\n\n\n\n\nUpdated configuration files for several mods.\n\n\n\n\nAdded mods\n\n\n\nCreate: Aeroworks\n\n\n\n\nCreate: Deep Seas\n\n\n\n\nCreate: Dragons Plus\n\n\n\n\nAEInfinityBooster\n\n\n\n\nRPG Style More Weapons\n\n\n\n\nSablewaves\n\n\n\n\nEMI Autocrafting\n\n\n\n\nBetter Advanced Tooltips\n\n\n\n\nEasy NPC, Easy NPC: Core, and Easy NPC: Config UI\n\n\n\n\nMore Quest Types\n\n\n\n\nFancyMenu, Konkrete, and Melody\n\n\n\n\nKubeJS and Rhino\n\n\n\n\nWorldEdit and WorldEdit Items\n\n\n\n\nRemoved mods\n\n\n\nLegendary Monsters\n\n\n\n\nLegendary Monsters Create Compat\n\n\n\n\nLegendary Spellbooks\n\n\n\n\nNera Jadis: Arcane Arsenal\n\n\n\n\nSea Myths\n\n\n\n\nFramedBlocks\n\n\n\n\nMod updates\n\nUpdated 30 mods, including Ice and Fire Community Edition, Spell Engine, the RPG Series class mods, Create: Interiors, Create: Flight Control, Create Aeronautics Discovery, Gadgets & Gizmos, Abyssal Ocean, Lootr, and several libraries and compatibility addons.\n\nUpdating an existing installation\n\nBack up your world before updating. Removed mods&rsquo; blocks, items, and entities may be lost, including existing FramedBlocks builds. Replace the old quest folder instead of merging it so removed quests do not remain."
+    },
+    {
+      "version": "1.0.4.3",
+      "date": "2026-09-26",
+      "title": "Mythforge Beyond the Horizon-1.0.4.3.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8981261",
+      "notes": "Added JEI for create recipes and such.\nFixed issue where updating nuked user nettings (sowwy)"
+    },
+    {
+      "version": "1.0.4.2",
+      "date": "2026-09-25",
+      "title": "Mythforge Beyond the Horizon-1.0.4.2.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8972751",
+      "notes": "Distant horizons removed due to problems."
+    },
+    {
+      "version": "1.0.4.1",
+      "date": "2026-09-24",
+      "title": "Mythforge Beyond the Horizon-1.0.4.1.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8967653",
+      "notes": "Fixed the update not actually containing the update."
+    },
+    {
+      "version": "1.0.4",
+      "date": "2026-09-24",
+      "title": "Mythforge-1.0.4.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8964036",
+      "notes": "Added DOOM and the future final boss of the pack!"
+    },
+    {
+      "version": "1.0.3",
+      "date": "2026-09-18",
+      "title": "Mythforge-1.0.3.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8915162",
+      "notes": "What's new\n\nMythforge: Beyond the Horizon 1.0.3\n\nA small maintenance update focused on server compatibility and making the pack easier to host.\n\n357 mods.\n\nUpdated\n\n\n\nMarium's Soulslike Weaponry &rarr; 1.4.8\n\n\n\nIncludes additional bug fixes and compatibility improvements\n\n\n\n\nImproves stability when running through Sinytra Connector\n\n\n\n\nFixes a server crash involving certain Forge mods\n\n\n\n\n\n\n\nServer Files\n\n\n\nAdded an official server pack for Mythforge\n\n\n\n\nServer owners can now download the matching server files for this version instead of building the server manually\n\n\n\n\nClient and server files are aligned for 1.0.3"
+    },
+    {
+      "version": "1.0.2",
+      "date": "2026-09-18",
+      "title": "Mythforge-1.0.2.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8908176",
+      "notes": "What's new\n\nMythforge: Beyond the Horizon 1.0.2\n\nLong-distance exploration gets a major visual upgrade, alongside new music systems, loot notifications and compatibility updates.\n\n357 mods (up from 352).\n\nAdded\n\n\n\nDistant Horizons - adds level-of-detail terrain rendering, allowing the world to remain visible far beyond Minecraft's normal render distance\n\n\n\n\nLoot Journal: Pickup Notifier - displays newly collected items and loot without needing to constantly check your inventory\n\n\n\n\nMaestro - dynamic music framework for expanding and controlling Minecraft's soundtrack\n\n\n\n\nMaestro: Overture - expanded soundtrack and music experience built for Maestro\n\n\n\n\nFragmentum - supporting library required by the new Obscuria mods\n\n\n\n\nYetAnotherConfigLib - configuration library required by the new additions\n\n\n\n\nUpdated\n\n\n\nLegendary Monsters &rarr; 2.2.3\n\n\n\n\nStreams Reflowing &rarr; 2.13.7\n\n\n\n\nThese updates also bring additional fixes and compatibility improvements for the pack's Create and Sable-heavy environment."
+    },
+    {
+      "version": "1.0.1",
+      "date": "2026-09-15",
+      "title": "Mythforge-1.0.1.zip",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8887983",
+      "notes": "## Mythforge: Beyond the Horizon 1.0.1\n\nComputers and automation join the pack, plus a round of mod updates.\n\n**352 mods** (up from 347).\n\n### Added\n- **CC: Tweaked** - programmable in-game computers, turtles and peripherals\n- **CC: Sable** - connects CC: Tweaked to the Sable physics engine, so you can\n  script your airships directly\n- **Advanced Peripherals** - extended peripheral set for CC: Tweaked\n- **Create: Avionics** - computer-controlled flight systems\n- **Minor Gamba** - two uncraftable gambling machines: a gacha machine that\n  outputs any item in the game, and a simple double-or-nothing\n\nTogether these mean an airship can now be flown by a Lua program instead of a\nplayer.\n\n### Updated\n- Aeronautics Player Tilt &rarr; 0.2.0\n- Ars 'n Spells &rarr; 3.3.4\n- Azimuth API &rarr; 1.4.8\n- Create: Bits 'n' Bobs &rarr; 2.3.5\n- Create: Creating Space &rarr; 1.7.22\n- Create: Flight Control &rarr; 0.7.2\n- Moog's Structure Lib &rarr; 3.3.1"
+    }
+  ],
+  "policies": {
+    "terms": "Effective October 13, 2026\n\nAbout Mythforge\nMythforge: Beyond the Horizon is an independently operated Minecraft modpack and community server. The operator uses the name Procyonine. Contact the Mythforge team through the official Discord linked on the Contact page. These terms cover mythforge.win and play.mythforge.win; external services have their own terms.\n\nUsing the service\nUse a legitimately owned Minecraft Java Edition account and the latest published Mythforge release. Follow the Server Rules and applicable laws. Keep your account secure. Do not disrupt the infrastructure, impersonate staff, distribute malware, evade moderation, or exploit other players.\n\nCommunity and moderation\nStaff may investigate reports and restrict access for rule violations or security and performance concerns. Staff may pause, modify, or remove harmful machines, items, or builds. You may appeal through the official Discord. Sharing a build or playing on the server does not transfer ownership of your original work to Mythforge.\n\nUpdates and world data\nThe modpack and server change over time. Bugs, interruptions, balancing changes, rollbacks, and world resets may occur. We do not promise uninterrupted access or permanent preservation of every build or item. Where practical, important changes will be announced through community channels. Nothing here removes rights that applicable law requires us to respect.\n\nSupporter services\nNo supporter packages are currently offered for purchase. Proposed rewards and playtime unlocks are not purchase promises. Before paid offers open, their contents, price, duration, billing conditions, delivery process, and applicable purchase terms will be published. Payments will be handled through the external provider identified at checkout; this website does not collect card details.\n\nExternal services and intellectual property\nMinecraft, mod content, and third-party assets remain subject to their respective owners’ licenses and terms. Discord, CurseForge, hosting, and any future checkout provider operate their own services. Mythforge does not replace their account or purchase agreements.\n\nChanges and contact\nUpdated terms will show a new effective date. Contact the operator through the Contact page if you have a question or dispute. Any future purchase is also subject to the terms disclosed for that transaction; a later website update does not automatically remove existing consumer rights.\n\nNOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.",
+    "privacy": "Effective October 13, 2026\n\nWho operates this service\nMythforge is operated under the name Procyonine. For privacy questions or requests, contact staff privately through the official Discord on the Contact page. Do not post sensitive information in public chat.\n\nWebsite visits\nThis website has no visitor account system, advertising tracker, analytics script, or payment form in its supplied code. Cloudflare hosts the website and may process IP addresses, request timestamps, browser information, and security logs to deliver and protect it. The site does not set advertising or analytics cookies in its own code; infrastructure or external services may have their own practices.\n\nServer status\nThe Server page requests status from mcstatus.io. When your browser makes this request, that provider receives your IP address and normal request information, plus the public server hostname. It queries Minecraft’s public status response. The site displays availability and player totals, not a list of player names. Status results can be cached and may lag behind the server. mcstatus.io has its own service practices.\n\nMinecraft server and support\nOperating a multiplayer server involves Minecraft usernames and UUIDs, connection addresses, gameplay and chat logs, world and claim data, and moderation records. Information you send to staff may include Discord identifiers, messages, screenshots, and technical logs. This information is used to operate the world, investigate problems, enforce rules, and respond to support requests. In-game chat may be visible to other players; information submitted to public Discord channels is visible to their audiences.\n\nProviders and sharing\nCloudflare, Discord, Minecraft account services, and CurseForge process information under their own policies when you use their services. Server administrators and relevant hosting providers may have access to operational data. A future checkout provider will handle payment information under the terms shown at checkout. This static website does not collect card numbers. Information may also need to be disclosed when required by law or to address a security incident.\n\nStorage and privacy requests\nLogs, world saves, backups, and support records may persist after a session ends. Contact staff to request access, correction, or deletion of information relating to you. We may need to verify account ownership and may need to keep records for security, moderation, backups, or legal obligations. Removing a record from active systems may not immediately remove it from backups. Applicable privacy rights depend on your location and the circumstances.\n\nChildren and sensitive information\nDo not send identity documents, payment credentials, or other unnecessary sensitive information to staff. Discord users must meet Discord’s applicable age requirements. A parent or guardian may contact us about information relating to a child. Child-specific data collection or services require a separate review before introduction.\n\nUpdates\nThis policy will be updated if the site adds accounts, analytics, payments, or other material changes in data handling. A new effective date will identify the revised version.",
+    "refunds": "Effective October 13, 2026\n\nCurrent purchase status\nThe Mythforge supporter store is closed. No supporter packages are offered for purchase on this website, and proposed package names or rewards are not purchasable offers.\n\nFuture purchases\nWhen the store opens, review the package description and the payment provider’s terms before paying. Those terms must identify the price, duration, recurring billing if any, and applicable cancellation and refund conditions. This page does not establish a blanket “no refunds” rule or promise a discretionary refund window for a store that has not launched. Statutory consumer rights are not excluded.\n\nDelivery problems and duplicate charges\nIf a future purchase is missing, incorrect, or charged twice, contact Mythforge staff privately through the Contact page with your receipt or transaction reference, Minecraft username, package name, and purchase date. Do not send card details or passwords. Staff will investigate delivery issues and coordinate with the checkout provider where appropriate. Do not purchase the package again merely to fix a delivery problem.\n\nProvider support and subscriptions\nUse the checkout provider’s receipt and support tools for payment or billing questions. If Tebex is selected, its purchase terms and payment-history tools will apply to the relevant checkout. Cancelling a subscription and requesting a refund are different actions; review the terms of the actual offer.\n\nRewards and reversals\nWhere a payment is refunded or reversed, rewards tied to that payment may be revoked under the applicable offer and provider terms. Separately earned playtime unlocks are not paid purchases and should not be removed solely because a supporter purchase was reversed.\n\nBefore the store opens\nThis page will be updated with the actual provider and package conditions before purchases are enabled. Contact staff if you have any questions."
+  },
+  "commerce": {
+    "provider": "Tebex",
+    "enabled": false,
+    "deliveryVerified": false,
+    "policyReviewComplete": false,
+    "storeHosts": [
+      "mythforge.tebex.io"
+    ],
+    "supportUrl": "https://discord.gg/QQwdEgFMFg"
+  },
+  "latestVersion": "1.2.4",
+  "latestReleaseUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368",
+  "curseforge": {
+    "projectId": 1696232,
+    "lastChecked": "2026-10-13T19:33:13.310Z",
+    "source": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon"
+  },
+  "serverTracksLatest": true
+}

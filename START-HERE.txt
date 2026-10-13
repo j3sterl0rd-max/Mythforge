@@ -1,0 +1,13 @@
+MYTHFORGE - COMPLETE WEBSITE PROJECT
+
+1. Read README.md.
+2. Edit data/site.json for links, server version and RAM.
+3. With Node.js 22+ installed, run:
+   npm run build
+   npm run check
+   npm run dev
+4. Preview at http://localhost:8080.
+5. Upload this project to GitHub and connect it to Cloudflare Workers.
+
+The complete deployable static website is already in dist/.
+README.md includes deployment, domain setup, artwork and editing instructions.
