@@ -16,7 +16,7 @@
     "contact": "mailto:admin@mythforge.win"
   },
   "status": {
-    "endpoint": "https://api.mcstatus.io/v2/status/java/play.mythforge.win?query=false",
+    "endpoint": null,
     "timeoutMs": 10000,
     "refreshMs": 60000,
     "provider": "mcstatus.io"
@@ -262,5 +262,6 @@
     "lastChecked": "2026-10-13T19:33:13.310Z",
     "source": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon"
   },
-  "serverTracksLatest": true
+  "serverTracksLatest": true,
+  "serverComingSoon": true
 }

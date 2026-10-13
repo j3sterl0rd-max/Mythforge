@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
+const config=JSON.parse(await readFile(path.join(root,'data/site.json'),'utf8'));
 const roster=[['Slenana','3fab6d20-f7c2-4d23-ad65-4503348ace93'],['Regranaas47','48f2f005-71ce-4cfb-bf46-1e750def5ceb'],['kaididit','aa705957-d779-49e1-95d6-ece6ad98216b'],['Winterberry99','d14db3c0-198b-41e4-a7d0-a6d800d31fa4'],['Irenoir','81622cdc-6dc3-4518-b6e0-ecbbc5934a54'],['Saku1849','ed2473cd-addc-4de9-9f3c-a5fed26e09e7'],['EnderHayes18','049f2b50-8c1a-4c0a-b8b8-dfbd7aabec6f'],['iDonnyboy23','1bb4e05a-10a1-46f3-a1a9-c810ad745409']];
 const affiliate='<aside class="hosting-card" aria-label="Wabbanode hosting partner"><p class="eyebrow">Host Mythforge with friends</p><a class="hosting-banner" href="https://wabbanode.com/affiliate/mythforgebeyondthehorizon" rel="sponsored noopener noreferrer"><img src="/assets/art/wabbanode-banner.png" alt="Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server." width="850" height="170"></a><p class="small">Affiliate link: Mythforge may earn a commission if you purchase. Discount eligibility and terms are set by Wabbanode.</p></aside>';
 async function files(dir){let out=[];for(const f of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,f.name);out.push(...(f.isDirectory()?await files(p):[p]));}return out;}
@@ -14,6 +15,13 @@ for(const f of await files(dist)){
  if(!/\.(html|js|css|xml|txt)$/.test(f)&&path.basename(f)!=='_headers')continue;
  let s=await readFile(f,'utf8');
  if(f.endsWith('.html')){
+  if(config.serverComingSoon){
+   s=s.replace(/<div><div class="copy-label">Minecraft server address<\/div><button class="copy-address"[\s\S]*?<\/button><\/div>/g,'<div class="server-coming-soon"><p class="eyebrow">The public server</p><strong>Server coming soon!</strong></div>');
+   s=s.replace(/<section class="panel"[^>]*data-status[\s\S]*?<\/section>/g,'<aside class="panel"><h2>Server coming soon!</h2><p>Watch Discord for launch news.</p></aside>');
+   if(f===path.join(dist,'server/index.html'))s=s.replace(/<main id="main">[\s\S]*?<\/main>/,'<main id="main"><section class="page-head"><div class="container"><p class="eyebrow">The public world</p><h1>Server coming soon!</h1><p>We’re preparing the next shared Mythforge adventure. Watch Discord for launch news.</p><div class="actions"><a class="btn primary" href="/modpack/">Explore the modpack</a><a class="btn" href="'+config.links.discord+'">Join Discord ↗</a></div></div></section></main>');
+   if(f===path.join(dist,'getting-started/index.html'))s=s.replace(/<li[^>]*>[\s\S]*?<\/li>/g,item=>/Multiplayer|Add Server|play\.mythforge\.win|Connect to the server/i.test(item)?'':item);
+   s=s.replaceAll('play.mythforge.win','Server coming soon!').replaceAll('Join the Server','Server coming soon!').replaceAll('Install the pack before joining','Explore the installation guide').replaceAll('The server always follows the latest pack release.','Server coming soon! Watch Discord for launch news.').replaceAll('Connection & server status','Server launch news');
+  }
   s=s.replace('<a href="/terms/">','<a href="/beta-testers/">Beta Testers &amp; Thanks</a><a href="/terms/">');
   s=s.replaceAll('Check the server’s required version before connecting.','The server always follows the latest pack release.');
   s=s.replaceAll('The server’s required pack version is awaiting publication. Confirm it through the official download or community channel before connecting.','The server always follows the latest pack release. Install the latest Mythforge release before connecting.');
