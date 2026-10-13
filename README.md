@@ -182,6 +182,8 @@ See [docs/VALIDATION.md](docs/VALIDATION.md) for what was verified and the remai
 3. Add its route to `navItems` if it belongs in the main navigation.
 4. Build and check. Page metadata, shared navigation/footer and sitemap are generated automatically.
 
+Automatic Cloudflare deployment enabled.
+
 ## Hosted checkout foundations
 
 Official CurseForge and Discord links are configured. See docs/PAYMENTS.md for Tebex setup, RCON delivery, separate paid/earned entitlements, and activating reviewed packages. Checkout is closed until those requirements are met. No store account or server delivery has been configured by this website build.
