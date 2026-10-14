@@ -1,0 +1,6 @@
+-Xms6G
+-Xmx12G
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+-Xlog:gc*:file=gc.log:time,uptime,level,tags:filecount=5,filesize=20M
+-Dcreatethrusters.graphEditorPort=18765
