@@ -14,10 +14,18 @@
     "Refund downgrades to the remaining paid entitlement",
     "Refund preserves natural allowances plus remaining rank bonuses",
     "Refund preserves earned time and one-time delivery receipts",
+    "Grindstone stays locked before 150 active hours",
+    "Grindstone opens at 150 hours without a paid rank",
+    "Naming and portable workbenches remain locked before 300 hours",
+    "Naming and portable utility permissions unlock at 300 hours",
+    "Lore, join messages and world time remain locked before 400 hours",
+    "Lore, join messages and world time unlock at 400 hours",
+    "Repair cannot bypass the 500-hour threshold",
+    "Earned repair charges XP and preserves item name and lore",
     "Reward equipment slot IDs exist for players",
     "All crate and kit registry IDs exist",
     "Experience Disperser reaches validated maximum rank, level and stats"
   ],
-  "success": true,
-  "failures": []
+  "failures": [],
+  "success": true
 }

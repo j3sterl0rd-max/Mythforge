@@ -268,8 +268,8 @@ public final class ServerTools {
         setNode(rank,"command.nick",h>=40||paid>=1);
         setNode(rank,"command.nickname",h>=40||paid>=1);
         for(String cmd:List.of("echest","enderchest")) setNode(rank,"command."+cmd,h>=90||paid>=2);
-        for(String cmd:List.of("anvil","smithing")) setNode(rank,"command."+cmd,paid>=2);
-        for(String cmd:List.of("trashcan","trash","disposal")) setNode(rank,"command."+cmd,paid>=1);
+        for(String cmd:List.of("anvil","smithing")) setNode(rank,"command."+cmd,h>=300||paid>=2);
+        for(String cmd:List.of("trashcan","trash","disposal")) setNode(rank,"command."+cmd,h>=300||paid>=1);
         setNode(rank,"command.hat",h>=400);
         for(String id:List.of("ember","artisan","runeforged","mythic")) {
             var paidRank=FTBRanksAPI.manager().getRank(id).orElseThrow();
