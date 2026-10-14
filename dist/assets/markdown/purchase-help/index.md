@@ -24,8 +24,8 @@ Refunds and recurring purchases
 
 Read the published refund policy and the provider’s purchase terms. Use the provider’s receipt or account tools for subscription management, and contact support for unresolved issues.
 
-Are playtime rewards affected by a refund?
+Are earned rewards affected by a refund?
 
-Paid supporter rewards and earned playtime unlocks are separate. The planned delivery system must preserve earned unlocks when a paid entitlement ends.
+Paid supporter rewards and earned gameplay rewards are separate. The planned delivery system must preserve earned unlocks when a paid entitlement ends.
 
  [Get purchase support](https://discord.gg/QQwdEgFMFg)  [Refund policy](https://mythforge.win/refunds/)

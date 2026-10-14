@@ -32,7 +32,7 @@ Updates and world data
 The modpack and server change over time. Bugs, interruptions, balancing changes, rollbacks, and world resets may occur. We do not promise uninterrupted access or permanent preservation of every build or item. Where practical, important changes will be announced through community channels. Nothing here removes rights that applicable law requires us to respect.
 
 Supporter services  
-No supporter packages are currently offered for purchase. Proposed rewards and playtime unlocks are not purchase promises. Before paid offers open, their contents, price, duration, billing conditions, delivery process, and applicable purchase terms will be published. Payments will be handled through the external provider identified at checkout; this website does not collect card details.
+No supporter packages are currently offered for purchase. Listed rewards are not offered for sale until checkout opens. Before paid offers open, their contents, price, duration, billing conditions, delivery process, and applicable purchase terms will be published. Payments will be handled through the external provider identified at checkout; this website does not collect card details.
 
 External services and intellectual property  
 Minecraft, mod content, and third-party assets remain subject to their respective owners’ licenses and terms. Discord, CurseForge, hosting, and any future checkout provider operate their own services. Mythforge does not replace their account or purchase agreements.

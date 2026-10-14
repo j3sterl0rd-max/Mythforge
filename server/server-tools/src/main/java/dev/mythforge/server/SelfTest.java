@@ -24,7 +24,8 @@ final class SelfTest {
             check(Payments.purchase(uuid.toString(),"runeforged","selftest_runeforged"),"Upgrade entitlement is recorded",passed);
             check(Payments.purchase(uuid.toString(),"runeforged","selftest_runeforged")&&test.purchases.size()==2,"Replayed purchase does not duplicate transactions",passed);
             ServerTools.reconcile(p);
-            check(FTBRanksAPI.getPermissionValue(p,"ftbessentials.home.max").asInteger().orElse(0)==5,"500-hour homes survive a lower paid allowance",passed);
+            check(FTBRanksAPI.getPermissionValue(p,"ftbessentials.home.max").asInteger().orElse(0)==9,"Purchased home bonus adds to 500-hour natural allowance",passed);
+            check(FTBRanksAPI.getPermissionValue(p,"mythforge.pwarp.max").asInteger().orElse(0)==8,"Purchased warp bonus adds to natural allowance",passed);
             check(FTBRanksAPI.getPermissionValue(p,"ftbchunks.max_claimed").asInteger().orElse(0)==592,"Paid claim bonus is added once to recurring earnings",passed);
             check(FTBRanksAPI.getPermissionValue(p,"ftbchunks.max_force_loaded").asInteger().orElse(0)==16,"Force-load entitlement combines base, earned and current rank",passed);
             check(!FTBRanksAPI.getPermissionValue(p,"command.give").asBooleanOrFalse(),"Supporters cannot use /give",passed);
@@ -32,6 +33,8 @@ final class SelfTest {
             check(!FTBRanksAPI.getPermissionValue(p,"command.ftbquests.editing_mode").asBooleanOrFalse(),"Players cannot edit quests",passed);
             check(!FTBRanksAPI.getPermissionValue(p,"command.ftbteams.force-add").asBooleanOrFalse(),"Players cannot force team membership",passed);
             check(Payments.revoke("selftest_runeforged")&&test.paid(uuid)==1,"Refund downgrades to the remaining paid entitlement",passed);
+            ServerTools.reconcile(p);
+            check(FTBRanksAPI.getPermissionValue(p,"ftbessentials.home.max").asInteger().orElse(0)==7&&FTBRanksAPI.getPermissionValue(p,"mythforge.pwarp.max").asInteger().orElse(0)==6,"Refund preserves natural allowances plus remaining rank bonuses",passed);
             check(data.activeSeconds==500*3600L&&data.delivered.contains(500)&&data.paidDelivered==3,"Refund preserves earned time and one-time delivery receipts",passed);
             var slots=top.theillusivec4.curios.api.CuriosApi.getPlayerSlots(ServerTools.server.overworld()).keySet();
             Files.writeString(Path.of("ops/evidence/equipment-slots.json"),State.JSON.toJson(slots));

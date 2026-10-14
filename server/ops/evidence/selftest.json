@@ -1,11 +1,10 @@
 {
-  "success": true,
-  "failures": [],
   "passed": [
     "Accepts Tebex\u0027s compact Java UUID",
     "Upgrade entitlement is recorded",
     "Replayed purchase does not duplicate transactions",
-    "500-hour homes survive a lower paid allowance",
+    "Purchased home bonus adds to 500-hour natural allowance",
+    "Purchased warp bonus adds to natural allowance",
     "Paid claim bonus is added once to recurring earnings",
     "Force-load entitlement combines base, earned and current rank",
     "Supporters cannot use /give",
@@ -13,9 +12,12 @@
     "Players cannot edit quests",
     "Players cannot force team membership",
     "Refund downgrades to the remaining paid entitlement",
+    "Refund preserves natural allowances plus remaining rank bonuses",
     "Refund preserves earned time and one-time delivery receipts",
     "Reward equipment slot IDs exist for players",
     "All crate and kit registry IDs exist",
     "Experience Disperser reaches validated maximum rank, level and stats"
-  ]
+  ],
+  "success": true,
+  "failures": []
 }

@@ -24,7 +24,7 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft ${config.minecraftVersion}, ${config.loader}; latest published release in this snapshot: ${config.latestVersion}. The custom tutorial and discovery quest system is still in development. ${config.serverComingSoon?'The public server is coming soon.':'The public server follows the latest pack release.'} Supporter packages and playtime rewards remain to be announced.
+Minecraft ${config.minecraftVersion}, ${config.loader}; latest published release in this snapshot: ${config.latestVersion}. The custom tutorial and discovery quest system is still in development. ${config.serverComingSoon?'The public server is coming soon.':'The public server follows the latest pack release.'} Current supporter ranks are listed; checkout remains closed.
 `;
 async function files(dir){const out=[];for(const f of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,f.name);out.push(...(f.isDirectory()?await files(p):[p]));}return out;}
 const converter=new TurndownService({headingStyle:'atx',bulletListMarker:'-',codeBlockStyle:'fenced'});

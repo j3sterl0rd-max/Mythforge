@@ -23,7 +23,7 @@ Provider support and subscriptions
 Use the checkout provider’s receipt and support tools for payment or billing questions. If Tebex is selected, its purchase terms and payment-history tools will apply to the relevant checkout. Cancelling a subscription and requesting a refund are different actions; review the terms of the actual offer.
 
 Rewards and reversals  
-Where a payment is refunded or reversed, rewards tied to that payment may be revoked under the applicable offer and provider terms. Separately earned playtime unlocks are not paid purchases and should not be removed solely because a supporter purchase was reversed.
+Where a payment is refunded or reversed, rewards tied to that payment may be revoked under the applicable offer and provider terms. Separately earned gameplay rewards are not paid purchases and should not be removed solely because a supporter purchase was reversed.
 
 Before the store opens  
 This page will be updated with the actual provider and package conditions before purchases are enabled. Contact staff if you have any questions.

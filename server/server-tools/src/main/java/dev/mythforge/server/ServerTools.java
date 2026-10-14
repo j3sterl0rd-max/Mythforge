@@ -257,8 +257,8 @@ public final class ServerTools {
         Rank rank=FTBRanksAPI.manager().getRank("earned_"+p.getUUID().toString().replace("-","")).orElseGet(()->FTBRanksAPI.manager().createRank("earned_"+p.getUUID().toString().replace("-",""),50,false));
         rank.add(p.getGameProfile());
         long h=hours(p);int paid=tier(p);
-        int homes=Math.max(h>=500?5:h>=200?4:h>=70?3:h>=10?2:1,paid==0?1:paid+1);
-        int warps=Math.max(h>=500?5:h>=400?4:h>=250?3:h>=100?2:h>=40?1:0,new int[]{0,1,2,3,5}[paid]);
+        int homes=(h>=500?5:h>=200?4:h>=70?3:h>=10?2:1)+(paid==0?0:paid+1);
+        int warps=(h>=500?5:h>=400?4:h>=250?3:h>=100?2:h>=40?1:0)+new int[]{0,1,2,3,5}[paid];
         setNode(rank,"ftbessentials.home.max",homes);
         setNode(rank,"mythforge.pwarp.max",warps);
         setNode(rank,"ftbchunks.max_claimed",64+8*(h/10)+new int[]{0,32,64,128,256}[paid]);

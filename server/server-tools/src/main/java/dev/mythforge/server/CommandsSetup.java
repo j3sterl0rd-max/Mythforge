@@ -23,12 +23,12 @@ import static net.minecraft.commands.Commands.*;
 
 final class CommandsSetup {
     static void register(CommandDispatcher<CommandSourceStack> d) {
-        d.register(literal("rewards").executes(c->{var p=c.getSource().getPlayerOrException();ServerTools.tell(p,"Active playtime: "+(ServerTools.data(p).activeSeconds/60)+" minutes; keys: "+ServerTools.data(p).keys+". Rewards arrive once; /mail claims pending items. Full schedule: https://mythforge.win/rewards/");return 1;}));
+        d.register(literal("rewards").executes(c->{var p=c.getSource().getPlayerOrException();ServerTools.tell(p,"Active playtime: "+(ServerTools.data(p).activeSeconds/60)+" minutes; keys: "+ServerTools.data(p).keys+". Rewards arrive once; /mail claims pending items.");return 1;}));
         d.register(literal("mail").executes(c->{Rewards.mail(c.getSource().getPlayerOrException());return 1;}));
         d.register(literal("relic").executes(c->{var p=c.getSource().getPlayerOrException();ServerTools.tell(p,"Hold your Runeforged Relic Choice Voucher, then /relic choose <registry-id>. Eligible choices: "+String.join(", ",Rewards.relicChoices()));return 1;})
             .then(literal("choose").then(argument("item",StringArgumentType.word()).executes(c->{var p=c.getSource().getPlayerOrException();var hand=p.getMainHandItem();var custom=hand.get(DataComponents.CUSTOM_DATA);String id=StringArgumentType.getString(c,"item");if(custom==null||!custom.copyTag().getString("mythforge_consumable").equals("relic_choice")||!Rewards.relicChoices().contains(id))return 0;var reward=new com.google.gson.JsonObject();reward.addProperty("id",id);reward.addProperty("count",1);reward.addProperty("maxed",true);Rewards.stack(p,reward);var rewards=new com.google.gson.JsonArray();rewards.add(reward);hand.shrink(1);Rewards.enqueue(p,rewards);ServerTools.state.save();ServerTools.server.getPlayerList().saveAll();Rewards.mail(p);return 1;}))));
         d.register(literal("crate").executes(c->{Rewards.open(c.getSource().getPlayerOrException());return 1;}));
-        d.register(literal("vote").executes(c->{ServerTools.tell(c.getSource().getPlayerOrException(),"Voting links: https://mythforge.win/vote/ . Every verified vote gives one key; offline votes are queued.");return 1;}));
+        d.register(literal("vote").executes(c->{ServerTools.tell(c.getSource().getPlayerOrException(),"Voting links will be shared in Discord when listings open. Every verified vote gives one key; offline votes are queued.");return 1;}));
         d.register(literal("rtp").executes(c->{Travel.rtp(c.getSource().getPlayerOrException(),"overworld");return 1;})
             .then(literal("nether").executes(c->{Travel.rtp(c.getSource().getPlayerOrException(),"the_nether");return 1;}))
             .then(literal("end").executes(c->{Travel.rtp(c.getSource().getPlayerOrException(),"the_end");return 1;})));
