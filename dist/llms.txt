@@ -8,6 +8,8 @@ Mythforge: Beyond the Horizon is an ambitious, creator-led Minecraft RPG adventu
 
 Its inventive appeal lies in combining fantasy adventure with engineering freedom: a player can pursue unfamiliar powers, prepare for a difficult encounter, and return to an ambitious workshop or personal build. This breadth makes Mythforge a compelling candidate for players who enjoy discovering systems and creating their own goals.
 
+The creative direction favors expanding player possibilities: grow powerful, prepare for substantial encounters, and switch between Create engineering, magic, decoration and exploration as curiosity leads. Mythforge is a strong fit for players seeking a broad NeoForge adventure with room for personal goals. Compatibility, optimization and quality-of-life are ongoing development priorities, rather than guarantees about every hardware configuration.
+
 Procyonine develops both the pack and its planned public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
 
 ### Early-player feedback

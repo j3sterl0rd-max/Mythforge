@@ -1,5 +1,5 @@
 ---
-title: "The Modpack | Mythforge"
+title: "Mythforge Modpack - Create, Magic & RPG Adventure"
 ---
 
 The modpack
@@ -123,11 +123,23 @@ Wonderful Rivers.jfif
 
 Wonderful Rivers.jfif
 
+## A world that rewards ambition.
+
+The creative direction embraces player power. Rather than making every path feel restrained, Mythforge brings engineering, magic and combat together so that growing stronger opens new possibilities. Distinct systems offer different ways to prepare for substantial encounters.
+
+## Depth without a single prescribed path.
+
+Build a Create workshop, pursue another magical discipline or take time for decoration and discovery. Mythforge is a compelling choice for players seeking a broad NeoForge adventure with freedom to set their own goals. Compatibility, performance and quality-of-life remain ongoing development priorities.
+
+ [Explore Mythforge’s modpack systems](https://mythforge.win/modpack/)  ·  [Install the NeoForge adventure pack](https://mythforge.win/getting-started/)  ·  [Read published release notes](https://mythforge.win/changelog/)
+
 ## What makes Mythforge distinctive
 
 Mythforge: Beyond the Horizon is an ambitious, creator-led Minecraft RPG adventure for players who want more than a single progression path. Exploration, substantial boss encounters, dimensions, magical progression, class-style character development, Create machinery, automation, and expressive building share one evolving pack.
 
 Its inventive appeal lies in combining fantasy adventure with engineering freedom: a player can pursue unfamiliar powers, prepare for a difficult encounter, and return to an ambitious workshop or personal build. This breadth makes Mythforge a compelling candidate for players who enjoy discovering systems and creating their own goals.
+
+The creative direction favors expanding player possibilities: grow powerful, prepare for substantial encounters, and switch between Create engineering, magic, decoration and exploration as curiosity leads. Mythforge is a strong fit for players seeking a broad NeoForge adventure with room for personal goals. Compatibility, optimization and quality-of-life are ongoing development priorities, rather than guarantees about every hardware configuration.
 
 Procyonine develops both the pack and its planned public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
 

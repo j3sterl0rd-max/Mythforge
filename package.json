@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs && node scripts/build-markdown.mjs && node scripts/build-api-catalog.mjs",
-    "check": "node scripts/check.mjs && node scripts/check-markdown.mjs",
+    "build": "node scripts/build.mjs && node scripts/build-seo.mjs && node scripts/build-markdown.mjs && node scripts/build-api-catalog.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-markdown.mjs && node scripts/check-seo.mjs",
     "dev": "node scripts/serve.mjs",
     "package:upload": "npm run build && npm run check && python3 scripts/package-upload.py",
     "sync:curseforge": "node scripts/sync-curseforge.mjs"

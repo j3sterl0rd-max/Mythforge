@@ -1,5 +1,5 @@
 ---
-title: "Beta Testers & Thanks | Mythforge"
+title: "Mythforge Beta Testers & Thanks"
 ---
 
 The people behind the journey

@@ -1,5 +1,5 @@
 ---
-title: "Getting Started | Mythforge"
+title: "Install Mythforge - Minecraft 1.21.1 NeoForge Guide"
 ---
 
 Getting started
@@ -96,4 +96,10 @@ Still need help?
 
 Provide your modpack version, launcher, allocated RAM, and the relevant crash report or latest log. Remove personal information before sharing logs.
 
- [Ask in Discord](https://discord.gg/QQwdEgFMFg)
+ [Ask in Discord](https://discord.gg/QQwdEgFMFg) 
+
+## Choose your first adventure.
+
+Once the pack launches, start with the playstyle that draws you in: explore, build, learn magic or experiment with Create. The sandbox includes mod guides, while the custom tutorial and discovery quest system is still in development.
+
+ [Explore Mythforge’s modpack systems](https://mythforge.win/modpack/)  ·  [Install the NeoForge adventure pack](https://mythforge.win/getting-started/)  ·  [Read published release notes](https://mythforge.win/changelog/)

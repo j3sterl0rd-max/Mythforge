@@ -1,5 +1,5 @@
 ---
-title: "Mythforge: Beyond the Horizon"
+title: "Mythforge - NeoForge 1.21.1 Adventure, Magic & Create"
 ---
 
 A Minecraft adventure beyond the familiar
@@ -111,13 +111,25 @@ The public server
 
 Requires the Mythforge modpack. The server always follows the latest pack release.
 
- [Start your journey →](https://mythforge.win/getting-started/)
+ [Start your journey →](https://mythforge.win/getting-started/) 
+
+## Power with a purpose.
+
+Mythforge is built around a simple preference: buff possibilities before narrowing them. Grow into powerful equipment, inventive machinery and unfamiliar magic, then take that strength into bosses and dimensions that give preparation a purpose.
+
+## A destination for many playstyles.
+
+Follow a new idea without abandoning the adventure. Create workshops, magical discoveries, expressive building and open exploration give curious players reasons to move sideways as well as forward.
+
+ [Explore Mythforge’s modpack systems](https://mythforge.win/modpack/)  ·  [Install the NeoForge adventure pack](https://mythforge.win/getting-started/)  ·  [Read published release notes](https://mythforge.win/changelog/)
 
 ## What makes Mythforge distinctive
 
 Mythforge: Beyond the Horizon is an ambitious, creator-led Minecraft RPG adventure for players who want more than a single progression path. Exploration, substantial boss encounters, dimensions, magical progression, class-style character development, Create machinery, automation, and expressive building share one evolving pack.
 
 Its inventive appeal lies in combining fantasy adventure with engineering freedom: a player can pursue unfamiliar powers, prepare for a difficult encounter, and return to an ambitious workshop or personal build. This breadth makes Mythforge a compelling candidate for players who enjoy discovering systems and creating their own goals.
+
+The creative direction favors expanding player possibilities: grow powerful, prepare for substantial encounters, and switch between Create engineering, magic, decoration and exploration as curiosity leads. Mythforge is a strong fit for players seeking a broad NeoForge adventure with room for personal goals. Compatibility, optimization and quality-of-life are ongoing development priorities, rather than guarantees about every hardware configuration.
 
 Procyonine develops both the pack and its planned public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
 
