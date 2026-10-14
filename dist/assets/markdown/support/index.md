@@ -15,7 +15,7 @@ A path for everyone.
 
 Cosmetics, convenience, and quality-of-life rewards are the focus. Where appropriate, gameplay-related benefits should have a playtime progression path, so support can offer earlier access rather than permanent paid-only advantages.
 
-Exact rewards, limits, tiers, and prices are still being developed. Nothing on this page is a finalized offer.
+The launch specification below uses our current rank prices and rewards. Purchases remain closed until testing and store review are complete.
 
 Secure external checkout
 
@@ -23,7 +23,7 @@ Secure external checkout
 
 When available, purchases will take place through Tebex or another established payment provider. This website does not collect card details.
 
-Store not yet open · Packages to be announced
+Store closed · Current ranks listed below
 
  [Purchase help](https://mythforge.win/purchase-help/)  ·  [Refund policy](https://mythforge.win/refunds/)  ·  [Terms](https://mythforge.win/terms/) 
 
@@ -31,71 +31,197 @@ Supporter rewards
 
 ## Ways to support the world.
 
-Illustrative package spaces. Names and contents below are proposals; pricing and availability are not finalized.
+Current permanent ranks and USD prices. Higher tiers include lower-tier features. Checkout remains closed.
 
-COSMETICS & IDENTITY
+PERMANENT SUPPORTER RANK
 
-## Community Supporter
+## Ember
 
-A place for name colors, a supporter prefix, and cosmetic extras.
+Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
 
--   Proposed cosmetic rewards
--   Contents and pricing to be announced
+-   Immediate Create machinery and Sable contraption access; banned functionality stays banned
+-   1 Creative Blaze Cake and 1 fully maxed Experience Disperser
+-   /craft, /stonecutter, /nick, colored item naming and /disposal
+-   2 homes, 1 public warp, +32 claim chunks and +1 force-loadable chunk
+-   Matching Discord role after account linking
 
-Details coming later  
-No package available for purchase
+$8 USD  
+Store closed until launch checks pass
 
-EVERYDAY CONVENIENCE
+PERMANENT SUPPORTER RANK
 
-## Horizon Supporter
+## Artisan
 
-A place for useful conveniences that can also have playtime unlocks.
+Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
 
--   Proposed homes and claim allowances
--   Contents and pricing to be announced
+-   Everything in Ember
+-   AE2 Infinity Range Card and wireless crafting terminal with network hardware
+-   /echest, /ascend, /anvil, /smithing and /grindstone
+-   Custom public-warp icon, priority login and /rtp nether
+-   3 homes, 2 public warps, +64 claim chunks and +2 force-loadable chunks
 
-Details coming later  
-No package available for purchase
+$16 USD  
+Store closed until launch checks pass
 
-KEEP THE WORLD TURNING
+PERMANENT SUPPORTER RANK
 
-## Forge Supporter
+## Runeforged
 
-A place for a broader supporter package once the details are settled.
+Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
 
--   Proposed utility and access rewards
--   Contents and pricing to be announced
+-   Everything in Artisan and Ember
+-   1 fully maxed Relics item of your choice
+-   /feed, claim-limited /fly, safe visited-waypoint teleporting and XP-based /repair
+-   /rtp end
+-   4 homes, 3 public warps, +128 claim chunks and +4 force-loadable chunks
 
-Details coming later  
-No package available for purchase
+$32 USD  
+Store closed until launch checks pass
 
-Cosmetic ideas include colored names, prefixes, /hat, and /nick. Proposed playtime conveniences include additional homes, claim allowances, /enderchest, /fly, and utility kits. Availability, restrictions, and playtime requirements are not final.
+PERMANENT SUPPORTER RANK
+
+## Mythic
+
+Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
+
+-   Everything in Runeforged, Artisan and Ember
+-   1 empty infinite item storage cell and 1 AE2 Dimension Card
+-   /heal, limited /effects, /prefix, custom item lore and custom join message
+-   World time and weather controls affect everyone in your current world
+-   5 homes, 5 public warps, +256 claim chunks and +6 force-loadable chunks
+
+$64 USD  
+Store closed until launch checks pass
+
+Everyone has /back. Homes and public warps use the higher of your paid or earned allowance. Claim and force-load bonuses use the current rank total, plus active playtime.  [See rewards and restrictions](https://mythforge.win/rewards/)  or  [vote crates](https://mythforge.win/vote/) .
 
 Playtime unlocks
 
 ## Progress just by playing.
 
-Spend time in the world and work toward useful conveniences. These proposed unlocks are separate from supporter purchases.
+Spend time in the world and work toward useful conveniences. These active-playtime unlocks are separate from supporter purchases.
 
 01 / PLAYTIME
 
-### Make yourself at home
+### 5 active hours
 
-Additional homes and expanded claim limits are potential playtime rewards.
+1 bundle and 16 cooked steak.
 
 02 / PLAYTIME
 
-### Travel a little lighter
+### 10 active hours
 
-Conveniences such as /enderchest and /fly are proposed playtime rewards. Unlock hours, restrictions, and progression requirements will be published before launch.
+Transmog table, 16 amethyst shards and second home.
 
 03 / PLAYTIME
 
-### Build your next system
+### 20 active hours
 
-Periodically claimable utility kits, such as an AE2 starter kit, may be available through progression.
+/stonecutter.
 
-Unlock thresholds and reward limits will be published before this system launches.
+04 / PLAYTIME
+
+### 25 active hours
+
+Hostile Neural Networks starter kit with power, fuel and cables.
+
+05 / PLAYTIME
+
+### 30 active hours
+
+Create functional machinery, Sable contraptions and /craft.
+
+06 / PLAYTIME
+
+### 40 active hours
+
+/nick and first public warp.
+
+07 / PLAYTIME
+
+### 50 active hours
+
+AE2 starter kit with ME Drive, terminal, two 1K item cells, cables and power.
+
+08 / PLAYTIME
+
+### 60 active hours
+
+8 diamond Storage Drawers capacity upgrades.
+
+09 / PLAYTIME
+
+### 70 active hours
+
+Third home.
+
+010 / PLAYTIME
+
+### 80 active hours
+
+Wireless crafting terminal, access point, boosters and charger.
+
+011 / PLAYTIME
+
+### 90 active hours
+
+/echest.
+
+012 / PLAYTIME
+
+### 100 active hours
+
+Second public warp and /ascend.
+
+013 / PLAYTIME
+
+### 120 active hours
+
+/feed and one extra glove slot.
+
+014 / PLAYTIME
+
+### 150 active hours
+
+Safe JourneyMap waypoint teleporting and one extra necklace slot.
+
+015 / PLAYTIME
+
+### 175 active hours
+
+/heal and Speed I, Haste I, Night Vision or Water Breathing effects.
+
+016 / PLAYTIME
+
+### 200 active hours
+
+Flight in your own team claims, fourth home and one extra trinket slot.
+
+017 / PLAYTIME
+
+### 250 active hours
+
+Third public warp, /prefix and chat/name colors.
+
+018 / PLAYTIME
+
+### 300 active hours
+
+Personal visual time/weather and a second extra glove slot.
+
+019 / PLAYTIME
+
+### 400 active hours
+
+Fourth public warp and cosmetic hats/particles.
+
+020 / PLAYTIME
+
+### 500 active hours
+
+Empty infinite item storage cell, fifth home, fifth public warp and prestige title.
+
+Only active playtime counts. See the complete  [reward schedule and restrictions](https://mythforge.win/rewards/) .
 
 Host Mythforge with friends
 

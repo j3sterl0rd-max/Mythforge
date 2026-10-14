@@ -23,10 +23,12 @@ Example: curl -H "Accept: text/markdown" https://mythforge.win/modpack/
 - https://mythforge.win/privacy/
 - https://mythforge.win/purchase-help/
 - https://mythforge.win/refunds/
+- https://mythforge.win/rewards/
 - https://mythforge.win/rules/
 - https://mythforge.win/server/
 - https://mythforge.win/support/
 - https://mythforge.win/terms/
+- https://mythforge.win/vote/
 
 ## Response behavior
 

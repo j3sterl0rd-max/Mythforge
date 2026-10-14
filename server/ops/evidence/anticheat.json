@@ -1,0 +1,9 @@
+{
+  "file": "fiw-anticheat-neoforge-1.21.1-2.1.0.jar",
+  "version": "2.1.0",
+  "source": "https://modrinth.com/mod/fiw-anticheat",
+  "author": "Fi3w0",
+  "sha256": "3069e2f85cf06de613be01f83da22ec71bcd0437abe1cc30fad7e3391384ac88",
+  "clientCompanionRequired": true,
+  "antiXray": false
+}

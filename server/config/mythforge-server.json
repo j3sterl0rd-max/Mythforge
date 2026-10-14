@@ -1,0 +1,911 @@
+{
+  "version": 1,
+  "startingClaims": 64,
+  "startingForceLoads": 2,
+  "teamLimitMode": "largest",
+  "functionalBlocks": [
+    "create:shaft",
+    "create:cogwheel",
+    "create:large_cogwheel",
+    "create:encased_chain_drive",
+    "create:belt",
+    "create:gearbox",
+    "create:clutch",
+    "create:gearshift"
+  ],
+  "milestones": {
+    "5": [
+      {
+        "id": "minecraft:bundle",
+        "count": 1
+      },
+      {
+        "id": "minecraft:cooked_beef",
+        "count": 16
+      }
+    ],
+    "10": [
+      {
+        "id": "transmog:transmogrification_table",
+        "count": 1
+      },
+      {
+        "id": "minecraft:amethyst_shard",
+        "count": 16
+      }
+    ],
+    "20": [],
+    "25": [
+      {
+        "id": "hostilenetworks:deep_learner",
+        "count": 1
+      },
+      {
+        "id": "hostilenetworks:sim_chamber",
+        "count": 1
+      },
+      {
+        "id": "hostilenetworks:loot_fabricator",
+        "count": 1
+      },
+      {
+        "id": "hostilenetworks:blank_data_model",
+        "count": 2
+      },
+      {
+        "id": "hostilenetworks:prediction_matrix",
+        "count": 64
+      },
+      {
+        "id": "excessive_utilities:furnace_generator",
+        "count": 16
+      },
+      {
+        "id": "minecraft:coal",
+        "count": 256
+      },
+      {
+        "id": "cyclic:energy_pipe",
+        "count": 32
+      }
+    ],
+    "30": [],
+    "40": [],
+    "50": [
+      {
+        "id": "ae2:drive",
+        "count": 1
+      },
+      {
+        "id": "ae2:terminal",
+        "count": 1
+      },
+      {
+        "id": "ae2:item_storage_cell_1k",
+        "count": 2
+      },
+      {
+        "id": "ae2:fluix_glass_cable",
+        "count": 16
+      },
+      {
+        "id": "ae2:energy_acceptor",
+        "count": 1
+      },
+      {
+        "id": "excessive_utilities:furnace_generator",
+        "count": 2
+      },
+      {
+        "id": "minecraft:coal",
+        "count": 64
+      },
+      {
+        "id": "cyclic:energy_pipe",
+        "count": 16
+      }
+    ],
+    "60": [
+      {
+        "id": "storagedrawers:diamond_storage_upgrade",
+        "count": 8
+      }
+    ],
+    "70": [],
+    "80": [
+      {
+        "id": "ae2:wireless_crafting_terminal",
+        "count": 1
+      },
+      {
+        "id": "ae2:wireless_access_point",
+        "count": 1
+      },
+      {
+        "id": "ae2:wireless_booster",
+        "count": 8
+      },
+      {
+        "id": "ae2:charger",
+        "count": 1
+      }
+    ],
+    "90": [],
+    "100": [],
+    "120": [],
+    "150": [],
+    "175": [],
+    "200": [],
+    "250": [],
+    "300": [],
+    "400": [],
+    "500": [
+      {
+        "id": "infinitestoragecell:infinity_item_cell",
+        "count": 1
+      }
+    ]
+  },
+  "pools": {
+    "decoration": [
+      "createdeco:long_red_bricks",
+      "createdeco:blue_bricks",
+      "createdeco:dean_bricks"
+    ],
+    "furniture": [
+      "decocraft:bistro_chair",
+      "decocraft:cottage_armchair",
+      "decocraft:cottage_coffee_table"
+    ],
+    "normalEgg": [
+      "minecraft:bat_spawn_egg",
+      "minecraft:bee_spawn_egg",
+      "minecraft:fox_spawn_egg",
+      "minecraft:frog_spawn_egg",
+      "minecraft:goat_spawn_egg",
+      "minecraft:panda_spawn_egg",
+      "minecraft:cat_spawn_egg",
+      "minecraft:axolotl_spawn_egg",
+      "minecraft:mooshroom_spawn_egg",
+      "minecraft:camel_spawn_egg"
+    ],
+    "exoticEgg": [
+      "minecraft:sniffer_spawn_egg",
+      "minecraft:allay_spawn_egg"
+    ],
+    "backpack": [
+      "travelersbackpack:standard",
+      "travelersbackpack:diamond",
+      "travelersbackpack:gold"
+    ],
+    "pets": [
+      "inventorypets:pet_cow",
+      "inventorypets:pet_pig",
+      "inventorypets:pet_chicken"
+    ],
+    "standardSword": [
+      "simplyswords:diamond_longsword",
+      "simplyswords:diamond_katana",
+      "simplyswords:diamond_spear",
+      "simplyswords:diamond_glaive",
+      "simplyswords:diamond_cutlass",
+      "simplyswords:diamond_claymore",
+      "simplyswords:diamond_rapier",
+      "simplyswords:diamond_twinblade",
+      "simplyswords:diamond_halberd",
+      "simplyswords:diamond_greataxe",
+      "simplyswords:diamond_greathammer",
+      "simplyswords:diamond_chakram",
+      "simplyswords:diamond_scythe",
+      "simplyswords:diamond_sai",
+      "simplyswords:diamond_warglaive"
+    ],
+    "uniqueSword": [
+      "simplyswords:bramblethorn",
+      "simplyswords:stormbringer",
+      "simplyswords:hearthflame"
+    ],
+    "relic": [
+      "relics:experience_disperser",
+      "relics:hunting_belt",
+      "relics:pet_bone",
+      "relics:chef_hat",
+      "relics:piglin_mask"
+    ]
+  },
+  "crate": [
+    {
+      "weight": 300,
+      "name": "Botany Pot x1",
+      "items": [
+        {
+          "id": "botanypots:terracotta_botany_pot",
+          "count": 1
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 300,
+      "name": "Charged Certus Quartz Crystals x16",
+      "items": [
+        {
+          "id": "ae2:charged_certus_quartz_crystal",
+          "count": 16
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 350,
+      "name": "Industrial Foregoing Plastic x16",
+      "items": [
+        {
+          "id": "industrialforegoing:plastic",
+          "count": 16
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 450,
+      "name": "Random Decorative Block Stack x64",
+      "items": [
+        {
+          "pool": "decoration",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 200,
+      "name": "Copycats+ Panels x32",
+      "items": [
+        {
+          "id": "copycats:copycat_half_panel",
+          "count": 32
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 180,
+      "name": "Basic Storage Drawers x4",
+      "items": [
+        {
+          "id": "storagedrawers:oak_full_drawers_1",
+          "count": 4
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 160,
+      "name": "Empty Mob Lassos x4",
+      "items": [
+        {
+          "id": "moblassos:golden_lasso",
+          "count": 4
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 160,
+      "name": "AE2 ME Glass Cables x16",
+      "items": [
+        {
+          "id": "ae2:fluix_glass_cable",
+          "count": 16
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 180,
+      "name": "Create Brass Funnels x8",
+      "items": [
+        {
+          "id": "create:brass_funnel",
+          "count": 8
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 170,
+      "name": "Random Decocraft Furniture Bundle x6",
+      "items": [
+        {
+          "pool": "furniture",
+          "count": 1
+        },
+        {
+          "pool": "furniture",
+          "count": 1
+        },
+        {
+          "pool": "furniture",
+          "count": 1
+        },
+        {
+          "pool": "furniture",
+          "count": 1
+        },
+        {
+          "pool": "furniture",
+          "count": 1
+        },
+        {
+          "pool": "furniture",
+          "count": 1
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 300,
+      "name": "Cyclic Item Cables x64",
+      "items": [
+        {
+          "id": "cyclic:item_pipe",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 300,
+      "name": "Cyclic Fluid Cables x64",
+      "items": [
+        {
+          "id": "cyclic:fluid_pipe",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 300,
+      "name": "Cyclic Energy Cables x64",
+      "items": [
+        {
+          "id": "cyclic:energy_pipe",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 320,
+      "name": "Just Dire Things Creature Catchers x64",
+      "items": [
+        {
+          "id": "justdirethings:creaturecatcher",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 310,
+      "name": "Golden Carrots x64",
+      "items": [
+        {
+          "id": "minecraft:golden_carrot",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 200,
+      "name": "Cyclic Cloud Blocks x32",
+      "items": [
+        {
+          "id": "cyclic:cloud",
+          "count": 32
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 250,
+      "name": "Dark Utilities Vector Plates x32",
+      "items": [
+        {
+          "id": "darkutils:vector_plate",
+          "count": 32
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 220,
+      "name": "Steam 'n' Rails Tracks x64",
+      "items": [
+        {
+          "id": "railways:track_oak",
+          "count": 64
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 150,
+      "name": "Cyclic Filter Cards x8",
+      "items": [
+        {
+          "id": "cyclic:filter_data",
+          "count": 8
+        }
+      ],
+      "tier": "common"
+    },
+    {
+      "weight": 440,
+      "name": "10-Minute Creative Flight Potion x1",
+      "items": [
+        {
+          "id": "minecraft:potion",
+          "count": 1,
+          "custom": "flight_10"
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 400,
+      "name": "Vote Crate Keys x2",
+      "items": [
+        {
+          "keys": 2
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 400,
+      "name": "4K ME Item Storage Cell x1",
+      "items": [
+        {
+          "id": "ae2:item_storage_cell_4k",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 350,
+      "name": "Random Whitelisted Mob Spawn Egg x1",
+      "items": [
+        {
+          "pool": "normalEgg",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 300,
+      "name": "Hopper Botany Pot x1",
+      "items": [
+        {
+          "id": "botanypots:terracotta_hopper_botany_pot",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 210,
+      "name": "Random Traveler's Backpack x1",
+      "items": [
+        {
+          "pool": "backpack",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 170,
+      "name": "Storage Drawers Drawer Controller x1",
+      "items": [
+        {
+          "id": "storagedrawers:controller",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 140,
+      "name": "PneumaticCraft Speed Upgrades x8",
+      "items": [
+        {
+          "id": "pneumaticcraft:speed_upgrade",
+          "count": 8
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 110,
+      "name": "Linked Ender Storage Chests x2",
+      "items": [
+        {
+          "id": "enderstorage:ender_chest",
+          "count": 2
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 160,
+      "name": "4K ME Fluid Storage Cell x1",
+      "items": [
+        {
+          "id": "ae2:fluid_storage_cell_4k",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 80,
+      "name": "Random Safe Inventory Pet x1",
+      "items": [
+        {
+          "pool": "pets",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 180,
+      "name": "Create Aeronautics Levitite Blocks x4",
+      "items": [
+        {
+          "id": "aeronautics:levitite",
+          "count": 4
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 180,
+      "name": "Ferricore Solar Panel x1",
+      "items": [
+        {
+          "id": "justdynathings:ferricore_solar_panel",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 140,
+      "name": "Cyclic Build Scepter x1",
+      "items": [
+        {
+          "id": "cyclic:scepter_build",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 140,
+      "name": "Ender Hopper x1",
+      "items": [
+        {
+          "id": "cyclic:hopper",
+          "count": 1
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 200,
+      "name": "Flux Network Starter Bundle x1",
+      "items": [
+        {
+          "id": "fluxnetworks:flux_plug",
+          "count": 2
+        },
+        {
+          "id": "fluxnetworks:flux_point",
+          "count": 2
+        }
+      ],
+      "tier": "uncommon"
+    },
+    {
+      "weight": 220,
+      "name": "Random Standard Simply Swords Weapon x1",
+      "items": [
+        {
+          "pool": "standardSword",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 170,
+      "name": "Gacha Token x1",
+      "items": [
+        {
+          "id": "gachamachine:gacha_token",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 165,
+      "name": "Nameless Trinkets Mysterious Trinket x1",
+      "items": [
+        {
+          "id": "nameless_trinkets:mysterious_trinket",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 145,
+      "name": "Relic Level-Up Consumable x1",
+      "items": [
+        {
+          "id": "minecraft:experience_bottle",
+          "count": 1,
+          "custom": "relic_level"
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 85,
+      "name": "Create Creative Blaze Cake x1",
+      "items": [
+        {
+          "id": "create:creative_blaze_cake",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 90,
+      "name": "Random Approved Relic x1",
+      "items": [
+        {
+          "pool": "relic",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 55,
+      "name": "16K ME Item Storage Cell x1",
+      "items": [
+        {
+          "id": "ae2:item_storage_cell_16k",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 65,
+      "name": "60-Minute Creative Flight Potion x1",
+      "items": [
+        {
+          "id": "minecraft:potion",
+          "count": 1,
+          "custom": "flight_60"
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 45,
+      "name": "Random Exotic Spawn Egg x1",
+      "items": [
+        {
+          "pool": "exoticEgg",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 130,
+      "name": "Random Simply Swords Unique Weapon x1",
+      "items": [
+        {
+          "pool": "uniqueSword",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 55,
+      "name": "Blazegold Solar Panel x1",
+      "items": [
+        {
+          "id": "justdynathings:blazegold_solar_panel",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 40,
+      "name": "Celestigem Solar Panel x1",
+      "items": [
+        {
+          "id": "justdynathings:celestigem_solar_panel",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 30,
+      "name": "Eclipse Alloy Solar Panel x1",
+      "items": [
+        {
+          "id": "justdynathings:eclipse_alloy_solar_panel",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 90,
+      "name": "Wireless Crafting Terminal x1",
+      "items": [
+        {
+          "id": "ae2:wireless_crafting_terminal",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 35,
+      "name": "Lilypad of Fertility x1",
+      "items": [
+        {
+          "id": "reliquary:fertile_lily_pad",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 40,
+      "name": "Magnum Torch x1",
+      "items": [
+        {
+          "id": "magnumtorch:diamond_magnum_torch",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 40,
+      "name": "Flux Controller x1",
+      "items": [
+        {
+          "id": "fluxnetworks:flux_controller",
+          "count": 1
+        }
+      ],
+      "tier": "rare"
+    },
+    {
+      "weight": 50,
+      "name": "Infinity Range Card x1",
+      "items": [
+        {
+          "id": "aeinfinitybooster:infinity_card",
+          "count": 1
+        }
+      ],
+      "tier": "jackpot"
+    },
+    {
+      "weight": 25,
+      "name": "Infinite ME Storage Cell x1",
+      "items": [
+        {
+          "id": "infinitestoragecell:infinity_item_cell",
+          "count": 1
+        }
+      ],
+      "tier": "jackpot"
+    },
+    {
+      "weight": 15,
+      "name": "Relic Level-Up Consumables x3",
+      "items": [
+        {
+          "id": "minecraft:experience_bottle",
+          "count": 3,
+          "custom": "relic_level"
+        }
+      ],
+      "tier": "jackpot"
+    },
+    {
+      "weight": 10,
+      "name": "Gacha Tokens x3",
+      "items": [
+        {
+          "id": "gachamachine:gacha_token",
+          "count": 3
+        }
+      ],
+      "tier": "jackpot"
+    }
+  ],
+  "paidItems": {
+    "1": [
+      {
+        "id": "create:creative_blaze_cake",
+        "count": 1
+      },
+      {
+        "id": "relics:experience_disperser",
+        "count": 1,
+        "maxed": true
+      }
+    ],
+    "2": [
+      {
+        "id": "aeinfinitybooster:infinity_card",
+        "count": 1
+      },
+      {
+        "id": "ae2:wireless_crafting_terminal",
+        "count": 1
+      },
+      {
+        "id": "ae2:wireless_access_point",
+        "count": 1
+      },
+      {
+        "id": "ae2:wireless_booster",
+        "count": 8
+      },
+      {
+        "id": "ae2:charger",
+        "count": 1
+      }
+    ],
+    "3": [
+      {
+        "relicChoice": true
+      }
+    ],
+    "4": [
+      {
+        "id": "infinitestoragecell:infinity_item_cell",
+        "count": 1
+      },
+      {
+        "id": "aeinfinitybooster:dimension_card",
+        "count": 1
+      }
+    ]
+  }
+}

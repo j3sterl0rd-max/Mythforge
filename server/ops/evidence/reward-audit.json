@@ -1,0 +1,11 @@
+{
+  "totalWeight": 10000,
+  "errors": [],
+  "tiers": {
+    "common": 4800,
+    "uncommon": 3600,
+    "rare": 1500,
+    "jackpot": 100
+  },
+  "valid": true
+}

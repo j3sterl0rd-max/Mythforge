@@ -1,0 +1,12 @@
+world/
+mods/
+libraries/
+logs/
+backups/
+ops/private/
+server-tools/build/
+server-tools/.gradle/
+config/votifier/
+config/mythforge-tebex.json
+*.pem
+*.db

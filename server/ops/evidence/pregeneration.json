@@ -1,0 +1,20 @@
+{
+  "world": "fresh launch world",
+  "oldSeedRetained": false,
+  "totalProcessed": 14723,
+  "dimensions": {
+    "overworld": {
+      "radius": 512,
+      "processed": 4225
+    },
+    "nether": {
+      "radius": 256,
+      "processed": 1089
+    },
+    "end": {
+      "radius": 768,
+      "processed": 9409
+    }
+  },
+  "completed": true
+}

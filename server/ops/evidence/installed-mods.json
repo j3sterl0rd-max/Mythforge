@@ -1,0 +1,72 @@
+[
+  {
+    "project": "lGffrQ3O",
+    "sha512": "87f511ddd00d10c885b0e1f45c5cb38c67e46c2b1bbcc0ef1ee90a9f86ddc062435503782dd1b627394c04177ce5ff0c735d72cf6b26a520f11895116083a9a2",
+    "version": "3.5.2",
+    "filename": "configurable-3.5.2+1.21.1-neoforge.jar",
+    "url": "https://cdn.modrinth.com/data/lGffrQ3O/versions/8gFREgfa/configurable-3.5.2%2B1.21.1-neoforge.jar"
+  },
+  {
+    "project": "neruina",
+    "sha512": "a1fe83aa8cb124531254e65f2fb4e9ad221761bc4898e3a276389bae34681e9707e686d05436d42aedf4c201bad48043dc25cd32a6ebb2fa2d4c8463d0367a41",
+    "version": "3.3.3",
+    "filename": "neruina-3.3.3+1.21.1-neoforge.jar",
+    "url": "https://cdn.modrinth.com/data/1s5x833P/versions/QAvQAcGh/neruina-3.3.3%2B1.21.1-neoforge.jar"
+  },
+  {
+    "project": "lhGA9TYQ",
+    "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
+    "version": "13.0.11+neoforge",
+    "filename": "architectury-13.0.11-neoforge.jar",
+    "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1IiqEQGl/architectury-13.0.11-neoforge.jar"
+  },
+  {
+    "project": "LN9BxssP",
+    "sha512": "768d8ca178c5e653986f5131b7aeb7fa57ce7d32c16ed399ced01b273565a2b640130c55c7092747efeff40dbb0348876b18b415f59b0d16dd2c7f32f1798ce2",
+    "version": "1.1.8-neoforge-mc1.21",
+    "filename": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+    "url": "https://cdn.modrinth.com/data/LN9BxssP/versions/qKL9jM75/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar"
+  },
+  {
+    "project": "grieflogger",
+    "sha512": "7de200b30c7ee63f8b2900e2a61fc0950b700db0cb73989e7c1070af410912a077bfda1a53bf1de1595a1b6fca1d03c5c73a509d4414e5679733e12da9b6c7d5",
+    "version": "1.2.10-1.21.1",
+    "filename": "grieflogger-1.2.10-1.21.1-neoforge.jar",
+    "url": "https://cdn.modrinth.com/data/8oGVUFuX/versions/IrRNGJIR/grieflogger-1.2.10-1.21.1-neoforge.jar"
+  },
+  {
+    "project": "8oGVUFuX",
+    "sha512": "7de200b30c7ee63f8b2900e2a61fc0950b700db0cb73989e7c1070af410912a077bfda1a53bf1de1595a1b6fca1d03c5c73a509d4414e5679733e12da9b6c7d5",
+    "version": "1.2.10-1.21.1",
+    "filename": "grieflogger-1.2.10-1.21.1-neoforge.jar",
+    "url": "https://cdn.modrinth.com/data/8oGVUFuX/versions/IrRNGJIR/grieflogger-1.2.10-1.21.1-neoforge.jar"
+  },
+  {
+    "project": "glra",
+    "sha512": "901798725d02d2f720922f6b4641ecb2046349622e4b6e931cc8b75f25b1789e5a6f3d0e687b56c828f1c1f2ad0e6870d33e93d41c2e95b1fef1220b16d7ca1a",
+    "version": "1.0.0",
+    "filename": "griefloggerrollbackaddon_GLRA-1.0.0-neoforge1.21.1.jar",
+    "url": "https://cdn.modrinth.com/data/9zz45oFQ/versions/5tkgw70K/griefloggerrollbackaddon_GLRA-1.0.0-neoforge1.21.1.jar"
+  },
+  {
+    "project": "advanced-backups",
+    "sha512": "8b5daf057985f1cec4b3d6f27e202ccc91b6e0c008b4c8ea4900c33508471c0c518c9830da61f85aa100c43b4fa08857eb6ecb82ae53205ef5db0bc02f959e04",
+    "version": "3.7.1",
+    "filename": "AdvancedBackups-neoforge-1.21-3.7.1.jar",
+    "url": "https://cdn.modrinth.com/data/Jrmoreqs/versions/ufIaRDFo/AdvancedBackups-neoforge-1.21-3.7.1.jar"
+  },
+  {
+    "project": "modded-votifier",
+    "sha512": "6e1e13912c60a1f11c5b38d83c5dab2525544c9048ccfa0b7fe24885ffa6431b3eff0bdccab88fb8f42ba3603932d7a8becf2aacbfbbbb1d0033b69dbf90ab23",
+    "version": "1.0.3",
+    "filename": "modded-votifier-neoforge-mc1.21.1-1.0.3.jar",
+    "url": "https://cdn.modrinth.com/data/1x8vMRUh/versions/InQ81EBH/modded-votifier-neoforge-mc1.21.1-1.0.3.jar"
+  },
+  {
+    "project": "FTB Ranks",
+    "sha512": "05df68240243068d89b8edc60fe21a0d7f961014f429634c481173eb72277248c0707ce0cde72ba2b627c79edf73d0efb8f8009ba84aea2e61498c92958fa873",
+    "version": "2101.1.5",
+    "filename": "ftb-ranks-neoforge-2101.1.5.jar",
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-ranks-neoforge/2101.1.5/ftb-ranks-neoforge-2101.1.5.jar"
+  }
+]

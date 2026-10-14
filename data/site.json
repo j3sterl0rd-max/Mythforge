@@ -62,57 +62,150 @@
   },
   "supporterPackages": [
     {
-      "name": "Community Supporter",
-      "tag": "COSMETICS & IDENTITY",
-      "description": "A place for name colors, a supporter prefix, and cosmetic extras.",
+      "id": "ember",
+      "name": "Ember",
+      "price": "$8 USD",
+      "tag": "PERMANENT SUPPORTER RANK",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
       "features": [
-        "Proposed cosmetic rewards",
-        "Contents and pricing to be announced"
+        "Immediate Create machinery and Sable contraption access; banned functionality stays banned",
+        "1 Creative Blaze Cake and 1 fully maxed Experience Disperser",
+        "/craft, /stonecutter, /nick, colored item naming and /disposal",
+        "2 homes, 1 public warp, +32 claim chunks and +1 force-loadable chunk",
+        "Matching Discord role after account linking"
       ],
-      "price": null,
       "url": null,
-      "active": false,
-      "id": "community"
+      "active": false
     },
     {
-      "name": "Horizon Supporter",
-      "tag": "EVERYDAY CONVENIENCE",
-      "description": "A place for useful conveniences that can also have playtime unlocks.",
+      "id": "artisan",
+      "name": "Artisan",
+      "price": "$16 USD",
+      "tag": "PERMANENT SUPPORTER RANK",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
       "features": [
-        "Proposed homes and claim allowances",
-        "Contents and pricing to be announced"
+        "Everything in Ember",
+        "AE2 Infinity Range Card and wireless crafting terminal with network hardware",
+        "/echest, /ascend, /anvil, /smithing and /grindstone",
+        "Custom public-warp icon, priority login and /rtp nether",
+        "3 homes, 2 public warps, +64 claim chunks and +2 force-loadable chunks"
       ],
-      "price": null,
       "url": null,
-      "active": false,
-      "id": "horizon"
+      "active": false
     },
     {
-      "name": "Forge Supporter",
-      "tag": "KEEP THE WORLD TURNING",
-      "description": "A place for a broader supporter package once the details are settled.",
+      "id": "runeforged",
+      "name": "Runeforged",
+      "price": "$32 USD",
+      "tag": "PERMANENT SUPPORTER RANK",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
       "features": [
-        "Proposed utility and access rewards",
-        "Contents and pricing to be announced"
+        "Everything in Artisan and Ember",
+        "1 fully maxed Relics item of your choice",
+        "/feed, claim-limited /fly, safe visited-waypoint teleporting and XP-based /repair",
+        "/rtp end",
+        "4 homes, 3 public warps, +128 claim chunks and +4 force-loadable chunks"
       ],
-      "price": null,
       "url": null,
-      "active": false,
-      "id": "forge"
+      "active": false
+    },
+    {
+      "id": "mythic",
+      "name": "Mythic",
+      "price": "$64 USD",
+      "tag": "PERMANENT SUPPORTER RANK",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
+      "features": [
+        "Everything in Runeforged, Artisan and Ember",
+        "1 empty infinite item storage cell and 1 AE2 Dimension Card",
+        "/heal, limited /effects, /prefix, custom item lore and custom join message",
+        "World time and weather controls affect everyone in your current world",
+        "5 homes, 5 public warps, +256 claim chunks and +6 force-loadable chunks"
+      ],
+      "url": null,
+      "active": false
     }
   ],
   "playtimeUnlocks": [
     {
-      "title": "Make yourself at home",
-      "text": "Additional homes and expanded claim limits are potential playtime rewards."
+      "title": "5 active hours",
+      "text": "1 bundle and 16 cooked steak."
     },
     {
-      "title": "Travel a little lighter",
-      "text": "Conveniences such as /enderchest and /fly are proposed playtime rewards. Unlock hours, restrictions, and progression requirements will be published before launch."
+      "title": "10 active hours",
+      "text": "Transmog table, 16 amethyst shards and second home."
     },
     {
-      "title": "Build your next system",
-      "text": "Periodically claimable utility kits, such as an AE2 starter kit, may be available through progression."
+      "title": "20 active hours",
+      "text": "/stonecutter."
+    },
+    {
+      "title": "25 active hours",
+      "text": "Hostile Neural Networks starter kit with power, fuel and cables."
+    },
+    {
+      "title": "30 active hours",
+      "text": "Create functional machinery, Sable contraptions and /craft."
+    },
+    {
+      "title": "40 active hours",
+      "text": "/nick and first public warp."
+    },
+    {
+      "title": "50 active hours",
+      "text": "AE2 starter kit with ME Drive, terminal, two 1K item cells, cables and power."
+    },
+    {
+      "title": "60 active hours",
+      "text": "8 diamond Storage Drawers capacity upgrades."
+    },
+    {
+      "title": "70 active hours",
+      "text": "Third home."
+    },
+    {
+      "title": "80 active hours",
+      "text": "Wireless crafting terminal, access point, boosters and charger."
+    },
+    {
+      "title": "90 active hours",
+      "text": "/echest."
+    },
+    {
+      "title": "100 active hours",
+      "text": "Second public warp and /ascend."
+    },
+    {
+      "title": "120 active hours",
+      "text": "/feed and one extra glove slot."
+    },
+    {
+      "title": "150 active hours",
+      "text": "Safe JourneyMap waypoint teleporting and one extra necklace slot."
+    },
+    {
+      "title": "175 active hours",
+      "text": "/heal and Speed I, Haste I, Night Vision or Water Breathing effects."
+    },
+    {
+      "title": "200 active hours",
+      "text": "Flight in your own team claims, fourth home and one extra trinket slot."
+    },
+    {
+      "title": "250 active hours",
+      "text": "Third public warp, /prefix and chat/name colors."
+    },
+    {
+      "title": "300 active hours",
+      "text": "Personal visual time/weather and a second extra glove slot."
+    },
+    {
+      "title": "400 active hours",
+      "text": "Fourth public warp and cosmetic hats/particles."
+    },
+    {
+      "title": "500 active hours",
+      "text": "Empty infinite item storage cell, fifth home, fifth public warp and prestige title."
     }
   ],
   "rulesDraft": false,
@@ -251,7 +344,7 @@
     "deliveryVerified": false,
     "policyReviewComplete": false,
     "storeHosts": [
-      "mythforge.tebex.io"
+      "mythforge.tebex.store"
     ],
     "supportUrl": "mailto:admin@mythforge.win"
   },
@@ -263,5 +356,415 @@
     "source": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon"
   },
   "serverTracksLatest": true,
-  "serverComingSoon": true
+  "serverComingSoon": true,
+  "launch": {
+    "storeUrl": "https://mythforge.tebex.store/",
+    "anticheat": {
+      "clientCompanionRequired": true,
+      "antiXray": false,
+      "download": "https://modrinth.com/mod/fiw-anticheat"
+    },
+    "updated": "2026-10-14",
+    "startingClaims": 64,
+    "startingForceLoads": 2,
+    "claimsPerTenHours": 8,
+    "loadsPerFiftyHours": 1,
+    "teamLimitMode": "largest",
+    "schedule": [
+      {
+        "hours": 5,
+        "text": "1 bundle and 16 cooked steak."
+      },
+      {
+        "hours": 10,
+        "text": "Transmog table, 16 amethyst shards and second home."
+      },
+      {
+        "hours": 20,
+        "text": "/stonecutter."
+      },
+      {
+        "hours": 25,
+        "text": "Hostile Neural Networks starter kit with power, fuel and cables."
+      },
+      {
+        "hours": 30,
+        "text": "Create functional machinery, Sable contraptions and /craft."
+      },
+      {
+        "hours": 40,
+        "text": "/nick and first public warp."
+      },
+      {
+        "hours": 50,
+        "text": "AE2 starter kit with ME Drive, terminal, two 1K item cells, cables and power."
+      },
+      {
+        "hours": 60,
+        "text": "8 diamond Storage Drawers capacity upgrades."
+      },
+      {
+        "hours": 70,
+        "text": "Third home."
+      },
+      {
+        "hours": 80,
+        "text": "Wireless crafting terminal, access point, boosters and charger."
+      },
+      {
+        "hours": 90,
+        "text": "/echest."
+      },
+      {
+        "hours": 100,
+        "text": "Second public warp and /ascend."
+      },
+      {
+        "hours": 120,
+        "text": "/feed and one extra glove slot."
+      },
+      {
+        "hours": 150,
+        "text": "Safe JourneyMap waypoint teleporting and one extra necklace slot."
+      },
+      {
+        "hours": 175,
+        "text": "/heal and Speed I, Haste I, Night Vision or Water Breathing effects."
+      },
+      {
+        "hours": 200,
+        "text": "Flight in your own team claims, fourth home and one extra trinket slot."
+      },
+      {
+        "hours": 250,
+        "text": "Third public warp, /prefix and chat/name colors."
+      },
+      {
+        "hours": 300,
+        "text": "Personal visual time/weather and a second extra glove slot."
+      },
+      {
+        "hours": 400,
+        "text": "Fourth public warp and cosmetic hats/particles."
+      },
+      {
+        "hours": 500,
+        "text": "Empty infinite item storage cell, fifth home, fifth public warp and prestige title."
+      }
+    ],
+    "crate": [
+      {
+        "name": "Botany Pot x1",
+        "tier": "common",
+        "weight": 300
+      },
+      {
+        "name": "Charged Certus Quartz Crystals x16",
+        "tier": "common",
+        "weight": 300
+      },
+      {
+        "name": "Industrial Foregoing Plastic x16",
+        "tier": "common",
+        "weight": 350
+      },
+      {
+        "name": "Random Decorative Block Stack x64",
+        "tier": "common",
+        "weight": 450
+      },
+      {
+        "name": "Copycats+ Panels x32",
+        "tier": "common",
+        "weight": 200
+      },
+      {
+        "name": "Basic Storage Drawers x4",
+        "tier": "common",
+        "weight": 180
+      },
+      {
+        "name": "Empty Mob Lassos x4",
+        "tier": "common",
+        "weight": 160
+      },
+      {
+        "name": "AE2 ME Glass Cables x16",
+        "tier": "common",
+        "weight": 160
+      },
+      {
+        "name": "Create Brass Funnels x8",
+        "tier": "common",
+        "weight": 180
+      },
+      {
+        "name": "Random Decocraft Furniture Bundle x6",
+        "tier": "common",
+        "weight": 170
+      },
+      {
+        "name": "Cyclic Item Cables x64",
+        "tier": "common",
+        "weight": 300
+      },
+      {
+        "name": "Cyclic Fluid Cables x64",
+        "tier": "common",
+        "weight": 300
+      },
+      {
+        "name": "Cyclic Energy Cables x64",
+        "tier": "common",
+        "weight": 300
+      },
+      {
+        "name": "Just Dire Things Creature Catchers x64",
+        "tier": "common",
+        "weight": 320
+      },
+      {
+        "name": "Golden Carrots x64",
+        "tier": "common",
+        "weight": 310
+      },
+      {
+        "name": "Cyclic Cloud Blocks x32",
+        "tier": "common",
+        "weight": 200
+      },
+      {
+        "name": "Dark Utilities Vector Plates x32",
+        "tier": "common",
+        "weight": 250
+      },
+      {
+        "name": "Steam 'n' Rails Tracks x64",
+        "tier": "common",
+        "weight": 220
+      },
+      {
+        "name": "Cyclic Filter Cards x8",
+        "tier": "common",
+        "weight": 150
+      },
+      {
+        "name": "10-Minute Creative Flight Potion x1",
+        "tier": "uncommon",
+        "weight": 440
+      },
+      {
+        "name": "Vote Crate Keys x2",
+        "tier": "uncommon",
+        "weight": 400
+      },
+      {
+        "name": "4K ME Item Storage Cell x1",
+        "tier": "uncommon",
+        "weight": 400
+      },
+      {
+        "name": "Random Whitelisted Mob Spawn Egg x1",
+        "tier": "uncommon",
+        "weight": 350
+      },
+      {
+        "name": "Hopper Botany Pot x1",
+        "tier": "uncommon",
+        "weight": 300
+      },
+      {
+        "name": "Random Traveler's Backpack x1",
+        "tier": "uncommon",
+        "weight": 210
+      },
+      {
+        "name": "Storage Drawers Drawer Controller x1",
+        "tier": "uncommon",
+        "weight": 170
+      },
+      {
+        "name": "PneumaticCraft Speed Upgrades x8",
+        "tier": "uncommon",
+        "weight": 140
+      },
+      {
+        "name": "Linked Ender Storage Chests x2",
+        "tier": "uncommon",
+        "weight": 110
+      },
+      {
+        "name": "4K ME Fluid Storage Cell x1",
+        "tier": "uncommon",
+        "weight": 160
+      },
+      {
+        "name": "Random Safe Inventory Pet x1",
+        "tier": "uncommon",
+        "weight": 80
+      },
+      {
+        "name": "Create Aeronautics Levitite Blocks x4",
+        "tier": "uncommon",
+        "weight": 180
+      },
+      {
+        "name": "Ferricore Solar Panel x1",
+        "tier": "uncommon",
+        "weight": 180
+      },
+      {
+        "name": "Cyclic Build Scepter x1",
+        "tier": "uncommon",
+        "weight": 140
+      },
+      {
+        "name": "Ender Hopper x1",
+        "tier": "uncommon",
+        "weight": 140
+      },
+      {
+        "name": "Flux Network Starter Bundle x1",
+        "tier": "uncommon",
+        "weight": 200
+      },
+      {
+        "name": "Random Standard Simply Swords Weapon x1",
+        "tier": "rare",
+        "weight": 220
+      },
+      {
+        "name": "Gacha Token x1",
+        "tier": "rare",
+        "weight": 170
+      },
+      {
+        "name": "Nameless Trinkets Mysterious Trinket x1",
+        "tier": "rare",
+        "weight": 165
+      },
+      {
+        "name": "Relic Level-Up Consumable x1",
+        "tier": "rare",
+        "weight": 145
+      },
+      {
+        "name": "Create Creative Blaze Cake x1",
+        "tier": "rare",
+        "weight": 85
+      },
+      {
+        "name": "Random Approved Relic x1",
+        "tier": "rare",
+        "weight": 90
+      },
+      {
+        "name": "16K ME Item Storage Cell x1",
+        "tier": "rare",
+        "weight": 55
+      },
+      {
+        "name": "60-Minute Creative Flight Potion x1",
+        "tier": "rare",
+        "weight": 65
+      },
+      {
+        "name": "Random Exotic Spawn Egg x1",
+        "tier": "rare",
+        "weight": 45
+      },
+      {
+        "name": "Random Simply Swords Unique Weapon x1",
+        "tier": "rare",
+        "weight": 130
+      },
+      {
+        "name": "Blazegold Solar Panel x1",
+        "tier": "rare",
+        "weight": 55
+      },
+      {
+        "name": "Celestigem Solar Panel x1",
+        "tier": "rare",
+        "weight": 40
+      },
+      {
+        "name": "Eclipse Alloy Solar Panel x1",
+        "tier": "rare",
+        "weight": 30
+      },
+      {
+        "name": "Wireless Crafting Terminal x1",
+        "tier": "rare",
+        "weight": 90
+      },
+      {
+        "name": "Lilypad of Fertility x1",
+        "tier": "rare",
+        "weight": 35
+      },
+      {
+        "name": "Magnum Torch x1",
+        "tier": "rare",
+        "weight": 40
+      },
+      {
+        "name": "Flux Controller x1",
+        "tier": "rare",
+        "weight": 40
+      },
+      {
+        "name": "Infinity Range Card x1",
+        "tier": "jackpot",
+        "weight": 50
+      },
+      {
+        "name": "Infinite ME Storage Cell x1",
+        "tier": "jackpot",
+        "weight": 25
+      },
+      {
+        "name": "Relic Level-Up Consumables x3",
+        "tier": "jackpot",
+        "weight": 15
+      },
+      {
+        "name": "Gacha Tokens x3",
+        "tier": "jackpot",
+        "weight": 10
+      }
+    ],
+    "voteSites": [
+      {
+        "name": "Minecraft-MP",
+        "url": "https://minecraft-mp.com/",
+        "listing": null
+      },
+      {
+        "name": "MinecraftServers.org",
+        "url": "https://minecraftservers.org/",
+        "listing": null
+      },
+      {
+        "name": "Planet Minecraft",
+        "url": "https://www.planetminecraft.com/servers/",
+        "listing": null
+      },
+      {
+        "name": "Minecraft Server List",
+        "url": "https://minecraft-server-list.com/",
+        "listing": null
+      },
+      {
+        "name": "TopG",
+        "url": "https://topg.org/minecraft-servers/",
+        "listing": null
+      },
+      {
+        "name": "Top Modded Servers",
+        "url": "https://topmoddedservers.com/",
+        "listing": null
+      }
+    ]
+  }
 }

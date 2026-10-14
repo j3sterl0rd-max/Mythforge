@@ -37,7 +37,7 @@ const catalogResponse=await worker.fetch(new Request('https://mythforge.win/.wel
 assert.equal(catalogResponse.status,200);assert.equal(catalogResponse.headers.get('Content-Type'),'application/linkset+json');assert.match(catalogResponse.headers.get('Link'),/rel="api-catalog"/);
 const catalog=await catalogResponse.json();assert.equal(catalog.linkset.length,1);
 for(const api of catalog.linkset){assert.ok(api.anchor.startsWith('https://'));for(const relation of ['service-desc','service-doc'])for(const link of api[relation]){const p=new URL(link.href).pathname;assert.ok((await readFile(path.join(root,p))).length>0);}}
-const spec=JSON.parse(await readFile(path.join(root,'api/openapi.json'),'utf8'));assert.equal(spec.openapi,'3.1.0');assert.equal(Object.keys(spec.paths).length,15);
+const spec=JSON.parse(await readFile(path.join(root,'api/openapi.json'),'utf8'));assert.equal(spec.openapi,'3.1.0');assert.equal(Object.keys(spec.paths).length,count-1);assert.ok(spec.paths['/rewards/']);assert.ok(spec.paths['/vote/']);
 const catalogHead=await worker.fetch(new Request('https://mythforge.win/.well-known/api-catalog',{method:'HEAD'}),env);assert.equal(catalogHead.status,200);assert.equal(await catalogHead.text(),'');assert.match(catalogHead.headers.get('Link'),/api-catalog/);
 assert.equal((await worker.fetch(new Request('https://mythforge.win/.well-known/api-catalog',{method:'POST'}),env)).status,405);
 console.log('PASS: API catalog format and media type, service links, OpenAPI routes, HEAD discovery, and method handling.');

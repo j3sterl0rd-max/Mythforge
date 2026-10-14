@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.147'
+}
+version = '1.0.0'
+group = 'dev.mythforge.server'
+base { archivesName = 'mythforge-server-tools' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
+neoForge {
+    version = '21.1.253'
+    mods { mythforge_server { sourceSet sourceSets.main } }
+}
+dependencies {
+    compileOnly files('../mods/ftb-ranks-neoforge-2101.1.5.jar', '../mods/ftb-library-neoforge-2101.1.37.jar', '../mods/ftb-chunks-neoforge-2101.1.22.jar', '../mods/ftb-teams-neoforge-2101.1.11.jar')
+    compileOnly files('../mods/relics-1.21.1-0.12.8.jar','../mods/curios-neoforge-9.5.1+1.21.1.jar')
+    compileOnly files('../mods/journeymap-neoforge-1.21.1-6.0.9.jar')
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

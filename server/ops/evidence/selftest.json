@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "failures": [],
+  "passed": [
+    "Accepts Tebex\u0027s compact Java UUID",
+    "Upgrade entitlement is recorded",
+    "Replayed purchase does not duplicate transactions",
+    "500-hour homes survive a lower paid allowance",
+    "Paid claim bonus is added once to recurring earnings",
+    "Force-load entitlement combines base, earned and current rank",
+    "Supporters cannot use /give",
+    "Supporters cannot open another player\u0027s ender chest",
+    "Players cannot edit quests",
+    "Players cannot force team membership",
+    "Refund downgrades to the remaining paid entitlement",
+    "Refund preserves earned time and one-time delivery receipts",
+    "Reward equipment slot IDs exist for players",
+    "All crate and kit registry IDs exist",
+    "Experience Disperser reaches validated maximum rank, level and stats"
+  ]
+}

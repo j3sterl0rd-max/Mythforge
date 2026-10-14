@@ -17,3 +17,5 @@
 @media(max-width:900px){.pillar:nth-child(7){grid-template-columns:1fr}.pillar:nth-child(7) p{grid-column:1}}
 .hosting-section{padding:30px 0;border-bottom:1px solid var(--line)}.hosting-section .hosting-card{padding:22px 28px}.hosting-card .eyebrow{margin-bottom:14px}.hosting-banner{display:block;width:min(100%,850px);margin-inline:auto}.hosting-banner img{width:100%;height:auto}.hosting-banner:hover{outline:2px solid var(--brass);outline-offset:4px}.hosting-card .small{margin:14px 0 0}
 @media(max-width:600px){.hosting-section .hosting-card{padding:16px}.hosting-section{padding:20px 0}}
+/* Launch schedules and exact crate odds remain readable on narrow screens. */
+.table-scroll{overflow-x:auto;margin:1.5rem 0}.table-scroll table{width:100%;border-collapse:collapse}.table-scroll th,.table-scroll td{text-align:left;padding:.7rem;border-bottom:1px solid var(--line,#39404c);vertical-align:top}.table-scroll thead{color:var(--accent,#d9af6e)}

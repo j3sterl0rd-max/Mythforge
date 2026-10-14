@@ -19,19 +19,25 @@ A straightforward guide from a fresh install to your first connection.
     Open the official pack listing, choose the version required by the server, and install it into a fresh profile.
     
      [Open the modpack download](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon) 
-3.  ## Set your memory allocation
+3.  ## Install the required anticheat companion
+    
+    Our launch server requires Fiw AntiCheat for NeoForge 1.21.1, version 2.1.0. Add it to your client instance unless a newer Mythforge release already includes it. The currently published 1.2.4 pack needs this separate addition. Anti-xray is disabled so legitimate pack abilities remain available.
+    
+    Download  [Fiw AntiCheat by Fi3w0](https://modrinth.com/mod/fiw-anticheat)  from its official listing and follow Discord announcements before connecting.
+    
+4.  ## Set your memory allocation
     
     Recommended allocated client RAM: **9-10 GB**.
     
     In your launcher’s profile or Minecraft settings, adjust the memory allocation. Leave enough RAM for your operating system and other programs; allocating all available memory can cause launch failures.
     
-4.  ## Launch the pack once
+5.  ## Launch the pack once
     
     Start Mythforge and let the initial setup finish. Use Java 21 for Minecraft 1.21.1; a supported launcher can usually manage this runtime for you.
     
     Wait until the main menu loads before connecting.
     
-5.  ## Meet us at the horizon
+6.  ## Meet us at the horizon
     
     Enter the address below, save the server, and connect. Take a moment to read the  [community rules](https://mythforge.win/rules/) .
     

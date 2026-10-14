@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "offlineVotes": 2,
+  "results": [
+    {
+      "mode": "v2",
+      "valid": false,
+      "response": "{\"status\":\"error\",\"error\":\"signature verification failed\"}\r\n"
+    },
+    {
+      "mode": "v2",
+      "valid": true,
+      "response": "{\"status\":\"ok\"}\r\n"
+    },
+    {
+      "mode": "v1",
+      "valid": true,
+      "response": ""
+    }
+  ]
+}
