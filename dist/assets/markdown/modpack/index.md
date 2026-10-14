@@ -34,7 +34,7 @@ Recommended allocated RAM
 
 Loader
 
-NeoForge 21.1.249
+NeoForge 21.1.253
 
 Use the installer’s bundled profile and dependencies. Follow the installation guide for your first launch.
 

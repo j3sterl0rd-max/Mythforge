@@ -1,6 +1,7 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {requirementsFromZip} from './release-manifest.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const configPath=path.join(root,'data/site.json');
 const config=JSON.parse(await readFile(configPath,'utf8'));
@@ -15,6 +16,16 @@ const releases=files.filter(f=>f.releaseType===1&&!f.isServerPack&&f.gameVersion
 if(!releases.length)throw Error('No compatible stable releases returned; existing content preserved');
 const version=f=>f.fileName.match(/(\d+\.\d+(?:\.\d+)*)\.zip$/i)?.[1];
 if(!version(releases[0]))throw Error('Cannot parse latest version; existing content preserved');
+const downloadUrl=releases[0].downloadUrl||await api('/mods/'+id+'/files/'+releases[0].id+'/download-url');
+const download=new URL(downloadUrl);
+if(download.protocol!=='https:'||!/(^|\.)forgecdn\.net$/.test(download.hostname))throw Error('Unexpected release download host');
+const archive=await fetch(download,{signal:AbortSignal.timeout(120000)});
+if(!archive.ok)throw Error('Release ZIP download failed: '+archive.status);
+const bytes=await archive.arrayBuffer();
+if(bytes.byteLength>300000000)throw Error('Release ZIP exceeds supported size');
+const requirements=requirementsFromZip(bytes);
+if(requirements.minecraftVersion!==config.minecraftVersion)throw Error('Release manifest Minecraft version mismatch');
+Object.assign(config,requirements);
 const notes=await Promise.all(releases.slice(0,12).map(async f=>({version:version(f)||f.displayName,date:f.fileDate.slice(0,10),title:f.displayName,sourceUrl:mod.links.websiteUrl+'/files/'+f.id,notes:text(await api('/mods/'+id+'/files/'+f.id+'/changelog'))})));
 config.latestVersion=version(releases[0]);if(config.serverTracksLatest)config.currentVersion=config.latestVersion;config.latestReleaseUrl=notes[0].sourceUrl;config.links.curseforge=mod.links.websiteUrl;
 const invitations=[...description.matchAll(/href=["'](https:\/\/(?:discord\.gg\/|discord\.com\/invite\/)[^"'\s]+)["']/gi)].map(m=>m[1]);
