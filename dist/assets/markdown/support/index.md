@@ -155,67 +155,67 @@ AE2 starter kit with ME Drive, terminal, two 1K item cells, cables and power.
 
 Third home.
 
-010 / PLAYTIME
+10 / PLAYTIME
 
 ### 80 active hours
 
 Wireless crafting terminal, access point, boosters and charger.
 
-011 / PLAYTIME
+11 / PLAYTIME
 
 ### 90 active hours
 
 /echest.
 
-012 / PLAYTIME
+12 / PLAYTIME
 
 ### 100 active hours
 
 Second public warp and /ascend.
 
-013 / PLAYTIME
+13 / PLAYTIME
 
 ### 120 active hours
 
 /feed and one extra glove slot.
 
-014 / PLAYTIME
+14 / PLAYTIME
 
 ### 150 active hours
 
 Safe JourneyMap waypoint teleporting and one extra necklace slot.
 
-015 / PLAYTIME
+15 / PLAYTIME
 
 ### 175 active hours
 
 /heal and Speed I, Haste I, Night Vision or Water Breathing effects.
 
-016 / PLAYTIME
+16 / PLAYTIME
 
 ### 200 active hours
 
 Flight in your own team claims, fourth home and one extra trinket slot.
 
-017 / PLAYTIME
+17 / PLAYTIME
 
 ### 250 active hours
 
 Third public warp, /prefix and chat/name colors.
 
-018 / PLAYTIME
+18 / PLAYTIME
 
 ### 300 active hours
 
 Personal visual time/weather and a second extra glove slot.
 
-019 / PLAYTIME
+19 / PLAYTIME
 
 ### 400 active hours
 
 Fourth public warp and cosmetic hats/particles.
 
-020 / PLAYTIME
+20 / PLAYTIME
 
 ### 500 active hours
 

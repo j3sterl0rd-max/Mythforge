@@ -19,3 +19,5 @@
 @media(max-width:600px){.hosting-section .hosting-card{padding:16px}.hosting-section{padding:20px 0}}
 /* Launch schedules and exact crate odds remain readable on narrow screens. */
 .table-scroll{overflow-x:auto;margin:1.5rem 0}.table-scroll table{width:100%;border-collapse:collapse}.table-scroll th,.table-scroll td{text-align:left;padding:.7rem;border-bottom:1px solid var(--line,#39404c);vertical-align:top}.table-scroll thead{color:var(--accent,#d9af6e)}
+
+@media(min-width:801px){.tiers{grid-template-columns:repeat(2,minmax(0,1fr))}}
