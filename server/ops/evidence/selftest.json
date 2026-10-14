@@ -1,4 +1,6 @@
 {
+  "failures": [],
+  "success": true,
   "passed": [
     "Accepts Tebex\u0027s compact Java UUID",
     "Upgrade entitlement is recorded",
@@ -7,6 +9,9 @@
     "Purchased warp bonus adds to natural allowance",
     "Paid claim bonus is added once to recurring earnings",
     "Force-load entitlement combines base, earned and current rank",
+    "FTB Chunks consumes earned and paid claim limits through the integration bridge",
+    "FTB Chunks consumes the force-load limit through the integration bridge",
+    "The shared FTB provider exposes additive home limits to Essentials",
     "Supporters cannot use /give",
     "Supporters cannot open another player\u0027s ender chest",
     "Players cannot edit quests",
@@ -25,7 +30,5 @@
     "Reward equipment slot IDs exist for players",
     "All crate and kit registry IDs exist",
     "Experience Disperser reaches validated maximum rank, level and stats"
-  ],
-  "failures": [],
-  "success": true
+  ]
 }

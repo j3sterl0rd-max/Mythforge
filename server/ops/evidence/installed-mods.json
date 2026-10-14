@@ -68,5 +68,12 @@
     "version": "2101.1.5",
     "filename": "ftb-ranks-neoforge-2101.1.5.jar",
     "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-ranks-neoforge/2101.1.5/ftb-ranks-neoforge-2101.1.5.jar"
+  },
+  {
+    "url": "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-xmod-compat-neoforge/21.1.12/ftb-xmod-compat-neoforge-21.1.12.jar",
+    "version": "21.1.12",
+    "sha256": "f587e13131101bac33d4cc7a04d13d06c00f8f88a892be90d6ffc8ad96119ae8",
+    "project": "FTB XMod Compat",
+    "filename": "ftb-xmod-compat-neoforge-21.1.12.jar"
   }
 ]

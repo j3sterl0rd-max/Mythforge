@@ -28,4 +28,12 @@ $ftbTarget = Join-Path $serverRoot ('mods/' + $ftbFile)
 Invoke-WebRequest $ftbUrl -OutFile $ftbTarget
 $jar = [IO.Compression.ZipFile]::OpenRead($ftbTarget); $jar.Dispose()
 $manifest.Add(@{project='FTB Ranks';version='2101.1.5';filename=$ftbFile;url=$ftbUrl;sha512=(Get-FileHash $ftbTarget -Algorithm SHA512).Hash.ToLowerInvariant()})
+$compatFile = 'ftb-xmod-compat-neoforge-21.1.12.jar'
+$compatUrl = 'https://maven.ftb.dev/releases/dev/ftb/mods/ftb-xmod-compat-neoforge/21.1.12/' + $compatFile
+$compatTarget = Join-Path $serverRoot ('mods/' + $compatFile)
+Invoke-WebRequest $compatUrl -OutFile $compatTarget
+$compatHash = (Get-FileHash -LiteralPath $compatTarget -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($compatHash -ne 'f587e13131101bac33d4cc7a04d13d06c00f8f88a892be90d6ffc8ad96119ae8') { throw 'FTB XMod Compat artifact changed; inspect before installing.' }
+$jar = [IO.Compression.ZipFile]::OpenRead($compatTarget); $jar.Dispose()
+$manifest.Add(@{project='FTB XMod Compat';version='21.1.12';filename=$compatFile;url=$compatUrl;sha256=$compatHash})
 $manifest | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $PSScriptRoot 'evidence/installed-mods.json')

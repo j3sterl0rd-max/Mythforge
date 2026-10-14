@@ -36,6 +36,9 @@ final class SelfTest {
             check(FTBRanksAPI.getPermissionValue(p,"mythforge.pwarp.max").asInteger().orElse(0)==8,"Purchased warp bonus adds to natural allowance",passed);
             check(FTBRanksAPI.getPermissionValue(p,"ftbchunks.max_claimed").asInteger().orElse(0)==592,"Paid claim bonus is added once to recurring earnings",passed);
             check(FTBRanksAPI.getPermissionValue(p,"ftbchunks.max_force_loaded").asInteger().orElse(0)==16,"Force-load entitlement combines base, earned and current rank",passed);
+            check(dev.ftb.mods.ftbchunks.integration.PermissionsHelper.getMaxClaimedChunks(p,64)==592,"FTB Chunks consumes earned and paid claim limits through the integration bridge",passed);
+            check(dev.ftb.mods.ftbchunks.integration.PermissionsHelper.getMaxForceLoadedChunks(p,2)==16,"FTB Chunks consumes the force-load limit through the integration bridge",passed);
+            check(dev.ftb.mods.ftblibrary.integration.permissions.PermissionHelper.INSTANCE.getProvider().getIntegerPermission(p,"ftbessentials.home.max",1)==9,"The shared FTB provider exposes additive home limits to Essentials",passed);
             check(!FTBRanksAPI.getPermissionValue(p,"command.give").asBooleanOrFalse(),"Supporters cannot use /give",passed);
             check(!FTBRanksAPI.getPermissionValue(p,"command.enderchest.target").asBooleanOrFalse(),"Supporters cannot open another player's ender chest",passed);
             check(!FTBRanksAPI.getPermissionValue(p,"command.ftbquests.editing_mode").asBooleanOrFalse(),"Players cannot edit quests",passed);

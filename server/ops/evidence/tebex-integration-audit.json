@@ -1,0 +1,11 @@
+{
+  "officialRelease": "https://github.com/tebexio/Tebex-Minecraft/releases/tag/v2.4.6",
+  "version": "2.4.6",
+  "sha256": "a626fc7b22dad4b08c9d705c8f07ed90a392221a64a9d2305b066b213faf8a03",
+  "manifestMatch": true,
+  "privateConfigurationPresent": true,
+  "connectionVerified": true,
+  "store": "https://mythforge.tebex.store",
+  "customHttpPoller": false,
+  "testPaymentRoundtripVerified": false
+}

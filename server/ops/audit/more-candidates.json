@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "astages",
+    "title": "AStages",
+    "downloads": 24957,
+    "client": "required",
+    "server": "required",
+    "source": "https://github.com/Alessandro-Casale/AStages",
+    "latest": "2.5.3-1.21.1",
+    "matchingVersions": 18
+  },
+  {
+    "slug": "privileged",
+    "title": "Privileged",
+    "downloads": 1651,
+    "client": "optional",
+    "server": "required",
+    "source": "https://github.com/cschierig/Privileged",
+    "matchingVersions": 0
+  },
+  {
+    "slug": "progressivestages",
+    "title": "ProgressiveStages",
+    "downloads": 3360,
+    "client": "required",
+    "server": "required",
+    "source": "https://github.com/EnVisione/ProgressiveStages",
+    "latest": "3.0.6",
+    "matchingVersions": 14
+  },
+  {
+    "slug": "simpleafk",
+    "title": "SimpleAFK",
+    "downloads": 7952,
+    "client": "unsupported",
+    "server": "required",
+    "source": "https://github.com/magnushjensen/simpleafk",
+    "latest": "1.5.2",
+    "matchingVersions": 3
+  }
+]

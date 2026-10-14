@@ -1,0 +1,357 @@
+[
+  {
+    "name": "neo-playtime-rewards",
+    "id": "kAF0EioI",
+    "title": "Playtime Rewards",
+    "client": "unsupported",
+    "server": "required",
+    "downloads": 269,
+    "updated": "2026-01-08T00:13:52.029002Z",
+    "source": "https://github.com/Matt-CompSci/PlaytimeRewards/",
+    "license": "MIT",
+    "versions": [
+      {
+        "number": "1.0.2",
+        "date": "2026-01-08T00:13:52.029002Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "playtimerewards-1.0.2.jar",
+            "url": "https://cdn.modrinth.com/data/kAF0EioI/versions/jK9BIXfI/playtimerewards-1.0.2.jar",
+            "sha512": "d5e3853fbfd9ac4360c424593b43da1f3b36423b35230ad2f78cb46878baa88abdb5bc1400d1c2253fc3b5da1ed58711eb28ae9c98ca4bd292dbe3de936dbc6f"
+          }
+        ]
+      },
+      {
+        "number": "1.0.1",
+        "date": "2026-01-07T23:48:40.919401Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "playtimerewards-1.0.1.jar",
+            "url": "https://cdn.modrinth.com/data/kAF0EioI/versions/o64XuJS6/playtimerewards-1.0.1.jar",
+            "sha512": "5868c9b53d301cad4227e6b5a770f9629714ad23ad4917ea57fddf7c6c19834f35998a054b30daf64edcde811a1578f36f99e33075c0093923ec3e59aae44afa"
+          }
+        ]
+      },
+      {
+        "number": "1.0.0",
+        "date": "2026-01-07T16:20:24.187021Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "playtimerewards-1.0.0.jar",
+            "url": "https://cdn.modrinth.com/data/kAF0EioI/versions/WVhhkYDf/playtimerewards-1.0.0.jar",
+            "sha512": "20002c3d2f071490155748a83057bb39eae56bf0a70fbcef6c49c2057c457a5c5af54953ca5ba92813623076cd0963c1c5682aaa473dea10da2e54a60712858a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "extrartp",
+    "id": "trAovj2e",
+    "title": "ExtraRTP",
+    "client": "unsupported",
+    "server": "required",
+    "downloads": 3969,
+    "updated": "2026-06-14T03:28:37.926852Z",
+    "source": "https://github.com/VecooDEV/ExtraRTP",
+    "license": "MIT",
+    "versions": [
+      {
+        "number": "1.5.0",
+        "date": "2026-06-14T03:28:37.616795Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.5.0-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/3zZVSGez/ExtraRTP-1.5.0-1.21.1-NeoForge.jar",
+            "sha512": "0837a678fe3f129cc9e700761e1d0feb6693337abbdd27f8dbed53d5c787c90364efe1a75097e54ec63995beb8888033636dc491b00f28ff60ec24c85fb5a312"
+          }
+        ]
+      },
+      {
+        "number": "1.4.1",
+        "date": "2026-01-06T05:36:01.474814Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.4.1-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/cNO7cg1e/ExtraRTP-1.4.1-1.21.1-NeoForge.jar",
+            "sha512": "62b388bf00aa5261e545793e5f99ffd3b641cf2fde49c689da1368c447172bde262da8ec26e800a23c666e7d88412b54cd3a8f4e930ba78c18524b47d1b3171c"
+          }
+        ]
+      },
+      {
+        "number": "1.4.0",
+        "date": "2025-12-17T12:20:37.955077Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.4.0-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/9U8Pushp/ExtraRTP-1.4.0-1.21.1-NeoForge.jar",
+            "sha512": "0f38f0d4aa410b7484c5b27f61a9d5d8c3e5ca3cf08e307107e2034634da395781bd26d85cac5f67972d4475c7222739aa8f50701432ef6ef3553b6217d1054a"
+          }
+        ]
+      },
+      {
+        "number": "1.3.10",
+        "date": "2025-12-11T03:17:51.233599Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.10-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/cfyzIjef/ExtraRTP-1.3.10-1.21.1-NeoForge.jar",
+            "sha512": "e7c7284d4d3c69acbd9f3c003724fe4ca7c9a69a22c35948511bd7f75a14eb84733a21dffee086d8ce55cb8918890ae1900629e27d863f3381c581579872f981"
+          }
+        ]
+      },
+      {
+        "number": "1.3.9",
+        "date": "2025-11-20T01:43:45.853753Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.9-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/Xn6A6mQl/ExtraRTP-1.3.9-1.21.1-NeoForge.jar",
+            "sha512": "10dbb9589714235bc77d514e1e118f31dbf1e16ab2a819aa6dcfeeec8c6614540a0829d6bf922665af3d304fefa31657762806fd906fd54e0570e83e60e8ea61"
+          }
+        ]
+      },
+      {
+        "number": "1.3.8",
+        "date": "2025-10-25T10:39:35.228367Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.8-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/vedveRFC/ExtraRTP-1.3.8-1.21.1-NeoForge.jar",
+            "sha512": "5f614b5beef2affc7f8b70f1046f38196259cc90569774281dadbdfa2d2c89c715dcafaafb369bcf13ace6c95a7aa4e03e8453246f41c65d339c75d6df2c1383"
+          }
+        ]
+      },
+      {
+        "number": "1.3.7",
+        "date": "2025-09-13T02:51:55.617603Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.7-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/oMUk8m4S/ExtraRTP-1.3.7-1.21.1-NeoForge.jar",
+            "sha512": "217e3655610b947e89325d101b272c62d9cc85f9a795132815ca1c3037aa018f450c785e4ae3260704d86f88c73d4b68d0cc5bff9169de706d3a63b3d7a6f823"
+          }
+        ]
+      },
+      {
+        "number": "1.3.6",
+        "date": "2025-08-25T07:03:00.994324Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.6-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/UwwqhkpS/ExtraRTP-1.3.6-1.21.1-NeoForge.jar",
+            "sha512": "71d5314032017659ec695c5269be162a702cb53f5e6e0128e9fea11c0979d8a7b115f0dcb8e5877008b3b39af90788d1e353d1be9beda0f79b5f56bede7cceeb"
+          }
+        ]
+      },
+      {
+        "number": "1.3.5",
+        "date": "2025-07-20T03:48:03.117508Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.5-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/iu8XK4vW/ExtraRTP-1.3.5-1.21.1-NeoForge.jar",
+            "sha512": "c4fa0731a63897dfc816ac1c32bcc1b7926215413f965f62f5e05c73e4872c48eefea9d6aaa4e1e417ecfe4c2e3a47b9cae7bc8bb63f9820ca34b2d2a4b9b187"
+          }
+        ]
+      },
+      {
+        "number": "1.3.4",
+        "date": "2025-05-30T21:14:20.114571Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.4-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/XIAq8LgC/ExtraRTP-1.3.4-1.21.1-NeoForge.jar",
+            "sha512": "d113cb75ca383b6c49d82e5620c3dd7621bb848b0d7f0c74ebf83a2d5139cc9a93490688cb933f45eaf04b6579dd9d96089c6df53a8556e86612aeec2dc9dfcd"
+          }
+        ]
+      },
+      {
+        "number": "1.3.3",
+        "date": "2025-05-24T03:02:31.795103Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.3-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/U0tK8BGu/ExtraRTP-1.3.3-1.21.1-NeoForge.jar",
+            "sha512": "5eaa025a98856388a68eaaa8ad7c93bbc00600613ddc600ec12452fcc6dbec7310e6052de7726c426a0a15ac9c385557936316108bac22c0bb3d06014dd69d5e"
+          }
+        ]
+      },
+      {
+        "number": "1.3.2",
+        "date": "2025-05-15T11:10:46.866726Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.2-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/80ranu3O/ExtraRTP-1.3.2-1.21.1-NeoForge.jar",
+            "sha512": "79dbda56f961efd5444505783047fa44497d0e24f7f9c98c28d9560b039820f57de4475c12c7d74bd1118b7734711e437db0200838aa93e2141317dc1f301ac4"
+          }
+        ]
+      },
+      {
+        "number": "1.3.1",
+        "date": "2025-05-13T15:10:56.081028Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "ExtraRTP-1.3.1-1.21.1-NeoForge.jar",
+            "url": "https://cdn.modrinth.com/data/trAovj2e/versions/fD472mut/ExtraRTP-1.3.1-1.21.1-NeoForge.jar",
+            "sha512": "88dae373764b4905962a4d9cd3a38674b744f6a53b0d40e4ab077ef54cacf8ac7a029a271d97131cfff31ee2ba8e78377e2d9bae315f88d173a114d23d16fb35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "teleport-commands",
+    "id": "3ne670on",
+    "title": "Teleport Commands",
+    "client": "unsupported",
+    "server": "required",
+    "downloads": 90286,
+    "updated": "2026-08-11T17:50:26.048476Z",
+    "source": "https://github.com/MrSn0wy/TeleportCommands",
+    "license": "MIT",
+    "versions": [
+      {
+        "number": "1.3.5",
+        "date": "2026-08-11T17:50:26.048476Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-1.21.1-v1.3.5.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/YoOeKNAU/teleport_commands-1.21.1-v1.3.5.jar",
+            "sha512": "7be95c1520e03ef38395f3752f707630c581c25fdedcd5c381a64d2628081bbb563da22d41b2b8f4200e8d64b2b24ec1249b052a58889c12864aa6348c416fe0"
+          }
+        ]
+      },
+      {
+        "number": "1.3.4",
+        "date": "2025-10-11T15:13:13.761167Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-1.21.1-v1.3.4.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/TMgcZs3R/teleport_commands-1.21.1-v1.3.4.jar",
+            "sha512": "72a65cefcc6b50866a23d14e2851c77b4dd4d5c6b1a3546fb30fee65516865896e30b5251ff8d1d201789316f3bebd280060fc92d0f4c38106175565da734f89"
+          }
+        ]
+      },
+      {
+        "number": "1.3.3",
+        "date": "2025-08-27T15:00:14.186002Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-1.21.1-v1.3.3.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/OSiGulDW/teleport_commands-1.21.1-v1.3.3.jar",
+            "sha512": "6287d257e0196a69fa3443f98b3e75a17d96675daae7df6f4910e25d0d62cd8cb4dcc3572c7b7f2aa24f65c8a8bfddfc54ffc431d436f42d01f418481dbd60fb"
+          }
+        ]
+      },
+      {
+        "number": "1.3.2",
+        "date": "2025-06-26T16:40:26.123787Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-1.21.1-v1.3.2.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/PfVhPuLn/teleport_commands-1.21.1-v1.3.2.jar",
+            "sha512": "ec66ce27c6ad3ad16c283edad36ea8ffd3af03f69c1d24fbd172bb69e3b6b092930c836054bae4141e08f9542c1bbc25096204c7068ad614435ff2e26db20404"
+          }
+        ]
+      },
+      {
+        "number": "1.3.1",
+        "date": "2025-05-07T19:17:39.514424Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-1.21.1-v1.3.1.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/p1Z1R8t5/teleport_commands-1.21.1-v1.3.1.jar",
+            "sha512": "a7c40c6043393022aceb04faeb0d4826bebf49044e18caa7e26e9ebf41e22a1a7467e61b7696f50f0ab7e0bcfb9faf455acab4d8a163a4c2c394d550f7d9962f"
+          }
+        ]
+      },
+      {
+        "number": "1.2.1",
+        "date": "2024-12-12T11:13:30.216436Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-neoforge-1.21-1.2.1.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/ICh7JwTc/teleport_commands-neoforge-1.21-1.2.1.jar",
+            "sha512": "071a43fd2991489c40f886e5ae01dc6c4019986f820b2a255f1856c65d1ea0978a5cd2eaa89b03e52cf869ab7cbdd6fa90ec88b7ecd02ab4e16b7861800be31b"
+          }
+        ]
+      },
+      {
+        "number": "1.1.2",
+        "date": "2024-08-13T11:54:08.924074Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-neoforge-1.21-1.1.2.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/JMXwcJUn/teleport_commands-neoforge-1.21-1.1.2.jar",
+            "sha512": "985710d15ff232843f4f01ba084f874de15f2adabcd4c885623b41e1e35675430e2971ec68909b2a974a5f0413d80c6b4aaa773d333f819752303fb83d2b3ec4"
+          }
+        ]
+      },
+      {
+        "number": "1.1.1",
+        "date": "2024-06-14T09:57:34.946309Z",
+        "type": "release",
+        "files": [
+          {
+            "name": "teleport_commands-neoforge-1.21-1.1.1.jar",
+            "url": "https://cdn.modrinth.com/data/3ne670on/versions/NrjBVbWi/teleport_commands-neoforge-1.21-1.1.1.jar",
+            "sha512": "6f0c7ae2f594a57721a557c45cbe0b30baa8420e3ee665186f12a9626d539ba8a0b2db46c691e6b4b5ebf7a04bb959e5e1a54c309fa9e8d0835e857ab43a4935"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lootcrates",
+    "id": "1fLfbOcu",
+    "title": "Modular Loot Crates and Bundles",
+    "client": "required",
+    "server": "required",
+    "downloads": 10634,
+    "updated": "2025-04-04T20:12:54.204266Z",
+    "source": "https://github.com/DaFuqs/LootCrates",
+    "license": "MIT",
+    "versions": []
+  },
+  {
+    "name": "raritychests",
+    "status": 404
+  },
+  {
+    "name": "essential-commands",
+    "id": "6VdDUivB",
+    "title": "Essential Commands",
+    "client": "unsupported",
+    "server": "required",
+    "downloads": 500169,
+    "updated": "2026-09-22T00:47:28.683017Z",
+    "source": "https://github.com/John-Paul-R/Essential-Commands",
+    "license": "MIT",
+    "versions": []
+  }
+]
