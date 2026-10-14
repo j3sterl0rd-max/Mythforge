@@ -100,6 +100,10 @@ Provide your modpack version, launcher, allocated RAM, and the relevant crash re
 
 ## Choose your first adventure.
 
-Once the pack launches, start with the playstyle that draws you in: explore, build, learn magic or experiment with Create. The sandbox includes mod guides, while the custom tutorial and discovery quest system is still in development.
+Your first launch opens an expansive NeoForge adventure with over 400 integrated mods. Start with what draws you in: exploration, decoration, magic or Create engineering. You can discover another path tomorrow without leaving today’s achievements behind.
 
- [Explore Mythforge’s modpack systems](https://mythforge.win/modpack/)  ·  [Install the NeoForge adventure pack](https://mythforge.win/getting-started/)  ·  [Read published release notes](https://mythforge.win/changelog/)
+## Make room for a long journey.
+
+Mythforge combines ambitious content with careful performance tuning. Follow the memory and Java guidance above to give the pack a good start on your machine. The sandbox includes mod guides, while the custom tutorial and discovery quest system is still in development.
+
+Looking for your next goal? Discover  [the pack’s magic, machinery and adventures](https://mythforge.win/modpack/) . When updating, check  [the release notes](https://mythforge.win/changelog/)  first.
