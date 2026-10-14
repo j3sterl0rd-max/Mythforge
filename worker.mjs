@@ -1,0 +1,40 @@
+// Serve build-time Markdown from the same URL while retaining static HTML.
+export function prefersMarkdown(accept='') {
+ let markdown=0,html=0;
+ for(const entry of accept.split(',')) {
+  const [type,...params]=entry.trim().toLowerCase().split(';');
+  const quality=params.find(p=>p.trim().startsWith('q='));
+  const q=quality===undefined?1:Number(quality.trim().slice(2));
+  if(!Number.isFinite(q)||q<0||q>1)continue;
+  if(type==='text/markdown')markdown=Math.max(markdown,q);
+  if(type==='text/html')html=Math.max(html,q);
+ }
+ return markdown>0&&markdown>=html;
+}
+function varyAccept(headers){const vary=headers.get('Vary');if(vary==='*')return;if(!vary?.split(',').some(v=>v.trim().toLowerCase()==='accept'))headers.set('Vary',vary?`${vary}, Accept`:'Accept');}
+export default {
+ async fetch(request,env) {
+  const negotiable=request.method==='GET'||request.method==='HEAD';
+  const markdown=negotiable&&prefersMarkdown(request.headers.get('Accept')||'');
+  const originHeaders=new Headers(request.headers);
+  originHeaders.set('Accept','text/html');
+  if(markdown)for(const key of ['If-None-Match','If-Modified-Since','Range','If-Range'])originHeaders.delete(key);
+  const html=await env.ASSETS.fetch(new Request(request,{headers:originHeaders,method:markdown?'GET':request.method}));
+  if(!negotiable||!html.headers.get('Content-Type')?.includes('text/html'))return html;
+  const headers=new Headers(html.headers);varyAccept(headers);
+  if(!markdown||![200,404].includes(html.status))return new Response(html.body,{status:html.status,statusText:html.statusText,headers});
+  const url=new URL(request.url);
+  let page=url.pathname;
+  if(page.endsWith('/'))page+='index.html';
+  if(!page.endsWith('.html'))page+='/index.html';
+  url.pathname=html.status===404?'/assets/markdown/404.md':'/assets/markdown'+page.replace(/\.html$/,'.md');
+  url.search='';
+  const representation=await env.ASSETS.fetch(new Request(url,{headers:{Accept:'text/plain'}}));
+  if(representation.status!==200)return new Response(request.method==='HEAD'?null:html.body,{status:html.status,headers});
+  headers.set('Content-Type','text/markdown; charset=utf-8');
+  // Validators and lengths from HTML cannot describe the Markdown variant.
+  for(const key of ['Content-Length','Content-Encoding','Content-Range','Transfer-Encoding','ETag','Last-Modified'])headers.delete(key);
+  headers.set('Cache-Control','public, max-age=0, must-revalidate');
+  return new Response(request.method==='HEAD'?null:representation.body,{status:html.status,headers});
+ }
+};
