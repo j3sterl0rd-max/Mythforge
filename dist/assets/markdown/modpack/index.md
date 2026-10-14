@@ -125,7 +125,7 @@ Wonderful Rivers.jfif
 
 ## A world that rewards ambition.
 
-Mythforge is an unofficial spiritual successor to Prominence 2, with its own philosophy: embrace player power and give that power a purpose. Bosses, dimensions and progression make strength feel earned and useful. This is a world for ambitious players who want their possibilities to grow.
+Mythforge follows its own philosophy: embrace player power and give that power a purpose. Bosses, dimensions and progression make strength feel earned and useful. This is a world for ambitious players who want their possibilities to grow.
 
 ## Depth without a single prescribed path.
 
