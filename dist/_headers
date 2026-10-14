@@ -1,5 +1,6 @@
 /*
   Content-Signal: ai-train=no, search=yes, ai-input=yes
+  Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
@@ -7,3 +8,8 @@
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://minotar.net; connect-src 'self' ; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'
 /assets/*
   Cache-Control: public, max-age=86400
+
+/api/docs.md
+  Content-Type: text/markdown; charset=utf-8
+/api/openapi.json
+  Content-Type: application/vnd.oai.openapi+json

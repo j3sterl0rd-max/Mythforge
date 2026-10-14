@@ -1,0 +1,783 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Mythforge public content API",
+    "version": "1.0.0",
+    "description": "Read-only access to published website pages as HTML or Markdown. No accounts, payments, server administration, or live game-status API is provided.",
+    "contact": {
+      "email": "admin@mythforge.win"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://mythforge.win"
+    }
+  ],
+  "paths": {
+    "/beta-testers/": {
+      "get": {
+        "summary": "Read beta-testers page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/changelog/": {
+      "get": {
+        "summary": "Read changelog page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/checkout/": {
+      "get": {
+        "summary": "Read checkout page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/contact/": {
+      "get": {
+        "summary": "Read contact page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/getting-started/": {
+      "get": {
+        "summary": "Read getting-started page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Read the Mythforge homepage",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/links/": {
+      "get": {
+        "summary": "Read links page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/modpack/": {
+      "get": {
+        "summary": "Read modpack page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/privacy/": {
+      "get": {
+        "summary": "Read privacy page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/purchase-help/": {
+      "get": {
+        "summary": "Read purchase-help page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/refunds/": {
+      "get": {
+        "summary": "Read refunds page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/rules/": {
+      "get": {
+        "summary": "Read rules page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/server/": {
+      "get": {
+        "summary": "Read server page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/support/": {
+      "get": {
+        "summary": "Read support page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
+    "/terms/": {
+      "get": {
+        "summary": "Read terms page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    }
+  }
+}

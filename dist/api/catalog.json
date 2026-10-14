@@ -1,0 +1,26 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://mythforge.win/",
+      "item": [
+        {
+          "href": "https://mythforge.win/"
+        }
+      ],
+      "service-desc": [
+        {
+          "href": "https://mythforge.win/api/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "Mythforge content API OpenAPI specification"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://mythforge.win/api/docs.md",
+          "type": "text/markdown",
+          "title": "Mythforge content API documentation"
+        }
+      ]
+    }
+  ]
+}

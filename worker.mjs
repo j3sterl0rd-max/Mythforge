@@ -14,6 +14,18 @@ export function prefersMarkdown(accept='') {
 function varyAccept(headers){const vary=headers.get('Vary');if(vary==='*')return;if(!vary?.split(',').some(v=>v.trim().toLowerCase()==='accept'))headers.set('Vary',vary?`${vary}, Accept`:'Accept');}
 export default {
  async fetch(request,env) {
+  const resource=new URL(request.url);
+  if(resource.pathname==='/.well-known/api-catalog'){
+   if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
+   resource.pathname='/api/catalog.json';resource.search='';
+   const asset=await env.ASSETS.fetch(new Request(resource,{headers:{Accept:'application/json'}}));
+   if(asset.status!==200)return asset;
+   const headers=new Headers(asset.headers);
+   headers.set('Content-Type','application/linkset+json');
+   headers.set('Link','</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"');
+   headers.set('Cache-Control','public, max-age=0, must-revalidate');
+   return new Response(request.method==='HEAD'?null:asset.body,{status:200,headers});
+  }
   const negotiable=request.method==='GET'||request.method==='HEAD';
   const markdown=negotiable&&prefersMarkdown(request.headers.get('Accept')||'');
   const originHeaders=new Headers(request.headers);

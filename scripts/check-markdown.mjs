@@ -33,3 +33,11 @@ const image=await worker.fetch(new Request('https://mythforge.win/assets/art/fav
 const credits=await worker.fetch(new Request('https://mythforge.win/beta-testers/',{headers:{Accept:'text/markdown'}}),env);const names=await credits.text();assert.match(names,/iDonnyboy23/);assert.ok(!names.includes('SSlenana'));
 assert.ok(requests.filter(r=>r.headers.get('Accept')==='text/html'&&r.method==='GET').some(r=>!r.headers.has('If-None-Match')&&!r.headers.has('Range')));
 console.log(`PASS: ${count} pages in HTML, Markdown, and HEAD; Accept preferences, cache variants, security headers, assets, 404, and content checks.`);
+const catalogResponse=await worker.fetch(new Request('https://mythforge.win/.well-known/api-catalog'),env);
+assert.equal(catalogResponse.status,200);assert.equal(catalogResponse.headers.get('Content-Type'),'application/linkset+json');assert.match(catalogResponse.headers.get('Link'),/rel="api-catalog"/);
+const catalog=await catalogResponse.json();assert.equal(catalog.linkset.length,1);
+for(const api of catalog.linkset){assert.ok(api.anchor.startsWith('https://'));for(const relation of ['service-desc','service-doc'])for(const link of api[relation]){const p=new URL(link.href).pathname;assert.ok((await readFile(path.join(root,p))).length>0);}}
+const spec=JSON.parse(await readFile(path.join(root,'api/openapi.json'),'utf8'));assert.equal(spec.openapi,'3.1.0');assert.equal(Object.keys(spec.paths).length,15);
+const catalogHead=await worker.fetch(new Request('https://mythforge.win/.well-known/api-catalog',{method:'HEAD'}),env);assert.equal(catalogHead.status,200);assert.equal(await catalogHead.text(),'');assert.match(catalogHead.headers.get('Link'),/api-catalog/);
+assert.equal((await worker.fetch(new Request('https://mythforge.win/.well-known/api-catalog',{method:'POST'}),env)).status,405);
+console.log('PASS: API catalog format and media type, service links, OpenAPI routes, HEAD discovery, and method handling.');
