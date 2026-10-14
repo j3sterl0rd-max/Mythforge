@@ -52,9 +52,9 @@ function document(p){const canonical=c.siteUrl.replace(/\/$/,'')+p.route;return 
 await rm(path.join(root,'dist'),{recursive:true,force:true});await mkdir(path.join(root,'dist'),{recursive:true});await cp(path.join(root,'public'),path.join(root,'dist'),{recursive:true});
 for(const p of pages){const output=p.route.endsWith('.html')?p.route.slice(1):p.route.slice(1)+'index.html';await mkdir(path.dirname(path.join(root,'dist',output)),{recursive:true});await writeFile(path.join(root,'dist',output),document(p))}
 await writeFile(path.join(root,'dist/sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.filter(p=>p.route!='/404.html').map(p=>`<url><loc>${e(c.siteUrl+p.route)}</loc></url>`).join('')}</urlset>`);
-await writeFile(path.join(root,'dist/robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${c.siteUrl}/sitemap.xml\n`);
+await writeFile(path.join(root,'dist/robots.txt'),`User-agent: *\nContent-Signal: ai-train=no, search=yes, ai-input=yes\nAllow: /\nSitemap: ${c.siteUrl}/sitemap.xml\n`);
 const connect=url(c.status.endpoint)?new URL(c.status.endpoint).origin:'';
-await writeFile(path.join(root,'dist/_headers'),`/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self' ${connect}; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'\n/assets/*\n  Cache-Control: public, max-age=86400\n`);
+await writeFile(path.join(root,'dist/_headers'),`/*\n  Content-Signal: ai-train=no, search=yes, ai-input=yes\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self' ${connect}; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'\n/assets/*\n  Cache-Control: public, max-age=86400\n`);
 console.log(`Built ${pages.length} pages into dist/.`);
 
 await import('./finish.mjs');
