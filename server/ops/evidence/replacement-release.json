@@ -1,0 +1,12 @@
+{
+  "originalServerPreserved": true,
+  "runtimeChecksPassed": 48,
+  "officialTebex": true,
+  "customAdapterSHA256": "0153b42d9fa4902679e33ec32e98e29de17cfb552c28ddbef03b5bf36832de3e",
+  "machineryRestrictions": 414,
+  "restoredFilesCompared": 599,
+  "restoredBootVerified": true,
+  "tebexReview": "pending",
+  "runtimeFailures": 0,
+  "date": "2026-10-14"
+}

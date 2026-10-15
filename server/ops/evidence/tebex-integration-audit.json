@@ -7,5 +7,10 @@
   "connectionVerified": true,
   "store": "https://mythforge.tebex.store",
   "customHttpPoller": false,
-  "testPaymentRoundtripVerified": false
+  "testPaymentRoundtripVerified": false,
+  "storeReviewStatus": "pending_review",
+  "reviewSubmitted": true,
+  "allPackagesEnabled": true,
+  "cumulativeUpgradeEmberToArtisanUSD": 8,
+  "deliveryTestBlockedReason": "Tebex: You cannot create a payment for a disabled account."
 }

@@ -82,7 +82,7 @@
       "name": "Artisan",
       "price": "$16 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.",
       "features": [
         "Everything in Ember",
         "AE2 Infinity Range Card and wireless crafting terminal with network hardware",
@@ -270,7 +270,7 @@
   "latestReleaseUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368",
   "curseforge": {
     "projectId": 1696232,
-    "lastChecked": "2026-10-13T19:33:13.310Z",
+    "lastChecked": "2026-10-13T19:33:13.31Z",
     "source": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon"
   },
   "serverTracksLatest": true,

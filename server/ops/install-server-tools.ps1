@@ -22,6 +22,13 @@ function Install-Modrinth([string]$Project) {
     Write-Output ('Installed ' + $file.filename)
 }
 foreach ($project in @('neruina','grieflogger','glra','advanced-backups','modded-votifier')) { Install-Modrinth $project }
+foreach ($release in (Get-Content -LiteralPath (Join-Path $PSScriptRoot 'audit/activation-releases.json') -Raw | ConvertFrom-Json)) {
+    $file = $release.files | Where-Object primary | Select-Object -First 1
+    $target = Join-Path $serverRoot ('mods/' + $file.filename)
+    Invoke-WebRequest $file.url -OutFile $target
+    if ((Get-FileHash -LiteralPath $target -Algorithm SHA512).Hash.ToLowerInvariant() -ne $file.hashes.sha512) { throw 'Replacement publisher hash mismatch.' }
+    $manifest.Add(@{project=$release.project_id;version=$release.version_number;filename=$file.filename;url=$file.url;sha512=$file.hashes.sha512})
+}
 $ftbFile = 'ftb-ranks-neoforge-2101.1.5.jar'
 $ftbUrl = 'https://maven.ftb.dev/releases/dev/ftb/mods/ftb-ranks-neoforge/2101.1.5/' + $ftbFile
 $ftbTarget = Join-Path $serverRoot ('mods/' + $ftbFile)

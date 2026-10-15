@@ -1,0 +1,107 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "dedicated_server_only",
+    "id": "Z2Vbx5Cc",
+    "project_id": "bI9lnAFH",
+    "author_id": "HFVE7DD9",
+    "featured": false,
+    "name": "SimpleAFK (Forge) - v1.5.2 - 1.21.1",
+    "version_number": "1.5.2",
+    "changelog": "# 1.5.2 - 1.21.1\n- Fixed an AFK calculation issue, not accounting correctly for both head and move AFK times.",
+    "changelog_url": null,
+    "date_published": "2026-05-05T08:31:01.473157Z",
+    "downloads": 502,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "sRLBk8Zk",
+        "hashes": {
+          "sha1": "21c9f47289056162c364133fbc9bc90dfcda9b91",
+          "sha512": "94dd8b5aee13d25d5a2c013ee413cb648beb4976abec3d74158bce1f28c89f7b1b1a3012fcdacd80605e7cdfbe7413468e1804cebd6be232b2878ebd3160713a"
+        },
+        "url": "https://cdn.modrinth.com/data/bI9lnAFH/versions/Z2Vbx5Cc/simpleafk-neoforge-1.21.1-1.5.2.jar",
+        "filename": "simpleafk-neoforge-1.21.1-1.5.2.jar",
+        "primary": true,
+        "size": 33505,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "ZkTlq92y",
+    "project_id": "6wy8fmIk",
+    "author_id": "SSMCs6cT",
+    "featured": false,
+    "name": "astages-2.5.3-1.21.1",
+    "version_number": "2.5.3-1.21.1",
+    "changelog": "New Features\n\n- Add stage management methods for players and servers. ([#289](https://github.com/Alessandro-Casale/AStages/pull/289))\n- Implement mixin to manage menu opening and block stage ownership. ([#292](https://github.com/Alessandro-Casale/AStages/pull/292))\n\nBug Fixes\n\n- Prevent unnecessary calls to show/hide in recipe viewers. ([#291](https://github.com/Alessandro-Casale/AStages/pull/291))\n- Fix player UUID handling and nullability checks in Crafter block. ([#293](https://github.com/Alessandro-Casale/AStages/pull/293))\n- Update item pickup restriction to use server and player context (1.21.X only). ([#300](https://github.com/Alessandro-Casale/AStages/pull/300))\n\nAPI Changes\n\n- Kubejs exposed methods now have default value set to true. ([#288](https://github.com/Alessandro-Casale/AStages/pull/288))\n\n\n",
+    "changelog_url": null,
+    "date_published": "2026-09-09T20:29:12.239177Z",
+    "downloads": 524,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vSTNFE8a",
+        "hashes": {
+          "sha1": "ff4db0f6623ecb76175601a87ced18927fce2793",
+          "sha512": "769382864f19b13b9efc861e5911ebd9d75629f5c475ee0660f852339843d325e83ad996baf0633afbc40b6637525a4303d8b89884c9da878bfa9776b950c61f"
+        },
+        "url": "https://cdn.modrinth.com/data/6wy8fmIk/versions/ZkTlq92y/astages-2.5.3-1.21.1.jar",
+        "filename": "astages-2.5.3-1.21.1.jar",
+        "primary": true,
+        "size": 978048,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "nfn13YXA",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "nvQzSEkH",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "umyGl7zF",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "KpICtuVx",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "u6dRKJwZ",
+        "file_name": null,
+        "dependency_type": "optional"
+      }
+    ]
+  }
+]

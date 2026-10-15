@@ -11,6 +11,8 @@ neoForge {
     mods { mythforge_server { sourceSet sourceSets.main } }
 }
 dependencies {
+    compileOnly files('../mods/astages-2.5.3-1.21.1.jar', '../mods/simpleafk-neoforge-1.21.1-1.5.2.jar')
+    compileOnly files('../mods/ftb-quests-neoforge-2101.1.36.jar', '../mods/ftb-essentials-neoforge-2101.1.10.jar')
     compileOnly files('../mods/ftb-ranks-neoforge-2101.1.5.jar', '../mods/ftb-library-neoforge-2101.1.37.jar', '../mods/ftb-chunks-neoforge-2101.1.22.jar', '../mods/ftb-teams-neoforge-2101.1.11.jar')
     compileOnly files('../mods/relics-1.21.1-0.12.8.jar','../mods/curios-neoforge-9.5.1+1.21.1.jar')
     compileOnly files('../mods/journeymap-neoforge-1.21.1-6.0.9.jar')

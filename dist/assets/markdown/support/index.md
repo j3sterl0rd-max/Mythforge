@@ -33,7 +33,7 @@ PERMANENT SUPPORTER RANK
 
 ## Artisan
 
-Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
+Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.
 
 -   Everything in Ember
 -   AE2 Infinity Range Card and wireless crafting terminal with network hardware

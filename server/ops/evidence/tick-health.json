@@ -1,0 +1,5 @@
+{
+  "description": "Empty copied server following asynchronous RTP terrain tests; not a multiplayer load test.",
+  "sample": "Average time per tick: 3.5ms (Target: 50.0ms)",
+  "measuredAt": "2026-10-14T18:46:05-05:00"
+}

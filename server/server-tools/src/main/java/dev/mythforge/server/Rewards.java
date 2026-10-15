@@ -107,14 +107,8 @@ final class Rewards {
     static void open(ServerPlayer p) {
         if(!crateValid) {ServerTools.tell(p,"Crate temporarily disabled pending registry verification.");return;}
         var d=ServerTools.data(p);if(d.keys<1) {ServerTools.tell(p,"No keys. Vote for the server to earn one.");return;}
-        int roll=ServerTools.RANDOM.nextInt(10000);
-        for(var raw:ServerTools.config.getAsJsonArray("crate")) {
-            var row=raw.getAsJsonObject();roll-=row.get("weight").getAsInt();
-            if(roll<0) {
-                d.keys--;enqueue(p,row.getAsJsonArray("items"));ServerTools.state.save();
-                ServerTools.tell(p,"Crate reward: "+row.get("name").getAsString()+" ["+row.get("tier").getAsString()+"]");mail(p);return;
-            }
-        }
-        throw new IllegalStateException("Crate selection escaped configured weight");
+        var row=CrateTable.draw(net.minecraft.util.RandomSource.create(ServerTools.RANDOM.nextLong()));
+        d.keys--;enqueue(p,row.getAsJsonArray("items"));ServerTools.state.save();
+        ServerTools.tell(p,"Crate reward: "+row.get("name").getAsString()+" ["+row.get("tier").getAsString()+"]");mail(p);
     }
 }

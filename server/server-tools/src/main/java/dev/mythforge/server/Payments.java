@@ -14,13 +14,17 @@ final class Payments {
             if(!old.uuid.equals(id.toString())||!old.rank.equals(rank))throw new IllegalStateException("Transaction identity conflict");
             return true;
         }
-        ServerTools.state.purchases.put(txn,new State.Purchase(id.toString(),rank));ServerTools.state.save();
+        var entitlement=new State.Purchase(id.toString(),rank);
+        entitlement.revoked=ServerTools.state.revokedTransactions.contains(txn);
+        ServerTools.state.purchases.put(txn,entitlement);ServerTools.state.save();
         var p=ServerTools.server.getPlayerList().getPlayer(id);
         if(p!=null) {ServerTools.reconcile(p);Rewards.deliver(p);}
         return true;
     }
     static boolean revoke(String txn) {
-        var purchase=ServerTools.state.purchases.get(txn);if(purchase==null)return false;
+        if(!txn.matches("[A-Za-z0-9_-]{1,100}"))return false;
+        ServerTools.state.revokedTransactions.add(txn);
+        var purchase=ServerTools.state.purchases.get(txn);if(purchase==null){ServerTools.state.save();return true;}
         purchase.revoked=true;ServerTools.state.save();
         var p=ServerTools.server.getPlayerList().getPlayer(uuid(purchase.uuid));if(p!=null)ServerTools.reconcile(p);
         return true;

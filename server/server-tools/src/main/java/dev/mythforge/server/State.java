@@ -11,6 +11,7 @@ final class State {
     static final Gson JSON = new GsonBuilder().setPrettyPrinting().create();
     Map<String, PlayerData> players = new LinkedHashMap<>();
     Map<String, Purchase> purchases = new LinkedHashMap<>();
+    Set<String> revokedTransactions = new HashSet<>();
     Map<String, Warp> warps = new LinkedHashMap<>();
     transient Path path;
     static final class PlayerData {

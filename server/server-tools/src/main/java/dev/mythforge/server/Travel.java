@@ -14,6 +14,12 @@ import java.util.*;
 
 final class Travel {
     static final Set<UUID> searching=new HashSet<>();
+    record Reservation(ServerLevel level,ChunkPos chunk,long id) {}
+    static final Map<UUID,Reservation> reservations=new HashMap<>();
+    static void release(ServerPlayer player) {
+        var reservation=reservations.remove(player.getUUID());
+        if(reservation!=null)reservation.level.getChunkSource().removeRegionTicket(FTBTravel.TICKET,reservation.chunk,0,reservation.id);
+    }
     static boolean permitted(ServerPlayer p,ServerLevel level) {
         String dim=level.dimension().location().toString();
         return dim.equals("minecraft:overworld") || p.level().dimension().equals(level.dimension()) || ServerTools.data(p).visited.stream().anyMatch(v->v.startsWith(dim+":")) || dim.equals("minecraft:the_nether")&&ServerTools.tier(p)>=2 || dim.equals("minecraft:the_end")&&ServerTools.tier(p)>=3;
@@ -35,9 +41,14 @@ final class Travel {
     }
     static void queue(ServerPlayer p,ServerLevel level,BlockPos pos) {
         if(!permitted(p,level)||ServerTools.combat(p))return;
-        level.getChunkSource().getChunkFuture(pos.getX()>>4,pos.getZ()>>4,ChunkStatus.FULL,true).whenComplete((chunk,error)->ServerTools.server.execute(()->{
-            if(p.hasDisconnected())return;
-            if(error!=null||ServerTools.combat(p)||!safe(p,level,pos)){ServerTools.tell(p,"Destination is unsafe or unavailable. Teleport cancelled.");return;}
+        release(p);ServerTools.teleports.remove(p.getUUID());
+        var reservation=new Reservation(level,new ChunkPos(pos),FTBTravel.IDS.incrementAndGet());
+        reservations.put(p.getUUID(),reservation);
+        level.getChunkSource().addRegionTicket(FTBTravel.TICKET,reservation.chunk,0,reservation.id);
+        FTBTravel.prepare(level,pos.getX()>>4,pos.getZ()>>4).whenComplete((chunk,error)->ServerTools.server.execute(()->{
+            if(reservations.get(p.getUUID())!=reservation)return;
+            if(p.hasDisconnected()){release(p);return;}
+            if(error!=null||ServerTools.combat(p)||!safe(p,level,pos)){release(p);ServerTools.tell(p,"Destination is unsafe or unavailable. Teleport cancelled.");return;}
             ServerTools.teleports.put(p.getUUID(),new ServerTools.PendingTeleport(level,pos,ServerTools.seconds+5,p.getX(),p.getY(),p.getZ()));
             ServerTools.tell(p,"Teleport in 5 seconds. Stay still and out of combat.");
         }));
@@ -52,21 +63,11 @@ final class Travel {
         search(p,level,0);
     }
     static void search(ServerPlayer p,ServerLevel level,int attempt) {
-        if(attempt>=32||p.hasDisconnected()) { searching.remove(p.getUUID()); if(!p.hasDisconnected()) { ServerTools.data(p).cooldowns.remove("rtp");ServerTools.tell(p,"No safe destination found. Try again."); } return; }
-        int radius=level.dimension()==Level.END?2500:1500;
-        int x=ServerTools.RANDOM.nextInt(radius*2+1)-radius,z=ServerTools.RANDOM.nextInt(radius*2+1)-radius;
-        if(Math.abs(x)<500&&Math.abs(z)<500) { search(p,level,attempt+1);return; }
-        var claim=FTBChunksAPI.api().getManager().getChunk(new ChunkDimPos(level.dimension(),new ChunkPos(x>>4,z>>4)));
-        if(claim!=null) { search(p,level,attempt+1);return; }
-        // Generation goes through Minecraft's asynchronous chunk pipeline.
-        level.getChunkSource().getChunkFuture(x>>4,z>>4,ChunkStatus.FULL,true).whenComplete((chunk,error)->ServerTools.server.execute(()->{
-            if(error!=null) { searching.remove(p.getUUID());ServerTools.tell(p,"Chunk generation failed; report this to staff.");return; }
-            int top=level.dimension()==Level.NETHER?120:level.getMaxBuildHeight()-3;
-            for(int y=top;y>level.getMinBuildHeight()+1;y--) {
-                var pos=new BlockPos(x,y,z);
-                if(safe(p,level,pos)) { searching.remove(p.getUUID()); queue(p,level,pos);return; }
-            }
-            search(p,level,attempt+1);
+        FTBTravel.search(p,level,attempt).whenComplete((pos,error)->ServerTools.server.execute(()->{
+            searching.remove(p.getUUID());
+            if(p.hasDisconnected())return;
+            if(error!=null || pos==null){ServerTools.data(p).cooldowns.remove("rtp");ServerTools.tell(p,"No safe destination found. Try again.");if(error!=null)ServerTools.LOG.error("FTB RTP preparation failed",error);return;}
+            queue(p,level,pos);
         }));
     }
     static void ascend(ServerPlayer p) {

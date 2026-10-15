@@ -61,6 +61,7 @@ public final class ServerTools {
     record PendingTeleport(ServerLevel level, BlockPos pos, long due, double x,double y,double z) {}
     public ServerTools() {
         var bus=NeoForge.EVENT_BUS;
+        bus.addListener(PublishedServices::stages); bus.addListener(PublishedServices::restrictions);
         bus.addListener(this::started); bus.addListener(this::stopping); bus.addListener(this::tick);
         bus.addListener(this::commands); bus.addListener(this::login); bus.addListener(this::logout);
         bus.addListener(this::place); bus.addListener(this::breakBlock); bus.addListener(this::interact);
@@ -81,6 +82,7 @@ public final class ServerTools {
             }).map(b->BuiltInRegistries.BLOCK.getKey(b).toString()).sorted().toList();
             Files.writeString(Path.of("ops/evidence/functional-machinery.json"),State.JSON.toJson(machines));
             audit();
+            CrateTable.initialize();
             state.save();
             LOG.info("[Mythforge] Active playtime, paid ledger, crates and travel ready; {} items registered",items.size());
         } catch(Exception ex) { throw new IllegalStateException("Mythforge launch configuration invalid",ex); }
@@ -117,6 +119,7 @@ public final class ServerTools {
         state.save();
     }
     void logout(PlayerEvent.PlayerLoggedOutEvent e) {
+        if(e.getEntity() instanceof ServerPlayer p)Travel.release(p);
         sessions.remove(e.getEntity().getUUID()); teleports.remove(e.getEntity().getUUID());
         if(state!=null) state.save();
     }
@@ -131,12 +134,12 @@ public final class ServerTools {
             if(intentional && seconds-s.lastAction<240) s.lastMovement=seconds;
             s.x=p.getX();s.y=p.getY();s.z=p.getZ();s.yaw=p.getYRot();s.pitch=p.getXRot();
             // Movement alone buys at most five minutes. Repeated identical block actions stop extending the window.
-            if(!p.isSpectator() && !p.isDeadOrDying() && seconds-s.lastAction<300 && (seconds-s.lastMovement<90 || seconds-s.lastAction<90)) {
+            if(!PublishedServices.afk(p) && !p.isSpectator() && !p.isDeadOrDying() && seconds-s.lastAction<300 && (seconds-s.lastMovement<90 || seconds-s.lastAction<90)) {
                 d.activeSeconds++; s.lastCredit=seconds;
                 if(d.activeSeconds%60==0) { reconcile(p); deliver(p); }
             }
             if(seconds-s.lastCredit==600) tell(p,"Active time is paused. Movement loops and repeated identical actions do not earn rewards.");
-            if(seconds-s.lastCredit>=900 && !p.hasPermissions(4)) p.connection.disconnect(Component.literal("AFK for 15 minutes. Rejoin when ready to play."));
+            if(seconds-s.lastCredit>=900 && !p.hasPermissions(4)) PublishedServices.kick(p);
             if(seconds%10==0 && intentional && !p.isPassenger()) {
                 if(d.visited.add(p.level().dimension().location()+":"+(p.blockPosition().getX()>>4)+":"+(p.blockPosition().getZ()>>4))) s.lastAction=seconds;
             }
@@ -152,10 +155,12 @@ public final class ServerTools {
             if(tp!=null) {
                 if(s.combatUntil>seconds || Math.pow(p.getX()-tp.x,2)+Math.pow(p.getY()-tp.y,2)+Math.pow(p.getZ()-tp.z,2)>0.25) {
                     teleports.remove(p.getUUID());tell(p,"Teleport cancelled by movement or combat.");
+                    Travel.release(p);
                 } else if(seconds>=tp.due) {
                     teleports.remove(p.getUUID());
                     if(Travel.safe(p,tp.level,tp.pos)) p.teleportTo(tp.level,tp.pos.getX()+0.5,tp.pos.getY(),tp.pos.getZ()+0.5,p.getYRot(),p.getXRot());
                     else tell(p,"Destination became unsafe. Teleport cancelled.");
+                    Travel.release(p);
                 }
             }
         }
@@ -171,27 +176,33 @@ public final class ServerTools {
     }
     void crafted(PlayerEvent.ItemCraftedEvent e) { if(e.getEntity() instanceof ServerPlayer p) signal(p,"craft:"+BuiltInRegistries.ITEM.getKey(e.getCrafting().getItem())); }
     static boolean machineryNamespace(String ns) { return ns.equals("create") || ns.equals("simulated") || ns.equals("sable") || ns.equals("aeronautics") || ns.startsWith("create_") || ns.equals("createaddition") || ns.equals("createthrusters"); }
+    static boolean decorative(ResourceLocation id) {
+        return Set.of("create:copycat_panel","create:copycat_step","create:placard","create:clipboard").contains(id.toString()) || id.getNamespace().equals("create_connected") && id.getPath().startsWith("copycat_");
+    }
     static boolean banned(ResourceLocation id) { return id.toString().equals("create:schematicannon") || id.getNamespace().equals("buildinggadgets2") || id.getPath().contains("schematicannon"); }
     static boolean machine(BlockState block) {
         var id=BuiltInRegistries.BLOCK.getKey(block.getBlock());
-        return machineryNamespace(id.getNamespace()) && (block.getBlock() instanceof EntityBlock || config.getAsJsonArray("functionalBlocks").asList().stream().anyMatch(v->v.getAsString().equals(id.toString())));
+        return !decorative(id) && machineryNamespace(id.getNamespace()) && (block.getBlock() instanceof EntityBlock || config.getAsJsonArray("functionalBlocks").asList().stream().anyMatch(v->v.getAsString().equals(id.toString())));
     }
     static boolean unlocked(ServerPlayer p) {
         if(p instanceof FakePlayer) {
-            // Fake actors may use machinery only inside a claim whose owner has earned access.
-            var chunk=FTBChunksAPI.api().getManager().getChunk(new ChunkDimPos(p.level().dimension(),p.chunkPosition()));
-            if(chunk==null) return false;
-            UUID owner=chunk.getTeamData().getTeam().getOwner();
-            return state.player(owner).activeSeconds>=108000 || state.paid(owner)>0;
+            return automationUnlocked(p.serverLevel(),p.blockPosition());
         }
         return hours(p)>=30 || tier(p)>0;
+    }
+    static boolean automationUnlocked(ServerLevel level,BlockPos target) {
+        var chunk=FTBChunksAPI.api().getManager().getChunk(new ChunkDimPos(level.dimension(),new ChunkPos(target)));
+        if(chunk==null)return false;
+        UUID owner=chunk.getTeamData().getTeam().getOwner();
+        return state.player(owner).activeSeconds>=108000 || state.paid(owner)>0;
     }
     void place(BlockEvent.EntityPlaceEvent e) {
         if(e.getLevel().isClientSide() || state==null) return;
         var id=BuiltInRegistries.BLOCK.getKey(e.getPlacedBlock().getBlock());
         boolean deny=banned(id);
         if(machine(e.getPlacedBlock())) {
-            if(e.getEntity() instanceof ServerPlayer p) deny|=!unlocked(p);
+            if(e.getEntity() instanceof FakePlayer p)deny|=!automationUnlocked(p.serverLevel(),e.getPos());
+            else if(e.getEntity() instanceof ServerPlayer p) deny|=!unlocked(p);
             else {
                 var level=(ServerLevel)e.getLevel();
                 var claim=FTBChunksAPI.api().getManager().getChunk(new ChunkDimPos(level.dimension(),new ChunkPos(e.getPos())));
@@ -206,7 +217,8 @@ public final class ServerTools {
     void interact(PlayerInteractEvent.RightClickBlock e) {
         if(!(e.getEntity() instanceof ServerPlayer p)||state==null) return;
         var block=p.level().getBlockState(e.getPos());
-        if(banned(BuiltInRegistries.BLOCK.getKey(block.getBlock())) || (machine(block)&&!unlocked(p))) { e.setCanceled(true); return; }
+        boolean allowed=p instanceof FakePlayer?automationUnlocked(p.serverLevel(),e.getPos()):unlocked(p);
+        if(banned(BuiltInRegistries.BLOCK.getKey(block.getBlock())) || (machine(block)&&!allowed)) { e.setCanceled(true); return; }
         if(banned(BuiltInRegistries.ITEM.getKey(e.getItemStack().getItem()))) { e.setCanceled(true); return; }
         signal(p,"use:"+e.getPos());
     }
@@ -254,6 +266,7 @@ public final class ServerTools {
     }
     static void setNode(Rank r,String node,Object value) { r.setPermission(node,PermissionValue.parse(String.valueOf(value))); }
     static void reconcile(ServerPlayer p) {
+        PublishedServices.reconcile(p);
         Rank rank=FTBRanksAPI.manager().getRank("earned_"+p.getUUID().toString().replace("-","")).orElseGet(()->FTBRanksAPI.manager().createRank("earned_"+p.getUUID().toString().replace("-",""),50,false));
         rank.add(p.getGameProfile());
         long h=hours(p);int paid=tier(p);

@@ -1,6 +1,6 @@
 # Mythforge mod and integration audit
 
-Date: 2026-10-14. Target: Minecraft 1.21.1, NeoForge 21.1.253. This is a source/configuration audit and dependency check. Candidate replacements have not been installed or certified by a real client play session. Gameplay compromises require an owner decision before migration.
+Date: 2026-10-14. Target: Minecraft 1.21.1, NeoForge 21.1.253. This is a source/configuration audit and dependency check. The owner authorized activation. SimpleAFK, AStages, FTB Quests crate selection and the FTB Essentials RTP adapter are now installed. See REPLACEMENTS-RELEASE.md for final behavior and verification limits. Real-client acceptance is still required.
 
 ## Main findings
 
@@ -21,11 +21,11 @@ Date: 2026-10-14. Target: Minecraft 1.21.1, NeoForge 21.1.253. This is a source/
 | Player-owned public warps | Custom `/pwarp`, owner consent and safe destinations | FTB Essentials has admin-owned global warps, not this exact player-owned model | Replacing with global warps would lose player ownership/limits/icons; retain until owner chooses a simpler model or a compatible provider is proven |
 | Active time and repeating allowances | Custom active-time ledger | FTB Ranks already has playtime conditions, but its installed condition uses Minecraft statistics | Vanilla/statistical playtime includes idle online time. Native conditions would weaken anti-AFK progression without an active-time adapter |
 | Playtime Rewards candidate | Not installed | NeoForge 1.21.1 version 1.0.2 exists | Inspected `PlayTimeEvents` increments on every player tick; no AFK filtering in that path. Milestones are command-based. It does not replace the current activity clock, overflow mail or one-time delivery journal by itself. Not recommended as a drop-in |
-| AFK status/kicking | Custom repeated-action/activity heuristics plus vanilla idle timeout | SimpleAFK 1.5.2 has a NeoForge 1.21.1 release and standard status/kick behavior | It is a good candidate for ordinary AFK status, but movement-based detection is not a complete anti-macro reward clock. Retain a thin activity filter if adopted. Requires avoiding two independent kick policies |
+| AFK status/kicking | SimpleAFK 1.5.2 plus active-time adapter | Installed and activated | Active-time kick plus vanilla idle fallback; native AFK presentation and manual AFK pause; anti-macro filter retained |
 | Vote receipt and offline queue | Modded Votifier | Keep official protocol-compatible existing mod | Existing local v1/v2 and bad-signature tests passed. Site callbacks and login delivery still need real-account tests; receipt removal before reward persistence deserves crash testing |
-| Vote crate selection/delivery | Custom weighted table, virtual keys and mailbox | FTB Quests already contains weighted/random/item/command rewards. RarityChests publishes NeoForge 1.21.1 physical chests/keys | Quest-backed delivery changes the UI/workflow and must not turn a per-player key into a shared-team reward; physical crate mods require a client-pack addition. Complex Relics/consumable rewards still need adapters and exact-weight tests. Keep current crate until one option is chosen and prototyped |
+| Vote crate selection/delivery | FTB Quests weighted engine with per-player key/mail adapter | Activated without installing another crate mod | 56 outcomes, total weight 10,000; private runtime table avoids team-shared completion rewards; 10,000 provider draws validated |
 | Modular Loot Crates and Bundles | Not installed | Useful public project but no matching NeoForge 1.21.1 release returned by publisher API | Excluded for this loader/version; do not use Fabric builds through a compatibility layer merely to get crates |
-| Machinery progression | Custom placement/interact/item guards | AStages 2.5.3-1.21.1 is a strong staging candidate; its API can allow pickup, inventory storage and mining separately | Requires both client and server. Must preserve crafting/trading/mining before unlock and avoid hiding decorative blocks. Sable assembly packets, contraption imports and automated writes still require specific integration testing |
+| Machinery progression | AStages 2.5.3-1.21.1 plus pack-specific guards | Installed and activated | 414 functional restrictions; client companion required; placement/use locked while crafting/trading/mining stay available; Sable/import acceptance requires an actual client |
 | Alternative stage engine | Not installed | ProgressiveStages 3.0.6 has a matching release | Broad progression system with required client/server installation. No need to add two stage engines. Evaluate only if AStages fails the needed restrictions |
 | Relic leveling, maxed items, equipment slots | Custom adapter calling Relics and Curios APIs | Keep the published Relics and Curios engines; retain only the reward adapter | Replacing the adapter with hand-written static item NBT can diverge from valid Relics maxima. Real client slot-capacity/compatibility tests remain necessary |
 | Claim-limited flight, timed flight, heal/feed/effects | Custom rules around vanilla effects/abilities; native FTB admin variants disabled | Native FTB commands exist, but a guard adapter would still be needed | Dropping the wrapper can lose claim limits, combat restrictions, expiry persistence and cooldowns. Preserve those rules; do not substitute unrestricted native admin commands |
@@ -39,7 +39,7 @@ Date: 2026-10-14. Target: Minecraft 1.21.1, NeoForge 21.1.253. This is a source/
 
 ## Cases for owner decisions
 
-No replacement below has been activated.
+The alternatives below were the audit recommendations. The authorized activation and final implementation are documented in REPLACEMENTS-RELEASE.md; this section preserves the reasoning behind the selections.
 
 1. **AFK:** prototype SimpleAFK for standard status/kicks while keeping active-reward filtering, or keep the current combined implementation. Recommendation: prototype the split approach; no weaker reward filtering.
 2. **RTP:** investigate an adapter around FTB's existing travel engine while preserving cross-dimension commands, or accept native current-dimension RTP. Recommendation: retain the current commands while testing the adapter; do not give up cross-dimension functionality by default.
@@ -51,7 +51,7 @@ No replacement below has been activated.
 
 These are audit findings, not claims of completed crash testing:
 
-- A revocation for an unknown transaction returns false and stores no tombstone. Test out-of-order purchase/refund commands and reconciliation against Tebex before enabling sales.
+- Fixed: unknown-transaction revocations now persist tombstones. The refund-before-purchase runtime test passed. Actual Tebex delivery remains blocked by disabled-account review status.
 - Reward mail has player-save receipts, but consumable/voucher consumption and ledger writes span separate saves. Test a forced crash between each step; do not claim all reward actions are atomic.
 - Vote delivery removes pending votes before running the configured command. Test failure/crash recovery so a consumed queue entry cannot silently lose the key.
 - Machinery guards cannot cover every mod's direct placement or custom packet. A stage engine improves coverage but is not automatically Sable-compatible.

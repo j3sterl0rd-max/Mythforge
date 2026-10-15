@@ -1,0 +1,9 @@
+{
+  "matched": true,
+  "bootVerified": true,
+  "failures": [],
+  "archive": "backups/launch-world-20261014-ready.zip",
+  "filesCompared": 599,
+  "runtimeChecksPassed": 48,
+  "isolatedBind": "127.0.0.1:25566"
+}

@@ -297,7 +297,7 @@
 			# Number of tries before /rtp gives up
 			# Default: 100
 			# Range: 1 ~ 1000
-			max_tries: 100
+			max_tries: 16
 			
 			# /rtp min distance from spawn point
 			# Default: 500

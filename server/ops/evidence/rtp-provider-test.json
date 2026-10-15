@@ -1,0 +1,17 @@
+{
+  "minecraft:the_nether": {
+    "safe": true,
+    "error": "",
+    "milliseconds": 4930
+  },
+  "minecraft:the_end": {
+    "safe": true,
+    "error": "",
+    "milliseconds": 8294
+  },
+  "minecraft:overworld": {
+    "safe": true,
+    "error": "",
+    "milliseconds": 16196
+  }
+}

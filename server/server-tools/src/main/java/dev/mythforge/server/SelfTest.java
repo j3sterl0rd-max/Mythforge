@@ -48,6 +48,38 @@ final class SelfTest {
             check(FTBRanksAPI.getPermissionValue(p,"ftbessentials.home.max").asInteger().orElse(0)==7&&FTBRanksAPI.getPermissionValue(p,"mythforge.pwarp.max").asInteger().orElse(0)==6,"Refund preserves natural allowances plus remaining rank bonuses",passed);
             check(data.activeSeconds==500*3600L&&data.delivered.contains(500)&&data.paidDelivered==3,"Refund preserves earned time and one-time delivery receipts",passed);
             Payments.revoke("selftest_ember");
+            check(Payments.revoke("selftest_early_refund") && Payments.purchase(uuid.toString(),"mythic","selftest_early_refund") && test.paid(uuid)==0,"Refund before purchase creates a durable revocation tombstone",passed);
+            data.activeSeconds=29*3600L;ServerTools.reconcile(p);
+            check(!com.alessandro.astages.api.util.AStagesUtils.hasStage(com.alessandro.astages.api.holder.AHolder.player(uuid),PublishedServices.MACHINERY),"AStages machinery stage stays locked before 30 active hours",passed);
+            var press=new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("create:mechanical_press")));
+            var machineRule=com.alessandro.astages.engine.ARestrictionManager.ITEM_INSTANCE.getRestriction(com.alessandro.astages.api.holder.AHolder.player(uuid),press);
+            check(machineRule!=null && !machineRule.get(com.alessandro.astages.engine.store.Attributes.BLOCK_PLACING) && !machineRule.get(com.alessandro.astages.engine.store.Attributes.BLOCK_INTERACTIONS),"AStages consumer rejects placement and interaction before unlock",passed);
+            check(machineRule.get(com.alessandro.astages.engine.store.Attributes.PICKUP) && machineRule.get(com.alessandro.astages.engine.store.Attributes.STORING_IN_INVENTORY) && machineRule.get(com.alessandro.astages.engine.store.Attributes.BLOCK_BREAKING),"AStages consumer permits pickup, inventory and mining before unlock",passed);
+            for(String decoration:List.of("create:copycat_panel","create:cut_granite","create_connected:copycat_stairs")) {
+                var id=ResourceLocation.parse(decoration);var block=BuiltInRegistries.BLOCK.get(id);
+                check(!ServerTools.machine(block.defaultBlockState()) && com.alessandro.astages.engine.ARestrictionManager.ITEM_INSTANCE.getRestriction(com.alessandro.astages.api.holder.AHolder.player(uuid),new ItemStack(block))==null,"Decoration stays placeable before machinery unlock: "+decoration,passed);
+            }
+            var previousHeld=p.getMainHandItem();p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,press);
+            var interaction=new net.neoforged.neoforge.event.entity.player.PlayerInteractEvent.RightClickBlock(p,net.minecraft.world.InteractionHand.MAIN_HAND,p.blockPosition(),new net.minecraft.world.phys.BlockHitResult(p.position(),net.minecraft.core.Direction.UP,p.blockPosition(),false));
+            com.alessandro.astages.infrastructure.hook.restriction.ItemServerEvents.onItemUsed(interaction);
+            check(!interaction.isCanceled(),"AStages delegates shared fake-player automation to the claim-owner guard",passed);
+            p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,previousHeld);
+            automation(test,passed);
+            data.activeSeconds=30*3600L;ServerTools.reconcile(p);
+            check(com.alessandro.astages.api.util.AStagesUtils.hasStage(com.alessandro.astages.api.holder.AHolder.player(uuid),PublishedServices.MACHINERY),"AStages grants machinery access at 30 active hours",passed);
+            check(com.alessandro.astages.engine.ARestrictionManager.ITEM_INSTANCE.getRestriction(com.alessandro.astages.api.holder.AHolder.player(uuid),press)==null,"AStages consumer removes the machinery restriction after earned unlock",passed);
+            var afkManager=dk.magnusjensen.simpleafk.AFKManager.getInstance();afkManager.addPlayer(p);
+            var afkPlayer=afkManager.getPlayer(uuid);afkPlayer.toggleAfkStatus();
+            check(PublishedServices.afk(p),"Manual SimpleAFK status reaches the reward activity filter",passed);
+            afkPlayer.removeAfkStatus();check(!PublishedServices.afk(p),"Resuming activity clears the shared AFK status",passed);afkManager.removePlayer(uuid);
+            check(PublishedServices.restrictedMachines>0,"AStages has actual functional machinery restrictions registered",passed);
+            check(CrateTable.table.getTotalWeight(false)==10000 && CrateTable.rows.size()==ServerTools.config.getAsJsonArray("crate").size(),"FTB Quests owns the exact configured crate table and weights",passed);
+            var random=net.minecraft.util.RandomSource.create(20261014L);
+            for(int draw=0;draw<10000;draw++)if(CrateTable.draw(random)==null)throw new IllegalStateException("Unknown FTB crate selection");
+            passed.add("Ten thousand FTB crate draws resolve to valid configured rewards");
+            test.purchases.put("selftest_travel",new State.Purchase(uuid.toString(),"runeforged"));
+            travel(p,passed);
+            test.purchases.remove("selftest_travel");
             commandUnlocks(p,data,passed);
             var slots=top.theillusivec4.curios.api.CuriosApi.getPlayerSlots(ServerTools.server.overworld()).keySet();
             Files.writeString(Path.of("ops/evidence/equipment-slots.json"),State.JSON.toJson(slots));
@@ -58,12 +90,39 @@ final class SelfTest {
             for(String id:Rewards.relicChoices()) {try {Relics.max(p,new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(id))));}catch(Exception ex){failures.add("Maxed relic "+id+": "+ex.getClass().getSimpleName()+" "+ex.getMessage());}}
         } catch(Exception ex) {failures.add(ex.getMessage());}
         finally {
+            dk.magnusjensen.simpleafk.AFKManager.getInstance().removePlayer(uuid);
+            com.alessandro.astages.api.util.AStagesUtils.removeStage(com.alessandro.astages.api.holder.AHolder.player(uuid),PublishedServices.MACHINERY,false,false,false);
             for(String id:List.of("ember","artisan","runeforged","mythic"))FTBRanksAPI.manager().getRank(id).ifPresent(r->r.remove(p.getGameProfile()));
             if(FTBRanksAPI.manager().getRank(earned).isPresent())FTBRanksAPI.manager().deleteRank(earned);
             ServerTools.state=original;
         }
         try {Files.writeString(Path.of("ops/evidence/selftest.json"),State.JSON.toJson(Map.of("passed",passed,"failures",failures,"success",failures.isEmpty())));}catch(Exception ex){throw new RuntimeException(ex);}
         ServerTools.LOG.info("[Mythforge] Runtime self-test: {} passed, {} failed. See ops/evidence/selftest.json",passed.size(),failures.size());
+    }
+    static void automation(State test,List<String> passed) {
+        check(!ServerTools.automationUnlocked(ServerTools.server.overworld(),new net.minecraft.core.BlockPos(500000,64,500000)),"Automated machinery cannot bypass progression in unclaimed terrain",passed);
+        var claim=dev.ftb.mods.ftbchunks.api.FTBChunksAPI.api().getManager().getAllClaimedChunks().stream().findFirst().orElseThrow();
+        var owner=claim.getTeamData().getTeam().getOwner();var data=test.player(owner);
+        var level=ServerTools.server.getLevel(claim.getPos().dimension());var target=new net.minecraft.core.BlockPos(claim.getPos().x()*16+8,64,claim.getPos().z()*16+8);
+        data.activeSeconds=29*3600L;
+        check(!ServerTools.automationUnlocked(level,target),"Claim-owner automation remains locked before 30 active hours",passed);
+        data.activeSeconds=30*3600L;
+        check(ServerTools.automationUnlocked(level,target),"Claim-owner automation unlocks with earned machinery access",passed);
+        data.activeSeconds=0;test.purchases.put("selftest_automation",new State.Purchase(owner.toString(),"ember"));
+        check(ServerTools.automationUnlocked(level,target),"Claim-owner automation accepts the eligible paid entitlement",passed);
+        test.purchases.remove("selftest_automation");
+        check(!ServerTools.automationUnlocked(level,target),"Removing the unearned paid entitlement relocks automation",passed);
+    }
+    static void travel(net.minecraft.server.level.ServerPlayer p,List<String> passed) throws Exception {
+        var timings=new java.util.LinkedHashMap<String,Object>();
+        for(var key:List.of(net.minecraft.world.level.Level.OVERWORLD,net.minecraft.world.level.Level.NETHER,net.minecraft.world.level.Level.END)) {
+            var level=ServerTools.server.getLevel(key);long started=System.nanoTime();
+            var actor=new TestPlayer(level,p.getGameProfile());
+            FTBTravel.search(actor,level,0).whenComplete((position,error)->ServerTools.server.execute(()->{
+                timings.put(key.location().toString(),Map.of("milliseconds",(System.nanoTime()-started)/1000000,"safe",error==null && position!=null && Travel.safe(actor,level,position),"error",error==null?"":error.toString()));
+                try {Files.writeString(Path.of("ops/evidence/rtp-provider-test.json"),State.JSON.toJson(timings));}catch(Exception failure){ServerTools.LOG.error("Cannot write RTP test",failure);}
+            }));
+        }
     }
     static void commandUnlocks(net.minecraft.server.level.ServerPlayer p,State.PlayerData data,List<String> passed) throws Exception {
         var dispatcher=ServerTools.server.getCommands().getDispatcher();

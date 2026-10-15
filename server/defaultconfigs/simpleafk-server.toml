@@ -1,0 +1,9 @@
+secondsBeforeAfk = 300
+secondsBeforeKick = 0
+isNowAfkMessage = "$player is now AFK"
+isNowAfkMessageEnabled = false
+isNoLongerAfkMessage = "$player is no longer AFK"
+isNoLongerAfkMessageEnabled = false
+playerNameFormat = "[AFK] $player"
+afkKickMessage = "AFK for 15 minutes. Rejoin when ready to play."
+includeExemptPlayersInSleepVote = false
