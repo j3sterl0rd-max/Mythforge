@@ -1,5 +1,4 @@
 {
-  "success": true,
   "failures": [],
   "passed": [
     "Accepts Tebex\u0027s compact Java UUID",
@@ -47,8 +46,21 @@
     "Lore, join messages and world time unlock at 400 hours",
     "Repair cannot bypass the 500-hour threshold",
     "Earned repair charges XP and preserves item name and lore",
+    "Earned Nether RTP stays locked before 300 active hours",
+    "Public-warp icons stay locked before 300 active hours",
+    "Earned Nether RTP and dimension access unlock at 300 hours",
+    "Owned public-warp icons unlock without payment at 300 hours",
+    "Public-warp menu displays the owner\u0027s actual selected icon",
+    "Warp display icons cannot be withdrawn by shift-click or item-drop actions",
+    "Earned End RTP stays locked before 400 active hours",
+    "Earned End RTP and dimension access unlock at 400 hours",
+    "Earned reserved-capacity login stays locked before 500 hours",
+    "Earned priority login unlocks at 500 hours without bypassing whitelist rejection",
+    "Namespaced relic-choice command consumes one voucher and delivers a maxed relic",
+    "Relic-choice replay without a voucher cannot duplicate its reward",
     "Reward equipment slot IDs exist for players",
     "All crate and kit registry IDs exist",
     "Experience Disperser reaches validated maximum rank, level and stats"
-  ]
+  ],
+  "success": true
 }

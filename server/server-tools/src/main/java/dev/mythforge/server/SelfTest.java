@@ -81,6 +81,8 @@ final class SelfTest {
             travel(p,passed);
             test.purchases.remove("selftest_travel");
             commandUnlocks(p,data,passed);
+            earnedTravel(p,data,passed);
+            relicChoice(p,passed);
             var slots=top.theillusivec4.curios.api.CuriosApi.getPlayerSlots(ServerTools.server.overworld()).keySet();
             Files.writeString(Path.of("ops/evidence/equipment-slots.json"),State.JSON.toJson(slots));
             check(slots.containsAll(List.of("hands","necklace","trinket")),"Reward equipment slot IDs exist for players",passed);
@@ -98,6 +100,46 @@ final class SelfTest {
         }
         try {Files.writeString(Path.of("ops/evidence/selftest.json"),State.JSON.toJson(Map.of("passed",passed,"failures",failures,"success",failures.isEmpty())));}catch(Exception ex){throw new RuntimeException(ex);}
         ServerTools.LOG.info("[Mythforge] Runtime self-test: {} passed, {} failed. See ops/evidence/selftest.json",passed.size(),failures.size());
+    }
+    static void relicChoice(net.minecraft.server.level.ServerPlayer p,List<String> passed) throws Exception {
+        var voucherSpec=new com.google.gson.JsonObject();voucherSpec.addProperty("id","minecraft:paper");voucherSpec.addProperty("count",1);voucherSpec.addProperty("custom","relic_choice");
+        var voucher=Rewards.stack(p,voucherSpec);p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,voucher);
+        var choice=Rewards.relicChoices().getFirst();var item=BuiltInRegistries.ITEM.get(ResourceLocation.parse(choice));
+        int before=p.getInventory().countItem(item);var dispatcher=ServerTools.server.getCommands().getDispatcher();
+        dispatcher.execute("relic choose "+choice,p.createCommandSourceStack());
+        check(voucher.isEmpty() && p.getInventory().countItem(item)==before+1 && ServerTools.data(p).pending.isEmpty(),"Namespaced relic-choice command consumes one voucher and delivers a maxed relic",passed);
+        dispatcher.execute("relic choose "+choice,p.createCommandSourceStack());
+        check(p.getInventory().countItem(item)==before+1,"Relic-choice replay without a voucher cannot duplicate its reward",passed);
+    }
+    static void earnedTravel(net.minecraft.server.level.ServerPlayer p,State.PlayerData data,List<String> passed) throws Exception {
+        long originalHours=data.activeSeconds;
+        var warp=new State.Warp(p.getUUID().toString(),"minecraft:overworld",0,80,0);
+        ServerTools.state.warps.put("selftest_icon",warp);
+        var dispatcher=ServerTools.server.getCommands().getDispatcher();var source=p.createCommandSourceStack();
+        try {
+            data.activeSeconds=299*3600L;
+            check(!Travel.canRtp(p,"the_nether"),"Earned Nether RTP stays locked before 300 active hours",passed);
+            dispatcher.execute("pwarp icon selftest_icon minecraft:diamond",source);
+            check(warp.icon.equals("minecraft:ender_pearl"),"Public-warp icons stay locked before 300 active hours",passed);
+            data.activeSeconds=300*3600L;
+            check(Travel.canRtp(p,"the_nether") && Travel.permitted(p,ServerTools.server.getLevel(net.minecraft.world.level.Level.NETHER)),"Earned Nether RTP and dimension access unlock at 300 hours",passed);
+            dispatcher.execute("pwarp icon selftest_icon minecraft:diamond",source);
+            check(warp.icon.equals("minecraft:diamond"),"Owned public-warp icons unlock without payment at 300 hours",passed);
+            dispatcher.execute("pwarp",source);
+            check(p.containerMenu instanceof WarpMenu && p.containerMenu.getSlot(0).getItem().is(net.minecraft.world.item.Items.DIAMOND),"Public-warp menu displays the owner's actual selected icon",passed);
+            int diamonds=p.getInventory().countItem(net.minecraft.world.item.Items.DIAMOND);
+            p.containerMenu.clicked(0,0,net.minecraft.world.inventory.ClickType.QUICK_MOVE,p);
+            p.containerMenu.clicked(0,0,net.minecraft.world.inventory.ClickType.THROW,p);
+            check(p.getInventory().countItem(net.minecraft.world.item.Items.DIAMOND)==diamonds && p.containerMenu.getSlot(0).getItem().is(net.minecraft.world.item.Items.DIAMOND),"Warp display icons cannot be withdrawn by shift-click or item-drop actions",passed);
+            p.closeContainer();
+            data.activeSeconds=399*3600L;check(!Travel.canRtp(p,"the_end"),"Earned End RTP stays locked before 400 active hours",passed);
+            data.activeSeconds=400*3600L;
+            check(Travel.canRtp(p,"the_end") && Travel.permitted(p,ServerTools.server.getLevel(net.minecraft.world.level.Level.END)),"Earned End RTP and dimension access unlock at 400 hours",passed);
+            var full=net.minecraft.network.chat.Component.translatable("multiplayer.disconnect.server_full");
+            data.activeSeconds=499*3600L;check(!PriorityLogin.allow(p.getGameProfile(),full),"Earned reserved-capacity login stays locked before 500 hours",passed);
+            data.activeSeconds=500*3600L;
+            check(PriorityLogin.allow(p.getGameProfile(),full) && !PriorityLogin.allow(p.getGameProfile(),net.minecraft.network.chat.Component.translatable("multiplayer.disconnect.not_whitelisted")),"Earned priority login unlocks at 500 hours without bypassing whitelist rejection",passed);
+        } finally {data.activeSeconds=originalHours;ServerTools.state.warps.remove("selftest_icon");}
     }
     static void automation(State test,List<String> passed) {
         check(!ServerTools.automationUnlocked(ServerTools.server.overworld(),new net.minecraft.core.BlockPos(500000,64,500000)),"Automated machinery cannot bypass progression in unclaimed terrain",passed);

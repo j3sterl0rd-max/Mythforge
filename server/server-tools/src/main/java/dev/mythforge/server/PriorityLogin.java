@@ -6,7 +6,7 @@ import net.minecraft.network.chat.contents.TranslatableContents;
 public final class PriorityLogin {
     public static boolean allow(GameProfile profile,Component rejection) {
         return ServerTools.state!=null&&rejection!=null&&rejection.getContents() instanceof TranslatableContents message
-            &&message.getKey().equals("multiplayer.disconnect.server_full")&&ServerTools.state.paid(profile.getId())>=2
+            &&message.getKey().equals("multiplayer.disconnect.server_full")&&(ServerTools.state.paid(profile.getId())>=2 || ServerTools.state.players.getOrDefault(profile.getId().toString(),new State.PlayerData()).activeSeconds>=500*3600L)
             &&ServerTools.server.getPlayerList().getPlayerCount()<ServerTools.server.getMaxPlayers()+2;
     }
 }

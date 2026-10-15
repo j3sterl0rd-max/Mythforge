@@ -22,7 +22,10 @@ final class Travel {
     }
     static boolean permitted(ServerPlayer p,ServerLevel level) {
         String dim=level.dimension().location().toString();
-        return dim.equals("minecraft:overworld") || p.level().dimension().equals(level.dimension()) || ServerTools.data(p).visited.stream().anyMatch(v->v.startsWith(dim+":")) || dim.equals("minecraft:the_nether")&&ServerTools.tier(p)>=2 || dim.equals("minecraft:the_end")&&ServerTools.tier(p)>=3;
+        return dim.equals("minecraft:overworld") || p.level().dimension().equals(level.dimension()) || ServerTools.data(p).visited.stream().anyMatch(v->v.startsWith(dim+":")) || dim.equals("minecraft:the_nether")&&canRtp(p,"the_nether") || dim.equals("minecraft:the_end")&&canRtp(p,"the_end");
+    }
+    static boolean canRtp(ServerPlayer p,String dimension) {
+        return dimension.equals("overworld") || dimension.equals("the_nether") && (ServerTools.hours(p)>=300 || ServerTools.tier(p)>=2) || dimension.equals("the_end") && (ServerTools.hours(p)>=400 || ServerTools.tier(p)>=3);
     }
     static boolean safe(ServerPlayer p,ServerLevel level,BlockPos pos) {
         if(!permitted(p,level)||!level.getWorldBorder().isWithinBounds(pos)||!level.hasChunk(pos.getX()>>4,pos.getZ()>>4)) return false;
@@ -56,7 +59,7 @@ final class Travel {
     static void rtp(ServerPlayer p,String dimension) {
         var key=ResourceKey.create(Registries.DIMENSION,ResourceLocation.parse("minecraft:"+dimension));
         var level=ServerTools.server.getLevel(key);
-        if(level==null || dimension.equals("the_nether")&&ServerTools.tier(p)<2 || dimension.equals("the_end")&&ServerTools.tier(p)<3) { ServerTools.tell(p,"Nether RTP requires Artisan; End RTP requires Runeforged.");return; }
+        if(level==null || !canRtp(p,dimension)) { ServerTools.tell(p,"Nether RTP needs Artisan or 300 active hours; End RTP needs Runeforged or 400 active hours.");return; }
         if(ServerTools.combat(p)||searching.contains(p.getUUID())||ServerTools.teleports.containsKey(p.getUUID())) { ServerTools.tell(p,"Already searching, teleporting, or in combat.");return; }
         if(!ServerTools.cooldown(p,"rtp",600)) return;
         searching.add(p.getUUID()); ServerTools.tell(p,"Finding safe, unclaimed terrain...");
