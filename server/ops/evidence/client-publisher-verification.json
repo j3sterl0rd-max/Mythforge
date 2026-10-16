@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://mediafilez.forgecdn.net/files/8846/327/astages-2.5.3-1.21.1.jar",
+    "filename": "astages-2.5.3-1.21.1.jar",
+    "sha256": "8aa762e34068c498cb3fda14ebb9de95ddcfdc1b19154d1d8f9109af0729e75c",
+    "matchesInstalledPublisherBinary": true
+  },
+  {
+    "url": "https://mediafilez.forgecdn.net/files/8909/889/ftb-xmod-compat-neoforge-21.1.12.jar",
+    "filename": "ftb-xmod-compat-neoforge-21.1.12.jar",
+    "sha256": "f587e13131101bac33d4cc7a04d13d06c00f8f88a892be90d6ffc8ad96119ae8",
+    "matchesInstalledPublisherBinary": true
+  },
+  {
+    "url": "https://mediafilez.forgecdn.net/files/8815/666/jei-1.21.1-neoforge-19.53.0.425.jar",
+    "filename": "jei-1.21.1-neoforge-19.53.0.425.jar",
+    "sha256": "3683c743c1b6192913abc2a969486344eee98aa2924e8deb5087109645c3abc6",
+    "matchesInstalledPublisherBinary": false
+  }
+]

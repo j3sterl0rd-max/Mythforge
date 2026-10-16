@@ -10,5 +10,9 @@
   {
     "filename": "ftb-xmod-compat-neoforge-21.1.12.jar",
     "sha512": "1fd5269769bb7c036a2366c17de45add12e5349856161f40c6a517faf3ed978ed8536f8c613c1b74b6c2cd4c6ba71b400fdbcdf915a9f9b8a9bbd0030bfd2409"
+  },
+  {
+    "filename": "jei-1.21.1-neoforge-19.53.0.425.jar",
+    "sha512": "0b847b07a27ea1c825ed022b94ed6e5154a54809d8d505dadfe3326844e2a210c996ce2eb7eb705809a1dc79fd5774b51b46762a07fa969b7edf8e059bb6ee08"
   }
 ]

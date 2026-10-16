@@ -1,3 +1,7 @@
+# Updated client export available
+
+Import `../client-release/Mythforge-Beyond-the-Horizon-1.2.5.zip` as a new CurseForge profile. It includes/references the three additions below and updates JEI to 19.53.0.425 to satisfy XMod Compat. Follow `../ops/START-HERE.md`. Manual upgrades must replace the old JEI, not keep both. The ZIP has been checked for integrity and preservation; actual client login is still pending.
+
 # Client additions for the launch copy
 
 Use the Mythforge 1.2.4 client instance, Minecraft 1.21.1 / NeoForge 21.1.253 / Java 21.

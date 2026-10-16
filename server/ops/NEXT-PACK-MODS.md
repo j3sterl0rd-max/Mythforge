@@ -1,16 +1,20 @@
 # Mods for the next Mythforge pack update
 
-Maintained list, updated 2026-10-14. Target NeoForge 1.21.1. Activated services and excluded alternatives are recorded below. Do not add Fabric/Paper artifacts to this NeoForge pack.
+Maintained list, updated 2026-10-16. Target NeoForge 1.21.1. Activated services and excluded alternatives are recorded below. Do not add Fabric/Paper artifacts to this NeoForge pack.
+
+The updated importable client export is `client-release/Mythforge-Beyond-the-Horizon-1.2.5.zip`. Packaging and publisher-binary checks passed; public upload and human client tests remain. Follow [START-HERE.md](START-HERE.md).
 
 ## Confirmed additions
 
 | Mod | Version | Client pack | Server pack | Reason/status |
 | --- | --- | --- | --- | --- |
-| [Fiw AntiCheat](https://modrinth.com/mod/fiw-anticheat) by Fi3w0 | 2.1.0, NeoForge 1.21.1 | Required companion | Installed | Published client pack lacks it. Preserve author attribution/license. Test legitimate pack clients before release; no anti-xray |
+| [Fiw AntiCheat](https://modrinth.com/mod/fiw-anticheat) by Fi3w0 | 2.1.0, NeoForge 1.21.1 | Required companion | Installed | Included in local 1.2.5 export; public release pending. Preserve author attribution/license. Test legitimate pack clients before release; no anti-xray |
 | [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) | 21.1.12 | Include for supported cross-mod client features; omission must be tested | Added during audit | Required bridge for FTB Ranks values reaching FTB consumers. Dependencies match the installed server. Startup selected FTB Ranks; all 28 runtime checks passed, including consuming-provider checks |
 
 | [AStages](https://modrinth.com/mod/astages) | 2.5.3-1.21.1 | Required | Installed and active | 414 functional machinery restrictions; paid or 30-hour synchronization |
 | [SimpleAFK](https://modrinth.com/mod/simpleafk) | 1.5.2 | Not required | Installed and active | AFK status/sleep handling; shared activity adapter owns kicking |
+
+JEI is also updated in client 1.2.5 from 19.51.0.418 to **19.53.0.425 NeoForge** (CurseForge file 8815666), the minimum declared by XMod Compat. This publisher build is marked beta; its actual NeoForge artifact and ZIP integrity were verified. Do not retain the older JEI beside it. No JEI is required on this dedicated server.
 
 ## Server-pack additions already installed
 

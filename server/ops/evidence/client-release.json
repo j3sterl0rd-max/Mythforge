@@ -1,0 +1,32 @@
+{
+  "source": "C:\\Users\\Dad\\Downloads\\Mythforge - Beyond the Horizon-1.2.4.zip",
+  "output": "C:\\Mythforge Server\\client-release\\Mythforge-Beyond-the-Horizon-1.2.5.zip",
+  "version": "1.2.5",
+  "sha256": "a1d49f0e5aaa54d4a849885823292ac1ab78160eee63c8e3f460a54121b0bb79",
+  "originalEntriesPreserved": 1633,
+  "zipCRCVerified": true,
+  "originalModPinsPreservedExceptJEI": true,
+  "addedPublisherReferences": [
+    [
+      1120180,
+      8846327,
+      "AStages (by Alessandro / _Kessy_)",
+      "astages"
+    ],
+    [
+      889915,
+      8909889,
+      "FTB XMod Compat (by FTB)",
+      "ftb-xmod-compat"
+    ]
+  ],
+  "embeddedFiwSHA256": "3069e2f85cf06de613be01f83da22ec71bcd0437abe1cc30fad7e3391384ac88",
+  "jei": {
+    "projectID": 238222,
+    "oldFileID": 8792638,
+    "newFileID": 8815666,
+    "version": "19.53.0.425"
+  },
+  "humanClientLaunchVerified": false,
+  "humanLoginVerified": false
+}

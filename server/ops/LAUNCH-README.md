@@ -1,5 +1,7 @@
 # Mythforge launch operations
 
+For the short owner checklist and updated client import, start with [START-HERE.md](START-HERE.md).
+
 This is the fresh launch copy, isolated until production cutover. The existing live test server is a separate Java process on 192.168.1.25:25565. Do not terminate that process while testing this copy. The public website deliberately says **Server coming soon!**. All four rank packages are enabled in the creator panel; Tebex account review currently prevents checkout and even manual test payments.
 
 See [REPLACEMENTS-RELEASE.md](REPLACEMENTS-RELEASE.md) for the activated published-service migration and exact current verification limits.
@@ -24,7 +26,7 @@ Never run two processes against the same world. Stop with the console command `s
 
 Fiw AntiCheat is by Fi3w0: https://modrinth.com/mod/fiw-anticheat . Preserve its attribution/license when distributing the companion in a pack. Its author describes it as a mod verification layer; a malicious custom client can lie.
 
-Install the current Mythforge client pack and add all three pinned JARs in `client-addons` (Fiw AntiCheat, AStages and FTB XMod Compat) to that instance's mods directory. This companion is required; the original published pack does not include it. Missing companion clients are disconnected after 30 seconds. Publish a new pack release including it, or give testers the official companion download instructions before inviting them. Do not distribute server-only Mythforge, Tebex, logger or backup JARs to clients.
+Import the prepared `client-release/Mythforge-Beyond-the-Horizon-1.2.5.zip` in CurseForge as a new profile. It adds Fiw AntiCheat, AStages and FTB XMod Compat and raises JEI to 19.53.0.425 as required by XMod Compat. This companion is required; the original published pack does not include it. Missing companion clients are disconnected after 30 seconds. Publish a new pack release including it, or give testers the official companion download instructions before inviting them. Do not distribute server-only Mythforge, Tebex, logger or backup JARs to clients.
 
 Use two actual Java accounts, both whitelisted, plus console commands. No human client session has been driven by this setup work. Runtime registry/permission/ledger tests are useful but do not replace the following:
 
