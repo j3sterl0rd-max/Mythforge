@@ -78,6 +78,6 @@ Your home, public-warp, claim and force-load limits combine your earned allowanc
 
 Host Mythforge with friends
 
- [Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server.](https://wabbanode.com/affiliate/mythforgebeyondthehorizon) 
+ [Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server.](https://wabbanode.com/affiliate/mythforgebeyondthehorizon)
 
 Affiliate link: Mythforge may earn a commission if you purchase. Discount eligibility and terms are set by Wabbanode.

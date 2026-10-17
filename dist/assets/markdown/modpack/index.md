@@ -18,7 +18,7 @@ The current pack is a sandbox with mod guides. The custom tutorial and discovery
 
 Minecraft 1.21.1NeoForgeJava 21
 
- [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon) 
+ [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
 
 Mythforge modpack icon
 
@@ -38,7 +38,7 @@ NeoForge 21.1.253
 
 Use the installer’s bundled profile and dependencies. Follow the installation guide for your first launch.
 
- [Installation & troubleshooting →](https://mythforge.win/getting-started/) 
+ [Installation & troubleshooting →](https://mythforge.win/getting-started/)
 
 The pillars of Mythforge
 

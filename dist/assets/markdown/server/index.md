@@ -8,7 +8,7 @@ The public world
 
 We’re preparing the next shared Mythforge adventure. Watch Discord for launch news.
 
- [Explore the modpack](https://mythforge.win/modpack/)  [Join Discord ↗](https://discord.gg/QQwdEgFMFg) 
+ [Explore the modpack](https://mythforge.win/modpack/)  [Join Discord ↗](https://discord.gg/QQwdEgFMFg)
 
 ## A shared horizon ahead.
 

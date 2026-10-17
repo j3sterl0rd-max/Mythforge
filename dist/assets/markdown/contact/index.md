@@ -12,11 +12,11 @@ Installation trouble, a server question, or a community concern? Start with the 
 
 Discord is the home for player support, announcements, bug reports, and build sharing.
 
- [Open Discord](https://discord.gg/QQwdEgFMFg) 
+ [Open Discord](https://discord.gg/QQwdEgFMFg)
 
 ## Contact the operator
 
- [Official contact →](mailto:admin@mythforge.win) 
+ [Official contact →](mailto:admin@mythforge.win)
 
 ## Help us help you
 

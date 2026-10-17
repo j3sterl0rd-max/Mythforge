@@ -12,11 +12,11 @@ Download and community links are available below. The supporter store will open 
 
 ## Modpack download
 
- [Open Modpack download ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon) 
+ [Open Modpack download ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
 
 ## Discord community
 
- [Open Discord community ↗](https://discord.gg/QQwdEgFMFg) 
+ [Open Discord community ↗](https://discord.gg/QQwdEgFMFg)
 
 ## Supporter store
 
@@ -24,6 +24,6 @@ Official link coming soon. Please check back before downloading, joining, or pur
 
 ## Contact
 
- [Open Contact ↗](mailto:admin@mythforge.win) 
+ [Open Contact ↗](mailto:admin@mythforge.win)
 
  [Read the installation guide](https://mythforge.win/getting-started/)  [Server information](https://mythforge.win/server/)

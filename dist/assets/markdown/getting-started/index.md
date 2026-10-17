@@ -18,7 +18,7 @@ A straightforward guide from a fresh install to your first connection.
     
     Open the official pack listing, choose the version required by the server, and install it into a fresh profile.
     
-     [Open the modpack download](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon) 
+     [Open the modpack download](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
 3.  ## Install the required anticheat companion
     
     Our launch server requires Fiw AntiCheat for NeoForge 1.21.1, version 2.1.0. Add it to your client instance unless a newer Mythforge release already includes it. The currently published 1.2.4 pack needs this separate addition. Anti-xray is disabled so legitimate pack abilities remain available.
@@ -72,7 +72,7 @@ Allocated client RAM
 
 Check these requirements before updating your launcher profile.
 
- [Troubleshooting ↓](https://mythforge.win/#troubleshooting) 
+ [Troubleshooting ↓](https://mythforge.win/#troubleshooting)
 
 When the journey stalls
 
@@ -102,7 +102,7 @@ Still need help?
 
 Provide your modpack version, launcher, allocated RAM, and the relevant crash report or latest log. Remove personal information before sharing logs.
 
- [Ask in Discord](https://discord.gg/QQwdEgFMFg) 
+ [Ask in Discord](https://discord.gg/QQwdEgFMFg)
 
 ## Choose your first adventure.
 

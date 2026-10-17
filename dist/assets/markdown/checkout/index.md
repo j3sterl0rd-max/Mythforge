@@ -12,6 +12,6 @@ Purchases are completed through an external secure checkout.
 
 Packages, prices, and automated delivery are being prepared. No payment is being collected here.
 
- [Supporter ranks →](https://mythforge.win/support/) 
+ [Supporter ranks →](https://mythforge.win/support/)
 
 Need help with a purchase?  [See purchase support](https://mythforge.win/purchase-help/) .

@@ -10,7 +10,7 @@ Beyond the Horizon
 
 Ancient machines. Uncharted dimensions. Power waiting to be earned. A large NeoForge adventure and RPG modpack where exploration, bosses, magic, and technology share one horizon.
 
- [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Server coming soon!](https://mythforge.win/server/)  [Join Discord](https://discord.gg/QQwdEgFMFg) 
+ [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Server coming soon!](https://mythforge.win/server/)  [Join Discord](https://discord.gg/QQwdEgFMFg)
 
 Minecraft 1.21.1NeoForgeAdventure · RPG · Technology
 
@@ -19,11 +19,11 @@ The public server
 **Server coming soon!**
 
 Your next chapter starts here.  
- [Explore the installation guide →](https://mythforge.win/getting-started/) 
+ [Explore the installation guide →](https://mythforge.win/getting-started/)
 
 Host Mythforge with friends
 
- [Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server.](https://wabbanode.com/affiliate/mythforgebeyondthehorizon) 
+ [Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server.](https://wabbanode.com/affiliate/mythforgebeyondthehorizon)
 
 Affiliate link: Mythforge may earn a commission if you purchase. Discount eligibility and terms are set by Wabbanode.
 
@@ -37,7 +37,7 @@ Set out with a backpack and a little courage. Find a class that fits your playst
 
 From brass workshops to distant dimensions, Mythforge brings its many systems into an adventure you can make your own.
 
- [Discover the modpack →](https://mythforge.win/modpack/) 
+ [Discover the modpack →](https://mythforge.win/modpack/)
 
 Built together
 
@@ -45,7 +45,7 @@ Built together
 
 Meet the beta testers who helped shape the journey.
 
- [Beta Testers & Thanks →](https://mythforge.win/beta-testers/) 
+ [Beta Testers & Thanks →](https://mythforge.win/beta-testers/)
 
 Forge your own story
 
@@ -103,7 +103,7 @@ Your own adventure.
 
 Bring the Mythforge experience into a persistent multiplayer world. Build alongside others, discover new places, and find help when you need it.
 
- [Server details & connection guide →](https://mythforge.win/server/) 
+ [Server details & connection guide →](https://mythforge.win/server/)
 
 The public server
 
@@ -111,7 +111,7 @@ The public server
 
 Requires the Mythforge modpack. The server always follows the latest pack release.
 
- [Start your journey →](https://mythforge.win/getting-started/) 
+ [Start your journey →](https://mythforge.win/getting-started/)
 
 ## Power with a purpose.
 
