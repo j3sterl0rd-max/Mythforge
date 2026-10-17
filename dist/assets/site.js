@@ -68,6 +68,17 @@ search?.addEventListener('input', () => {
   document.querySelector('#no-releases').hidden = visible > 0;
   document.querySelector('#release-count').textContent = `${visible} release${visible === 1 ? '' : 's'} shown`;
 });
+const modSearch = document.querySelector('#mod-search');
+modSearch?.addEventListener('input', () => {
+  const query = modSearch.value.toLocaleLowerCase().trim();
+  let visible = 0;
+  for (const entry of document.querySelectorAll('.mod-entry')) {
+    entry.hidden = !entry.textContent.toLocaleLowerCase().includes(query);
+    if (!entry.hidden) visible++;
+  }
+  document.querySelector('#no-mods').hidden = visible > 0;
+  document.querySelector('#mod-count').textContent = `${visible} project${visible === 1 ? '' : 's'} shown`;
+});
 // Optional JSON endpoint contract is documented in README. No endpoint means no request.
 const component = document.querySelector('[data-status]');
 if (component) {

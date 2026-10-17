@@ -184,6 +184,16 @@ See [docs/VALIDATION.md](docs/VALIDATION.md) for what was verified and the remai
 
 Automatic Cloudflare deployment enabled.
 
+## Automatically populated mod list
+
+The Modpack page renders `data/mods.json` at build time, so its complete list and CurseForge links also work without JavaScript and appear in the Markdown representation. JavaScript adds local filtering by project name, creator and type.
+
+`.github/workflows/sync-modlist.yml` checks for a new stable NeoForge client release every six hours, or on a manual workflow dispatch. It discovers releases through the free [CFWidget metadata API](https://cfwidget.com/#api), then reads `manifest.json`, `modlist.html`, and bundled mod metadata from the official ForgeCDN client ZIP. No CurseForge API key or running Minecraft server is required. Libraries, data packs and resource packs are included and labeled. Server-only additions and unreleased local pack edits are excluded.
+
+The importer validates project identity, archive size, Minecraft version, stable release type, manifest counts and project-link hosts. Unchanged releases do not download the ZIP again. An unavailable or stale source fails the workflow and preserves the last verified list. A changed list is built, checked and committed with its generated pages to trigger the normal Cloudflare deployment. The existing authenticated `sync:curseforge` importer remains available for the broader release-notes/gallery synchronization.
+
+Run `python scripts/sync-modlist.py`, then `npm run build` and `npm run check`, to refresh manually. Python 3.11 or newer is required. A matching official ZIP already downloaded can be supplied with `--archive PATH`.
+
 ## Hosted checkout foundations
 
 Official CurseForge and Discord links are configured. See docs/PAYMENTS.md for Tebex setup, RCON delivery, separate paid/earned entitlements, and activating reviewed packages. Checkout is closed until those requirements are met. No store account or server delivery has been configured by this website build.

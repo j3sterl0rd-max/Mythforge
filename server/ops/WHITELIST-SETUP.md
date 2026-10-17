@@ -4,6 +4,8 @@ The new page is `/apply/`. It uses the existing `/contact/` page for support and
 
 The public page, API gateway and private Cloudflare backend are live. The database, bot protection, email notifications and Windows connector are configured. A real browser application passed automatic screening and received approval only after Minecraft saved and confirmed its whitelist entry.
 
+Submissions are currently paused at the owner's request while the launch copy is stopped. The original live test server remains available. Start the launch copy and re-enable the private backend's `ENABLED` setting when applications should resume.
+
 ## Operation
 
 1. **Completed October 17:** Cloudflare CLI login, private backend/database/bot-protection deployment and website service binding. Never paste an API token or password into chat.

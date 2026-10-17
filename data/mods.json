@@ -1,0 +1,2414 @@
+{
+  "version": "1.2.4",
+  "fileId": 9152368,
+  "publishedAt": "2026-10-13T00:07:17.843Z",
+  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368",
+  "mods": [
+    {
+      "name": "[EMF] Entity Model Features [Fabric & Forge]",
+      "author": "Traben",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/entity-model-features",
+      "bundled": false
+    },
+    {
+      "name": "[ETF] Entity Texture Features - [Fabric & Forge]",
+      "author": "Traben",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric",
+      "bundled": false
+    },
+    {
+      "name": "[Let's Do Addon] EMI Compat",
+      "author": "pandaismyname1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lets-do-emi-compat",
+      "bundled": false
+    },
+    {
+      "name": "[Let's Do] Vinery",
+      "author": "satisfy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lets-do-vinery",
+      "bundled": false
+    },
+    {
+      "name": "Aaron",
+      "author": "aaronhowser1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aaron",
+      "bundled": false
+    },
+    {
+      "name": "Absolute Kinematics | Create Aeronautics",
+      "author": "RCXcrafter",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/absolute-kinematics",
+      "bundled": false
+    },
+    {
+      "name": "Accessories",
+      "author": "Blodhgarm",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/accessories",
+      "bundled": false
+    },
+    {
+      "name": "Ace's Spell Utils",
+      "author": "Ace_The_Eldritch_King",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aces-spell-utils",
+      "bundled": false
+    },
+    {
+      "name": "Advanced Peripherals",
+      "author": "srrendi",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals",
+      "bundled": false
+    },
+    {
+      "name": "AEInfinityBooster",
+      "author": "hexeptiondev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster",
+      "bundled": false
+    },
+    {
+      "name": "Aeronautical Explorations",
+      "author": "C_Muller",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aeronautical-explorations",
+      "bundled": false
+    },
+    {
+      "name": "Aeronautics Camera Sync",
+      "author": "playsi",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aeronautics-camera-sync",
+      "bundled": false
+    },
+    {
+      "name": "Aeronautics Player Tilt",
+      "author": "mrlemonhog",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aero-player-tilt",
+      "bundled": false
+    },
+    {
+      "name": "AI Improvements: Performance Tuning",
+      "author": "QueenOfMissiles",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ai-improvements",
+      "bundled": false
+    },
+    {
+      "name": "Akashic Tome",
+      "author": "Vazkii",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/akashic-tome",
+      "bundled": false
+    },
+    {
+      "name": "Alex's Caves (Unofficial Port)",
+      "author": "Raguto",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-caves-unofficial-port",
+      "bundled": false
+    },
+    {
+      "name": "Alex's Caves Better Combat",
+      "author": "jslament",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-caves-better-combat",
+      "bundled": false
+    },
+    {
+      "name": "Alex's Mobs (Unofficial Port)",
+      "author": "Raguto",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-mobs-1-21-1-port",
+      "bundled": false
+    },
+    {
+      "name": "AllTheLeaks (Memory Leak Fix)",
+      "author": "Uncandango",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/alltheleaks",
+      "bundled": false
+    },
+    {
+      "name": "Almost Unified",
+      "author": "AlmostReliable",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/almostunified",
+      "bundled": false
+    },
+    {
+      "name": "Amendments",
+      "author": "plantspookable",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/amendments",
+      "bundled": false
+    },
+    {
+      "name": "ANARCHY  Minibosses (RPG Series Plus)",
+      "author": "cleannrooster",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/rpg-minibosses-forsaken-adventurers",
+      "bundled": false
+    },
+    {
+      "name": "Anti Enderman Grief",
+      "author": "DerexXD",
+      "url": "https://www.curseforge.com/minecraft/data-packs/anti-enderman-grief",
+      "bundled": false
+    },
+    {
+      "name": "Apothic Attributes",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/apothic-attributes",
+      "bundled": false
+    },
+    {
+      "name": "AppleSkin",
+      "author": "squeek502",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/appleskin",
+      "bundled": false
+    },
+    {
+      "name": "Applied Energistics 2",
+      "author": "thetechnici4n",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2",
+      "bundled": false
+    },
+    {
+      "name": "Applied Energistics 2 Wireless Terminals",
+      "author": "Mari_023",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals",
+      "bundled": false
+    },
+    {
+      "name": "Applied Pneumatics",
+      "author": "frostbitetime",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/applied-pneumatics",
+      "bundled": false
+    },
+    {
+      "name": "Archers (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/archers",
+      "bundled": false
+    },
+    {
+      "name": "Archers Expansion (RPG Series Plus)",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/archers-expansion",
+      "bundled": false
+    },
+    {
+      "name": "Architectury API",
+      "author": "shedaniel",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
+      "bundled": false
+    },
+    {
+      "name": "ARLib",
+      "author": "Marvin_Eckhardt",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/arlib",
+      "bundled": false
+    },
+    {
+      "name": "Armor Model API",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/armor-model-api",
+      "bundled": false
+    },
+    {
+      "name": "Armory (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/armory-rpg-series",
+      "bundled": false
+    },
+    {
+      "name": "Ars 'n Spells",
+      "author": "Otectus",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-n-spells",
+      "bundled": false
+    },
+    {
+      "name": "Ars Creo",
+      "author": "baileyholl2",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-creo",
+      "bundled": false
+    },
+    {
+      "name": "Ars Elemancy",
+      "author": "lyrellion",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-elemancy",
+      "bundled": false
+    },
+    {
+      "name": "Ars Elemental",
+      "author": "Alexth99",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-elemental",
+      "bundled": false
+    },
+    {
+      "name": "Ars Nouveau",
+      "author": "baileyholl2",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-nouveau",
+      "bundled": false
+    },
+    {
+      "name": "Ars Sable",
+      "author": "baileyholl2",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-sable",
+      "bundled": false
+    },
+    {
+      "name": "Ars Technica",
+      "author": "zerobuncle",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-technica",
+      "bundled": false
+    },
+    {
+      "name": "Arsenal (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/arsenal-rpg-series",
+      "bundled": false
+    },
+    {
+      "name": "Artifactory",
+      "author": "Silvertide",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/artifactory",
+      "bundled": false
+    },
+    {
+      "name": "Artifacts",
+      "author": "ochotonida",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/artifacts",
+      "bundled": false
+    },
+    {
+      "name": "Athena",
+      "author": "terrariumearth",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/athena",
+      "bundled": false
+    },
+    {
+      "name": "AttributeFix",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/attributefix",
+      "bundled": false
+    },
+    {
+      "name": "Azimuth API",
+      "author": "CakeIsTastyDeveloper",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/azimuth-api",
+      "bundled": false
+    },
+    {
+      "name": "AzureLib",
+      "author": "AzureDoomC",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/azurelib",
+      "bundled": false
+    },
+    {
+      "name": "AzureLib Armor",
+      "author": "AzureDoomC",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/azurelib-armor",
+      "bundled": false
+    },
+    {
+      "name": "Balm",
+      "author": "BlayTheNinth",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/balm",
+      "bundled": false
+    },
+    {
+      "name": "BCLib: New Dawn",
+      "author": "Raijin2312",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bclib-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Berserker (RPG Series Plus)",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/berserker-rpg-class",
+      "bundled": false
+    },
+    {
+      "name": "Better Advanced Tooltips",
+      "author": "Lat",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-advanced-tooltips",
+      "bundled": false
+    },
+    {
+      "name": "Better Combat [Fabric & Forge]",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus",
+      "bundled": false
+    },
+    {
+      "name": "Better Spellcasting",
+      "author": "K4yne",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-spellcasting",
+      "bundled": false
+    },
+    {
+      "name": "Better Weaponry - Better Combat",
+      "author": "WoroxIV",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-weaponry-better-combat",
+      "bundled": false
+    },
+    {
+      "name": "BetterBlockZ",
+      "author": "riciJak",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/betterblockz",
+      "bundled": false
+    },
+    {
+      "name": "BetterEnd: New Dawn",
+      "author": "Raijin2312",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Bookshelf",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bookshelf",
+      "bundled": false
+    },
+    {
+      "name": "Born in Chaos",
+      "author": "mongoose_artist",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/born-in-chaos",
+      "bundled": false
+    },
+    {
+      "name": "Bosses of Mass Destruction [Forge | NeoForge]",
+      "author": "Cerbon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge",
+      "bundled": false
+    },
+    {
+      "name": "Bosses'Rise - Epic Souls like boss fights",
+      "author": "blockfactorystudio",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bossesrise",
+      "bundled": false
+    },
+    {
+      "name": "Botany Pots",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/botany-pots",
+      "bundled": false
+    },
+    {
+      "name": "Building Gadgets",
+      "author": "Direwolf20",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/building-gadgets",
+      "bundled": false
+    },
+    {
+      "name": "Bundle API",
+      "author": "TheRedBrain",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bundle-api",
+      "bundled": false
+    },
+    {
+      "name": "Caelus API",
+      "author": "TheIllusiveC4",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/caelus",
+      "bundled": false
+    },
+    {
+      "name": "Cardinal Components API",
+      "author": "UpcraftLP",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api",
+      "bundled": false
+    },
+    {
+      "name": "Cataclysm Compat",
+      "author": "CyberRat2",
+      "url": "https://www.curseforge.com/minecraft/data-packs/cataclysm-compat",
+      "bundled": false
+    },
+    {
+      "name": "Cataclysm of Chaos (Cataclysm & Born in Chaos Compatability mod)",
+      "author": "vndtta",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cataclysm-of-chaos",
+      "bundled": false
+    },
+    {
+      "name": "Cataclysm x YUNG's Better Nether Fortresses Compat",
+      "author": "GamesOfLife",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cataclysm-x-yungs",
+      "bundled": false
+    },
+    {
+      "name": "Cataclysm: Spellbooks",
+      "author": "StarOcean",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks",
+      "bundled": false
+    },
+    {
+      "name": "Cataclysm: Spellbooks & BetterCombat - Compatibility",
+      "author": "rymusov",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks-bettercombat-compatibility",
+      "bundled": false
+    },
+    {
+      "name": "Cataclysmic Combat",
+      "author": "FaerMinded",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cataclysmic-combat",
+      "bundled": false
+    },
+    {
+      "name": "CC: Sable",
+      "author": "TechTastic1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cc-sable",
+      "bundled": false
+    },
+    {
+      "name": "CC: Tweaked",
+      "author": "Daniel Ratcliffe, Aaron Mills, SquidDev",
+      "url": null,
+      "bundled": true
+    },
+    {
+      "name": "CERBON's API [Forge | Fabric | NeoForge]",
+      "author": "Cerbon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cerbons-api",
+      "bundled": false
+    },
+    {
+      "name": "Chunky (Forge/NeoForge)",
+      "author": "pop4959",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator-forge",
+      "bundled": false
+    },
+    {
+      "name": "Cinematic Cataclysm",
+      "author": "FINDERFEED",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cinematic-cataclysm",
+      "bundled": false
+    },
+    {
+      "name": "Cinematic Respawn",
+      "author": "VoKaP",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cinematic-respawn",
+      "bundled": false
+    },
+    {
+      "name": "Citadel (Unofficial Port)",
+      "author": "Raguto",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/citadel-1-21-1-port",
+      "bundled": false
+    },
+    {
+      "name": "Cloth Config API (Fabric/Forge/NeoForge)",
+      "author": "shedaniel",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+      "bundled": false
+    },
+    {
+      "name": "Clumps",
+      "author": "Jaredlll08",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/clumps",
+      "bundled": false
+    },
+    {
+      "name": "Cobweb",
+      "author": "CrystalSpider",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cobweb",
+      "bundled": false
+    },
+    {
+      "name": "CodeChicken Lib 1.8.+",
+      "author": "covers1624",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8",
+      "bundled": false
+    },
+    {
+      "name": "Combat Roll [Fabric & Forge]",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/combat-roll",
+      "bundled": false
+    },
+    {
+      "name": "Common Network",
+      "author": "Mysticdrew",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/common-network",
+      "bundled": false
+    },
+    {
+      "name": "Compass to Map: JourneyMap & Explorer's Compass & Nature's Compass Addon",
+      "author": "KURONAMl",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/compass-to-map",
+      "bundled": false
+    },
+    {
+      "name": "Compat API",
+      "author": "FixerLink1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/compat-api",
+      "bundled": false
+    },
+    {
+      "name": "Compat Structure",
+      "author": "FixerLink1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/compat-structure",
+      "bundled": false
+    },
+    {
+      "name": "ConnectedTexturesMod",
+      "author": "tterrag1098",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ctm",
+      "bundled": false
+    },
+    {
+      "name": "Connectivity",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/connectivity",
+      "bundled": false
+    },
+    {
+      "name": "Controlling",
+      "author": "Jaredlll08",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/controlling",
+      "bundled": false
+    },
+    {
+      "name": "CoroUtil",
+      "author": "Corosus",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/coroutil",
+      "bundled": false
+    },
+    {
+      "name": "Corpse",
+      "author": "henkelmax",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/corpse",
+      "bundled": false
+    },
+    {
+      "name": "Crash Assistant",
+      "author": "KostromDan",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/crash-assistant",
+      "bundled": false
+    },
+    {
+      "name": "Create",
+      "author": "simibubi",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create",
+      "bundled": false
+    },
+    {
+      "name": "Create  Deep Seas",
+      "author": "MaxCreateMC",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-deep-seas",
+      "bundled": false
+    },
+    {
+      "name": "Create : Creating Space",
+      "author": "RealAntEngineer",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-creating-space",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics",
+      "author": "ryanhcode",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics Discovery",
+      "author": "Corvinoo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-discovery",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics Structures",
+      "author": "pael1as88592",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-structures",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics: Automated Logistics",
+      "author": "SprocketGames",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-automated-logistics",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics: Compact Carry",
+      "author": "mumu17",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-compact-carry",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics: Compatibility",
+      "author": "rsap",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-compatability",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics: Gadgets & Gizmos",
+      "author": "Riieno",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-gadgets-and-gizmos",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics: Joystick | Control Stick",
+      "author": "fluffy_squishy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-joystick-control-stick",
+      "bundled": false
+    },
+    {
+      "name": "Create Aeronautics: Transmission & Linkage",
+      "author": "enxv233",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-transmission-linkage",
+      "bundled": false
+    },
+    {
+      "name": "create aeronautics：toolgun",
+      "author": "enxv233",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronauticstoolgun",
+      "bundled": false
+    },
+    {
+      "name": "Create Bugfix: Clipboard Patch",
+      "author": "cff1028",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-bugfix-clipboard-patch",
+      "bundled": false
+    },
+    {
+      "name": "Create Cobblestone",
+      "author": "MrStickyPiston",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-cobblestone",
+      "bundled": false
+    },
+    {
+      "name": "Create Crafts & Additions",
+      "author": "MRHminer",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/createaddition",
+      "bundled": false
+    },
+    {
+      "name": "Create Deco",
+      "author": "talrey",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-deco",
+      "bundled": false
+    },
+    {
+      "name": "Create Encased",
+      "author": "iglee42",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-encased",
+      "bundled": false
+    },
+    {
+      "name": "Create Propulsion: Simulated",
+      "author": "kyivsec",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-propulsion-simulated",
+      "bundled": false
+    },
+    {
+      "name": "create-collision-fix",
+      "author": "messskull",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-collision-fix",
+      "bundled": false
+    },
+    {
+      "name": "Create: Aeronautics Weightworks",
+      "author": "GWStudios",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/weightworks",
+      "bundled": false
+    },
+    {
+      "name": "Create: Aeroworks",
+      "author": "mred231",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeroworks",
+      "bundled": false
+    },
+    {
+      "name": "Create: Avionics - ComputerCraft for Aeronautics - Reforged",
+      "author": "NoxCrafted",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-avionics-computercraft-for-aeronautics",
+      "bundled": false
+    },
+    {
+      "name": "Create: Bells & Whistles",
+      "author": "a0ax",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bellsandwhistles",
+      "bundled": false
+    },
+    {
+      "name": "Create: Bits 'n' Bobs",
+      "author": "az_tech",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-bits-n-bobs",
+      "bundled": false
+    },
+    {
+      "name": "Create: Connected",
+      "author": "Lysine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-connected",
+      "bundled": false
+    },
+    {
+      "name": "Create: Copycats+",
+      "author": "Lysine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/copycats",
+      "bundled": false
+    },
+    {
+      "name": "Create: Curios Jetpack & Backtank",
+      "author": "robinfrt",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-curios-jetpack",
+      "bundled": false
+    },
+    {
+      "name": "Create: Dragons Plus",
+      "author": "DragonsPlus",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus",
+      "bundled": false
+    },
+    {
+      "name": "Create: Fast SchematicCannon",
+      "author": "Pink_Cats",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-fast-schematiccannon",
+      "bundled": false
+    },
+    {
+      "name": "Create: Flight Control",
+      "author": "AceVolca",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-flight-control",
+      "bundled": false
+    },
+    {
+      "name": "Create: Interiors",
+      "author": "a0ax",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/interiors",
+      "bundled": false
+    },
+    {
+      "name": "Create: Linear Bearing",
+      "author": "StievenNob",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-linear-bearing",
+      "bundled": false
+    },
+    {
+      "name": "Create: Mechanical Botany",
+      "author": "DakotaPrideModding",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-mechanical-botany",
+      "bundled": false
+    },
+    {
+      "name": "Create: Rustic Structures",
+      "author": "robinfrt",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-rustic-structures",
+      "bundled": false
+    },
+    {
+      "name": "Create: Schematic Checker",
+      "author": "Pink_Cats",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-schematicchecker",
+      "bundled": false
+    },
+    {
+      "name": "Create: Structures Arise",
+      "author": "SmartStreamLabs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-structures-arise",
+      "bundled": false
+    },
+    {
+      "name": "Create: Trading Floor",
+      "author": "CakeIsTastyDeveloper",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-trading-floor",
+      "bundled": false
+    },
+    {
+      "name": "Create: Ultimate Factory",
+      "author": "robinfrt",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-ultimate-factory",
+      "bundled": false
+    },
+    {
+      "name": "Create: WaterFrames",
+      "author": "troller0305",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create-waterframes",
+      "bundled": false
+    },
+    {
+      "name": "CreativeCore",
+      "author": "CreativeMD",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/creativecore",
+      "bundled": false
+    },
+    {
+      "name": "Cristel Lib",
+      "author": "Cristelknight",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cristel-lib",
+      "bundled": false
+    },
+    {
+      "name": "Critical Strike",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/critical-strike",
+      "bundled": false
+    },
+    {
+      "name": "Cupboard",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cupboard",
+      "bundled": false
+    },
+    {
+      "name": "Curios API",
+      "author": "TheIllusiveC4",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/curios",
+      "bundled": false
+    },
+    {
+      "name": "Cyclic",
+      "author": "Lothrazar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cyclic",
+      "bundled": false
+    },
+    {
+      "name": "Dark Doppelganger : Iron's Spells and Spellbooks Addon",
+      "author": "Bandit_Bytes",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dark-doppelganger",
+      "bundled": false
+    },
+    {
+      "name": "Dark Utilities",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dark-utilities",
+      "bundled": false
+    },
+    {
+      "name": "Decocraft",
+      "author": "RazzleberryFox",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/decocraft",
+      "bundled": false
+    },
+    {
+      "name": "Decocraft Nature",
+      "author": "RazzleberryFox",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/decocraft-nature",
+      "bundled": false
+    },
+    {
+      "name": "Default Options",
+      "author": "BlayTheNinth",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/default-options",
+      "bundled": false
+    },
+    {
+      "name": "Diagonal Fences",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/diagonal-fences",
+      "bundled": false
+    },
+    {
+      "name": "Diagonal Walls",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/diagonal-walls",
+      "bundled": false
+    },
+    {
+      "name": "Diagonal Windows",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/diagonal-windows",
+      "bundled": false
+    },
+    {
+      "name": "Dungeon Crawl",
+      "author": "xiroc_",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl",
+      "bundled": false
+    },
+    {
+      "name": "Easier Sleeping",
+      "author": "GeheimagentNr1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easier-sleeping",
+      "bundled": false
+    },
+    {
+      "name": "Easy Anvils",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easy-anvils",
+      "bundled": false
+    },
+    {
+      "name": "Easy NPC",
+      "author": "Kaworru",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easy-npc",
+      "bundled": false
+    },
+    {
+      "name": "Easy NPC: Config UI",
+      "author": "Kaworru",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easy-npc-config-ui",
+      "bundled": false
+    },
+    {
+      "name": "Easy NPC: Core",
+      "author": "Kaworru",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easy-npc-core",
+      "bundled": false
+    },
+    {
+      "name": "Easy Wind Charges for Aeronautics",
+      "author": "biggsmcb",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easy-wind-charges-for-aeronautics",
+      "bundled": false
+    },
+    {
+      "name": "Elemental Wizards (RPG Series Plus)",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/elemental-wizards-rpg-class",
+      "bundled": false
+    },
+    {
+      "name": "Elytra Slot",
+      "author": "TheIllusiveC4",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/elytra-slot",
+      "bundled": false
+    },
+    {
+      "name": "EMI",
+      "author": "EmilyPloszaj",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emi",
+      "bundled": false
+    },
+    {
+      "name": "EMI Autocrafting",
+      "author": "ElderSmurf",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emi-autocrafting-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "EMI Enchanting",
+      "author": "fzzyhmstrs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emi-enchanting",
+      "bundled": false
+    },
+    {
+      "name": "EMI Extra Integrations",
+      "author": "Kneelawk",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/extra-mod-integrations",
+      "bundled": false
+    },
+    {
+      "name": "EMI Loot",
+      "author": "fzzyhmstrs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emi-loot",
+      "bundled": false
+    },
+    {
+      "name": "EMI Ores",
+      "author": "Abbie34",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emi-ores",
+      "bundled": false
+    },
+    {
+      "name": "EMI professions (EMIP)",
+      "author": "Mrbysco",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emi-professions-emip",
+      "bundled": false
+    },
+    {
+      "name": "Enchantment Descriptions",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions",
+      "bundled": false
+    },
+    {
+      "name": "End Remastered [NeoForge/Fabric]",
+      "author": "jack_bagel",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/endremastered",
+      "bundled": false
+    },
+    {
+      "name": "End Remastered Expanded",
+      "author": "Yori3o",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/end-remastered-additions",
+      "bundled": false
+    },
+    {
+      "name": "End's Phantasm",
+      "author": "Lyof429",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/phantasm",
+      "bundled": false
+    },
+    {
+      "name": "Ender IO",
+      "author": "crazypants_mc_the_second",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ender-io",
+      "bundled": false
+    },
+    {
+      "name": "Ender Storage 1.8.+",
+      "author": "covers1624",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8",
+      "bundled": false
+    },
+    {
+      "name": "Enderman Overhaul",
+      "author": "joosh_7889",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul",
+      "bundled": false
+    },
+    {
+      "name": "Entity Culling Fabric/Forge",
+      "author": "tr7zw",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/entityculling",
+      "bundled": false
+    },
+    {
+      "name": "Eternal Starlight",
+      "author": "LeoLezury",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/eternal-starlight",
+      "bundled": false
+    },
+    {
+      "name": "Excessive Utilities",
+      "author": "aaronhowser1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/excessive-utilities",
+      "bundled": false
+    },
+    {
+      "name": "Explorer's Compass",
+      "author": "Chaosyr",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/explorers-compass",
+      "bundled": false
+    },
+    {
+      "name": "Extra Spell Attributes (RPG Series Tweaks)",
+      "author": "cleannrooster",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/extra-spell-attributes",
+      "bundled": false
+    },
+    {
+      "name": "FallingTree",
+      "author": "rakambda",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/falling-tree",
+      "bundled": false
+    },
+    {
+      "name": "FancyMenu",
+      "author": "Keksuccino",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fancymenu",
+      "bundled": false
+    },
+    {
+      "name": "FastFurnace",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace",
+      "bundled": false
+    },
+    {
+      "name": "FastWorkbench",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench",
+      "bundled": false
+    },
+    {
+      "name": "FDLib",
+      "author": "FINDERFEED",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fdlib",
+      "bundled": false
+    },
+    {
+      "name": "FerriteCore ((Neo)Forge)",
+      "author": "malte0811",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ferritecore",
+      "bundled": false
+    },
+    {
+      "name": "fix GPU memory leak",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fix-gpu-memory-leak",
+      "bundled": false
+    },
+    {
+      "name": "FLIB",
+      "author": "Lothrazar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/flib",
+      "bundled": false
+    },
+    {
+      "name": "Flux Networks",
+      "author": "sonar_sonic",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/flux-networks",
+      "bundled": false
+    },
+    {
+      "name": "Forcemaster (RPG Series Plus)",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/forcemaster-rpg-class",
+      "bundled": false
+    },
+    {
+      "name": "Forgified Fabric API",
+      "author": "Su5eD",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/forgified-fabric-api",
+      "bundled": false
+    },
+    {
+      "name": "Fragmentum 🧩 NeoForge",
+      "author": "Obscuria",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fragmentum-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Framework",
+      "author": "MrCrayfish",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/framework",
+      "bundled": false
+    },
+    {
+      "name": "FTB Chunks (NeoForge)",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge",
+      "bundled": false
+    },
+    {
+      "name": "FTB Essentials (Forge & Fabric)",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-essentials",
+      "bundled": false
+    },
+    {
+      "name": "FTB Library (NeoForge)",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge",
+      "bundled": false
+    },
+    {
+      "name": "FTB Quests (NeoForge)",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge",
+      "bundled": false
+    },
+    {
+      "name": "FTB Teams (NeoForge)",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge",
+      "bundled": false
+    },
+    {
+      "name": "FTB Ultimine (NeoForge)",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge",
+      "bundled": false
+    },
+    {
+      "name": "Fzzy Config",
+      "author": "fzzyhmstrs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fzzy-config",
+      "bundled": false
+    },
+    {
+      "name": "Galosphere",
+      "author": "orcinus73",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/galosphere",
+      "bundled": false
+    },
+    {
+      "name": "Galosphere: Spellbooks",
+      "author": "CyberRat2",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/galosphere-spellbooks",
+      "bundled": false
+    },
+    {
+      "name": "Gazebos (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/gazebos",
+      "bundled": false
+    },
+    {
+      "name": "GeckoLib",
+      "author": "Gecko",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/geckolib",
+      "bundled": false
+    },
+    {
+      "name": "Grimoire of Gaia",
+      "author": "Silentine_",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/grimoire-of-gaia",
+      "bundled": false
+    },
+    {
+      "name": "Grimoire of Gaia Spells",
+      "author": "hakujoucho",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/grimoire-of-gaia-spells",
+      "bundled": false
+    },
+    {
+      "name": "GuideME",
+      "author": "shartte",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/guideme",
+      "bundled": false
+    },
+    {
+      "name": "Hazen 'N Stuff",
+      "author": "HazentouvelPrime",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff",
+      "bundled": false
+    },
+    {
+      "name": "HazentouveLib",
+      "author": "HazentouvelPrime",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/hazentouvelib",
+      "bundled": false
+    },
+    {
+      "name": "Hostile Neural Networks",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/hostile-neural-networks",
+      "bundled": false
+    },
+    {
+      "name": "Hostile Neural Networks: Extra Data Models",
+      "author": "vizthex",
+      "url": "https://www.curseforge.com/minecraft/data-packs/extra-data-models",
+      "bundled": false
+    },
+    {
+      "name": "Ice and Fire Dragons X Better Combat",
+      "author": "jslament",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons-x-better-combat",
+      "bundled": false
+    },
+    {
+      "name": "IceAndFire Community Edition",
+      "author": "IAFEnvoy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/iceandfire-ce",
+      "bundled": false
+    },
+    {
+      "name": "ImmediatelyFast",
+      "author": "RaphiMC",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/immediatelyfast",
+      "bundled": false
+    },
+    {
+      "name": "Industrial Foregoing",
+      "author": "Buuz135",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing",
+      "bundled": false
+    },
+    {
+      "name": "Infinite Storage Cell",
+      "author": "nutant233",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/infinite-storage-cell",
+      "bundled": false
+    },
+    {
+      "name": "Integrated API",
+      "author": "CraisinLord",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-api",
+      "bundled": false
+    },
+    {
+      "name": "Integrated Cataclysm",
+      "author": "CraisinLord",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-cataclysm",
+      "bundled": false
+    },
+    {
+      "name": "Integrated Dungeons and Structures",
+      "author": "CraisinLord",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/idas",
+      "bundled": false
+    },
+    {
+      "name": "Integrated Simply Swords",
+      "author": "CraisinLord",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-simply-swords",
+      "bundled": false
+    },
+    {
+      "name": "Integrated Stronghold",
+      "author": "CraisinLord",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold",
+      "bundled": false
+    },
+    {
+      "name": "Inventory Pets",
+      "author": "Purplicious_Cow_",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-pets",
+      "bundled": false
+    },
+    {
+      "name": "Iron's Lib",
+      "author": "Iron431",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/irons-lib",
+      "bundled": false
+    },
+    {
+      "name": "Iron's Spells 'n Spellbooks",
+      "author": "Iron431",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks",
+      "bundled": false
+    },
+    {
+      "name": "Iron's Spells x Aeronautics Compat",
+      "author": "Luchho",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks-aeronautics",
+      "bundled": false
+    },
+    {
+      "name": "Jade Addons (Neo/Forge)",
+      "author": "Snownee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jade-addons",
+      "bundled": false
+    },
+    {
+      "name": "Jade Sable Compat",
+      "author": "Maks_gaming",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jade-sable-compat",
+      "bundled": false
+    },
+    {
+      "name": "Jade 🔍",
+      "author": "Snownee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jade",
+      "bundled": false
+    },
+    {
+      "name": "Jewelry (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jewelry",
+      "bundled": false
+    },
+    {
+      "name": "JourneyMap",
+      "author": "techbrew",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap",
+      "bundled": false
+    },
+    {
+      "name": "JourneyMap Integration",
+      "author": "frankV",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap-integration",
+      "bundled": false
+    },
+    {
+      "name": "Jupiter",
+      "author": "IAFEnvoy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jupiter",
+      "bundled": false
+    },
+    {
+      "name": "Just Dire Things",
+      "author": "Direwolf20",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/just-dire-things",
+      "bundled": false
+    },
+    {
+      "name": "Just Dyna Things (Just Dire Things addon)",
+      "author": "DevDyna",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/just-dyna-things",
+      "bundled": false
+    },
+    {
+      "name": "Just Enough Breeding (JEBr)",
+      "author": "Christofmeg",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding",
+      "bundled": false
+    },
+    {
+      "name": "Just Enough Items (JEI)",
+      "author": "mezz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
+      "bundled": false
+    },
+    {
+      "name": "KilaGraph",
+      "author": "KilaBash",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/kilagraph",
+      "bundled": false
+    },
+    {
+      "name": "Konkrete",
+      "author": "Keksuccino",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/konkrete",
+      "bundled": false
+    },
+    {
+      "name": "Kotlin for Forge",
+      "author": "thedarkcolour",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge",
+      "bundled": false
+    },
+    {
+      "name": "KubeJS",
+      "author": "Lat",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/kubejs",
+      "bundled": false
+    },
+    {
+      "name": "L_Ender 's Cataclysm",
+      "author": "mcl_ender",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm",
+      "bundled": false
+    },
+    {
+      "name": "LambDynamicLights",
+      "author": "LambdAurora",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights",
+      "bundled": false
+    },
+    {
+      "name": "LDLib",
+      "author": "KilaBash",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ldlib",
+      "bundled": false
+    },
+    {
+      "name": "Lionfish API",
+      "author": "mcl_ender",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lionfish-api",
+      "bundled": false
+    },
+    {
+      "name": "Lithium (Fabric/NeoForge)",
+      "author": "JellySquid",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lithium",
+      "bundled": false
+    },
+    {
+      "name": "Lithostitched",
+      "author": "Apollo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lithostitched",
+      "bundled": false
+    },
+    {
+      "name": "LNE Archers Add-On",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lne-archers",
+      "bundled": false
+    },
+    {
+      "name": "LNE Paladins & Priests Add-On",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lne-paladins",
+      "bundled": false
+    },
+    {
+      "name": "LNE Rogues & Warriors Add-On",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lne-rogues",
+      "bundled": false
+    },
+    {
+      "name": "LNE Wizards Add-On",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lne-wizards",
+      "bundled": false
+    },
+    {
+      "name": "Load My F***ing Tags",
+      "author": "Blodhgarm",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lmft",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: Born in Chaos",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-born-in-chaos",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: Dungeon Crawl",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-dungeon-crawl",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: Ice and Fire",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-ice-and-fire",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: Integrated Dungeons, Villages & Strongholds & Cataclysm",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-integrated-dungeons-villages",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: L_Ender 's Cataclysm",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-cataclysm",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: Towns and Towers",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-towns-and-towers",
+      "bundled": false
+    },
+    {
+      "name": "Loot Integrations: When Dungeons Arise & Co",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-integrations-when-dungeons-arise",
+      "bundled": false
+    },
+    {
+      "name": "Loot Journal: Pickup Notifier 🧩 NeoForge",
+      "author": "Obscuria",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Lootr (Forge & NeoForge)",
+      "author": "Noobanidus",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/lootr",
+      "bundled": false
+    },
+    {
+      "name": "Maestro",
+      "author": "Obscuria",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/maestro",
+      "bundled": false
+    },
+    {
+      "name": "Maestro: Overture",
+      "author": "Obscuria",
+      "url": "https://www.curseforge.com/minecraft/texture-packs/maestro-overture",
+      "bundled": false
+    },
+    {
+      "name": "Magnum Torch",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/magnum-torch",
+      "bundled": false
+    },
+    {
+      "name": "Marium's Soulslike Weaponry",
+      "author": "mariumbacchus",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry",
+      "bundled": false
+    },
+    {
+      "name": "MCDoom (Unofficial) - AzureLib 3.x Port",
+      "author": "Procyonine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mcdoom-unofficial-azurelib-3-x-port",
+      "bundled": false
+    },
+    {
+      "name": "ME Requester",
+      "author": "Relentless",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/merequester",
+      "bundled": false
+    },
+    {
+      "name": "MEGA Cells",
+      "author": "ninety",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mega-cells",
+      "bundled": false
+    },
+    {
+      "name": "Melody",
+      "author": "Keksuccino",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/melody",
+      "bundled": false
+    },
+    {
+      "name": "Mercenaries and Artificers (RPG Series Plus)",
+      "author": "cleannrooster",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mercenaries-and-artificers",
+      "bundled": false
+    },
+    {
+      "name": "MES - Moog's End Structures",
+      "author": "finndog_123",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures",
+      "bundled": false
+    },
+    {
+      "name": "Mine Cells - Dead Cells Mod",
+      "author": "mim1q",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/minecells",
+      "bundled": false
+    },
+    {
+      "name": "Minor Gamba",
+      "author": "Procyonine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/minor-gamba",
+      "bundled": false
+    },
+    {
+      "name": "MmmMmmMmmMmm (Target Dummy)",
+      "author": "MehVahdJukaar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm",
+      "bundled": false
+    },
+    {
+      "name": "MNS - Moog's Nether Structures",
+      "author": "finndog_123",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mns-moogs-nether-structures",
+      "bundled": false
+    },
+    {
+      "name": "Mob Lassos",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mob-lassos",
+      "bundled": false
+    },
+    {
+      "name": "ModernFix",
+      "author": "embeddedt",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/modernfix",
+      "bundled": false
+    },
+    {
+      "name": "Modonomicon",
+      "author": "kli_kli",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/modonomicon",
+      "bundled": false
+    },
+    {
+      "name": "Moog's Structure Lib (moogs_structures)",
+      "author": "finndog_123",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-structure-lib",
+      "bundled": false
+    },
+    {
+      "name": "Moonlight Lib",
+      "author": "MehVahdJukaar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/selene",
+      "bundled": false
+    },
+    {
+      "name": "More Dragon Eggs",
+      "author": "Darkere",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs",
+      "bundled": false
+    },
+    {
+      "name": "More Quest Types",
+      "author": "KevzCz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/more-quest-types",
+      "bundled": false
+    },
+    {
+      "name": "More Relics (RPG Series Plus)",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/more-relics-more-rpg-content",
+      "bundled": false
+    },
+    {
+      "name": "More RPG Classes - Skill Tree (RPG Series Plus)",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mrpgc-skill-tree",
+      "bundled": false
+    },
+    {
+      "name": "More RPG Library",
+      "author": "Fichteee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/more-rpg-library",
+      "bundled": false
+    },
+    {
+      "name": "Mouse Tweaks",
+      "author": "YaLTeR",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks",
+      "bundled": false
+    },
+    {
+      "name": "Mowzie's Cataclysm",
+      "author": "CyberRat2",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mowzies-cataclysm",
+      "bundled": false
+    },
+    {
+      "name": "Mowzie's Mobs",
+      "author": "bobmowzie",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs",
+      "bundled": false
+    },
+    {
+      "name": "Mythforge: Last Horizon",
+      "author": "Procyonine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mythforge-last-horizon",
+      "bundled": false
+    },
+    {
+      "name": "Nameless Trinkets",
+      "author": "Cozary",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets",
+      "bundled": false
+    },
+    {
+      "name": "Nature's Compass",
+      "author": "Chaosyr",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/natures-compass",
+      "bundled": false
+    },
+    {
+      "name": "No Chat Reports",
+      "author": "Aizistral",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/no-chat-reports",
+      "bundled": false
+    },
+    {
+      "name": "Not Enough Animations",
+      "author": "tr7zw",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/not-enough-animations",
+      "bundled": false
+    },
+    {
+      "name": "Nyctography",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/nyctography",
+      "bundled": false
+    },
+    {
+      "name": "Observable",
+      "author": "tasgon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/observable",
+      "bundled": false
+    },
+    {
+      "name": "One Player Sleep",
+      "author": "DismissedGv",
+      "url": "https://www.curseforge.com/minecraft/data-packs/one-player-sleep",
+      "bundled": false
+    },
+    {
+      "name": "oωo (owo-lib)",
+      "author": "gliscowo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/owo-lib",
+      "bundled": false
+    },
+    {
+      "name": "Paladins & Priests (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/paladins-and-priests",
+      "bundled": false
+    },
+    {
+      "name": "Patchouli",
+      "author": "Vazkii",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/patchouli",
+      "bundled": false
+    },
+    {
+      "name": "PatPat [Mod]",
+      "author": "LopyTwich",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/patpat",
+      "bundled": false
+    },
+    {
+      "name": "Paxi (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/paxi-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Photon",
+      "author": "KilaBash",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/photon",
+      "bundled": false
+    },
+    {
+      "name": "Pig Pen Cipher",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/pig-pen-cipher",
+      "bundled": false
+    },
+    {
+      "name": "Ping Wheel",
+      "author": "LukenSkyne",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ping-wheel",
+      "bundled": false
+    },
+    {
+      "name": "Placebo",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/placebo",
+      "bundled": false
+    },
+    {
+      "name": "Platform",
+      "author": "BlackGear",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/platform",
+      "bundled": false
+    },
+    {
+      "name": "playerAnimator",
+      "author": "KosmX",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/playeranimator",
+      "bundled": false
+    },
+    {
+      "name": "PneumaticCraft: Repressurized",
+      "author": "desht_08",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized",
+      "bundled": false
+    },
+    {
+      "name": "Polymorph",
+      "author": "TheIllusiveC4",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/polymorph",
+      "bundled": false
+    },
+    {
+      "name": "Polymorphic Energistics",
+      "author": "ninety",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics",
+      "bundled": false
+    },
+    {
+      "name": "Prickle",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/prickle",
+      "bundled": false
+    },
+    {
+      "name": "Prometheus",
+      "author": "CrystalSpider",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/prometheus",
+      "bundled": false
+    },
+    {
+      "name": "Pufferfish's Skills [Fabric & Forge & NeoForge]",
+      "author": "Pufferfish",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/puffish-skills",
+      "bundled": false
+    },
+    {
+      "name": "Puzzles Lib",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/puzzles-lib",
+      "bundled": false
+    },
+    {
+      "name": "Quark",
+      "author": "Vazkii",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/quark",
+      "bundled": false
+    },
+    {
+      "name": "Ranged Weapon API",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ranged-weapon-api",
+      "bundled": false
+    },
+    {
+      "name": "Regions Unexplored",
+      "author": "Apollo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/regions-unexplored",
+      "bundled": false
+    },
+    {
+      "name": "Relics",
+      "author": "SSKirillSS",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/relics-mod",
+      "bundled": false
+    },
+    {
+      "name": "Relics (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/relics-rpg",
+      "bundled": false
+    },
+    {
+      "name": "Reliquary Reincarnations",
+      "author": "P3pp3rF1y",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations",
+      "bundled": false
+    },
+    {
+      "name": "Reliquified Ars Nouveau",
+      "author": "SSKirillSS",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/reliquified-ars-nouveau",
+      "bundled": false
+    },
+    {
+      "name": "Reliquified Artifacts",
+      "author": "SSKirillSS",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/reliquified-artifacts",
+      "bundled": false
+    },
+    {
+      "name": "Reliquified Iron's Spells 'n Spellbooks",
+      "author": "SSKirillSS",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/reliquified-irons-spells-n-spellbooks",
+      "bundled": false
+    },
+    {
+      "name": "Reliquified L_Ender 's Cataclysm",
+      "author": "SSKirillSS",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/reliquified-l-ender-s-cataclysm",
+      "bundled": false
+    },
+    {
+      "name": "Reliquified L_Ender 's Cataclysm new relics fix",
+      "author": "Gasharaujo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/reliquified-l-ender-s-cataclysm-new-relics-fix",
+      "bundled": false
+    },
+    {
+      "name": "Resourceful Config",
+      "author": "ThatGravyBoat",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-config",
+      "bundled": false
+    },
+    {
+      "name": "Resourceful Lib",
+      "author": "ThatGravyBoat",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-lib",
+      "bundled": false
+    },
+    {
+      "name": "Revelationary",
+      "author": "DaFuqsy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/revelationary",
+      "bundled": false
+    },
+    {
+      "name": "Rhino",
+      "author": "Lat",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/rhino",
+      "bundled": false
+    },
+    {
+      "name": "Rogues & Warriors (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/rogues-and-warriors",
+      "bundled": false
+    },
+    {
+      "name": "Runelic",
+      "author": "DarkhaxDev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/runelic",
+      "bundled": false
+    },
+    {
+      "name": "Runes",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/rune-crafting",
+      "bundled": false
+    },
+    {
+      "name": "Sable",
+      "author": "ryanhcode",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/sable",
+      "bundled": false
+    },
+    {
+      "name": "Sable: Physics Compat",
+      "author": "NumberOneRiker",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/sable-physics-compat",
+      "bundled": false
+    },
+    {
+      "name": "Scorched Guns Neoforged",
+      "author": "sadeast",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/scorched-guns-neoforged",
+      "bundled": false
+    },
+    {
+      "name": "Searchables",
+      "author": "Jaredlll08",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/searchables",
+      "bundled": false
+    },
+    {
+      "name": "ServerCore",
+      "author": "Wesley8081",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/servercore",
+      "bundled": false
+    },
+    {
+      "name": "ShatterLib | OctoLib",
+      "author": "SSKirillSS",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/shatterbyte-lib",
+      "bundled": false
+    },
+    {
+      "name": "Shield API",
+      "author": "TheRedBrain",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/shield-api",
+      "bundled": false
+    },
+    {
+      "name": "SilverLib",
+      "author": "Silvertide",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/silverlib",
+      "bundled": false
+    },
+    {
+      "name": "Simply More",
+      "author": "Rosemary__Thyme",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/simply-more",
+      "bundled": false
+    },
+    {
+      "name": "Simply Swords [Fabric & Forge]",
+      "author": "sweenuss",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/simply-swords",
+      "bundled": false
+    },
+    {
+      "name": "Simply Swords: Cataclysm",
+      "author": "Cephelo_",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/simplycataclysm",
+      "bundled": false
+    },
+    {
+      "name": "Simply Tooltips",
+      "author": "sweenuss",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/simply-tooltips",
+      "bundled": false
+    },
+    {
+      "name": "Sinytra Connector",
+      "author": "Su5eD",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/sinytra-connector",
+      "bundled": false
+    },
+    {
+      "name": "Skill Tree (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/skill-tree",
+      "bundled": false
+    },
+    {
+      "name": "SmartBrainLib (Forge/Fabric/Quilt)",
+      "author": "Scimiguy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/smartbrainlib",
+      "bundled": false
+    },
+    {
+      "name": "Sodium",
+      "author": "JellySquid",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/sodium",
+      "bundled": false
+    },
+    {
+      "name": "Soul fire'd",
+      "author": "CrystalSpider",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/soul-fire-d",
+      "bundled": false
+    },
+    {
+      "name": "spark",
+      "author": "Iucko",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/spark",
+      "bundled": false
+    },
+    {
+      "name": "Spectrum",
+      "author": "DaFuqsy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/spectrum",
+      "bundled": false
+    },
+    {
+      "name": "Spell Engine",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/spell-engine",
+      "bundled": false
+    },
+    {
+      "name": "Spell Power Attributes",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/spell-power",
+      "bundled": false
+    },
+    {
+      "name": "Spellblades: Zero (RPG Series Plus)",
+      "author": "cleannrooster",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/spellblades-zero-rpg-series-plus",
+      "bundled": false
+    },
+    {
+      "name": "Sphere Projector",
+      "author": "Procyonine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/sphere-projector",
+      "bundled": false
+    },
+    {
+      "name": "Stars Aligned",
+      "author": "HazentouvelPrime",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/stars-aligned",
+      "bundled": false
+    },
+    {
+      "name": "Steam 'n' Rails Neoforge",
+      "author": "PoppyBlossom",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Storage Drawers",
+      "author": "Texelsaur",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/storage-drawers",
+      "bundled": false
+    },
+    {
+      "name": "Streams Reflowing",
+      "author": "NiceJohn",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/streams-reflowing",
+      "bundled": false
+    },
+    {
+      "name": "Structure Pool API",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/structure-pool-api",
+      "bundled": false
+    },
+    {
+      "name": "Strut Your Stuff (Struts)",
+      "author": "CakeIsTastyDeveloper",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/strut-your-stuff",
+      "bundled": false
+    },
+    {
+      "name": "SuperMartijn642's Config Lib",
+      "author": "SuperMartijn642",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib",
+      "bundled": false
+    },
+    {
+      "name": "SuperMartijn642's Core Lib",
+      "author": "SuperMartijn642",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib",
+      "bundled": false
+    },
+    {
+      "name": "Supplementaries",
+      "author": "MehVahdJukaar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
+      "bundled": false
+    },
+    {
+      "name": "Supplementaries Compat",
+      "author": "CyberRat2",
+      "url": "https://www.curseforge.com/minecraft/data-packs/supplementaries-compat",
+      "bundled": false
+    },
+    {
+      "name": "Tavern Brawl (RPG Series Plus)",
+      "author": "cleannrooster",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/tavern-brawl",
+      "bundled": false
+    },
+    {
+      "name": "Tectonic",
+      "author": "Apollo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/tectonic",
+      "bundled": false
+    },
+    {
+      "name": "TerraBlender (NeoForge)",
+      "author": "TheAdubbz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Titanium",
+      "author": "Buuz135",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/titanium",
+      "bundled": false
+    },
+    {
+      "name": "Toast Control",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/toast-control",
+      "bundled": false
+    },
+    {
+      "name": "Towns and Towers",
+      "author": "Biban_Auriu",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/towns-and-towers",
+      "bundled": false
+    },
+    {
+      "name": "Transmog",
+      "author": "Hidoni",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/transmog",
+      "bundled": false
+    },
+    {
+      "name": "Trash Cans",
+      "author": "SuperMartijn642",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/trash-cans",
+      "bundled": false
+    },
+    {
+      "name": "Traveler's Backpack",
+      "author": "Tiviacz1337",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/travelers-backpack",
+      "bundled": false
+    },
+    {
+      "name": "Uranus",
+      "author": "IAFEnvoy",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/uranus",
+      "bundled": false
+    },
+    {
+      "name": "Vanilla Backport",
+      "author": "BlackGear",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/vanillabackport",
+      "bundled": false
+    },
+    {
+      "name": "Village Taverns (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/village-taverns",
+      "bundled": false
+    },
+    {
+      "name": "Waifucraft",
+      "author": "SeaApples",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/waifucraft",
+      "bundled": false
+    },
+    {
+      "name": "WATERFrAMES: Multimedia Displays",
+      "author": "SrRapero720",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/waterframes",
+      "bundled": false
+    },
+    {
+      "name": "WATERMeDIA: Multimedia API",
+      "author": "SrRapero720",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/watermedia",
+      "bundled": false
+    },
+    {
+      "name": "WATERMeDIA: Platform Extension",
+      "author": "SrRapero720",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/watermedia-platform-extension",
+      "bundled": false
+    },
+    {
+      "name": "WATERViSION: Videoplayer",
+      "author": "SrRapero720",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/watervision",
+      "bundled": false
+    },
+    {
+      "name": "What Are They Up To (Watut)",
+      "author": "Corosus",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/what-are-they-up-to",
+      "bundled": false
+    },
+    {
+      "name": "When Dungeons Arise - Seven Seas",
+      "author": "Aureljz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-seven-seas",
+      "bundled": false
+    },
+    {
+      "name": "Wizards (RPG Series)",
+      "author": "daedelus_dev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/wizards",
+      "bundled": false
+    },
+    {
+      "name": "WorldWeaver: New Dawn",
+      "author": "Raijin2312",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/worldweaver-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "WunderLib: New Dawn",
+      "author": "Raijin2312",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/wunderlib-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YetAnotherConfigLib",
+      "author": "isXander",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yacl",
+      "bundled": false
+    },
+    {
+      "name": "Yung Structures Addon for Loot Integrations",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yung-structures-addon-for-loot-integrations",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Caves (Forge/NeoForge)",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Desert Temples (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Dungeons (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better End Island (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Jungle Temples (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Mineshafts (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Nether Fortresses (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Ocean Monuments (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Better Witch Huts (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Cave Biomes (Forge/NeoForge)",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes",
+      "bundled": false
+    },
+    {
+      "name": "YUNG's Extras (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+      "author": "YUNGNICKYOUNG",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-extras-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "Yuushya Modelling",
+      "author": "coco_fish",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yuushya-modelling",
+      "bundled": false
+    },
+    {
+      "name": "Yuushya Townscape [Forge/Fabric]",
+      "author": "coco_fish",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/yuushya-townscape",
+      "bundled": false
+    },
+    {
+      "name": "Zeta",
+      "author": "Vazkii",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/zeta",
+      "bundled": false
+    }
+  ]
+}
