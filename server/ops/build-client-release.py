@@ -26,18 +26,12 @@ with zipfile.ZipFile(SOURCE) as old:
     manifest['version'] = '1.2.5'
     modlist = old.read('modlist.html').decode()
     extra = ''.join(f'<li><a href="https://www.curseforge.com/minecraft/mc-mods/{slug}">{title}</a></li>\n' for _, _, title, slug in additions)
-    extra += '<li><a href="https://modrinth.com/mod/fiw-anticheat">Fiw AntiCheat 2.1.0 (by Fi3w0)</a></li>\n'
     assert '</ul>' in modlist
     modlist = modlist.replace('</ul>', extra + '</ul>', 1)
-    fiw_name = 'fiw-anticheat-neoforge-1.21.1-2.1.0.jar'
-    fiw = (ROOT / 'client-addons' / fiw_name).read_bytes()
-    assert hashlib.sha256(fiw).hexdigest() == '3069e2f85cf06de613be01f83da22ec71bcd0437abe1cc30fad7e3391384ac88'
-    attribution = '''Mythforge 1.2.5 client update\n\nMinecraft 1.21.1 / NeoForge 21.1.253 / Java 21.\nAdds AStages 2.5.3-1.21.1, FTB XMod Compat 21.1.12 and Fiw AntiCheat 2.1.0.\nUpdates JEI from 19.51.0.418 to 19.53.0.425 to meet XMod Compat's dependency.\nOther original files and mod pins are preserved. No server credentials are included.\n\nFiw AntiCheat is by Fi3w0: https://modrinth.com/mod/fiw-anticheat\nOriginal source: https://github.com/Fi3w0/Fiw-Anticheat\nUnmodified official binary; original notices retained. License included alongside this file.\nAStages: https://www.curseforge.com/minecraft/mc-mods/astages/files/8846327\nFTB XMod Compat: https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat/files/8909889\nJEI: https://www.curseforge.com/minecraft/mc-mods/jei/files/8815666\n\nImport this ZIP as a new CurseForge profile, allow publisher downloads, then launch.\nPackaging validation passed. Human client launch/login testing is still required.\nDo not copy server-only mods into this client.\n'''
+    attribution = "Mythforge 1.2.5 client update\n\nMinecraft 1.21.1 / NeoForge 21.1.253 / Java 21.\nAdds AStages 2.5.3-1.21.1 and FTB XMod Compat 21.1.12.\nUpdates JEI from 19.51.0.418 to 19.53.0.425 to meet XMod Compat's dependency.\nNo client anticheat or mod-verification companion is included or required.\nOther original files and mod pins are preserved. No server credentials are included.\n\nAStages: https://www.curseforge.com/minecraft/mc-mods/astages/files/8846327\nFTB XMod Compat: https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat/files/8909889\nJEI: https://www.curseforge.com/minecraft/mc-mods/jei/files/8815666\n\nImport this ZIP as a new CurseForge profile, allow publisher downloads, then launch.\nPackaging validation passed. Human client launch/login testing is still required.\nDo not copy server-only mods into this client.\n"
     changed = {'manifest.json': (json.dumps(manifest, indent=2)+'\n').encode(),
                'modlist.html': modlist.encode()}
-    added = {'overrides/mods/'+fiw_name: fiw,
-             'overrides/MYTHFORGE-CLIENT-UPDATE.txt': attribution.encode(),
-             'overrides/licenses/Fiw-AntiCheat-LICENSE.txt': (ROOT/'ops/fiw-source/LICENSE').read_bytes()}
+    added = {'overrides/MYTHFORGE-CLIENT-UPDATE.txt': attribution.encode()}
     target = OUT/'Mythforge-Beyond-the-Horizon-1.2.5.zip'
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as new:
         for entry in old.infolist():
@@ -57,7 +51,7 @@ with zipfile.ZipFile(SOURCE) as old:
                     sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
                     originalEntriesPreserved=len(preserved), zipCRCVerified=True,
                     originalModPinsPreservedExceptJEI=True,
-                    addedPublisherReferences=additions, embeddedFiwSHA256=hashlib.sha256(fiw).hexdigest(),
+                    addedPublisherReferences=additions, clientVerificationCompanionRequired=False,
                     jei=dict(projectID=238222,oldFileID=8792638,newFileID=8815666,version='19.53.0.425'),
                     humanClientLaunchVerified=False, humanLoginVerified=False)
     (ROOT/'ops/evidence/client-release.json').write_text(json.dumps(evidence,indent=2)+'\n',encoding='utf-8')

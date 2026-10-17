@@ -6,10 +6,10 @@
 <li>[ ] Select <code>C:\Mythforge Server\client-release\Mythforge-Beyond-the-Horizon-1.2.5.zip</code>. Import as a new profile so your old instance and saves remain available.</li>
 <li>[ ] Let CurseForge finish downloading the referenced mods. If it asks for a manual download, follow the publisher link it provides; do not substitute a Fabric or Forge file.</li>
 <li>[ ] Check the profile uses Minecraft <strong>1.21.1</strong>, <strong>NeoForge 21.1.253</strong>, and <strong>Java 21</strong>. Start with the export's existing 9 GB memory recommendation; close unnecessary programs while both servers run.</li>
-<li>[ ] In the profile's mod list, confirm <strong>AStages 2.5.3-1.21.1</strong>, <strong>Fiw AntiCheat 2.1.0</strong>, <strong>FTB XMod Compat 21.1.12</strong>, and <strong>JEI 19.53.0.425</strong> (the publisher marks this required compatible build as beta). AStages and XMod Compat download through the manifest. Fiw is already included in overrides: do not add it twice.</li>
+<li>[ ] In the profile's mod list, confirm <strong>AStages 2.5.3-1.21.1</strong>, <strong>FTB XMod Compat 21.1.12</strong>, and <strong>JEI 19.53.0.425</strong> (the publisher marks this required compatible build as beta). AStages and XMod Compat download through the manifest.</li>
 <li>[ ] Launch and reach the main menu. If it fails, save that profile's <code>logs/latest.log</code> and crash report and send their paths to me. Do not delete random mods to get past the error.</li>
 </ul>
-<p>The export preserves 1,633 original archive entries byte for byte, all original mod pins except JEI, and all original artwork/scripts/configuration. JEI was raised from 19.51.0.418 to the minimum required by XMod Compat. Fiw AntiCheat is by <a href="https://modrinth.com/mod/fiw-anticheat">Fi3w0</a>; its original license and attribution are included. Archive integrity checks passed. A real client launch and join are still unverified.</p>
+<p>The export preserves 1,633 original archive entries byte for byte, all original mod pins except JEI, and all original artwork/scripts/configuration. JEI was raised from 19.51.0.418 to the minimum required by XMod Compat. Archive integrity checks passed. A real client launch and join are still unverified.</p>
 <h2>2. Join the private launch copy</h2>
 <ul>
 <li>[ ] If this copy is already running, use its existing console. Do not start a second process. Otherwise open PowerShell and run:</li>
@@ -19,7 +19,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\ops\start-staging.ps1
 </code></pre>
 <ul>
 <li>[ ] Wait for the server's <code>Done</code> message. In <strong>this copy's console</strong>, type <code>whitelist add YOUR_JAVA_NAME</code> (replace the name; no leading slash).</li>
-<li>[ ] In Minecraft choose Multiplayer, Add Server, address <strong>127.0.0.1:25566</strong>. This address works only on this computer. Stay connected at least two minutes to verify the Fiw handshake does not disconnect you.</li>
+<li>[ ] In Minecraft choose Multiplayer, Add Server, address <strong>127.0.0.1:25566</strong>. This address works only on this computer. Stay connected at least two minutes and verify normal login and gameplay.</li>
 <li>[ ] Open quests, JEI, inventory, map and a normal recipe. Walk around, place ordinary blocks, claim a chunk, use a home and <code>/back</code>. Record any missing recipes, visual failures or disconnects.</li>
 </ul>
 <p>If the server closes during boot, preserve its crash report. If memory is exhausted while the original server and client run, arrange a maintenance window to stop the old server normally before testing; do not kill an unknown Java process.</p>
@@ -52,7 +52,7 @@ mythforge revoke acceptance_artisan_20261016
 <h2>4. Publish the client after the join test passes</h2>
 <ul>
 <li>[ ] Sign into your existing CurseForge project owner account. Upload the new client ZIP as version <strong>1.2.5</strong>, Minecraft <strong>1.21.1</strong>, loader <strong>NeoForge</strong>.</li>
-<li>[ ] Use <code>client-release\CHANGELOG.txt</code> for the changelog. Keep the visible Fi3w0 credit and link. The bundled Fiw binary is unmodified; its license is included. If CurseForge requests third-party review, supply the publisher/license links rather than removing notices.</li>
+<li>[ ] Use <code>client-release\CHANGELOG.txt</code> for the changelog. The export uses CurseForge publisher references for its added mods.</li>
 <li>[ ] Wait for approval, then install the published release into a fresh profile and join once more. Share the approved release with testers. The local ZIP being built does not mean it has been uploaded or approved.</li>
 </ul>
 <h2>5. Finish the external accounts</h2>

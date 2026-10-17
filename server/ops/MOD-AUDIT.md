@@ -35,7 +35,6 @@ Date: 2026-10-14. Target: Minecraft 1.21.1, NeoForge 21.1.253. This is a source/
 | Priority login | Custom two reserved overflow slots | Existing larger queue systems often target Paper/proxies | This is reserved capacity, not a true queue. A proxy changes infrastructure and can require paid hosting/setup; no such migration is approved |
 | Crash containment, logs, backups, performance, pregeneration | Neruina, GriefLogger/GLRA, AdvancedBackups, spark, Chunky | Keep published mods | Configuration backup/off-host recovery and a restored-server boot remain operational tests, not reasons to create more custom mods |
 | Sable/Rapier deadlock mitigation | Custom compatibility mixin | Prefer an upstream fix in the exact pack version when available | Removing it without a replacement may restore the observed native collider deadlock. This is an upstream compatibility issue, not a feature-plugin replacement |
-| Anticheat | Fiw AntiCheat client verification | Keep provisionally; do not mistake it for a complete server movement/combat anticheat | Its author explicitly says a malicious custom client can lie. Pack abilities complicate speed/flight checks. Mandatory companion and client privacy/configuration need owner acceptance. Anti-xray stays excluded |
 
 ## Cases for owner decisions
 

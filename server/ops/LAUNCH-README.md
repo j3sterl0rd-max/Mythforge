@@ -12,7 +12,7 @@ See [REPLACEMENTS-RELEASE.md](REPLACEMENTS-RELEASE.md) for the activated publish
 - NeoForge 21.1.253 / Minecraft 1.21.1. FTB Ranks, FTB XMod Compat 21.1.12 and a server-only Mythforge module implement the accepted current rank/reward specifications, safe RTP, public warps, active-time accounting, durable reward mail, transaction receipts and refund downgrade logic.
 - Ember $8, Artisan $16, Runeforged $32, Mythic $64 USD, permanent and cumulative. One-time item grants do not repeat after a refund or downgrade. Earned allowances survive paid-rank removal. Homes and public warps now add the highest current purchased rank bonus to natural earned allowances. Purchased home bonuses are 2/3/4/5; public warp bonuses are 1/2/3/5. They do not stack across purchased tiers. Claims start at 64 and force-load allowance at 2; +8 claims/10 active hours and +1 load/50 active hours continue indefinitely. Paid bonuses use the highest current paid tier once. Team allowances use the largest member; force loads require an online team member.
 - 56 vote-crate outcomes totaling 10,000 weight; registry-validated item pools, 20 playtime milestones, paid kits, relic upgrades, and pending inventory delivery. Crate rewards use actual installed registry IDs, including `gachamachine:gacha_token`.
-- Fiw AntiCheat with cheat-client, autoclicker and schematic-printer detection. Anti-xray, fullbright and ordinary pack utilities are excluded. Neruina contains ticking faults; GriefLogger records local actions, GLRA's web endpoint is disabled. Hourly AdvancedBackups retain up to 14 days / 168 backups / 50 GB, whichever limit applies.
+- Neruina contains ticking faults; GriefLogger records local actions, GLRA's web endpoint is disabled. Hourly AdvancedBackups retain up to 14 days / 168 backups / 50 GB, whichever limit applies.
 - Overworld 4,225 processed chunks, Nether 1,089, End 9,409, total 14,723. RTP uses FTB Essentials with asynchronous terrain preparation outside that area.
 - Sable/Rapier reentrancy mitigation addresses an observed chunk-generation deadlock. This is a local compatibility patch, not a guarantee against all Sable faults.
 
@@ -24,9 +24,8 @@ Never run two processes against the same world. Stop with the console command `s
 
 ## Client preparation and mandatory acceptance testing
 
-Fiw AntiCheat is by Fi3w0: https://modrinth.com/mod/fiw-anticheat . Preserve its attribution/license when distributing the companion in a pack. Its author describes it as a mod verification layer; a malicious custom client can lie.
 
-Import the prepared `client-release/Mythforge-Beyond-the-Horizon-1.2.5.zip` in CurseForge as a new profile. It adds Fiw AntiCheat, AStages and FTB XMod Compat and raises JEI to 19.53.0.425 as required by XMod Compat. This companion is required; the original published pack does not include it. Missing companion clients are disconnected after 30 seconds. Publish a new pack release including it, or give testers the official companion download instructions before inviting them. Do not distribute server-only Mythforge, Tebex, logger or backup JARs to clients.
+Import the prepared `client-release/Mythforge-Beyond-the-Horizon-1.2.5.zip` in CurseForge as a new profile. It adds AStages and FTB XMod Compat and raises JEI to 19.53.0.425. No client anticheat or mod-verification companion is required. Publish the tested pack before inviting players. Do not distribute server-only Mythforge, Tebex, logger or backup JARs to clients.
 
 Use two actual Java accounts, both whitelisted, plus console commands. No human client session has been driven by this setup work. Runtime registry/permission/ledger tests are useful but do not replace the following:
 

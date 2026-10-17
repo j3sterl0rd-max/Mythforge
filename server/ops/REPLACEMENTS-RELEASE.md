@@ -27,7 +27,7 @@ Public-warp icons unlock at 300 active hours, alongside Nether RTP. `/pwarp` ope
 
 ## Client release additions
 
-Required client additions are AStages 2.5.3 and Fiw AntiCheat 2.1.0. Include FTB XMod Compat 21.1.12 for supported cross-mod integration. The exact downloaded AStages and Fiw files are in `client-addons`; publisher release metadata is in `ops/audit/activation-releases.json`. SimpleAFK, Tebex and Mythforge Server Tools are server-only.
+Required client addition: AStages 2.5.3. Include FTB XMod Compat 21.1.12 and matching JEI for cross-mod integration. No client anticheat/mod-verification companion is required. SimpleAFK, Tebex and Mythforge Server Tools are server-only.
 
 Install these into the actual Mythforge 1.2.4 client instance before connecting to this copy. Launch with Java 21 and the matching NeoForge. The currently published pack lacks these additions. Publishing its replacement requires access to the pack publishing account. Do not claim client acceptance testing based on a fake-player test.
 

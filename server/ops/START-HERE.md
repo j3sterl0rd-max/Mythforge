@@ -8,10 +8,10 @@ Updated October 16, 2026. Work through this in order. Check each box only after 
 - [ ] Select `C:\Mythforge Server\client-release\Mythforge-Beyond-the-Horizon-1.2.5.zip`. Import as a new profile so your old instance and saves remain available.
 - [ ] Let CurseForge finish downloading the referenced mods. If it asks for a manual download, follow the publisher link it provides; do not substitute a Fabric or Forge file.
 - [ ] Check the profile uses Minecraft **1.21.1**, **NeoForge 21.1.253**, and **Java 21**. Start with the export's existing 9 GB memory recommendation; close unnecessary programs while both servers run.
-- [ ] In the profile's mod list, confirm **AStages 2.5.3-1.21.1**, **Fiw AntiCheat 2.1.0**, **FTB XMod Compat 21.1.12**, and **JEI 19.53.0.425** (the publisher marks this required compatible build as beta). AStages and XMod Compat download through the manifest. Fiw is already included in overrides: do not add it twice.
+- [ ] In the profile's mod list, confirm **AStages 2.5.3-1.21.1**, **FTB XMod Compat 21.1.12**, and **JEI 19.53.0.425** (the publisher marks this required compatible build as beta). AStages and XMod Compat download through the manifest.
 - [ ] Launch and reach the main menu. If it fails, save that profile's `logs/latest.log` and crash report and send their paths to me. Do not delete random mods to get past the error.
 
-The export preserves 1,633 original archive entries byte for byte, all original mod pins except JEI, and all original artwork/scripts/configuration. JEI was raised from 19.51.0.418 to the minimum required by XMod Compat. Fiw AntiCheat is by [Fi3w0](https://modrinth.com/mod/fiw-anticheat); its original license and attribution are included. Archive integrity checks passed. A real client launch and join are still unverified.
+The export preserves 1,633 original archive entries byte for byte, all original mod pins except JEI, and all original artwork/scripts/configuration. JEI was raised from 19.51.0.418 to the minimum required by XMod Compat. Archive integrity checks passed. A real client launch and join are still unverified.
 
 ## 2. Join the private launch copy
 
@@ -23,7 +23,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\ops\start-staging.ps1
 ```
 
 - [ ] Wait for the server's `Done` message. In **this copy's console**, type `whitelist add YOUR_JAVA_NAME` (replace the name; no leading slash).
-- [ ] In Minecraft choose Multiplayer, Add Server, address **127.0.0.1:25566**. This address works only on this computer. Stay connected at least two minutes to verify the Fiw handshake does not disconnect you.
+- [ ] In Minecraft choose Multiplayer, Add Server, address **127.0.0.1:25566**. This address works only on this computer. Stay connected at least two minutes and verify normal login and gameplay.
 - [ ] Open quests, JEI, inventory, map and a normal recipe. Walk around, place ordinary blocks, claim a chunk, use a home and `/back`. Record any missing recipes, visual failures or disconnects.
 
 If the server closes during boot, preserve its crash report. If memory is exhausted while the original server and client run, arrange a maintenance window to stop the old server normally before testing; do not kill an unknown Java process.
@@ -67,7 +67,7 @@ For the full test matrix and troubleshooting, see [LAUNCH-README.md](LAUNCH-READ
 ## 4. Publish the client after the join test passes
 
 - [ ] Sign into your existing CurseForge project owner account. Upload the new client ZIP as version **1.2.5**, Minecraft **1.21.1**, loader **NeoForge**.
-- [ ] Use `client-release\CHANGELOG.txt` for the changelog. Keep the visible Fi3w0 credit and link. The bundled Fiw binary is unmodified; its license is included. If CurseForge requests third-party review, supply the publisher/license links rather than removing notices.
+- [ ] Use `client-release\CHANGELOG.txt` for the changelog. The export uses CurseForge publisher references for its added mods.
 - [ ] Wait for approval, then install the published release into a fresh profile and join once more. Share the approved release with testers. The local ZIP being built does not mean it has been uploaded or approved.
 
 ## 5. Finish the external accounts

@@ -1,6 +1,6 @@
 # Mods for the next Mythforge pack update
 
-Maintained list, updated 2026-10-16. Target NeoForge 1.21.1. Activated services and excluded alternatives are recorded below. Do not add Fabric/Paper artifacts to this NeoForge pack.
+Maintained list, updated 2026-10-17. Target NeoForge 1.21.1. Activated services and excluded alternatives are recorded below. Do not add Fabric/Paper artifacts to this NeoForge pack.
 
 The updated importable client export is `client-release/Mythforge-Beyond-the-Horizon-1.2.5.zip`. Packaging and publisher-binary checks passed; public upload and human client tests remain. Follow [START-HERE.md](START-HERE.md).
 
@@ -8,7 +8,6 @@ The updated importable client export is `client-release/Mythforge-Beyond-the-Hor
 
 | Mod | Version | Client pack | Server pack | Reason/status |
 | --- | --- | --- | --- | --- |
-| [Fiw AntiCheat](https://modrinth.com/mod/fiw-anticheat) by Fi3w0 | 2.1.0, NeoForge 1.21.1 | Required companion | Installed | Included in local 1.2.5 export; public release pending. Preserve author attribution/license. Test legitimate pack clients before release; no anti-xray |
 | [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) | 21.1.12 | Include for supported cross-mod client features; omission must be tested | Added during audit | Required bridge for FTB Ranks values reaching FTB consumers. Dependencies match the installed server. Startup selected FTB Ranks; all 28 runtime checks passed, including consuming-provider checks |
 
 | [AStages](https://modrinth.com/mod/astages) | 2.5.3-1.21.1 | Required | Installed and active | 414 functional machinery restrictions; paid or 30-hour synchronization |
@@ -34,6 +33,15 @@ Players do not need these administrative services just to join. Some mods also s
 Existing spark, Chunky, FTB Quests, Relics, Curios, JourneyMap, KubeJS and their pack dependencies should remain. This list is not a request to add duplicates or update unrelated gameplay mods.
 
 ## Alternatives not selected
+
+### Client verification decision (October 17)
+
+The owner removed client anticheat/mod verification from launch scope. No Mod Whitelist, X-SHIELD or other replacement is selected. Normal pack updates require no verification allow-list or hash maintenance. The server's player-access whitelist remains separate and enabled.
+
+### Performance candidate from the October 17 live capture
+
+- [FastMapCodec](https://modrinth.com/mod/fastmapcodec/): the owner reports adding the recommended advancement decoder fix to the next patch. The exact implementation/artifact and runtime compatibility have not been inspected here. Avoid adding a duplicate decoder fix if already included. A server-only trial is sufficient for the diagnosed server join issue; no mandatory client addition is established. Preserve player progress and test a full-pack join. See `PERFORMANCE-RESULTS-20261017.md`.
+- [Alex's Caves port PR #180](https://github.com/Raguto/AlexsCaves-1.21.1/pull/180): optimization for the exact ruined-portal biome scan found in live recordings. The owner reports implementing the fix in their custom mod for the next pack release. That implementation has not been inspected or runtime-validated here; verify terrain/portal placement and compatibility before release. No additional client mod is proposed by this entry.
 
 | Candidate | Matching release found | Sides | Decision needed |
 | --- | --- | --- | --- |
