@@ -12,6 +12,7 @@ Example: curl -H "Accept: text/markdown" https://mythforge.win/modpack/
 
 ## Pages
 
+- https://mythforge.win/apply/
 - https://mythforge.win/beta-testers/
 - https://mythforge.win/changelog/
 - https://mythforge.win/checkout/

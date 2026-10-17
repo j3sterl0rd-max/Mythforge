@@ -43,6 +43,10 @@ Third-party providers may process requests and records in countries different fr
 Updates  
 This policy will be updated if the site adds accounts, analytics, payments, or other material changes in data handling. A new effective date will identify the revised version.
 
+## Whitelist applications
+
+When you apply, we process your Minecraft username, public account identifier and profile information, application history, and relevant moderation records to assess access and operate the whitelist. Cloudflare Turnstile processes browser and network information to prevent abuse. Staff can access application records and receive private review alerts. We retain application records for up to 90 days, short-lived request identifiers for up to 24 hours, and necessary staff decisions while they remain applicable. Contact admin@mythforge.win for access, correction or deletion requests. Applying does not verify account ownership; Minecraft sign-in is required to join.
+
 ## Player heads and external services
 
 The Beta Testers & Thanks page loads Minecraft player heads from Minotar using the listed players’ public UUIDs. Your browser contacts minotar.net, which receives your IP address and normal request metadata. Head requests send no referrer. Skin updates follow the provider’s cache and may take time to appear. If you are credited and want your name or head removed, email admin@mythforge.win or contact staff privately through the Contact page. A local initial remains available if loading fails.

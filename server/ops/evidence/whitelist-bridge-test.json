@@ -1,0 +1,11 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "serverVerified": true,
+  "loopbackOnly": true,
+  "testAccountCleanupPending": false,
+  "testedArtifactSHA256": "f4492d8e61882f24d1e4d5cb8fc20c429f5a6b7d4055104b24e54b87aac46314",
+  "testAccountCleanupVerified": true,
+  "testBanCleanupVerified": true,
+  "shutdownExitCode": 0
+}

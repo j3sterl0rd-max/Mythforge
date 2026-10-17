@@ -1,0 +1,13 @@
+{
+  "privateWorkflowChecksPassed": 53,
+  "privateWorkflowChecksFailed": 0,
+  "frontendChecksPassed": true,
+  "serverBridgeChecksPassed": 11,
+  "existingServerChecksPassed": 60,
+  "cloudBackendDeployed": false,
+  "liveEmailVerified": false,
+  "liveApplicationRoundtripVerified": false,
+  "privateSourceExcludedFromPublicRepository": true,
+  "nativeCloudflareEmailSupported": true,
+  "nativeCloudflareEmailVerified": false
+}

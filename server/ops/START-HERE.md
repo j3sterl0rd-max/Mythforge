@@ -95,6 +95,13 @@ Do not run `reset-copied-data.ps1` again. The old data was already cleared; it w
 - [ ] Have someone outside your home network join using the public address. Test each voting site's callback and confirm backups and Tebex still work.
 - [ ] Keep the whitelist until controlled tests pass. Spawn construction remains a separate task as requested. Ask me to update the website when you want “Server coming soon!” changed.
 
+## 8. Activate website applications (when back at your computer)
+
+- [ ] Open PowerShell and run `npx wrangler login`. Complete the official Cloudflare authorization for the account owning mythforge.win. Tell Codex when signed in so the remaining setup can be connected and tested.
+- [ ] Check the verified destination inbox behind admin@mythforge.win in Cloudflare Email Routing. The preferred alert method sends only to that destination using Cloudflare's free exception. Do not upgrade Workers or buy an email plan. General outbound email is paid.
+- [ ] Follow [WHITELIST-SETUP.md](WHITELIST-SETUP.md). Detailed private deployment instructions are in `ops/private/whitelist/README.md`; keep them private.
+- [ ] Complete the remaining integrations and a real application/email/server-confirmation test before enabling public submissions. The `/apply/` page stays closed until those checks pass.
+
 ## What to send me if something fails
 
 Send the failed step number, Java player name, exact time, screenshot of the error if useful, and paths to the client/server `latest.log` or crash report. Keep payment keys, vote tokens, private backups and account passwords out of messages and public reports.

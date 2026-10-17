@@ -84,10 +84,11 @@ public final class ServerTools {
             audit();
             CrateTable.initialize();
             state.save();
+            WhitelistBridge.start(server);
             LOG.info("[Mythforge] Active playtime, paid ledger, crates and travel ready; {} items registered",items.size());
         } catch(Exception ex) { throw new IllegalStateException("Mythforge launch configuration invalid",ex); }
     }
-    void stopping(ServerStoppingEvent e) { if(state!=null) state.save(); }
+    void stopping(ServerStoppingEvent e) { WhitelistBridge.stop(); if(state!=null) state.save(); }
     void formatName(PlayerEvent.NameFormat e) {
         if(state==null||!(e.getEntity() instanceof ServerPlayer p))return;
         var d=data(p);var name=e.getDisplayname().copy();

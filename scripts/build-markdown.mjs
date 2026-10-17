@@ -43,7 +43,9 @@ for(const file of await files(dist)){
  const context=['index.html',path.join('modpack','index.html')].includes(relative)?`\n${overview}`:'';
  const markdown=`---\ntitle: ${JSON.stringify(title)}\n---\n\n${converter.turndown(main)}\n${context}`;
  const output=path.join(dist,'assets/markdown',relative.replace(/\.html$/,'.md'));
- await mkdir(path.dirname(output),{recursive:true});await writeFile(output,markdown);count++;
+ // Drop incidental single trailing spaces from inline-link conversion; retain
+ // Markdown's deliberate two-space hard line breaks.
+ await mkdir(path.dirname(output),{recursive:true});await writeFile(output,markdown.replace(/(?<![ \t])[ \t]$/gm,''));count++;
 }
 console.log(`Generated ${count} Markdown page representations.`);
 await writeFile(path.join(dist,'llms.txt'),`# Mythforge: Beyond the Horizon

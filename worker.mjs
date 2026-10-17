@@ -15,6 +15,16 @@ function varyAccept(headers){const vary=headers.get('Vary');if(vary==='*')return
 export default {
  async fetch(request,env) {
   const resource=new URL(request.url);
+  if(resource.pathname==='/api/applications'||resource.pathname.startsWith('/api/applications/')||resource.pathname.startsWith('/api/whitelist-connector/')||resource.pathname.startsWith('/api/whitelist-staff/')) {
+   const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'};
+   try {
+    if(env.WHITELIST_SERVICE) {
+     const response=await env.WHITELIST_SERVICE.fetch(request);
+     return new Response(response.body,{status:response.status,headers});
+    }
+   } catch {}
+   return new Response(JSON.stringify(resource.pathname.endsWith('/config')?{available:false}:{state:'not_approved'}),{headers});
+  }
   if(resource.pathname==='/.well-known/api-catalog'){
    if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
    resource.pathname='/api/catalog.json';resource.search='';
