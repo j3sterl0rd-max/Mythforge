@@ -26,7 +26,7 @@ Mythforge modpack icon
 
 Latest CurseForge release
 
-1.2.4
+1.2.5
 
 Recommended allocated RAM
 
@@ -127,11 +127,11 @@ Inside the pack
 
 ## Included mods & packs
 
-401 projects in release 1.2.4, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
+412 projects in release 1.2.5, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
 
- [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368)
+ [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9225524)
 
-Find a mod or creator401 projects shown
+Find a mod or creator412 projects shown
 
 -    [\[EMF\] Entity Model Features \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-model-features) by Traben · Mod
 -    [\[ETF\] Entity Texture Features - \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric) by Traben · Mod
@@ -154,7 +154,7 @@ Find a mod or creator401 projects shown
 -    [AllTheLeaks (Memory Leak Fix)](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) by Uncandango · Mod
 -    [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almostunified) by AlmostReliable · Mod
 -    [Amendments](https://www.curseforge.com/minecraft/mc-mods/amendments) by plantspookable · Mod
--    [ANARCHY Minibosses (RPG Series Plus)](https://www.curseforge.com/minecraft/mc-mods/rpg-minibosses-forsaken-adventurers) by cleannrooster · Mod
+-    [ANARCHY RPG (RPG Series Plus)](https://www.curseforge.com/minecraft/mc-mods/rpg-minibosses-forsaken-adventurers) by cleannrooster · Mod
 -    [Anti Enderman Grief](https://www.curseforge.com/minecraft/data-packs/anti-enderman-grief) by DerexXD · Data pack
 -    [Apothic Attributes](https://www.curseforge.com/minecraft/mc-mods/apothic-attributes) by Shadows\_of\_Fire · Mod
 -    [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin) by squeek502 · Mod
@@ -177,6 +177,7 @@ Find a mod or creator401 projects shown
 -    [Arsenal (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/arsenal-rpg-series) by daedelus\_dev · Mod
 -    [Artifactory](https://www.curseforge.com/minecraft/mc-mods/artifactory) by Silvertide · Mod
 -    [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts) by ochotonida · Mod
+-    [AStages](https://www.curseforge.com/minecraft/mc-mods/astages) by \_Kessy\_ · Mod
 -    [Athena](https://www.curseforge.com/minecraft/mc-mods/athena) by terrariumearth · Mod
 -    [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix) by DarkhaxDev · Mod
 -    [Azimuth API](https://www.curseforge.com/minecraft/mc-mods/azimuth-api) by CakeIsTastyDeveloper · Mod
@@ -192,7 +193,6 @@ Find a mod or creator401 projects shown
 -    [BetterBlockZ](https://www.curseforge.com/minecraft/mc-mods/betterblockz) by riciJak · Mod
 -    [BetterEnd: New Dawn](https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge) by Raijin2312 · Mod
 -    [Bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf) by DarkhaxDev · Mod
--    [Born in Chaos](https://www.curseforge.com/minecraft/mc-mods/born-in-chaos) by mongoose\_artist · Mod
 -    [Bosses of Mass Destruction \[Forge | NeoForge\]](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge) by Cerbon · Mod
 -    [Bosses'Rise - Epic Souls like boss fights](https://www.curseforge.com/minecraft/mc-mods/bossesrise) by blockfactorystudio · Mod
 -    [Botany Pots](https://www.curseforge.com/minecraft/mc-mods/botany-pots) by DarkhaxDev · Mod
@@ -201,7 +201,6 @@ Find a mod or creator401 projects shown
 -    [Caelus API](https://www.curseforge.com/minecraft/mc-mods/caelus) by TheIllusiveC4 · Mod
 -    [Cardinal Components API](https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api) by UpcraftLP · Mod
 -    [Cataclysm Compat](https://www.curseforge.com/minecraft/data-packs/cataclysm-compat) by CyberRat2 · Data pack
--    [Cataclysm of Chaos (Cataclysm & Born in Chaos Compatability mod)](https://www.curseforge.com/minecraft/mc-mods/cataclysm-of-chaos) by vndtta · Mod
 -    [Cataclysm x YUNG's Better Nether Fortresses Compat](https://www.curseforge.com/minecraft/mc-mods/cataclysm-x-yungs) by GamesOfLife · Mod
 -    [Cataclysm: Spellbooks](https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks) by StarOcean · Mod
 -    [Cataclysm: Spellbooks & BetterCombat - Compatibility](https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks-bettercombat-compatibility) by rymusov · Mod
@@ -229,11 +228,10 @@ Find a mod or creator401 projects shown
 -    [Corpse](https://www.curseforge.com/minecraft/mc-mods/corpse) by henkelmax · Mod
 -    [Crash Assistant](https://www.curseforge.com/minecraft/mc-mods/crash-assistant) by KostromDan · Mod
 -    [Create](https://www.curseforge.com/minecraft/mc-mods/create) by simibubi · Mod
--    [Create Deep Seas](https://www.curseforge.com/minecraft/mc-mods/create-deep-seas) by MaxCreateMC · Mod
+-    [Create Deep Seas \[BETA\]](https://www.curseforge.com/minecraft/mc-mods/create-deep-seas) by MaxCreateMC · Mod
 -    [Create : Creating Space](https://www.curseforge.com/minecraft/mc-mods/create-creating-space) by RealAntEngineer · Mod
 -    [Create Aeronautics](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics) by ryanhcode · Mod
 -    [Create Aeronautics Discovery](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-discovery) by Corvinoo · Mod
--    [Create Aeronautics Structures](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-structures) by pael1as88592 · Mod
 -    [Create Aeronautics: Automated Logistics](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-automated-logistics) by SprocketGames · Mod
 -    [Create Aeronautics: Compact Carry](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-compact-carry) by mumu17 · Mod
 -    [Create Aeronautics: Compatibility](https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-compatability) by rsap · Mod
@@ -262,7 +260,6 @@ Find a mod or creator401 projects shown
 -    [Create: Interiors](https://www.curseforge.com/minecraft/mc-mods/interiors) by a0ax · Mod
 -    [Create: Linear Bearing](https://www.curseforge.com/minecraft/mc-mods/create-linear-bearing) by StievenNob · Mod
 -    [Create: Mechanical Botany](https://www.curseforge.com/minecraft/mc-mods/create-mechanical-botany) by DakotaPrideModding · Mod
--    [Create: Rustic Structures](https://www.curseforge.com/minecraft/mc-mods/create-rustic-structures) by robinfrt · Mod
 -    [Create: Schematic Checker](https://www.curseforge.com/minecraft/mc-mods/create-schematicchecker) by Pink\_Cats · Mod
 -    [Create: Structures Arise](https://www.curseforge.com/minecraft/mc-mods/create-structures-arise) by SmartStreamLabs · Mod
 -    [Create: Trading Floor](https://www.curseforge.com/minecraft/mc-mods/create-trading-floor) by CakeIsTastyDeveloper · Mod
@@ -271,6 +268,7 @@ Find a mod or creator401 projects shown
 -    [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore) by CreativeMD · Mod
 -    [Cristel Lib](https://www.curseforge.com/minecraft/mc-mods/cristel-lib) by Cristelknight · Mod
 -    [Critical Strike](https://www.curseforge.com/minecraft/mc-mods/critical-strike) by daedelus\_dev · Mod
+-    [Cuisine Delight](https://www.curseforge.com/minecraft/mc-mods/cuisine-delight) by lcy0x1 · Mod
 -    [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) by someaddon · Mod
 -    [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) by TheIllusiveC4 · Mod
 -    [Cyclic](https://www.curseforge.com/minecraft/mc-mods/cyclic) by Lothrazar · Mod
@@ -283,6 +281,7 @@ Find a mod or creator401 projects shown
 -    [Diagonal Walls](https://www.curseforge.com/minecraft/mc-mods/diagonal-walls) by Fuzs · Mod
 -    [Diagonal Windows](https://www.curseforge.com/minecraft/mc-mods/diagonal-windows) by Fuzs · Mod
 -    [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl) by xiroc\_ · Mod
+-    [Dungeons and Taverns](https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns) by Nova\_Wostra · Mod
 -    [Easier Sleeping](https://www.curseforge.com/minecraft/mc-mods/easier-sleeping) by GeheimagentNr1 · Mod
 -    [Easy Anvils](https://www.curseforge.com/minecraft/mc-mods/easy-anvils) by Fuzs · Mod
 -    [Easy NPC](https://www.curseforge.com/minecraft/mc-mods/easy-npc) by Kaworru · Mod
@@ -301,7 +300,6 @@ Find a mod or creator401 projects shown
 -    [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) by DarkhaxDev · Mod
 -    [End Remastered \[NeoForge/Fabric\]](https://www.curseforge.com/minecraft/mc-mods/endremastered) by jack\_bagel · Mod
 -    [End Remastered Expanded](https://www.curseforge.com/minecraft/mc-mods/end-remastered-additions) by Yori3o · Mod
--    [End's Phantasm](https://www.curseforge.com/minecraft/mc-mods/phantasm) by Lyof429 · Mod
 -    [Ender IO](https://www.curseforge.com/minecraft/mc-mods/ender-io) by crazypants\_mc\_the\_second · Mod
 -    [Ender Storage 1.8.+](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8) by covers1624 · Mod
 -    [Enderman Overhaul](https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul) by joosh\_7889 · Mod
@@ -309,10 +307,13 @@ Find a mod or creator401 projects shown
 -    [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) by LeoLezury · Mod
 -    [Excessive Utilities](https://www.curseforge.com/minecraft/mc-mods/excessive-utilities) by aaronhowser1 · Mod
 -    [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass) by Chaosyr · Mod
+-    [ExtendedAE](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider) by GlodBlock · Mod
 -    [Extra Spell Attributes (RPG Series Tweaks)](https://www.curseforge.com/minecraft/mc-mods/extra-spell-attributes) by cleannrooster · Mod
 -    [FallingTree](https://www.curseforge.com/minecraft/mc-mods/falling-tree) by rakambda · Mod
 -    [FancyMenu](https://www.curseforge.com/minecraft/mc-mods/fancymenu) by Keksuccino · Mod
+-    [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) by vectorwing · Mod
 -    [FastFurnace](https://www.curseforge.com/minecraft/mc-mods/fastfurnace) by Shadows\_of\_Fire · Mod
+-    [FastMapCodec](https://www.curseforge.com/minecraft/mc-mods/fastmapcodec) by nekotxs · Mod
 -    [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench) by Shadows\_of\_Fire · Mod
 -    [FDLib](https://www.curseforge.com/minecraft/mc-mods/fdlib) by FINDERFEED · Mod
 -    [FerriteCore ((Neo)Forge)](https://www.curseforge.com/minecraft/mc-mods/ferritecore) by malte0811 · Mod
@@ -329,11 +330,13 @@ Find a mod or creator401 projects shown
 -    [FTB Quests (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) by FTB · Mod
 -    [FTB Teams (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) by FTB · Mod
 -    [FTB Ultimine (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge) by FTB · Mod
+-    [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) by FTB · Mod
 -    [Fzzy Config](https://www.curseforge.com/minecraft/mc-mods/fzzy-config) by fzzyhmstrs · Mod
 -    [Galosphere](https://www.curseforge.com/minecraft/mc-mods/galosphere) by orcinus73 · Mod
 -    [Galosphere: Spellbooks](https://www.curseforge.com/minecraft/mc-mods/galosphere-spellbooks) by CyberRat2 · Mod
 -    [Gazebos (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/gazebos) by daedelus\_dev · Mod
 -    [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib) by Gecko · Mod
+-    [Glodium](https://www.curseforge.com/minecraft/mc-mods/glodium) by GlodBlock · Mod
 -    [Grimoire of Gaia](https://www.curseforge.com/minecraft/mc-mods/grimoire-of-gaia) by Silentine\_ · Mod
 -    [Grimoire of Gaia Spells](https://www.curseforge.com/minecraft/mc-mods/grimoire-of-gaia-spells) by hakujoucho · Mod
 -    [GuideME](https://www.curseforge.com/minecraft/mc-mods/guideme) by shartte · Mod
@@ -351,6 +354,7 @@ Find a mod or creator401 projects shown
 -    [Integrated Dungeons and Structures](https://www.curseforge.com/minecraft/mc-mods/idas) by CraisinLord · Mod
 -    [Integrated Simply Swords](https://www.curseforge.com/minecraft/mc-mods/integrated-simply-swords) by CraisinLord · Mod
 -    [Integrated Stronghold](https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold) by CraisinLord · Mod
+-    [Inv View Forge/NeoForge](https://www.curseforge.com/minecraft/mc-mods/inv-view-forge) by RazorPlay01 · Mod
 -    [Inventory Pets](https://www.curseforge.com/minecraft/mc-mods/inventory-pets) by Purplicious\_Cow\_ · Mod
 -    [Iron's Lib](https://www.curseforge.com/minecraft/mc-mods/irons-lib) by Iron431 · Mod
 -    [Iron's Spells 'n Spellbooks](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks) by Iron431 · Mod
@@ -373,6 +377,7 @@ Find a mod or creator401 projects shown
 -    [L\_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) by mcl\_ender · Mod
 -    [LambDynamicLights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights) by LambdAurora · Mod
 -    [LDLib](https://www.curseforge.com/minecraft/mc-mods/ldlib) by KilaBash · Mod
+-    [Legendary Monsters](https://www.curseforge.com/minecraft/mc-mods/legendary-monsters) by miauczel · Mod
 -    [Lionfish API](https://www.curseforge.com/minecraft/mc-mods/lionfish-api) by mcl\_ender · Mod
 -    [Lithium (Fabric/NeoForge)](https://www.curseforge.com/minecraft/mc-mods/lithium) by JellySquid · Mod
 -    [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched) by Apollo · Mod
@@ -398,9 +403,12 @@ Find a mod or creator401 projects shown
 -    [MCDoom (Unofficial) - AzureLib 3.x Port](https://www.curseforge.com/minecraft/mc-mods/mcdoom-unofficial-azurelib-3-x-port) by Procyonine · Mod
 -    [ME Requester](https://www.curseforge.com/minecraft/mc-mods/merequester) by Relentless · Mod
 -    [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) by ninety · Mod
+-    [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) by bradyaidanc · Mod
+-    [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) by bradyaidanc · Mod
 -    [Melody](https://www.curseforge.com/minecraft/mc-mods/melody) by Keksuccino · Mod
 -    [Mercenaries and Artificers (RPG Series Plus)](https://www.curseforge.com/minecraft/mc-mods/mercenaries-and-artificers) by cleannrooster · Mod
 -    [MES - Moog's End Structures](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) by finndog\_123 · Mod
+-    [MezzConfig](https://www.curseforge.com/minecraft/mc-mods/mezzconfig) by mezz · Mod
 -    [Mine Cells - Dead Cells Mod](https://www.curseforge.com/minecraft/mc-mods/minecells) by mim1q · Mod
 -    [Minor Gamba](https://www.curseforge.com/minecraft/mc-mods/minor-gamba) by Procyonine · Mod
 -    [MmmMmmMmmMmm (Target Dummy)](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm) by MehVahdJukaar · Mod
@@ -418,6 +426,7 @@ Find a mod or creator401 projects shown
 -    [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks) by YaLTeR · Mod
 -    [Mowzie's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/mowzies-cataclysm) by CyberRat2 · Mod
 -    [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) by bobmowzie · Mod
+-    [Mythforge Custom Tweaks](https://www.curseforge.com/minecraft/mc-mods/mythforge-custom-tweaks) by Procyonine · Mod
 -    [Mythforge: Last Horizon](https://www.curseforge.com/minecraft/mc-mods/mythforge-last-horizon) by Procyonine · Mod
 -    [Nameless Trinkets](https://www.curseforge.com/minecraft/mc-mods/nameless-trinkets) by Cozary · Mod
 -    [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass) by Chaosyr · Mod
@@ -438,8 +447,8 @@ Find a mod or creator401 projects shown
 -    [Platform](https://www.curseforge.com/minecraft/mc-mods/platform) by BlackGear · Mod
 -    [playerAnimator](https://www.curseforge.com/minecraft/mc-mods/playeranimator) by KosmX · Mod
 -    [PneumaticCraft: Repressurized](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized) by desht\_08 · Mod
--    [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph) by TheIllusiveC4 · Mod
--    [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics) by ninety · Mod
+-    [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus) by Aminoquiz · Mod
+-    [Polymorphic AE2](https://www.curseforge.com/minecraft/mc-mods/polymorphic-ae2) by Aminoquiz · Mod
 -    [Prickle](https://www.curseforge.com/minecraft/mc-mods/prickle) by DarkhaxDev · Mod
 -    [Prometheus](https://www.curseforge.com/minecraft/mc-mods/prometheus) by CrystalSpider · Mod
 -    [Pufferfish's Skills \[Fabric & Forge & NeoForge\]](https://www.curseforge.com/minecraft/mc-mods/puffish-skills) by Pufferfish · Mod
@@ -507,12 +516,14 @@ Find a mod or creator401 projects shown
 -    [Uranus](https://www.curseforge.com/minecraft/mc-mods/uranus) by IAFEnvoy · Mod
 -    [Vanilla Backport](https://www.curseforge.com/minecraft/mc-mods/vanillabackport) by BlackGear · Mod
 -    [Village Taverns (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/village-taverns) by daedelus\_dev · Mod
+-    [Wabbanode Companion](https://www.curseforge.com/minecraft/mc-mods/wabbanode-companion) by wabbanode · Mod
 -    [Waifucraft](https://www.curseforge.com/minecraft/mc-mods/waifucraft) by SeaApples · Mod
 -    [WATERFrAMES: Multimedia Displays](https://www.curseforge.com/minecraft/mc-mods/waterframes) by SrRapero720 · Mod
 -    [WATERMeDIA: Multimedia API](https://www.curseforge.com/minecraft/mc-mods/watermedia) by SrRapero720 · Mod
 -    [WATERMeDIA: Platform Extension](https://www.curseforge.com/minecraft/mc-mods/watermedia-platform-extension) by SrRapero720 · Mod
 -    [WATERViSION: Videoplayer](https://www.curseforge.com/minecraft/mc-mods/watervision) by SrRapero720 · Mod
 -    [What Are They Up To (Watut)](https://www.curseforge.com/minecraft/mc-mods/what-are-they-up-to) by Corosus · Mod
+-    [When Dungeons Arise - Forge!](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise) by Aureljz · Mod
 -    [When Dungeons Arise - Seven Seas](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-seven-seas) by Aureljz · Mod
 -    [Wizards (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/wizards) by daedelus\_dev · Mod
 -    [WorldWeaver: New Dawn](https://www.curseforge.com/minecraft/mc-mods/worldweaver-neoforge) by Raijin2312 · Mod
@@ -569,4 +580,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.2.4. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.2.5. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.

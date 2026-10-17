@@ -1,8 +1,8 @@
 {
-  "version": "1.2.4",
-  "fileId": 9152368,
-  "publishedAt": "2026-10-13T00:07:17.843Z",
-  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368",
+  "version": "1.2.5",
+  "fileId": 9225524,
+  "publishedAt": "2026-10-17T16:41:10+00:00",
+  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9225524",
   "mods": [
     {
       "name": "[EMF] Entity Model Features [Fabric & Forge]",
@@ -131,7 +131,7 @@
       "bundled": false
     },
     {
-      "name": "ANARCHY  Minibosses (RPG Series Plus)",
+      "name": "ANARCHY RPG (RPG Series Plus)",
       "author": "cleannrooster",
       "url": "https://www.curseforge.com/minecraft/mc-mods/rpg-minibosses-forsaken-adventurers",
       "bundled": false
@@ -269,6 +269,12 @@
       "bundled": false
     },
     {
+      "name": "AStages",
+      "author": "_Kessy_",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/astages",
+      "bundled": false
+    },
+    {
       "name": "Athena",
       "author": "terrariumearth",
       "url": "https://www.curseforge.com/minecraft/mc-mods/athena",
@@ -359,12 +365,6 @@
       "bundled": false
     },
     {
-      "name": "Born in Chaos",
-      "author": "mongoose_artist",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/born-in-chaos",
-      "bundled": false
-    },
-    {
       "name": "Bosses of Mass Destruction [Forge | NeoForge]",
       "author": "Cerbon",
       "url": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge",
@@ -410,12 +410,6 @@
       "name": "Cataclysm Compat",
       "author": "CyberRat2",
       "url": "https://www.curseforge.com/minecraft/data-packs/cataclysm-compat",
-      "bundled": false
-    },
-    {
-      "name": "Cataclysm of Chaos (Cataclysm & Born in Chaos Compatability mod)",
-      "author": "vndtta",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/cataclysm-of-chaos",
       "bundled": false
     },
     {
@@ -581,7 +575,7 @@
       "bundled": false
     },
     {
-      "name": "Create  Deep Seas",
+      "name": "Create  Deep Seas [BETA]",
       "author": "MaxCreateMC",
       "url": "https://www.curseforge.com/minecraft/mc-mods/create-deep-seas",
       "bundled": false
@@ -602,12 +596,6 @@
       "name": "Create Aeronautics Discovery",
       "author": "Corvinoo",
       "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-discovery",
-      "bundled": false
-    },
-    {
-      "name": "Create Aeronautics Structures",
-      "author": "pael1as88592",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-structures",
       "bundled": false
     },
     {
@@ -779,12 +767,6 @@
       "bundled": false
     },
     {
-      "name": "Create: Rustic Structures",
-      "author": "robinfrt",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/create-rustic-structures",
-      "bundled": false
-    },
-    {
       "name": "Create: Schematic Checker",
       "author": "Pink_Cats",
       "url": "https://www.curseforge.com/minecraft/mc-mods/create-schematicchecker",
@@ -830,6 +812,12 @@
       "name": "Critical Strike",
       "author": "daedelus_dev",
       "url": "https://www.curseforge.com/minecraft/mc-mods/critical-strike",
+      "bundled": false
+    },
+    {
+      "name": "Cuisine Delight",
+      "author": "lcy0x1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cuisine-delight",
       "bundled": false
     },
     {
@@ -902,6 +890,12 @@
       "name": "Dungeon Crawl",
       "author": "xiroc_",
       "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl",
+      "bundled": false
+    },
+    {
+      "name": "Dungeons and Taverns",
+      "author": "Nova_Wostra",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns",
       "bundled": false
     },
     {
@@ -1013,12 +1007,6 @@
       "bundled": false
     },
     {
-      "name": "End's Phantasm",
-      "author": "Lyof429",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/phantasm",
-      "bundled": false
-    },
-    {
       "name": "Ender IO",
       "author": "crazypants_mc_the_second",
       "url": "https://www.curseforge.com/minecraft/mc-mods/ender-io",
@@ -1061,6 +1049,12 @@
       "bundled": false
     },
     {
+      "name": "ExtendedAE",
+      "author": "GlodBlock",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider",
+      "bundled": false
+    },
+    {
       "name": "Extra Spell Attributes (RPG Series Tweaks)",
       "author": "cleannrooster",
       "url": "https://www.curseforge.com/minecraft/mc-mods/extra-spell-attributes",
@@ -1079,9 +1073,21 @@
       "bundled": false
     },
     {
+      "name": "Farmer's Delight",
+      "author": "vectorwing",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/farmers-delight",
+      "bundled": false
+    },
+    {
       "name": "FastFurnace",
       "author": "Shadows_of_Fire",
       "url": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace",
+      "bundled": false
+    },
+    {
+      "name": "FastMapCodec",
+      "author": "nekotxs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fastmapcodec",
       "bundled": false
     },
     {
@@ -1181,6 +1187,12 @@
       "bundled": false
     },
     {
+      "name": "FTB XMod Compat",
+      "author": "FTB",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat",
+      "bundled": false
+    },
+    {
       "name": "Fzzy Config",
       "author": "fzzyhmstrs",
       "url": "https://www.curseforge.com/minecraft/mc-mods/fzzy-config",
@@ -1208,6 +1220,12 @@
       "name": "GeckoLib",
       "author": "Gecko",
       "url": "https://www.curseforge.com/minecraft/mc-mods/geckolib",
+      "bundled": false
+    },
+    {
+      "name": "Glodium",
+      "author": "GlodBlock",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/glodium",
       "bundled": false
     },
     {
@@ -1310,6 +1328,12 @@
       "name": "Integrated Stronghold",
       "author": "CraisinLord",
       "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold",
+      "bundled": false
+    },
+    {
+      "name": "Inv View Forge/NeoForge",
+      "author": "RazorPlay01",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/inv-view-forge",
       "bundled": false
     },
     {
@@ -1442,6 +1466,12 @@
       "name": "LDLib",
       "author": "KilaBash",
       "url": "https://www.curseforge.com/minecraft/mc-mods/ldlib",
+      "bundled": false
+    },
+    {
+      "name": "Legendary Monsters",
+      "author": "miauczel",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/legendary-monsters",
       "bundled": false
     },
     {
@@ -1595,6 +1625,18 @@
       "bundled": false
     },
     {
+      "name": "Mekanism",
+      "author": "bradyaidanc",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism",
+      "bundled": false
+    },
+    {
+      "name": "Mekanism Generators",
+      "author": "bradyaidanc",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-generators",
+      "bundled": false
+    },
+    {
       "name": "Melody",
       "author": "Keksuccino",
       "url": "https://www.curseforge.com/minecraft/mc-mods/melody",
@@ -1610,6 +1652,12 @@
       "name": "MES - Moog's End Structures",
       "author": "finndog_123",
       "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures",
+      "bundled": false
+    },
+    {
+      "name": "MezzConfig",
+      "author": "mezz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mezzconfig",
       "bundled": false
     },
     {
@@ -1712,6 +1760,12 @@
       "name": "Mowzie's Mobs",
       "author": "bobmowzie",
       "url": "https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs",
+      "bundled": false
+    },
+    {
+      "name": "Mythforge Custom Tweaks",
+      "author": "Procyonine",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mythforge-custom-tweaks",
       "bundled": false
     },
     {
@@ -1835,15 +1889,15 @@
       "bundled": false
     },
     {
-      "name": "Polymorph",
-      "author": "TheIllusiveC4",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/polymorph",
+      "name": "Polymorph+",
+      "author": "Aminoquiz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/polymorph-plus",
       "bundled": false
     },
     {
-      "name": "Polymorphic Energistics",
-      "author": "ninety",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics",
+      "name": "Polymorphic AE2",
+      "author": "Aminoquiz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/polymorphic-ae2",
       "bundled": false
     },
     {
@@ -2249,6 +2303,12 @@
       "bundled": false
     },
     {
+      "name": "Wabbanode Companion",
+      "author": "wabbanode",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/wabbanode-companion",
+      "bundled": false
+    },
+    {
       "name": "Waifucraft",
       "author": "SeaApples",
       "url": "https://www.curseforge.com/minecraft/mc-mods/waifucraft",
@@ -2282,6 +2342,12 @@
       "name": "What Are They Up To (Watut)",
       "author": "Corosus",
       "url": "https://www.curseforge.com/minecraft/mc-mods/what-are-they-up-to",
+      "bundled": false
+    },
+    {
+      "name": "When Dungeons Arise - Forge!",
+      "author": "Aureljz",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise",
       "bundled": false
     },
     {

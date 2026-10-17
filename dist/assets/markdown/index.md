@@ -145,4 +145,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.2.4. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.2.5. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.

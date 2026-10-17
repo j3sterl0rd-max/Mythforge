@@ -1,5 +1,7 @@
 """Import the published client ZIP's mod list; no API key or local server required."""
 import argparse
+import datetime
+import email.utils
 import io
 import json
 import pathlib
@@ -96,6 +98,8 @@ def import_zip(data):
 def main():
     arguments = argparse.ArgumentParser()
     arguments.add_argument('--archive', type=pathlib.Path, help='Seed from the matching published ZIP already downloaded')
+    arguments.add_argument('--file-id', type=int, help='Import a newer file verified on the official project page')
+    arguments.add_argument('--file-name', help='Exact official filename, required with --file-id')
     args = arguments.parse_args()
     config_path = ROOT / 'data/site.json'
     config = json.loads(config_path.read_text(encoding='utf-8'))
@@ -111,12 +115,25 @@ def main():
     if not releases:
         raise ValueError('No compatible stable client release found; existing list preserved')
     release = releases[0]
+    if args.file_id:
+        if not args.file_name or not re.fullmatch(r'[^/\\]+\.zip', args.file_name):
+            raise ValueError('A verified official ZIP filename is required')
+        official = f'https://edge.forgecdn.net/files/{args.file_id // 1000}/{args.file_id % 1000:03d}/{urllib.parse.quote(args.file_name, safe="")}'
+        request = urllib.request.Request(official, method='HEAD', headers={'User-Agent': USER_AGENT})
+        with urllib.request.urlopen(request, timeout=30) as response:
+            published = email.utils.parsedate_to_datetime(response.headers['Last-Modified'])
+            release = {'id': args.file_id, 'name': args.file_name,
+                       'filesize': int(response.headers['Content-Length']),
+                       'uploaded_at': published.astimezone(datetime.timezone.utc).isoformat()}
     output = ROOT / 'data/mods.json'
     previous = json.loads(output.read_text(encoding='utf-8')) if output.exists() else {}
-    if previous.get('fileId', 0) > release['id']:
-        raise ValueError('Release discovery is stale; existing list preserved')
-    if previous.get('fileId') == release['id'] and not args.archive:
-        print('Published release unchanged; existing mod list retained.')
+    def sync_version(result):
+        config['latestVersion'] = result['version']
+        config['latestReleaseUrl'] = result['sourceUrl']
+        config_path.write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    if previous.get('fileId', 0) >= release['id'] and not args.archive:
+        sync_version(previous)
+        print('Discovery is unchanged or cached behind the verified release; current list and version retained.')
         return
     file_id = release['id']
     if not isinstance(file_id, int) or not release['name'].endswith('.zip') or '/' in release['name']:
@@ -134,6 +151,7 @@ def main():
     result = {'version': version, 'fileId': file_id, 'publishedAt': release['uploaded_at'],
               'sourceUrl': config['curseforge']['source'] + f'/files/{file_id}', 'mods': entries}
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    sync_version(result)
     print(f'Imported {len(entries)} included mods from published release {version}.')
 
 

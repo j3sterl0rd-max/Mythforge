@@ -190,9 +190,11 @@ The Modpack page renders `data/mods.json` at build time, so its complete list an
 
 `.github/workflows/sync-modlist.yml` checks for a new stable NeoForge client release every six hours, or on a manual workflow dispatch. It discovers releases through the free [CFWidget metadata API](https://cfwidget.com/#api), then reads `manifest.json`, `modlist.html`, and bundled mod metadata from the official ForgeCDN client ZIP. No CurseForge API key or running Minecraft server is required. Libraries, data packs and resource packs are included and labeled. Server-only additions and unreleased local pack edits are excluded.
 
-The importer validates project identity, archive size, Minecraft version, stable release type, manifest counts and project-link hosts. Unchanged releases do not download the ZIP again. An unavailable or stale source fails the workflow and preserves the last verified list. A changed list is built, checked and committed with its generated pages to trigger the normal Cloudflare deployment. The existing authenticated `sync:curseforge` importer remains available for the broader release-notes/gallery synchronization.
+The importer validates project identity, archive size, Minecraft version, stable release type, manifest counts and project-link hosts. Unchanged releases do not download the ZIP again. An unavailable source fails the workflow and preserves the last verified list; a cached feed behind an already verified release retains that newer release. The list, latest-version labels and release link are synchronized together, built, checked and committed with their generated pages to trigger the normal Cloudflare deployment. The existing authenticated `sync:curseforge` importer remains available for the broader release-notes/gallery synchronization.
 
 Run `python scripts/sync-modlist.py`, then `npm run build` and `npm run check`, to refresh manually. Python 3.11 or newer is required. A matching official ZIP already downloaded can be supplied with `--archive PATH`.
+
+CFWidget can lag behind a newly published CurseForge file. After verifying a newer stable client file on the official project page, an operator can import it immediately using `--file-id ID --file-name 'EXACT ZIP NAME'`. The archive size and modification date are checked against the official ForgeCDN response. Future automatic checks retain that verified file until the feed catches up; they never downgrade it.
 
 ## Hosted checkout foundations
 
