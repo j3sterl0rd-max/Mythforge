@@ -1,8 +1,8 @@
 {
-  "version": "1.2.5",
-  "fileId": 9225524,
-  "publishedAt": "2026-10-17T16:41:10+00:00",
-  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9225524",
+  "version": "1.2.7.1",
+  "fileId": 9274379,
+  "publishedAt": "2026-10-21T05:41:05.24Z",
+  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379",
   "mods": [
     {
       "name": "[EMF] Entity Model Features [Fabric & Forge]",
@@ -35,6 +35,12 @@
       "bundled": false
     },
     {
+      "name": "Abridged",
+      "author": "Apollo",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/abridged",
+      "bundled": false
+    },
+    {
       "name": "Absolute Kinematics | Create Aeronautics",
       "author": "RCXcrafter",
       "url": "https://www.curseforge.com/minecraft/mc-mods/absolute-kinematics",
@@ -59,15 +65,21 @@
       "bundled": false
     },
     {
-      "name": "AEInfinityBooster",
-      "author": "hexeptiondev",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster",
+      "name": "AE2 Import Export Card",
+      "author": "Ultramega",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ae2-import-export-card",
       "bundled": false
     },
     {
-      "name": "Aeronautical Explorations",
-      "author": "C_Muller",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/aeronautical-explorations",
+      "name": "AE2: Crafting Tree",
+      "author": "nimeng1299",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ae2-crafting-tree",
+      "bundled": false
+    },
+    {
+      "name": "AEInfinityBooster",
+      "author": "hexeptiondev",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster",
       "bundled": false
     },
     {
@@ -128,12 +140,6 @@
       "name": "Amendments",
       "author": "plantspookable",
       "url": "https://www.curseforge.com/minecraft/mc-mods/amendments",
-      "bundled": false
-    },
-    {
-      "name": "ANARCHY RPG (RPG Series Plus)",
-      "author": "cleannrooster",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/rpg-minibosses-forsaken-adventurers",
       "bundled": false
     },
     {
@@ -257,12 +263,6 @@
       "bundled": false
     },
     {
-      "name": "Artifactory",
-      "author": "Silvertide",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/artifactory",
-      "bundled": false
-    },
-    {
       "name": "Artifacts",
       "author": "ochotonida",
       "url": "https://www.curseforge.com/minecraft/mc-mods/artifacts",
@@ -278,6 +278,12 @@
       "name": "Athena",
       "author": "terrariumearth",
       "url": "https://www.curseforge.com/minecraft/mc-mods/athena",
+      "bundled": false
+    },
+    {
+      "name": "ATi Structures",
+      "author": "ATii",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ati-structures",
       "bundled": false
     },
     {
@@ -305,6 +311,12 @@
       "bundled": false
     },
     {
+      "name": "BadOptimizations",
+      "author": "thosea",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/badoptimizations",
+      "bundled": false
+    },
+    {
       "name": "Balm",
       "author": "BlayTheNinth",
       "url": "https://www.curseforge.com/minecraft/mc-mods/balm",
@@ -329,15 +341,21 @@
       "bundled": false
     },
     {
+      "name": "Better chunk loading",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-chunk-loading-forge-fabric",
+      "bundled": false
+    },
+    {
       "name": "Better Combat [Fabric & Forge]",
       "author": "daedelus_dev",
       "url": "https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus",
       "bundled": false
     },
     {
-      "name": "Better Spellcasting",
-      "author": "K4yne",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/better-spellcasting",
+      "name": "Better Compatibility Checker",
+      "author": "Gaz_",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-compatibility-checker",
       "bundled": false
     },
     {
@@ -521,15 +539,9 @@
       "bundled": false
     },
     {
-      "name": "Compat API",
-      "author": "FixerLink1",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/compat-api",
-      "bundled": false
-    },
-    {
-      "name": "Compat Structure",
-      "author": "FixerLink1",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/compat-structure",
+      "name": "Configurable",
+      "author": "bawnorton",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/configurable",
       "bundled": false
     },
     {
@@ -590,12 +602,6 @@
       "name": "Create Aeronautics",
       "author": "ryanhcode",
       "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics",
-      "bundled": false
-    },
-    {
-      "name": "Create Aeronautics Discovery",
-      "author": "Corvinoo",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/create-aeronautics-discovery",
       "bundled": false
     },
     {
@@ -773,12 +779,6 @@
       "bundled": false
     },
     {
-      "name": "Create: Structures Arise",
-      "author": "SmartStreamLabs",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/create-structures-arise",
-      "bundled": false
-    },
-    {
       "name": "Create: Trading Floor",
       "author": "CakeIsTastyDeveloper",
       "url": "https://www.curseforge.com/minecraft/mc-mods/create-trading-floor",
@@ -848,6 +848,12 @@
       "name": "Dark Utilities",
       "author": "DarkhaxDev",
       "url": "https://www.curseforge.com/minecraft/mc-mods/dark-utilities",
+      "bundled": false
+    },
+    {
+      "name": "Dead's Mekanism Tweaks",
+      "author": "DeadStudios",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/deads-mekanism-port",
       "bundled": false
     },
     {
@@ -989,6 +995,12 @@
       "bundled": false
     },
     {
+      "name": "EMIAccelerator",
+      "author": "Chatterjay",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/emiaccelerator",
+      "bundled": false
+    },
+    {
       "name": "Enchantment Descriptions",
       "author": "DarkhaxDev",
       "url": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions",
@@ -1061,12 +1073,6 @@
       "bundled": false
     },
     {
-      "name": "FallingTree",
-      "author": "rakambda",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/falling-tree",
-      "bundled": false
-    },
-    {
       "name": "FancyMenu",
       "author": "Keksuccino",
       "url": "https://www.curseforge.com/minecraft/mc-mods/fancymenu",
@@ -1079,6 +1085,12 @@
       "bundled": false
     },
     {
+      "name": "Fast Async World Save[Forge/Neo/Fabric]",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fast-async-world-save-forge-fabric",
+      "bundled": false
+    },
+    {
       "name": "FastFurnace",
       "author": "Shadows_of_Fire",
       "url": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace",
@@ -1088,6 +1100,12 @@
       "name": "FastMapCodec",
       "author": "nekotxs",
       "url": "https://www.curseforge.com/minecraft/mc-mods/fastmapcodec",
+      "bundled": false
+    },
+    {
+      "name": "FastSuite",
+      "author": "Shadows_of_Fire",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fastsuite",
       "bundled": false
     },
     {
@@ -1106,6 +1124,12 @@
       "name": "FerriteCore ((Neo)Forge)",
       "author": "malte0811",
       "url": "https://www.curseforge.com/minecraft/mc-mods/ferritecore",
+      "bundled": false
+    },
+    {
+      "name": "Fishing Expansion (Fabric/Forge/NeoForge/Quilt)",
+      "author": "lullaby6",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fishing-expansion",
       "bundled": false
     },
     {
@@ -1271,6 +1295,12 @@
       "bundled": false
     },
     {
+      "name": "I'm Fast",
+      "author": "Bielhiss",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/im-fast",
+      "bundled": false
+    },
+    {
       "name": "Ice and Fire Dragons X Better Combat",
       "author": "jslament",
       "url": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons-x-better-combat",
@@ -1337,6 +1367,12 @@
       "bundled": false
     },
     {
+      "name": "Invasive Optimizations",
+      "author": "qther",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/invasive-optimizations",
+      "bundled": false
+    },
+    {
       "name": "Inventory Pets",
       "author": "Purplicious_Cow_",
       "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-pets",
@@ -1376,12 +1412,6 @@
       "name": "Jade 🔍",
       "author": "Snownee",
       "url": "https://www.curseforge.com/minecraft/mc-mods/jade",
-      "bundled": false
-    },
-    {
-      "name": "Jewelry (RPG Series)",
-      "author": "daedelus_dev",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/jewelry",
       "bundled": false
     },
     {
@@ -1469,9 +1499,21 @@
       "bundled": false
     },
     {
-      "name": "Legendary Monsters",
-      "author": "miauczel",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/legendary-monsters",
+      "name": "Leaky - Item Lag Fix",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/leaky",
+      "bundled": false
+    },
+    {
+      "name": "Leaves Be Gone",
+      "author": "Fuzs",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/leaves-be-gone",
+      "bundled": false
+    },
+    {
+      "name": "Limited Chunkloading - Chunk cleanup",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/limited-chunkloading",
       "bundled": false
     },
     {
@@ -1613,6 +1655,12 @@
       "bundled": false
     },
     {
+      "name": "McJtyLib",
+      "author": "McJty",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mcjtylib",
+      "bundled": false
+    },
+    {
       "name": "ME Requester",
       "author": "Relentless",
       "url": "https://www.curseforge.com/minecraft/mc-mods/merequester",
@@ -1622,12 +1670,6 @@
       "name": "MEGA Cells",
       "author": "ninety",
       "url": "https://www.curseforge.com/minecraft/mc-mods/mega-cells",
-      "bundled": false
-    },
-    {
-      "name": "Mekanism",
-      "author": "bradyaidanc",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism",
       "bundled": false
     },
     {
@@ -1688,6 +1730,12 @@
       "name": "Mob Lassos",
       "author": "Fuzs",
       "url": "https://www.curseforge.com/minecraft/mc-mods/mob-lassos",
+      "bundled": false
+    },
+    {
+      "name": "Model Gap Fix",
+      "author": "MehVahdJukaar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/model-gap-fix",
       "bundled": false
     },
     {
@@ -1787,9 +1835,27 @@
       "bundled": false
     },
     {
+      "name": "Neruina - Ticking Entity Fixer",
+      "author": "bawnorton",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/neruina",
+      "bundled": false
+    },
+    {
+      "name": "NetherPortalFix",
+      "author": "BlayTheNinth",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/netherportalfix",
+      "bundled": false
+    },
+    {
       "name": "No Chat Reports",
       "author": "Aizistral",
       "url": "https://www.curseforge.com/minecraft/mc-mods/no-chat-reports",
+      "bundled": false
+    },
+    {
+      "name": "No Structure Overlap",
+      "author": "ankin",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/no-structure-overlap",
       "bundled": false
     },
     {
@@ -1811,15 +1877,21 @@
       "bundled": false
     },
     {
-      "name": "One Player Sleep",
-      "author": "DismissedGv",
-      "url": "https://www.curseforge.com/minecraft/data-packs/one-player-sleep",
+      "name": "OpenBlocks Elevator",
+      "author": "vsngarcia",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator",
       "bundled": false
     },
     {
       "name": "oωo (owo-lib)",
       "author": "gliscowo",
       "url": "https://www.curseforge.com/minecraft/mc-mods/owo-lib",
+      "bundled": false
+    },
+    {
+      "name": "Packet Fixer",
+      "author": "TonimatasDEV",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/packet-fixer",
       "bundled": false
     },
     {
@@ -1889,6 +1961,12 @@
       "bundled": false
     },
     {
+      "name": "Pocket Storage",
+      "author": "Flanks255",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/pocket-storage",
+      "bundled": false
+    },
+    {
       "name": "Polymorph+",
       "author": "Aminoquiz",
       "url": "https://www.curseforge.com/minecraft/mc-mods/polymorph-plus",
@@ -1934,6 +2012,12 @@
       "name": "Ranged Weapon API",
       "author": "daedelus_dev",
       "url": "https://www.curseforge.com/minecraft/mc-mods/ranged-weapon-api",
+      "bundled": false
+    },
+    {
+      "name": "Recipe Essentials",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/recipe-essentials-forge-fabric",
       "bundled": false
     },
     {
@@ -2009,6 +2093,12 @@
       "bundled": false
     },
     {
+      "name": "RFTools Base",
+      "author": "McJty",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-base",
+      "bundled": false
+    },
+    {
       "name": "Rhino",
       "author": "Lat",
       "url": "https://www.curseforge.com/minecraft/mc-mods/rhino",
@@ -2057,6 +2147,12 @@
       "bundled": false
     },
     {
+      "name": "Server Performance - Smooth Chunk Save",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save",
+      "bundled": false
+    },
+    {
       "name": "ServerCore",
       "author": "Wesley8081",
       "url": "https://www.curseforge.com/minecraft/mc-mods/servercore",
@@ -2072,12 +2168,6 @@
       "name": "Shield API",
       "author": "TheRedBrain",
       "url": "https://www.curseforge.com/minecraft/mc-mods/shield-api",
-      "bundled": false
-    },
-    {
-      "name": "SilverLib",
-      "author": "Silvertide",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/silverlib",
       "bundled": false
     },
     {
@@ -2159,15 +2249,15 @@
       "bundled": false
     },
     {
-      "name": "Spellblades: Zero (RPG Series Plus)",
-      "author": "cleannrooster",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/spellblades-zero-rpg-series-plus",
-      "bundled": false
-    },
-    {
       "name": "Sphere Projector",
       "author": "Procyonine",
       "url": "https://www.curseforge.com/minecraft/mc-mods/sphere-projector",
+      "bundled": false
+    },
+    {
+      "name": "Starcatcher",
+      "author": "wdiscute",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/starcatcher",
       "bundled": false
     },
     {
@@ -2192,6 +2282,12 @@
       "name": "Streams Reflowing",
       "author": "NiceJohn",
       "url": "https://www.curseforge.com/minecraft/mc-mods/streams-reflowing",
+      "bundled": false
+    },
+    {
+      "name": "Structure Essentials",
+      "author": "someaddon",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/structure-essentials-forge-fabric",
       "bundled": false
     },
     {
@@ -2246,6 +2342,12 @@
       "name": "TerraBlender (NeoForge)",
       "author": "TheAdubbz",
       "url": "https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "ThreadWard",
+      "author": "Ddantee",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/threadward",
       "bundled": false
     },
     {
@@ -2339,6 +2441,18 @@
       "bundled": false
     },
     {
+      "name": "wd's Selling Bin",
+      "author": "wdiscute",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/wds-selling-bin",
+      "bundled": false
+    },
+    {
+      "name": "Weaver's Cosmetics",
+      "author": "Weaver_66",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/weavers-cosmetics",
+      "bundled": false
+    },
+    {
       "name": "What Are They Up To (Watut)",
       "author": "Corosus",
       "url": "https://www.curseforge.com/minecraft/mc-mods/what-are-they-up-to",
@@ -2357,6 +2471,12 @@
       "bundled": false
     },
     {
+      "name": "WITS (What Is This Structure?)",
+      "author": "telepathicgrunt",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/wits",
+      "bundled": false
+    },
+    {
       "name": "Wizards (RPG Series)",
       "author": "daedelus_dev",
       "url": "https://www.curseforge.com/minecraft/mc-mods/wizards",
@@ -2372,6 +2492,12 @@
       "name": "WunderLib: New Dawn",
       "author": "Raijin2312",
       "url": "https://www.curseforge.com/minecraft/mc-mods/wunderlib-neoforge",
+      "bundled": false
+    },
+    {
+      "name": "XNet",
+      "author": "McJty",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/xnet",
       "bundled": false
     },
     {

@@ -58,7 +58,7 @@ Java
 
 Required pack version
 
-1.2.5
+1.2.7.1
 
 Allocated client RAM
 
