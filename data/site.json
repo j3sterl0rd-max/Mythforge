@@ -66,11 +66,11 @@
       "name": "Ember",
       "price": "$8 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.",
       "features": [
         "Immediate Create machinery and Sable contraption access; banned functionality stays banned",
         "1 Creative Blaze Cake and 1 fully maxed Experience Disperser",
-        "/craft, /stonecutter, /nick, colored item naming and /disposal",
+        "/craft, /stonecutter, /nick, /rename <text> (supports & color codes) and /disposal",
         "+2 homes, +1 public warps, +32 claim chunks and +1 force-loadable chunk",
         "Matching Discord role after account linking"
       ],
@@ -82,12 +82,12 @@
       "name": "Artisan",
       "price": "$16 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.",
       "features": [
         "Everything in Ember",
         "AE2 Infinity Range Card and wireless crafting terminal with network hardware",
         "/echest, /ascend, /anvil, /smithing and /grindstone",
-        "Custom public-warp icon, priority login and /rtp nether",
+        "Custom public-warp icon with /pwarp icon <name> <item>, priority login and /rtp nether",
         "+3 homes, +2 public warps, +64 claim chunks and +2 force-loadable chunks"
       ],
       "url": null,
@@ -98,12 +98,13 @@
       "name": "Runeforged",
       "price": "$32 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.",
       "features": [
         "Everything in Artisan and Ember",
         "1 fully maxed Relics item of your choice",
-        "/feed, claim-limited /fly, safe visited-waypoint teleporting and XP-based /repair",
+        "/feed, claim-limited /fly, JourneyMap waypoint teleporting or /waypoint <x> <y> <z> and XP-based /repair",
         "/rtp end",
+        "Teleporting requires five seconds without movement or damage; /repair uses XP levels based on damage repaired",
         "+4 homes, +3 public warps, +128 claim chunks and +4 force-loadable chunks"
       ],
       "url": null,
@@ -114,12 +115,13 @@
       "name": "Mythic",
       "price": "$64 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.",
       "features": [
         "Everything in Runeforged, Artisan and Ember",
         "1 empty infinite item storage cell and 1 AE2 Dimension Card",
-        "/heal, limited /effects, /prefix, custom item lore and custom join message",
-        "World time and weather controls affect everyone in your current world",
+        "/heal, limited /effects, /prefix, /lore <text> and /joinmessage <text>",
+        "/worldtime <0-23999> and /worldweather <clear|rain|thunder> affect everyone in your current world; each has a 30-minute cooldown",
+        "/effects <speed|haste|night_vision|water_breathing> grants level-I effects for five minutes with a 15-minute cooldown; /prefix <text> changes your chat prefix",
         "+5 homes, +5 public warps, +256 claim chunks and +6 force-loadable chunks"
       ],
       "url": null,
@@ -167,88 +169,112 @@
   ],
   "changelog": [
     {
+      "version": "1.2.7.1",
+      "date": "2026-10-21",
+      "title": "Mythforge 1.2.7.1",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379"
+    },
+    {
+      "version": "1.2.7",
+      "date": "2026-10-21",
+      "title": "Mythforge 1.2.7",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9273912"
+    },
+    {
+      "version": "1.2.5",
+      "date": "2026-10-17",
+      "title": "Mythforge 1.2.5",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9225524"
+    },
+    {
       "version": "1.2.4",
       "date": "2026-10-13",
-      "title": "Mythforge - Beyond the Horizon-1.2.4.zip",
+      "title": "Mythforge 1.2.4",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368",
       "notes": "Added Mods\n\n\nAkashic Tome\n\nPatchouli\n\nGalosphere\n\nGalosphere: Spellbooks\n\nBorn in Chaos\n\nCataclysm of Chaos\n\nLoot Integrations: Born in Chaos\n\nANARCHY Minibosses\n\nCreate: Mechanical Botany\n\nMore RPG Classes - Skill Tree\n\nReliquified Artifacts\n\nArs Sable\n\nCreate Collision Fix\n\nSphere Projector\n\nSilverLib\n\n\nAdded Datapacks\n\n\nHostile Neural Networks: Extra Data Models\n\nAnti Enderman Grief\n\nOne Player Sleep\n\nSupplementaries Compat\n\nCataclysm Compat\n\n\nRemoved Mods\n\n\nAbyssal Ocean / Hadal Depths\n\nRemoved an incompatible MoreRelics addon introduced during development.\n\n\nProgression & Guides\n\n\nRemoved the main quest progression and its old rewards.\n\nRemoved automatic quest-book handouts.\n\nRemoved quest requirements from Refuge travel.\n\nUpdated Refuge NPCs with simple greetings and travel options.\n\nPlayers now receive an Akashic Tome containing 17 mod guides.\n\nFixed the AE2 and Spectrum guides inside the Tome.\n\nFixed blank guidebook entries and added clearer book names.\n\nAdvanced Peripherals and Mine Cells no longer give separate books automatically. Their guides remain in the Tome.\n\n\nGacha Changes\n\n\nWardens now reward Minor Gamba tokens.\n\nKept the 30-minute reward cooldown.\n\nUpdated token names, descriptions, and tooltips.\n\nRemoved the old custom tokens and Refuge gacha machine.\n\n\nFixes & Improvements\n\n\nFixed &ldquo;Second Chances&rdquo; and &ldquo;Going Up?&rdquo; unlocking when unrelated blocks were placed.\n\nRemoved the overlapping Accessories shortcut from the inventory.\n\nDisabled the Create Aeronautics Structures Telegram welcome message.\n\nDisabled the CSC whitelist reminder.\n\nDiscovery traders now disappear after 40 minutes of loaded time.\n\nEnabled obstacle avoidance for Discovery aircraft and patrols.\n\nImproved claim protection and limited excessive chunk loading.\n\nRestricted selected capture mechanics, remote access features, and problematic items.\n\nUpdated Reliquified Artifacts to resolve its compatibility crash.\n\nUpdated numerous existing mods, including ModernFix, Quark, BetterEnd, Ice and Fire, and several RPG Series addons.\n\n\nPack Cleanup\n\n\nRemoved unused quest scripts and old campaign files.\n\nRemoved leftover configs from uninstalled mods.\n\nCleaned out obsolete settings, temporary files, and old backups.\n\nDisabled the unused KubeJS web server."
     },
     {
       "version": "1.2.3",
       "date": "2026-10-05",
-      "title": "Mythforge - Beyond the Horizon-1.2.3.zip",
+      "title": "Mythforge 1.2.3",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9073646",
       "notes": "DRAMATICALLY improved performance, and staged for the multiplayer hardening thats to come."
     },
     {
       "version": "1.2.2",
       "date": "2026-10-04",
-      "title": "Mythforge - Beyond the Horizon-1.2.2.zip",
+      "title": "Mythforge 1.2.2",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9058165",
       "notes": "Hotfix because of version mismatch. Fixes crashing from tooltips."
     },
     {
       "version": "1.2.1",
       "date": "2026-10-04",
-      "title": "Mythforge - Beyond the Horizon-1.2.1.zip",
+      "title": "Mythforge 1.2.1",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9053808",
       "notes": "Removed Chipped and Chisels and bits to cut literally millions of EMI dings.\nFixed crafting recipes not showing?\nOther lag reduction... maybe?"
     },
     {
       "version": "1.2.0",
       "date": "2026-10-03",
-      "title": "Mythforge_1.2.0.zip",
+      "title": "Mythforge 1.2.0",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9042597",
       "notes": "Mythforge: Beyond the Horizon - Update from 1.0.4.3\n\nMain changes\n\n\n\nReplaced the previous quest book with a WIP notice while quests undergo further development.\n\n\n\n\nAdded a custom main menu with layered animated artwork and updated branding.\n\n\n\n\nAdded the Refuge dimension, custom NPCs, dialogue, and protection scripts.\n\n\n\n\nDisabled the automatic starting class scroll.\n\n\n\n\nChanged the recommended RAM allocation from 10 GB to 8 GB.\n\n\n\n\nGameplay adjustments\n\n\n\nDisabled Nameless Trinkets crafting.\n\n\n\n\nDisabled the Illuminati Pet&rsquo;s item-generation ability.\n\n\n\n\nDisabled the End Portal and Juggernaut pets and removed their crafting recipes.\n\n\n\n\nUpdated RPG equipment and spell-scroll loot settings.\n\n\n\n\nUpdated configuration files for several mods.\n\n\n\n\nAdded mods\n\n\n\nCreate: Aeroworks\n\n\n\n\nCreate: Deep Seas\n\n\n\n\nCreate: Dragons Plus\n\n\n\n\nAEInfinityBooster\n\n\n\n\nRPG Style More Weapons\n\n\n\n\nSablewaves\n\n\n\n\nEMI Autocrafting\n\n\n\n\nBetter Advanced Tooltips\n\n\n\n\nEasy NPC, Easy NPC: Core, and Easy NPC: Config UI\n\n\n\n\nMore Quest Types\n\n\n\n\nFancyMenu, Konkrete, and Melody\n\n\n\n\nKubeJS and Rhino\n\n\n\n\nWorldEdit and WorldEdit Items\n\n\n\n\nRemoved mods\n\n\n\nLegendary Monsters\n\n\n\n\nLegendary Monsters Create Compat\n\n\n\n\nLegendary Spellbooks\n\n\n\n\nNera Jadis: Arcane Arsenal\n\n\n\n\nSea Myths\n\n\n\n\nFramedBlocks\n\n\n\n\nMod updates\n\nUpdated 30 mods, including Ice and Fire Community Edition, Spell Engine, the RPG Series class mods, Create: Interiors, Create: Flight Control, Create Aeronautics Discovery, Gadgets & Gizmos, Abyssal Ocean, Lootr, and several libraries and compatibility addons.\n\nUpdating an existing installation\n\nBack up your world before updating. Removed mods&rsquo; blocks, items, and entities may be lost, including existing FramedBlocks builds. Replace the old quest folder instead of merging it so removed quests do not remain."
     },
     {
       "version": "1.0.4.3",
       "date": "2026-09-26",
-      "title": "Mythforge Beyond the Horizon-1.0.4.3.zip",
+      "title": "Mythforge 1.0.4.3",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8981261",
       "notes": "Added JEI for create recipes and such.\nFixed issue where updating nuked user nettings (sowwy)"
     },
     {
       "version": "1.0.4.2",
       "date": "2026-09-25",
-      "title": "Mythforge Beyond the Horizon-1.0.4.2.zip",
+      "title": "Mythforge 1.0.4.2",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8972751",
       "notes": "Distant horizons removed due to problems."
     },
     {
       "version": "1.0.4.1",
       "date": "2026-09-24",
-      "title": "Mythforge Beyond the Horizon-1.0.4.1.zip",
+      "title": "Mythforge 1.0.4.1",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8967653",
       "notes": "Fixed the update not actually containing the update."
     },
     {
       "version": "1.0.4",
       "date": "2026-09-24",
-      "title": "Mythforge-1.0.4.zip",
+      "title": "Mythforge 1.0.4",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8964036",
       "notes": "Added DOOM and the future final boss of the pack!"
     },
     {
       "version": "1.0.3",
       "date": "2026-09-18",
-      "title": "Mythforge-1.0.3.zip",
+      "title": "Mythforge 1.0.3",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8915162",
       "notes": "What's new\n\nMythforge: Beyond the Horizon 1.0.3\n\nA small maintenance update focused on server compatibility and making the pack easier to host.\n\n357 mods.\n\nUpdated\n\n\n\nMarium's Soulslike Weaponry &rarr; 1.4.8\n\n\n\nIncludes additional bug fixes and compatibility improvements\n\n\n\n\nImproves stability when running through Sinytra Connector\n\n\n\n\nFixes a server crash involving certain Forge mods\n\n\n\n\n\n\n\nServer Files\n\n\n\nAdded an official server pack for Mythforge\n\n\n\n\nServer owners can now download the matching server files for this version instead of building the server manually\n\n\n\n\nClient and server files are aligned for 1.0.3"
     },
     {
       "version": "1.0.2",
       "date": "2026-09-18",
-      "title": "Mythforge-1.0.2.zip",
+      "title": "Mythforge 1.0.2",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8908176",
       "notes": "What's new\n\nMythforge: Beyond the Horizon 1.0.2\n\nLong-distance exploration gets a major visual upgrade, alongside new music systems, loot notifications and compatibility updates.\n\n357 mods (up from 352).\n\nAdded\n\n\n\nDistant Horizons - adds level-of-detail terrain rendering, allowing the world to remain visible far beyond Minecraft's normal render distance\n\n\n\n\nLoot Journal: Pickup Notifier - displays newly collected items and loot without needing to constantly check your inventory\n\n\n\n\nMaestro - dynamic music framework for expanding and controlling Minecraft's soundtrack\n\n\n\n\nMaestro: Overture - expanded soundtrack and music experience built for Maestro\n\n\n\n\nFragmentum - supporting library required by the new Obscuria mods\n\n\n\n\nYetAnotherConfigLib - configuration library required by the new additions\n\n\n\n\nUpdated\n\n\n\nLegendary Monsters &rarr; 2.2.3\n\n\n\n\nStreams Reflowing &rarr; 2.13.7\n\n\n\n\nThese updates also bring additional fixes and compatibility improvements for the pack's Create and Sable-heavy environment."
     },
     {
       "version": "1.0.1",
       "date": "2026-09-15",
-      "title": "Mythforge-1.0.1.zip",
+      "title": "Mythforge 1.0.1",
       "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8887983",
       "notes": "## Mythforge: Beyond the Horizon 1.0.1\n\nComputers and automation join the pack, plus a round of mod updates.\n\n**352 mods** (up from 347).\n\n### Added\n- **CC: Tweaked** - programmable in-game computers, turtles and peripherals\n- **CC: Sable** - connects CC: Tweaked to the Sable physics engine, so you can\n  script your airships directly\n- **Advanced Peripherals** - extended peripheral set for CC: Tweaked\n- **Create: Avionics** - computer-controlled flight systems\n- **Minor Gamba** - two uncraftable gambling machines: a gacha machine that\n  outputs any item in the game, and a simple double-or-nothing\n\nTogether these mean an airship can now be flown by a Lua program instead of a\nplayer.\n\n### Updated\n- Aeronautics Player Tilt &rarr; 0.2.0\n- Ars 'n Spells &rarr; 3.3.4\n- Azimuth API &rarr; 1.4.8\n- Create: Bits 'n' Bobs &rarr; 2.3.5\n- Create: Creating Space &rarr; 1.7.22\n- Create: Flight Control &rarr; 0.7.2\n- Moog's Structure Lib &rarr; 3.3.1"
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-09-14",
+      "title": "Mythforge 1.0.0",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8881729"
     }
   ],
   "policies": {

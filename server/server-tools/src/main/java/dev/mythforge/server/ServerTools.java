@@ -58,7 +58,12 @@ public final class ServerTools {
         boolean customFlight, priorMayfly;
         Session(ServerPlayer p) { x=p.getX();y=p.getY();z=p.getZ();yaw=p.getYRot();pitch=p.getXRot(); }
     }
-    record PendingTeleport(ServerLevel level, BlockPos pos, long due, double x,double y,double z) {}
+    record PendingTeleport(ServerLevel level, BlockPos pos, long due, double x,double y,double z, boolean requireSafe, ResourceKey<Level> origin) {
+        boolean validSource(ServerPlayer p) {
+            return p.serverLevel().dimension().equals(origin) && !p.isDeadOrDying()
+                && Math.pow(p.getX()-x,2)+Math.pow(p.getY()-y,2)+Math.pow(p.getZ()-z,2)<=0.0001;
+        }
+    }
     public ServerTools() {
         var bus=NeoForge.EVENT_BUS;
         bus.addListener(PublishedServices::stages); bus.addListener(PublishedServices::restrictions);
@@ -66,7 +71,7 @@ public final class ServerTools {
         bus.addListener(this::commands); bus.addListener(this::login); bus.addListener(this::logout);
         bus.addListener(this::place); bus.addListener(this::breakBlock); bus.addListener(this::interact);
         bus.addListener(this::useItem); bus.addListener(this::damage); bus.addListener(this::crafted);
-        bus.addListener(this::commandGuard);
+        bus.addListener(this::commandGuard); bus.addListener(PvpSettings::attack);
         bus.addListener(this::formatName); bus.addListener(this::chat);
     }
     void started(ServerStartedEvent e) {
@@ -81,6 +86,9 @@ public final class ServerTools {
                 return machineryNamespace(id.getNamespace()) && b instanceof EntityBlock;
             }).map(b->BuiltInRegistries.BLOCK.getKey(b).toString()).sorted().toList();
             Files.writeString(Path.of("ops/evidence/functional-machinery.json"),State.JSON.toJson(machines));
+            RoleBenefits.initialize();
+            CommandPolicy.install();
+            CommandAudit.write();
             audit();
             CrateTable.initialize();
             state.save();
@@ -88,13 +96,20 @@ public final class ServerTools {
             LOG.info("[Mythforge] Active playtime, paid ledger, crates and travel ready; {} items registered",items.size());
         } catch(Exception ex) { throw new IllegalStateException("Mythforge launch configuration invalid",ex); }
     }
-    void stopping(ServerStoppingEvent e) { WhitelistBridge.stop(); if(state!=null) state.save(); }
+    void stopping(ServerStoppingEvent e) {
+        WhitelistBridge.stop();
+        for(var p:e.getServer().getPlayerList().getPlayers()) {
+            var session=sessions.get(p.getUUID());if(session!=null)revokeFlight(p,session);
+            Travel.release(p);
+        }
+        if(state!=null)state.save();
+    }
     void formatName(PlayerEvent.NameFormat e) {
         if(state==null||!(e.getEntity() instanceof ServerPlayer p))return;
         var d=data(p);var name=e.getDisplayname().copy();
         var color=net.minecraft.ChatFormatting.getByName(d.chatColor);
         if((hours(p)>=250||tier(p)>=4) && color!=null)name.withStyle(color);
-        String prefix=(hours(p)>=500?"[Prestige] ":"")+d.prefix;
+        String prefix=(hours(p)>=500?"[Prestige] ":"")+PrefixPolicy.displayed(d.prefix);
         if(!prefix.isBlank())e.setDisplayname(Component.literal(prefix+" ").append(name));else e.setDisplayname(name);
     }
     void chat(ServerChatEvent e) {
@@ -104,7 +119,7 @@ public final class ServerTools {
     }
     static State.PlayerData data(ServerPlayer p) { return state.player(p.getUUID()); }
     static long hours(ServerPlayer p) { return data(p).activeSeconds/3600; }
-    static int tier(ServerPlayer p) { return state.paid(p.getUUID()); }
+    static int tier(ServerPlayer p) { return RoleBenefits.tier(p.getGameProfile()); }
     static void tell(ServerPlayer p,String msg) { p.sendSystemMessage(Component.literal("[Mythforge] "+msg)); }
     static void signal(ServerPlayer p,String signal) {
         if(p instanceof FakePlayer || state==null) return;
@@ -114,20 +129,30 @@ public final class ServerTools {
     }
     void login(PlayerEvent.PlayerLoggedInEvent e) {
         if(!(e.getEntity() instanceof ServerPlayer p)||state==null) return;
+        restoreFlight(p);
         sessions.put(p.getUUID(),new Session(p)); data(p).name=p.getGameProfile().getName();
-        reconcile(p); deliver(p); tell(p,"Welcome. /rewards, /vote, /crate, /rtp, /pwarp and /back are available.");
+        reconcile(p); deliver(p); Rewards.notifyPending(p); Voting.remind(p); tell(p,"Welcome. /rewards, /vote, /crate, /rtp, /pwarp and /back are available.");
         if(!data(p).joinMessage.isBlank()) server.getPlayerList().broadcastSystemMessage(Component.literal(p.getGameProfile().getName()+": "+data(p).joinMessage),false);
         state.save();
     }
     void logout(PlayerEvent.PlayerLoggedOutEvent e) {
-        if(e.getEntity() instanceof ServerPlayer p)Travel.release(p);
+        if(e.getEntity() instanceof ServerPlayer p) {
+            var session=sessions.get(p.getUUID());if(session!=null)revokeFlight(p,session);
+            Travel.release(p);
+        }
         sessions.remove(e.getEntity().getUUID()); teleports.remove(e.getEntity().getUUID());
         if(state!=null) state.save();
     }
     void tick(ServerTickEvent.Post e) {
-        if(state==null || e.getServer().getTickCount()%20!=0) return;
+        if(state==null)return;
+        for(var online:List.copyOf(e.getServer().getPlayerList().getPlayers())) {
+            var pending=teleports.get(online.getUUID());
+            if(pending!=null&&!pending.validSource(online)) {teleports.remove(online.getUUID());Travel.release(online);tell(online,"Teleport cancelled by movement, dimension change or death.");}
+        }
+        if(e.getServer().getTickCount()%20!=0)return;
         seconds++;
-        for(ServerPlayer p:server.getPlayerList().getPlayers()) {
+        for(ServerPlayer p:List.copyOf(server.getPlayerList().getPlayers())) {
+            if(p.hasDisconnected())continue;
             Session s=sessions.computeIfAbsent(p.getUUID(),k->new Session(p));
             var d=data(p);
             double distance=Math.pow(p.getX()-s.x,2)+Math.pow(p.getY()-s.y,2)+Math.pow(p.getZ()-s.z,2);
@@ -140,7 +165,7 @@ public final class ServerTools {
                 if(d.activeSeconds%60==0) { reconcile(p); deliver(p); }
             }
             if(seconds-s.lastCredit==600) tell(p,"Active time is paused. Movement loops and repeated identical actions do not earn rewards.");
-            if(seconds-s.lastCredit>=900 && !p.hasPermissions(4)) PublishedServices.kick(p);
+            if(seconds-s.lastCredit>=900 && !p.hasPermissions(4)) { PublishedServices.kick(p); continue; }
             if(seconds%10==0 && intentional && !p.isPassenger()) {
                 if(d.visited.add(p.level().dimension().location()+":"+(p.blockPosition().getX()>>4)+":"+(p.blockPosition().getZ()>>4))) s.lastAction=seconds;
             }
@@ -154,25 +179,28 @@ public final class ServerTools {
             if(d.flightUntil>now && !s.customFlight && s.combatUntil<=seconds) { grantFlight(p,s); p.onUpdateAbilities(); }
             var tp=teleports.get(p.getUUID());
             if(tp!=null) {
-                if(s.combatUntil>seconds || Math.pow(p.getX()-tp.x,2)+Math.pow(p.getY()-tp.y,2)+Math.pow(p.getZ()-tp.z,2)>0.25) {
-                    teleports.remove(p.getUUID());tell(p,"Teleport cancelled by movement or combat.");
+                if(!tp.validSource(p)) {
+                    teleports.remove(p.getUUID());tell(p,"Teleport cancelled by movement, dimension change, death or damage.");
                     Travel.release(p);
                 } else if(seconds>=tp.due) {
                     teleports.remove(p.getUUID());
-                    if(Travel.safe(p,tp.level,tp.pos)) p.teleportTo(tp.level,tp.pos.getX()+0.5,tp.pos.getY(),tp.pos.getZ()+0.5,p.getYRot(),p.getXRot());
-                    else tell(p,"Destination became unsafe. Teleport cancelled.");
+                    if(Travel.destinationAllowed(p,tp.level,tp.pos,tp.requireSafe)) p.teleportTo(tp.level,tp.pos.getX()+0.5,tp.pos.getY(),tp.pos.getZ()+0.5,p.getYRot(),p.getXRot());
+                    else tell(p,tp.requireSafe?"Destination became unsafe. Teleport cancelled.":"Waypoint destination is unavailable or claim access is denied.");
                     Travel.release(p);
                 }
             }
         }
-        if(seconds%60==0) state.save();
+        if(seconds%60==0) { for(var online:List.copyOf(server.getPlayerList().getPlayers())) if(!online.hasDisconnected())Voting.remind(online); state.save(); }
     }
     static boolean combat(ServerPlayer p) { var s=sessions.get(p.getUUID());return s!=null&&s.combatUntil>seconds; }
     static boolean bossEncounter(ServerPlayer p) {
         return !p.serverLevel().getEntitiesOfClass(net.minecraft.world.entity.LivingEntity.class,p.getBoundingBox().inflate(32),e->e!=p && e.isAlive() && !(e instanceof Player) && e.getMaxHealth()>=150).isEmpty();
     }
     void damage(LivingDamageEvent.Post e) {
-        if(e.getEntity() instanceof ServerPlayer p) { var s=sessions.get(p.getUUID());if(s!=null)s.combatUntil=seconds+30; }
+        if(e.getEntity() instanceof ServerPlayer p) { var s=sessions.get(p.getUUID());if(s!=null)s.combatUntil=seconds+30;
+            if(teleports.remove(p.getUUID())!=null){Travel.release(p);tell(p,"Teleport cancelled by damage.");}
+            dev.ftb.mods.ftbessentials.util.WarmupCooldownTeleporter.cancelWarmup(p);
+        }
         if(e.getSource().getEntity() instanceof ServerPlayer p) { var s=sessions.get(p.getUUID());if(s!=null)s.combatUntil=seconds+30; signal(p,"combat:"+e.getEntity().getType().toString()); }
     }
     void crafted(PlayerEvent.ItemCraftedEvent e) { if(e.getEntity() instanceof ServerPlayer p) signal(p,"craft:"+BuiltInRegistries.ITEM.getKey(e.getCrafting().getItem())); }
@@ -180,7 +208,12 @@ public final class ServerTools {
     static boolean decorative(ResourceLocation id) {
         return Set.of("create:copycat_panel","create:copycat_step","create:placard","create:clipboard").contains(id.toString()) || id.getNamespace().equals("create_connected") && id.getPath().startsWith("copycat_");
     }
-    static boolean banned(ResourceLocation id) { return id.toString().equals("create:schematicannon") || id.getNamespace().equals("buildinggadgets2") || id.getPath().contains("schematicannon"); }
+    static boolean banned(ResourceLocation id) {
+        if(id.toString().equals("create:schematicannon") || id.getNamespace().equals("buildinggadgets2") || id.getPath().contains("schematicannon"))return true;
+        try {
+            return (Boolean)Class.forName("mythforge.policy.DisabledItems").getMethod("disabledId",String.class).invoke(null,id.toString());
+        } catch(ReflectiveOperationException error) {throw new IllegalStateException("Authoritative item policy unavailable",error);}
+    }
     static boolean machine(BlockState block) {
         var id=BuiltInRegistries.BLOCK.getKey(block.getBlock());
         return !decorative(id) && machineryNamespace(id.getNamespace()) && (block.getBlock() instanceof EntityBlock || config.getAsJsonArray("functionalBlocks").asList().stream().anyMatch(v->v.getAsString().equals(id.toString())));
@@ -189,13 +222,13 @@ public final class ServerTools {
         if(p instanceof FakePlayer) {
             return automationUnlocked(p.serverLevel(),p.blockPosition());
         }
-        return hours(p)>=30 || tier(p)>0;
+        return RoleBenefits.machinery(p.getUUID());
     }
     static boolean automationUnlocked(ServerLevel level,BlockPos target) {
         var chunk=FTBChunksAPI.api().getManager().getChunk(new ChunkDimPos(level.dimension(),new ChunkPos(target)));
         if(chunk==null)return false;
         UUID owner=chunk.getTeamData().getTeam().getOwner();
-        return state.player(owner).activeSeconds>=108000 || state.paid(owner)>0;
+        return RoleBenefits.machinery(owner);
     }
     void place(BlockEvent.EntityPlaceEvent e) {
         if(e.getLevel().isClientSide() || state==null) return;
@@ -208,7 +241,7 @@ public final class ServerTools {
                 var level=(ServerLevel)e.getLevel();
                 var claim=FTBChunksAPI.api().getManager().getChunk(new ChunkDimPos(level.dimension(),new ChunkPos(e.getPos())));
                 UUID owner=claim==null?null:claim.getTeamData().getTeam().getOwner();
-                deny|=owner==null || (state.player(owner).activeSeconds<108000 && state.paid(owner)==0);
+                deny|=owner==null || !RoleBenefits.machinery(owner);
             }
         }
         if(deny) { e.setCanceled(true); if(e.getEntity() instanceof ServerPlayer p && !(p instanceof FakePlayer)) tell(p,"Functional machinery needs 30 active hours or a supporter rank. Banned machinery stays banned."); }
@@ -231,7 +264,10 @@ public final class ServerTools {
         var custom=item.get(DataComponents.CUSTOM_DATA);
         if(custom==null) return;
         String kind=custom.copyTag().getString("mythforge_consumable");
-        if(kind.startsWith("flight_")) {
+        if(kind.equals("relic_choice")) {
+            e.setCanceled(true);
+            RelicChoiceMenu.open(p,0);
+        } else if(kind.startsWith("flight_")) {
             e.setCanceled(true);
             if(combat(p)) { tell(p,"Flight consumables are disabled in combat."); return; }
             int minutes=kind.equals("flight_60")?60:10;
@@ -252,13 +288,31 @@ public final class ServerTools {
         return claim!=null && claim.getTeamData().isTeamMember(p.getUUID());
     }
     static void grantFlight(ServerPlayer p,Session s) {
-        if(!s.customFlight)s.priorMayfly=p.getAbilities().mayfly;
+        if(!s.customFlight) {
+            s.priorMayfly=p.getAbilities().mayfly && !p.isCreative() && !p.isSpectator();
+            var marker=new CompoundTag();marker.putBoolean("priorMayfly",s.priorMayfly);
+            p.getPersistentData().put("mythforge_flight",marker);
+        }
         s.customFlight=true;p.getAbilities().mayfly=true;p.onUpdateAbilities();
     }
     static void revokeFlight(ServerPlayer p,Session s) {
         if(!s.customFlight)return;
         s.customFlight=false;
-        if(!p.isCreative()&&!p.isSpectator()) { p.getAbilities().flying=s.priorMayfly && p.getAbilities().flying;p.getAbilities().mayfly=s.priorMayfly;p.onUpdateAbilities(); p.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,200,0,false,false)); }
+        p.getPersistentData().remove("mythforge_flight");
+        restoreMayfly(p,s.priorMayfly);
+    }
+    static void restoreFlight(ServerPlayer p) {
+        var saved=p.getPersistentData();
+        if(!saved.contains("mythforge_flight",10))return;
+        boolean prior=saved.getCompound("mythforge_flight").getBoolean("priorMayfly");
+        saved.remove("mythforge_flight");
+        restoreMayfly(p,prior);
+    }
+    private static void restoreMayfly(ServerPlayer p,boolean prior) {
+        if(!p.isCreative()&&!p.isSpectator()) {
+            p.getAbilities().flying=prior && p.getAbilities().flying;p.getAbilities().mayfly=prior;
+            p.onUpdateAbilities();p.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,200,0,false,false));
+        }
     }
     static boolean cooldown(ServerPlayer p,String key,int sec) {
         var d=data(p);long now=System.currentTimeMillis();long until=d.cooldowns.getOrDefault(key,0L);
@@ -267,10 +321,12 @@ public final class ServerTools {
     }
     static void setNode(Rank r,String node,Object value) { r.setPermission(node,PermissionValue.parse(String.valueOf(value))); }
     static void reconcile(ServerPlayer p) {
+        RoleBenefits.reconcile(p);
         PublishedServices.reconcile(p);
         Rank rank=FTBRanksAPI.manager().getRank("earned_"+p.getUUID().toString().replace("-","")).orElseGet(()->FTBRanksAPI.manager().createRank("earned_"+p.getUUID().toString().replace("-",""),50,false));
         rank.add(p.getGameProfile());
         long h=hours(p);int paid=tier(p);
+        for(String travel:List.of("home","back","spawn","warp","tpa","playerspawn"))setNode(rank,"ftbessentials."+travel+".warmup",5);
         int homes=(h>=500?5:h>=200?4:h>=70?3:h>=10?2:1)+(paid==0?0:paid+1);
         int warps=(h>=500?5:h>=400?4:h>=250?3:h>=100?2:h>=40?1:0)+new int[]{0,1,2,3,5}[paid];
         setNode(rank,"ftbessentials.home.max",homes);
@@ -283,11 +339,11 @@ public final class ServerTools {
         setNode(rank,"command.nickname",h>=40||paid>=1);
         for(String cmd:List.of("echest","enderchest")) setNode(rank,"command."+cmd,h>=90||paid>=2);
         for(String cmd:List.of("anvil","smithing")) setNode(rank,"command."+cmd,h>=300||paid>=2);
-        for(String cmd:List.of("trashcan","trash","disposal")) setNode(rank,"command."+cmd,h>=300||paid>=1);
+        for(String cmd:List.of("trashcan","trash","disposal")) setNode(rank,"command."+cmd,true);
         setNode(rank,"command.hat",h>=400);
         for(String id:List.of("ember","artisan","runeforged","mythic")) {
             var paidRank=FTBRanksAPI.manager().getRank(id).orElseThrow();
-            if(paid>0 && id.equals(List.of("ember","artisan","runeforged","mythic").get(paid-1)))paidRank.add(p.getGameProfile());else paidRank.remove(p.getGameProfile());
+            if(state.paid(p.getUUID())>0 && id.equals(List.of("ember","artisan","runeforged","mythic").get(state.paid(p.getUUID())-1)))paidRank.add(p.getGameProfile());else paidRank.remove(p.getGameProfile());
         }
         // Explicitly avoid raw /tp, /time, /weather, /effect, /give or cross-player utility grants.
     }
@@ -299,8 +355,9 @@ public final class ServerTools {
         if(!(source.getEntity() instanceof ServerPlayer p)||state==null) return;
         String input=e.getParseResults().getReader().getString().trim();
         String[] words=input.split("\\s+");String root=words[0].replaceFirst("^[^:]+:","");
-        if(Set.of("home","back","spawn","warp","tpa","tpaccept","tpahere","rtp","ascend","waypoint").contains(root) && combat(p)) { e.setCanceled(true);tell(p,"Travel is disabled for 30 seconds after combat."); }
-        if(root.equals("ftbchunks") && words.length>1 && !Set.of("claim","unclaim","unclaim_all","load","unload","unload_all","info","map","block_color","waypoint").contains(words[1]) && !p.hasPermissions(4)) { e.setCanceled(true); }
+        if(CommandPolicy.guard(e,p,root,words))return;
+        if(CommandPolicy.owner(p))return;
+        if(root.equals("ftbchunks") && words.length>1 && !Set.of("claim","unclaim","unclaim_all","load","unload","unload_all","info","map","block_color","waypoint").contains(words[1]) && CommandPolicy.level(p)<3) { e.setCanceled(true); }
         if((root.equals("create")||root.equals("sable")||root.equals("aeronautics")) && !unlocked(p)) { e.setCanceled(true);tell(p,"Machinery access unlocks at 30 active hours."); }
     }
 }

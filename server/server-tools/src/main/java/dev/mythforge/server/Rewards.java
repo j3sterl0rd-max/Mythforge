@@ -14,6 +14,9 @@ import java.util.*;
 
 final class Rewards {
     static List<String> relicChoices() {return BuiltInRegistries.ITEM.stream().filter(item->item instanceof it.hurts.sskirillss.relics.api.relics.IRelicItem).map(item->BuiltInRegistries.ITEM.getKey(item).toString()).filter(id->!ServerTools.banned(ResourceLocation.parse(id))).sorted().toList();}
+    static int choose(ServerPlayer p,String id) {
+        var hand=p.getMainHandItem();var custom=hand.get(DataComponents.CUSTOM_DATA);if(custom==null||!custom.copyTag().getString("mythforge_consumable").equals("relic_choice")||!Rewards.relicChoices().contains(id))return 0;var reward=new com.google.gson.JsonObject();reward.addProperty("id",id);reward.addProperty("count",1);reward.addProperty("maxed",true);Rewards.stack(p,reward);var rewards=new com.google.gson.JsonArray();rewards.add(reward);hand.shrink(1);Rewards.enqueue(p,rewards);ServerTools.state.save();ServerTools.server.getPlayerList().saveAll();Rewards.notifyPending(p);return 1;
+    }
     static boolean crateValid;
     static List<String> errors=new ArrayList<>();
     static void audit() {
@@ -76,39 +79,35 @@ final class Rewards {
         var d=ServerTools.data(p);
         for(var entry:ServerTools.config.getAsJsonObject("milestones").entrySet()) {
             int hours=Integer.parseInt(entry.getKey());
-            if(ServerTools.hours(p)>=hours&&d.delivered.add(hours)) { enqueue(p,entry.getValue().getAsJsonArray());ServerTools.tell(p,"Milestone reached: "+hours+" active hours."); }
+            if(ServerTools.hours(p)>=hours&&d.delivered.add(hours)) { var rewards=entry.getValue().getAsJsonArray().deepCopy();for(var reward:rewards)reward.getAsJsonObject().addProperty("milestone",hours);enqueue(p,rewards);ServerTools.tell(p,"Milestone reached: "+hours+" active hours! Open /rewards to claim your rewards."); }
         }
         for(int paid=d.paidDelivered+1;paid<=ServerTools.tier(p);paid++) {
             enqueue(p,ServerTools.config.getAsJsonObject("paidItems").getAsJsonArray(String.valueOf(paid)));d.paidDelivered=paid;
         }
-        ServerTools.state.save();Relics.slots(p);mail(p);
+        ServerTools.state.save();Relics.slots(p);
     }
-    static void mail(ServerPlayer p) {
-        var d=ServerTools.data(p);int delivered=0;
-        var receipt=p.getPersistentData().getCompound("mythforge_delivery_receipts");
-        var completed=new ArrayList<String>();
-        for(String pending:d.pending) {
-            var spec=JsonParser.parseString(pending).getAsJsonObject();String grant=spec.get("grant").getAsString();
-            if(receipt.getBoolean(grant)) {completed.add(pending);continue;}
-            if(p.getInventory().getFreeSlot()<0)break;
-            var item=stack(p,spec);
-            if(p.getInventory().add(item)) {receipt.putBoolean(grant,true);completed.add(pending);delivered++;}
-            else throw new IllegalStateException("Reward insertion failed despite reserved inventory space");
-        }
-        p.getPersistentData().put("mythforge_delivery_receipts",receipt);
-        if(!completed.isEmpty()) {
-            // Inventory and receipt live in the same atomic player save. Replay after a crash checks that receipt.
+    static void notifyPending(ServerPlayer p) {
+        if(!ServerTools.data(p).pending.isEmpty())ServerTools.tell(p,"You have "+ServerTools.data(p).pending.size()+" unclaimed reward stacks. Open /rewards to claim them.");
+    }
+    static void claim(ServerPlayer p,String grant) {
+        var d=ServerTools.data(p);
+        String pending=d.pending.stream().filter(raw->JsonParser.parseString(raw).getAsJsonObject().get("grant").getAsString().equals(grant)).findFirst().orElse(null);
+        if(pending==null)return;
+        var receipts=p.getPersistentData().getCompound("mythforge_delivery_receipts");
+        if(!receipts.getBoolean(grant)) {
+            if(p.getInventory().getFreeSlot()<0){ServerTools.tell(p,"Make an empty inventory slot, then claim this reward.");return;}
+            var item=stack(p,JsonParser.parseString(pending).getAsJsonObject());
+            if(!p.getInventory().add(item))throw new IllegalStateException("Reward insertion failed despite reserved inventory space");
+            receipts.putBoolean(grant,true);p.getPersistentData().put("mythforge_delivery_receipts",receipts);
             ServerTools.server.getPlayerList().saveAll();
-            d.pending.removeAll(completed);ServerTools.state.save();
         }
-        if(delivered>0) {p.inventoryMenu.broadcastChanges();ServerTools.tell(p,"Delivered "+delivered+" reward stacks.");}
-        if(!d.pending.isEmpty())ServerTools.tell(p,"Inventory full: "+d.pending.size()+" stacks remain in /mail.");
+        d.pending.remove(pending);ServerTools.state.save();p.inventoryMenu.broadcastChanges();
     }
     static void open(ServerPlayer p) {
         if(!crateValid) {ServerTools.tell(p,"Crate temporarily disabled pending registry verification.");return;}
         var d=ServerTools.data(p);if(d.keys<1) {ServerTools.tell(p,"No keys. Vote for the server to earn one.");return;}
         var row=CrateTable.draw(net.minecraft.util.RandomSource.create(ServerTools.RANDOM.nextLong()));
         d.keys--;enqueue(p,row.getAsJsonArray("items"));ServerTools.state.save();
-        ServerTools.tell(p,"Crate reward: "+row.get("name").getAsString()+" ["+row.get("tier").getAsString()+"]");mail(p);
+        ServerTools.tell(p,"Crate reward: "+row.get("name").getAsString()+" ["+row.get("tier").getAsString()+"]. Claim in /rewards.");notifyPending(p);
     }
 }

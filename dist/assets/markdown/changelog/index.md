@@ -8,11 +8,29 @@ Release journal
 
 Pack updates, balance changes, and notes from the public world.
 
-Find a release12 releases shown
+Find a release16 releases shown
+
+VERSION 1.2.7.12026-10-21
+
+## Mythforge 1.2.7.1
+
+ [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379)
+
+VERSION 1.2.72026-10-21
+
+## Mythforge 1.2.7
+
+ [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9273912)
+
+VERSION 1.2.52026-10-17
+
+## Mythforge 1.2.5
+
+ [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9225524)
 
 VERSION 1.2.42026-10-13
 
-## Mythforge - Beyond the Horizon-1.2.4.zip
+## Mythforge 1.2.4
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9152368)
 
@@ -20,7 +38,7 @@ Added Mods Akashic Tome Patchouli Galosphere Galosphere: Spellbooks Born in Chao
 
 VERSION 1.2.32026-10-05
 
-## Mythforge - Beyond the Horizon-1.2.3.zip
+## Mythforge 1.2.3
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9073646)
 
@@ -28,7 +46,7 @@ DRAMATICALLY improved performance, and staged for the multiplayer hardening that
 
 VERSION 1.2.22026-10-04
 
-## Mythforge - Beyond the Horizon-1.2.2.zip
+## Mythforge 1.2.2
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9058165)
 
@@ -36,7 +54,7 @@ Hotfix because of version mismatch. Fixes crashing from tooltips.
 
 VERSION 1.2.12026-10-04
 
-## Mythforge - Beyond the Horizon-1.2.1.zip
+## Mythforge 1.2.1
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9053808)
 
@@ -44,7 +62,7 @@ Removed Chipped and Chisels and bits to cut literally millions of EMI dings. Fix
 
 VERSION 1.2.02026-10-03
 
-## Mythforge\_1.2.0.zip
+## Mythforge 1.2.0
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9042597)
 
@@ -52,7 +70,7 @@ Mythforge: Beyond the Horizon - Update from 1.0.4.3 Main changes Replaced the pr
 
 VERSION 1.0.4.32026-09-26
 
-## Mythforge Beyond the Horizon-1.0.4.3.zip
+## Mythforge 1.0.4.3
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8981261)
 
@@ -60,7 +78,7 @@ Added JEI for create recipes and such. Fixed issue where updating nuked user net
 
 VERSION 1.0.4.22026-09-25
 
-## Mythforge Beyond the Horizon-1.0.4.2.zip
+## Mythforge 1.0.4.2
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8972751)
 
@@ -68,7 +86,7 @@ Distant horizons removed due to problems.
 
 VERSION 1.0.4.12026-09-24
 
-## Mythforge Beyond the Horizon-1.0.4.1.zip
+## Mythforge 1.0.4.1
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8967653)
 
@@ -76,7 +94,7 @@ Fixed the update not actually containing the update.
 
 VERSION 1.0.42026-09-24
 
-## Mythforge-1.0.4.zip
+## Mythforge 1.0.4
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8964036)
 
@@ -84,7 +102,7 @@ Added DOOM and the future final boss of the pack!
 
 VERSION 1.0.32026-09-18
 
-## Mythforge-1.0.3.zip
+## Mythforge 1.0.3
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8915162)
 
@@ -92,7 +110,7 @@ What's new Mythforge: Beyond the Horizon 1.0.3 A small maintenance update focuse
 
 VERSION 1.0.22026-09-18
 
-## Mythforge-1.0.2.zip
+## Mythforge 1.0.2
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8908176)
 
@@ -100,10 +118,16 @@ What's new Mythforge: Beyond the Horizon 1.0.2 Long-distance exploration gets a 
 
 VERSION 1.0.12026-09-15
 
-## Mythforge-1.0.1.zip
+## Mythforge 1.0.1
 
  [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8887983)
 
 \## Mythforge: Beyond the Horizon 1.0.1 Computers and automation join the pack, plus a round of mod updates. \*\*352 mods\*\* (up from 347). ### Added - \*\*CC: Tweaked\*\* - programmable in-game computers, turtles and peripherals - \*\*CC: Sable\*\* - connects CC: Tweaked to the Sable physics engine, so you can script your airships directly - \*\*Advanced Peripherals\*\* - extended peripheral set for CC: Tweaked - \*\*Create: Avionics\*\* - computer-controlled flight systems - \*\*Minor Gamba\*\* - two uncraftable gambling machines: a gacha machine that outputs any item in the game, and a simple double-or-nothing Together these mean an airship can now be flown by a Lua program instead of a player. ### Updated - Aeronautics Player Tilt &rarr; 0.2.0 - Ars 'n Spells &rarr; 3.3.4 - Azimuth API &rarr; 1.4.8 - Create: Bits 'n' Bobs &rarr; 2.3.5 - Create: Creating Space &rarr; 1.7.22 - Create: Flight Control &rarr; 0.7.2 - Moog's Structure Lib &rarr; 3.3.1
+
+VERSION 1.0.02026-09-14
+
+## Mythforge 1.0.0
+
+ [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/8881729)
 
 No matching releases. Try another version or keyword.

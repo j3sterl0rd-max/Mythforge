@@ -43,7 +43,7 @@ final class PublishedServices {
     }
     static void reconcile(ServerPlayer player) {
         var holder=AHolder.player(player.getUUID());
-        boolean allowed=ServerTools.hours(player)>=30 || ServerTools.tier(player)>0;
+        boolean allowed=RoleBenefits.machinery(player.getUUID());
         if(allowed && !AStagesUtils.hasStage(holder,MACHINERY)) AStagesUtils.addStage(holder,MACHINERY,false,false,false);
         else if(!allowed && AStagesUtils.hasStage(holder,MACHINERY)) AStagesUtils.removeStage(holder,MACHINERY,false,false,false);
     }

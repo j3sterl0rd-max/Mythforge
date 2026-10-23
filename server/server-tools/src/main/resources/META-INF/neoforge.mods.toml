@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="All Rights Reserved"
 [[mods]]
 modId="mythforge_server"
-version="1.0.0"
+version="1.0.6"
 displayName="Mythforge Server Tools"
 description="Server-owned active playtime, rank delivery, vote crates, safe travel and launch controls."
 [[dependencies.mythforge_server]]

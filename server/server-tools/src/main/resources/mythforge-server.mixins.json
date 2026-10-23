@@ -2,6 +2,20 @@
   "required": true,
   "package": "dev.mythforge.server.mixin",
   "compatibilityLevel": "JAVA_21",
-  "server": ["PersonalViewMixin", "JourneyMapTeleportMixin", "PriorityLoginMixin", "RapierReentrancyMixin", "FTBRtpInvoker", "FTBRtpPreparationMixin", "AStagesAutomationMixin", "SimpleAfkConfigMixin"],
-  "injectors": { "defaultRequire": 1 }
+  "server": [
+    "PersonalViewMixin",
+    "JourneyMapTeleportMixin",
+    "PriorityLoginMixin",
+    "RapierReentrancyMixin",
+    "FTBRtpInvoker",
+    "FTBRtpPreparationMixin",
+    "AStagesAutomationMixin",
+    "SimpleAfkConfigMixin",
+    "OwnerCommandPermissionMixin",
+    "VoteReminderMixin",
+    "TeleportWarmupMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

@@ -18,11 +18,11 @@ PERMANENT SUPPORTER RANK
 
 ## Ember
 
-Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
+Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.
 
 -   Immediate Create machinery and Sable contraption access; banned functionality stays banned
 -   1 Creative Blaze Cake and 1 fully maxed Experience Disperser
--   /craft, /stonecutter, /nick, colored item naming and /disposal
+-   /craft, /stonecutter, /nick, /rename <text> (supports & color codes) and /disposal
 -   +2 homes, +1 public warps, +32 claim chunks and +1 force-loadable chunk
 -   Matching Discord role after account linking
 
@@ -33,12 +33,12 @@ PERMANENT SUPPORTER RANK
 
 ## Artisan
 
-Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.
+Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.
 
 -   Everything in Ember
 -   AE2 Infinity Range Card and wireless crafting terminal with network hardware
 -   /echest, /ascend, /anvil, /smithing and /grindstone
--   Custom public-warp icon, priority login and /rtp nether
+-   Custom public-warp icon with /pwarp icon <name> <item>, priority login and /rtp nether
 -   +3 homes, +2 public warps, +64 claim chunks and +2 force-loadable chunks
 
 $16 USD  
@@ -48,12 +48,13 @@ PERMANENT SUPPORTER RANK
 
 ## Runeforged
 
-Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
+Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.
 
 -   Everything in Artisan and Ember
 -   1 fully maxed Relics item of your choice
--   /feed, claim-limited /fly, safe visited-waypoint teleporting and XP-based /repair
+-   /feed, claim-limited /fly, JourneyMap waypoint teleporting or /waypoint <x> <y> <z> and XP-based /repair
 -   /rtp end
+-   Teleporting requires five seconds without movement or damage; /repair uses XP levels based on damage repaired
 -   +4 homes, +3 public warps, +128 claim chunks and +4 force-loadable chunks
 
 $32 USD  
@@ -63,12 +64,13 @@ PERMANENT SUPPORTER RANK
 
 ## Mythic
 
-Permanent and cumulative. Higher ranks include lower-rank features. Item grants are one-time; upgrades deliver only newly acquired rewards.
+Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.
 
 -   Everything in Runeforged, Artisan and Ember
 -   1 empty infinite item storage cell and 1 AE2 Dimension Card
--   /heal, limited /effects, /prefix, custom item lore and custom join message
--   World time and weather controls affect everyone in your current world
+-   /heal, limited /effects, /prefix, /lore <text> and /joinmessage <text>
+-   /worldtime <0-23999> and /worldweather <clear|rain|thunder> affect everyone in your current world; each has a 30-minute cooldown
+-   /effects <speed|haste|night\_vision|water\_breathing> grants level-I effects for five minutes with a 15-minute cooldown; /prefix <text> changes your chat prefix
 -   +5 homes, +5 public warps, +256 claim chunks and +6 force-loadable chunks
 
 $64 USD  

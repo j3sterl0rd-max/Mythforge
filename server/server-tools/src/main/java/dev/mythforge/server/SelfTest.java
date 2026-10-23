@@ -27,6 +27,7 @@ final class SelfTest {
         String earned="earned_"+uuid.toString().replace("-","");
         try {
             ServerTools.state=test;
+            RoleBenefitsTest.run(p,passed);
             var data=test.player(uuid);data.activeSeconds=500*3600L;data.delivered.add(500);data.paidDelivered=3;
             check(Payments.purchase(uuid.toString().replace("-",""),"ember","selftest_ember"),"Accepts Tebex's compact Java UUID",passed);
             check(Payments.purchase(uuid.toString(),"runeforged","selftest_runeforged"),"Upgrade entitlement is recorded",passed);
@@ -90,6 +91,8 @@ final class SelfTest {
             var disperser=new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("relics:experience_disperser")));
             Relics.max(p,disperser);passed.add("Experience Disperser reaches validated maximum rank, level and stats");
             for(String id:Rewards.relicChoices()) {try {Relics.max(p,new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(id))));}catch(Exception ex){failures.add("Maxed relic "+id+": "+ex.getClass().getSimpleName()+" "+ex.getMessage());}}
+
+            CommandPolicyTest.run(p,passed);
         } catch(Exception ex) {failures.add(ex.getMessage());}
         finally {
             dk.magnusjensen.simpleafk.AFKManager.getInstance().removePlayer(uuid);
@@ -107,7 +110,8 @@ final class SelfTest {
         var choice=Rewards.relicChoices().getFirst();var item=BuiltInRegistries.ITEM.get(ResourceLocation.parse(choice));
         int before=p.getInventory().countItem(item);var dispatcher=ServerTools.server.getCommands().getDispatcher();
         dispatcher.execute("relic choose "+choice,p.createCommandSourceStack());
-        check(voucher.isEmpty() && p.getInventory().countItem(item)==before+1 && ServerTools.data(p).pending.isEmpty(),"Namespaced relic-choice command consumes one voucher and delivers a maxed relic",passed);
+        check(voucher.isEmpty() && p.getInventory().countItem(item)==before && ServerTools.data(p).pending.size()==1,"Namespaced relic-choice command consumes one voucher and queues a maxed relic",passed);
+        String grant=com.google.gson.JsonParser.parseString(ServerTools.data(p).pending.getFirst()).getAsJsonObject().get("grant").getAsString();Rewards.claim(p,grant);
         dispatcher.execute("relic choose "+choice,p.createCommandSourceStack());
         check(p.getInventory().countItem(item)==before+1,"Relic-choice replay without a voucher cannot duplicate its reward",passed);
     }
@@ -117,12 +121,15 @@ final class SelfTest {
         ServerTools.state.warps.put("selftest_icon",warp);
         var dispatcher=ServerTools.server.getCommands().getDispatcher();var source=p.createCommandSourceStack();
         try {
+            data.activeSeconds=(RtpUnlocks.NETHER_HOURS-1)*3600L;
+            check(!Travel.canRtp(p,"the_nether"),"Nether RTP locked below configured active hours",passed);
+            data.activeSeconds=RtpUnlocks.NETHER_HOURS*3600L;
+            check(Travel.canRtp(p,"the_nether"),"Nether RTP unlocks at configured active hours",passed);
             data.activeSeconds=299*3600L;
-            check(!Travel.canRtp(p,"the_nether"),"Earned Nether RTP stays locked before 300 active hours",passed);
             dispatcher.execute("pwarp icon selftest_icon minecraft:diamond",source);
             check(warp.icon.equals("minecraft:ender_pearl"),"Public-warp icons stay locked before 300 active hours",passed);
             data.activeSeconds=300*3600L;
-            check(Travel.canRtp(p,"the_nether") && Travel.permitted(p,ServerTools.server.getLevel(net.minecraft.world.level.Level.NETHER)),"Earned Nether RTP and dimension access unlock at 300 hours",passed);
+            check(Travel.canRtp(p,"the_nether") && Travel.permitted(p,ServerTools.server.getLevel(net.minecraft.world.level.Level.NETHER)),"Nether RTP remains unlocked above its configured threshold",passed);
             dispatcher.execute("pwarp icon selftest_icon minecraft:diamond",source);
             check(warp.icon.equals("minecraft:diamond"),"Owned public-warp icons unlock without payment at 300 hours",passed);
             dispatcher.execute("pwarp",source);
@@ -132,9 +139,9 @@ final class SelfTest {
             p.containerMenu.clicked(0,0,net.minecraft.world.inventory.ClickType.THROW,p);
             check(p.getInventory().countItem(net.minecraft.world.item.Items.DIAMOND)==diamonds && p.containerMenu.getSlot(0).getItem().is(net.minecraft.world.item.Items.DIAMOND),"Warp display icons cannot be withdrawn by shift-click or item-drop actions",passed);
             p.closeContainer();
-            data.activeSeconds=399*3600L;check(!Travel.canRtp(p,"the_end"),"Earned End RTP stays locked before 400 active hours",passed);
-            data.activeSeconds=400*3600L;
-            check(Travel.canRtp(p,"the_end") && Travel.permitted(p,ServerTools.server.getLevel(net.minecraft.world.level.Level.END)),"Earned End RTP and dimension access unlock at 400 hours",passed);
+            data.activeSeconds=(RtpUnlocks.END_HOURS-1)*3600L;check(!Travel.canRtp(p,"the_end"),"End RTP locked below configured active hours",passed);
+            data.activeSeconds=RtpUnlocks.END_HOURS*3600L;
+            check(Travel.canRtp(p,"the_end") && Travel.permitted(p,ServerTools.server.getLevel(net.minecraft.world.level.Level.END)),"End RTP and dimension access unlock at configured active hours",passed);
             var full=net.minecraft.network.chat.Component.translatable("multiplayer.disconnect.server_full");
             data.activeSeconds=499*3600L;check(!PriorityLogin.allow(p.getGameProfile(),full),"Earned reserved-capacity login stays locked before 500 hours",passed);
             data.activeSeconds=500*3600L;
