@@ -1,0 +1,19 @@
+{
+	"success": true,
+	"passed": [
+		"Vanilla OP-only spawn protection disabled",
+		"Exact square bounds",
+		"Old beta Overworld excluded",
+		"Ordinary player cannot break spawn blocks",
+		"Ordinary player cannot place spawn blocks",
+		"Outside spawn is unaffected",
+		"moderator can build at spawn",
+		"admin can build at spawn",
+		"owner can build at spawn",
+		"Block interaction retained while item-based edits are denied",
+		"Explosion removes only protected blocks from its damage list",
+		"Hostile monster spawning rejected",
+		"Passive entities allowed",
+		"New arrivals are placed on center glowstone, not the roof"
+	]
+}

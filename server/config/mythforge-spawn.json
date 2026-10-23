@@ -1,0 +1,13 @@
+{
+  "dimension": "minecraft:overworld",
+  "built": true,
+  "minX": -100,
+  "maxX": 100,
+  "minZ": -100,
+  "maxZ": 100,
+  "minY": -64,
+  "maxY": 319,
+  "centerX": 0,
+  "centerZ": 0,
+  "glowstoneY": 127
+}

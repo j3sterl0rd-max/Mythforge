@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "checkedBlocks": 15513984,
+  "counts": {
+    "minecraft:bedrock": 386402,
+    "minecraft:black_concrete": 380162,
+    "minecraft:air": 14747411,
+    "minecraft:cave_air": 8,
+    "minecraft:glowstone": 1
+  },
+  "mismatches": [],
+  "spawn": {
+    "SpawnX": 0,
+    "SpawnY": 128,
+    "SpawnZ": 0
+  },
+  "dimension": "minecraft:overworld"
+}
