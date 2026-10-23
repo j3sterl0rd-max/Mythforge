@@ -116,7 +116,7 @@
   "moderator": {
     "name": "Moderator",
     "power": 300,
-    "ftbranks.name_format": "&9[Mod] &f{name}&r",
+    "ftbranks.name_format": "&9[Moderator] &f{name}&r",
     "command.kick": true,
     "command.mute": true,
     "command.unmute": true,
@@ -127,7 +127,7 @@
   "admin": {
     "name": "Admin",
     "power": 400,
-    "ftbranks.name_format": "&d[Admin] &f{name}&r",
+    "ftbranks.name_format": "&d[Administrator] &f{name}&r",
     "command.kick": true,
     "command.mute": true,
     "command.unmute": true,

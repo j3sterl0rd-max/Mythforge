@@ -12,8 +12,8 @@ import java.util.function.Predicate;
 public final class CommandPolicy {
     static final Set<String> PUBLIC=Set.of("help","list","msg","tell","w","me","teammsg","tm","home","sethome","delhome","homes","listhomes","back","spawn","warp","listwarps","tpa","tpaccept","tpdeny","tpahere","rewards","pvp","crate","vote","rtp","ascend","feed","heal","fly","repair","effects","grindstone","pwarp","waypoint","prefix","rename","lore","joinmessage","worldtime","worldweather","ftbteams","ftbchunks","chunks","ftbquests","ftbultimine","kickme","rec","recording","afk","relic","chatcolor","ptime","pweather","particles","modlist","leaderboard","emi","trigger");
     static final Set<String> EARNED=Set.of("craft","crafting","stonecutter","nick","nickname","echest","enderchest","anvil","smithing","trashcan","trash","disposal","hat");
-    static final Set<String> JUNIOR=Set.of("kick","mute","unmute","gamemode","staffmode","gm","grieflogger","gl");
-    static final Set<String> MODERATOR=Set.of("ban","banlist","pardon","near","deathhistory");
+    static final Set<String> JUNIOR=Set.of("kick","mute","unmute","gm","grieflogger","gl");
+    static final Set<String> MODERATOR=Set.of("ban","banlist","pardon","near","deathhistory","tp","teleport","view");
     static final Set<String> ADMIN=Set.of("jade","open-patchouli-book","guideme","createbypass","invsee","spark","observable","ban-ip","pardon-ip","whitelist","tp","teleport","tpo","tpx","teleport_last","tp_offline","setwarp","delwarp","setworldspawn","spawnpoint","spectate","give","clear","enchant","effect","attribute","experience","xp","kill","summon","setblock","fill","clone","place","particle","playsound","stopsound","tellraw","title","say","time","weather","difficulty","worldborder","gamerule","advancement","recipe","forceload","neruina","chunky","lootr","tb","curios","accessories","fluxnetworks","ae2","sable","simulated","create","c","automated_logistics","aal","waterframes");
     public static boolean owner(ServerPlayer player){
         if(ServerTools.server==null)return false;
@@ -83,8 +83,6 @@ public final class CommandPolicy {
         if(minimum(root)>level(player)){
             event.setCanceled(true);ServerTools.tell(player,minimum(root)==4?"This maintenance command is console-only.":"Your staff role does not have access to this command.");return true;
         }
-        // The native /gamemode path is self-only, including for operators.
-        if(root.equals("gamemode")&&words.length!=2){event.setCanceled(true);ServerTools.tell(player,"Game mode changes are self-only. Use /gamemode <mode> or /staffmode <mode>, without a target.");return true;}
         return false;
     }
 }

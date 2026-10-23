@@ -1,0 +1,813 @@
+MYTHFORGE ADMINISTRATOR COMMAND GUIDE
+
+Replace <values> with the requested names, numbers or IDs; do not type the brackets. Use Tab for available values.
+Coordinates are x y z. ~ uses your current coordinate. @s selects yourself; @a selects all online players; @e selects all entities.
+
+/AFK
+====
+
+Displays the AFK bypass list.
+/afk bypass-list
+
+Adds a player to the AFK bypass list so AFK handling can exempt them according to the AFK mod's settings.
+/afk bypass-list add <player>
+
+Removes a player from the AFK bypass list.
+/afk bypass-list remove <player>
+
+Changes another player's AFK state.
+/afk toggle <player>
+
+/BAN
+====
+
+Bans the named account from joining. Add a reason to record why the ban was issued.
+/ban <targets>
+/ban <targets> <reason>
+
+/BAN-IP
+=======
+
+Bans a connection address, or the address of an online player, from joining. Other players sharing that address can also be affected.
+/ban-ip <target>
+/ban-ip <target> <reason>
+
+/BANLIST
+========
+
+Lists current bans. Use players for account bans or ips for address bans.
+/banlist
+/banlist ips
+/banlist players
+
+/CHUNKY
+=======
+
+Displays Chunky help and task controls.
+/chunky
+
+Cancels a chunk-generation task. Existing generated chunks remain.
+/chunky cancel
+/chunky cancel <world>
+
+Sets the center of the generation selection.
+/chunky center
+/chunky center <x>
+/chunky center <x> <z>
+
+Resumes a paused chunk-generation task.
+/chunky continue
+/chunky continue <world>
+
+Defines the generation area using two opposite corners.
+/chunky corners
+/chunky corners <x1>
+/chunky corners <x1> <z1>
+/chunky corners <x1> <z1> <x2>
+/chunky corners <x1> <z1> <x2> <z2>
+
+Displays Chunky help, optionally for the named command.
+/chunky help
+/chunky help <page>
+
+Pauses chunk generation without deleting its progress.
+/chunky pause
+/chunky pause <world>
+
+Shows chunk-generation progress and speed.
+/chunky progress
+
+Sets the generation radius in blocks, with separate axes where supported.
+/chunky radius
+/chunky radius <radius>
+/chunky radius <radius> <radius>
+
+Reloads Chunky configuration from disk.
+/chunky reload
+/chunky reload <type>
+
+Displays the current generation selection.
+/chunky selection
+
+Chooses the generation selection's shape.
+/chunky shape
+/chunky shape <shape>
+
+Moves the selection center to the selected world's spawn.
+/chunky spawn
+
+Starts generating chunks inside the current selection. This can create substantial server load.
+/chunky start
+/chunky start <world>
+/chunky start <world> <shape>
+/chunky start <world> <shape> <centerX>
+/chunky start <world> <shape> <centerX> <centerZ>
+/chunky start <world> <shape> <centerX> <centerZ> <radiusX>
+/chunky start <world> <shape> <centerX> <centerZ> <radiusX> <radiusZ>
+
+Selects the world/dimension used by subsequent Chunky commands.
+/chunky world
+/chunky world <world>
+
+Copies the selected world's Minecraft world border into the generation selection.
+/chunky worldborder
+
+/CLEAR
+======
+
+Removes inventory items from the selected player(s). An item limits what is removed; a maximum count limits the number removed. A count of 0 only counts matching items.
+/clear
+/clear <targets>
+/clear <targets> <item>
+/clear <targets> <item> <maxCount>
+
+/CREATEBYPASS
+=============
+
+Shows the named player's manual machinery-bypass status.
+/createbypass <player>
+
+Removes the manual machinery bypass. Machinery already unlocked through playtime or rank remains available.
+/createbypass <player> off
+
+Grants the named player access to the gated Create machinery before their normal playtime unlock. Banned items remain banned.
+/createbypass <player> on
+
+Shows whether the named player has a manual machinery bypass.
+/createbypass <player> status
+
+/DEATHHISTORY
+=============
+
+Displays the selected player's recorded death locations/history. A UUID can be used instead of a name.
+/deathhistory <player>
+/deathhistory <player_uuid>
+
+/DELWARP
+========
+
+Deletes the named server warp.
+/delwarp <name>
+
+/DIFFICULTY
+===========
+
+Shows the current world difficulty, or changes it to peaceful, easy, normal or hard when a value is supplied.
+/difficulty
+/difficulty easy
+/difficulty hard
+/difficulty normal
+/difficulty peaceful
+
+/EFFECT
+=======
+
+Removes active status effects from the selected entities; supplying an effect removes only that effect.
+/effect clear
+/effect clear <targets>
+/effect clear <targets> <effect>
+
+Applies the specified status effect to the selected entities. Duration, amplifier and particle visibility can be supplied; infinite makes it last indefinitely.
+/effect give <targets> <effect>
+/effect give <targets> <effect> <seconds>
+/effect give <targets> <effect> <seconds> <amplifier>
+/effect give <targets> <effect> <seconds> <amplifier> <hideParticles>
+/effect give <targets> <effect> infinite
+/effect give <targets> <effect> infinite <amplifier>
+/effect give <targets> <effect> infinite <amplifier> <hideParticles>
+
+/ENCHANT
+========
+
+Adds the specified enchantment to the item held by each selected player, subject to normal compatibility and level rules.
+/enchant <targets> <enchantment>
+/enchant <targets> <enchantment> <level>
+
+/EXPERIENCE
+===========
+
+Adds experience to the selected players. Negative amounts subtract experience. Choose points or levels; omitted units use points.
+/experience add <targets> <amount>
+/experience add <targets> <amount> levels
+/experience add <targets> <amount> points
+
+Shows the selected player's current experience points or levels.
+/experience query <targets> levels
+/experience query <targets> points
+
+Sets the selected players' experience to the supplied number of points or levels.
+/experience set <targets> <amount>
+/experience set <targets> <amount> levels
+/experience set <targets> <amount> points
+
+/FORCELOAD
+==========
+
+Marks the selected chunk(s) to remain loaded even without players nearby.
+/forceload add <from>
+/forceload add <from> <to>
+
+Lists force-loaded chunks, or checks whether the specified chunk is force-loaded.
+/forceload query
+/forceload query <pos>
+
+Removes force-load assignments for the selected chunks. remove all removes all such assignments in the current dimension.
+/forceload remove <from>
+/forceload remove <from> <to>
+/forceload remove all
+
+/FTBCHUNKS
+==========
+
+Toggles your ability to bypass FTB Chunks claim protection for staff work.
+/ftbchunks admin bypass_protection
+
+Claims the specified chunks on behalf of the selected team/player.
+/ftbchunks admin claim_as <team>
+/ftbchunks admin claim_as <team> <radius_in_blocks>
+/ftbchunks admin claim_as <team> <radius_in_blocks> <anchor>
+/ftbchunks admin claim_as <team> <radius_in_blocks> <anchor> <dimension>
+
+Adds to the selected player's extra claim-chunk allowance.
+/ftbchunks admin extra_claim_chunks <player> add <number>
+
+Shows the selected player's extra claim-chunk allowance.
+/ftbchunks admin extra_claim_chunks <player> get
+
+Sets the selected player's extra claim-chunk allowance to the supplied number.
+/ftbchunks admin extra_claim_chunks <player> set <number>
+
+Adds to the selected player's extra force-loaded-chunk allowance.
+/ftbchunks admin extra_force_load_chunks <player> add <number>
+
+Shows the selected player's extra force-loaded-chunk allowance.
+/ftbchunks admin extra_force_load_chunks <player> get
+
+Sets the selected player's extra force-loaded-chunk allowance.
+/ftbchunks admin extra_force_load_chunks <player> set <number>
+
+Opens the claim interface for the selected team/player so you can administer its claims.
+/ftbchunks admin open_claim_gui_as <team>
+
+Removes claims on behalf of the selected team/player.
+/ftbchunks admin unclaim_as <team>
+/ftbchunks admin unclaim_as <team> <radius_in_blocks>
+/ftbchunks admin unclaim_as <team> <radius_in_blocks> <anchor>
+/ftbchunks admin unclaim_as <team> <radius_in_blocks> <anchor> <dimension>
+
+Removes claims in the specified dimension for the command's selected owner/scope.
+/ftbchunks admin unclaim_dimension
+/ftbchunks admin unclaim_dimension <dimension>
+
+Removes all claims in the command's selected owner/scope.
+/ftbchunks admin unclaim_everything
+
+Removes force-load assignments in the command's selected owner/scope.
+/ftbchunks admin unload_everything
+
+Shows the staff visualization of loaded chunks.
+/ftbchunks admin view_loaded_chunks
+/ftbchunks admin view_loaded_chunks <dimension>
+
+Clears the staff loaded-chunk visualization.
+/ftbchunks admin view_loaded_chunks reset
+/ftbchunks admin view_loaded_chunks reset <dimension>
+
+/FTBQUESTS
+==========
+
+Changes whether quest rewards are blocked for the selected scope.
+/ftbquests block_rewards
+/ftbquests block_rewards <enabled>
+/ftbquests block_rewards <enabled> <player>
+
+Marks the selected quest/task complete for the specified team/player.
+/ftbquests change_progress <players> complete <quest_object>
+
+Marks all quests complete for the selected team/player.
+/ftbquests change_progress <players> complete-all
+
+Resets the selected quest/task progress for the specified team/player.
+/ftbquests change_progress <players> reset <quest_object>
+
+Resets all quest progress for the selected team/player.
+/ftbquests change_progress <players> reset-all
+
+Changes quest editing mode, enabling or disabling changes to the quest book.
+/ftbquests editing_mode
+/ftbquests editing_mode <enabled>
+/ftbquests editing_mode <enabled> <player>
+
+Changes whether quest progress is locked.
+/ftbquests locked
+/ftbquests locked <enabled>
+/ftbquests locked <enabled> <player>
+
+Reloads quest data.
+/ftbquests reload
+
+Reloads quest definitions from disk.
+/ftbquests reload quests
+
+Reloads saved quest team progress from disk.
+/ftbquests reload team_progress
+
+/FTBTEAMS
+=========
+
+Forces a player to join the specified team.
+/ftbteams force-add <team> <players>
+
+Disbands a team administratively.
+/ftbteams force-disband <team>
+
+Forces a player out of a team.
+/ftbteams force-remove <team> <players>
+
+Opens or changes another party's settings.
+/ftbteams party settings_for <team> <key>
+/ftbteams party settings_for <team> <key> <value>
+
+Transfers ownership of another party to the selected player.
+/ftbteams party transfer_ownership_for <team> <player_id>
+
+/GAMERULE
+=========
+
+Shows the announce Advancements game rule.
+/gamerule announceAdvancements
+
+Changes the announce Advancements game rule.
+/gamerule announceAdvancements <value>
+
+Shows the do Daylight Cycle game rule.
+/gamerule doDaylightCycle
+
+Changes the do Daylight Cycle game rule.
+/gamerule doDaylightCycle <value>
+
+Shows the do Fire Tick game rule.
+/gamerule doFireTick
+
+Changes the do Fire Tick game rule.
+/gamerule doFireTick <value>
+
+Shows the do Mob Spawning game rule.
+/gamerule doMobSpawning
+
+Changes the do Mob Spawning game rule.
+/gamerule doMobSpawning <value>
+
+Shows the do Weather Cycle game rule.
+/gamerule doWeatherCycle
+
+Changes the do Weather Cycle game rule.
+/gamerule doWeatherCycle <value>
+
+Shows the keep Inventory game rule.
+/gamerule keepInventory
+
+Changes the keep Inventory game rule.
+/gamerule keepInventory <value>
+
+Shows the mob Griefing game rule.
+/gamerule mobGriefing
+
+Changes the mob Griefing game rule.
+/gamerule mobGriefing <value>
+
+Shows the players Sleeping Percentage game rule.
+/gamerule playersSleepingPercentage
+
+Changes the players Sleeping Percentage game rule.
+/gamerule playersSleepingPercentage <value>
+
+Shows the show Death Messages game rule.
+/gamerule showDeathMessages
+
+Changes the show Death Messages game rule.
+/gamerule showDeathMessages <value>
+
+Shows the spawn Radius game rule.
+/gamerule spawnRadius
+
+Changes the spawn Radius game rule.
+/gamerule spawnRadius <value>
+
+/GIVE
+=====
+
+Gives the selected player(s) the specified item and optional quantity.
+/give <targets> <item>
+/give <targets> <item> <count>
+
+/GL
+===
+
+Toggles block inspection. Interact with blocks to view their recorded changes and identify who changed them.
+/gl inspect
+
+Searches recorded activity using the supplied filters. Filters narrow results by player, time, radius, action or item; use command completion for accepted filter formats.
+/gl lookup <filter1>
+/gl lookup <filter1> <filter2>
+/gl lookup <filter1> <filter2> <filter3>
+/gl lookup <filter1> <filter2> <filter3> <filter4>
+/gl lookup <filter1> <filter2> <filter3> <filter4> <filter5>
+
+Displays the requested page of your most recent GriefLogger search results.
+/gl page <page>
+
+/GM
+===
+
+Changes your own game mode to survival, creative, adventure or spectator. No player target is accepted.
+/gm adventure
+/gm creative
+/gm spectator
+/gm survival
+
+/GRIEFLOGGER
+============
+
+Toggles block inspection. Interact with blocks to view their recorded changes and identify who changed them.
+/grieflogger inspect
+
+Searches recorded activity using the supplied filters. Filters narrow results by player, time, radius, action or item; use command completion for accepted filter formats.
+/grieflogger lookup <filter1>
+/grieflogger lookup <filter1> <filter2>
+/grieflogger lookup <filter1> <filter2> <filter3>
+/grieflogger lookup <filter1> <filter2> <filter3> <filter4>
+/grieflogger lookup <filter1> <filter2> <filter3> <filter4> <filter5>
+
+Displays the requested page of your most recent GriefLogger search results.
+/grieflogger page <page>
+
+/INVSEE
+=======
+
+Opens another online player's inventory for staff inspection.
+/invsee <player>
+
+/KICK
+=====
+
+Disconnects the selected online player immediately. They can reconnect unless they are also banned. An optional reason is shown to them.
+/kick <targets>
+/kick <targets> <reason>
+
+/KILL
+=====
+
+Kills the selected entity or entities. Without a target it kills you.
+/kill
+/kill <targets>
+
+/LISTHOMES
+==========
+
+Lists another online player's saved homes.
+/listhomes <player>
+
+/LOOTR
+======
+
+Clears stored Lootr inventories for the named player, resetting their saved loot contents.
+/lootr clear
+/lootr clear <profile>
+
+Shows the unique ID of the Lootr container you are standing on.
+/lootr id
+
+Opens the stored inventory of the container you stand on as the named player.
+/lootr open_as
+/lootr open_as <profile>
+
+Opens the stored inventory of the container you stand on as the player identified by UUID.
+/lootr open_as_uuid
+/lootr open_as_uuid <uuid>
+
+Lists the players/UUIDs that have opened the Lootr container at the supplied location.
+/lootr openers <location>
+
+Schedules the Lootr container you stand on to refresh using the configured delay.
+/lootr refresh
+
+/MUTE
+=====
+
+Prevents the selected player from sending chat messages. Without a duration, the mute lasts until it is removed with /unmute.
+/mute <player>
+
+Prevents the selected player from sending chat messages. The duration uses s, m, h, d or w, for example 30m or 2h.
+/mute <player> <until>
+
+/NEAR
+=====
+
+Lists nearby players and their distances. A player argument centers the search on that player; a radius argument sets the search distance in blocks.
+/near
+/near <player>
+/near <player> <radius>
+/near <radius>
+
+/NERUINA
+========
+
+Cancels your pending GitHub sign-in used by Neruina's issue-reporting system. This does not disconnect a Minecraft player.
+/neruina cancel_login
+
+Clears Neruina's tracked ticking-error records.
+/neruina clear_tracked
+
+Shows the ticking-error record ID for the selected entity or block entity; targeting a player checks the item they are holding.
+/neruina id <entity>
+/neruina id <pos>
+
+Shows details of the selected Neruina ticking exception.
+/neruina info <id>
+
+Removes the selected entity/entities if Neruina has marked them as errored.
+/neruina kill <entity>
+
+Reloads Neruina configuration.
+/neruina reload
+
+Produces a report for the selected ticking exception.
+/neruina report <id>
+
+Resumes the suspended entity, block entity, block state or item stack named by the command. Its error may recur if the cause is still present.
+/neruina resume block_entity <pos>
+/neruina resume block_state <pos>
+/neruina resume entity <entity>
+/neruina resume item_stack <player>
+
+Shows the objects Neruina has suspended because of ticking errors.
+/neruina show_suspended
+
+/OBSERVABLE
+===========
+
+Opens Observable's profiling controls/status.
+/observable
+
+Allows the selected player to use Observable profiling.
+/observable allow <player>
+
+Opens Observable configuration controls.
+/observable config
+
+Removes the selected player's permission to use Observable profiling.
+/observable deny <player>
+
+Resets Observable's collected profiling state.
+/observable reset
+
+Starts an Observable profiling run to identify expensive ticking objects.
+/observable run <duration>
+
+Teleports to the entity identified in an Observable profiling result.
+/observable tp <dim> entity <id>
+
+Teleports to a position identified in an Observable profiling result.
+/observable tp <dim> position <pos>
+
+/PARDON
+=======
+
+Removes an account ban so that player can join again.
+/pardon <targets>
+
+/PARDON-IP
+==========
+
+Removes an address ban.
+/pardon-ip <target>
+
+/SAY
+====
+
+Broadcasts a server chat message to everyone online.
+/say <message>
+
+/SETWARP
+========
+
+Creates or updates a server warp at your current location.
+/setwarp <name>
+
+/SETWORLDSPAWN
+==============
+
+Changes the world spawn position. Optional position and angle set where new players and players without a valid bed spawn arrive.
+/setworldspawn
+/setworldspawn <pos>
+/setworldspawn <pos> <angle>
+
+/SPARK
+======
+
+Opens or runs spark performance tools. /spark shows help; /spark profiler start begins a profile, /spark profiler stop ends it and returns the report link. /spark tps and /spark healthreport show server performance information.
+/spark
+/spark <args>
+
+/SPAWNPOINT
+===========
+
+Sets the selected player's personal respawn position. Optional position and angle control the destination.
+/spawnpoint
+/spawnpoint <targets>
+/spawnpoint <targets> <pos>
+/spawnpoint <targets> <pos> <angle>
+
+/SPECTATE
+=========
+
+Makes you, or the specified player, spectate the target entity. Without a target it stops spectating. Spectator mode is required.
+/spectate
+/spectate <target>
+/spectate <target> <player>
+
+/TB
+===
+
+Opens the selected player's equipped Traveler's Backpack, or the backpack block at the supplied coordinates.
+/tb access <pos>
+/tb access <target>
+
+Replaces the equipped Traveler's Backpack with a cleared copy, retaining its tier; the original is returned to the player's inventory or dropped if full.
+/tb clear
+/tb clear <player>
+
+Unequips the Traveler's Backpack and returns it to the player's inventory, or drops it if the inventory is full.
+/tb remove
+/tb remove <player>
+
+Restores the saved backpack identified by backpack_id to the selected player's inventory, or drops it if the inventory is full.
+/tb restore <target> <backpack_id>
+
+Empties the selected equipped or placed Traveler's Backpack, dropping its stored items, tools and upgrades into the world at its location.
+/tb unpack <pos>
+/tb unpack <target>
+
+/TELEPORT_LAST
+==============
+
+Teleports you to the last location recorded by the command's teleport history.
+/teleport_last <player>
+
+/TELLRAW
+========
+
+Sends a formatted JSON chat message to the selected player(s).
+/tellraw <targets> <message>
+
+/TIME
+=====
+
+Advances world time by the supplied number of ticks.
+/time add <time>
+
+Shows the requested time counter: daytime is time within the day, day is the day number, and gametime is total world ticks.
+/time query day
+/time query daytime
+/time query gametime
+
+Sets world time to the supplied tick value or named time: day, noon, night or midnight.
+/time set <time>
+/time set day
+/time set midnight
+/time set night
+/time set noon
+
+/TITLE
+======
+
+Displays a JSON message above the selected players' hotbars.
+/title <targets> actionbar <title>
+
+Clears currently displayed titles from selected players.
+/title <targets> clear
+
+Clears titles and resets title timing to its defaults.
+/title <targets> reset
+
+Sets the subtitle text used with the next title.
+/title <targets> subtitle <title>
+
+Sets title fade-in, stay and fade-out durations in ticks.
+/title <targets> times <fadeIn> <stay> <fadeOut>
+
+Displays a large JSON title message on the selected players' screens.
+/title <targets> title <title>
+
+/TP
+===
+
+Teleports you or the selected entities to the specified coordinates or entity. facing sets their view direction toward coordinates or an entity.
+/tp <destination>
+/tp <location>
+/tp <targets> <destination>
+/tp <targets> <location>
+/tp <targets> <location> <rotation>
+/tp <targets> <location> facing <facingLocation>
+/tp <targets> <location> facing entity <facingEntity>
+/tp <targets> <location> facing entity <facingEntity> <facingAnchor>
+
+/TP_OFFLINE
+===========
+
+Changes an offline player's saved position to the supplied coordinates in your current dimension, so they appear there on their next login. name identifies the account by name; id identifies it by UUID.
+/tp_offline id <player_id> <pos>
+/tp_offline name <player> <pos>
+
+/TPX
+====
+
+Teleports you to the named dimension using FTB Essentials.
+/tpx <dimension>
+
+/UNMUTE
+=======
+
+Restores the selected player's ability to send chat messages.
+/unmute <player>
+
+/VIEW
+=====
+
+Opens the named player's Curios equipment slots.
+/view curios <target>
+
+Opens the named player's cosmetic Curios slots.
+/view curios_cosmetic <target>
+
+Opens the named player's Ender Chest.
+/view echest <target>
+
+Opens the named player's inventory, including supported offline saved inventories.
+/view inv <target>
+
+/WEATHER
+========
+
+Sets world weather to clear. An optional duration sets how long it lasts.
+/weather clear
+/weather clear <duration>
+
+Sets world weather to rain. An optional duration sets how long it lasts.
+/weather rain
+/weather rain <duration>
+
+Sets world weather to thunder. An optional duration sets how long it lasts.
+/weather thunder
+/weather thunder <duration>
+
+/WHITELIST
+==========
+
+Adds the named account to the Minecraft server whitelist.
+/whitelist add <targets>
+
+Lists whitelisted accounts.
+/whitelist list
+
+Disables whitelist enforcement so it no longer restricts who may join.
+/whitelist off
+
+Enables the whitelist so only whitelisted accounts can join.
+/whitelist on
+
+Reloads whitelist.json from disk.
+/whitelist reload
+
+Removes the named account from the Minecraft server whitelist.
+/whitelist remove <targets>
+
+/WORLDBORDER
+============
+
+Adds the supplied amount to the border diameter, optionally over a timed transition.
+/worldborder add <distance>
+/worldborder add <distance> <time>
+
+Sets the world border's center coordinates.
+/worldborder center <pos>
+
+Sets damage per block per second outside the border's damage buffer.
+/worldborder damage amount <damagePerBlock>
+
+Sets how far outside the border a player may go before taking border damage.
+/worldborder damage buffer <distance>
+
+Shows the current border diameter.
+/worldborder get
+
+Sets the border diameter, optionally over a timed transition.
+/worldborder set <distance>
+/worldborder set <distance> <time>
+
+Sets the distance from the border at which a warning appears.
+/worldborder warning distance <distance>
+
+Sets how many seconds before a moving border reaches a player the warning appears.
+/worldborder warning time <time>

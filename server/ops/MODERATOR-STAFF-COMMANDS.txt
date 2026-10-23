@@ -1,0 +1,138 @@
+MYTHFORGE MODERATOR COMMAND GUIDE
+
+Replace <values> with the requested names, numbers or IDs; do not type the brackets. Use Tab for available values.
+Coordinates are x y z. ~ uses your current coordinate. @s selects yourself; @a selects all online players; @e selects all entities.
+
+/BAN
+====
+
+Bans the named account from joining. Add a reason to record why the ban was issued.
+/ban <targets>
+/ban <targets> <reason>
+
+/BANLIST
+========
+
+Lists current bans. Use players for account bans or ips for address bans.
+/banlist
+/banlist ips
+/banlist players
+
+/DEATHHISTORY
+=============
+
+Displays the selected player's recorded death locations/history. A UUID can be used instead of a name.
+/deathhistory <player>
+/deathhistory <player_uuid>
+
+/GL
+===
+
+Toggles block inspection. Interact with blocks to view their recorded changes and identify who changed them.
+/gl inspect
+
+Searches recorded activity using the supplied filters. Filters narrow results by player, time, radius, action or item; use command completion for accepted filter formats.
+/gl lookup <filter1>
+/gl lookup <filter1> <filter2>
+/gl lookup <filter1> <filter2> <filter3>
+/gl lookup <filter1> <filter2> <filter3> <filter4>
+/gl lookup <filter1> <filter2> <filter3> <filter4> <filter5>
+
+Displays the requested page of your most recent GriefLogger search results.
+/gl page <page>
+
+/GM
+===
+
+Changes your own game mode to survival, creative, adventure or spectator. No player target is accepted.
+/gm adventure
+/gm creative
+/gm spectator
+/gm survival
+
+/GRIEFLOGGER
+============
+
+Toggles block inspection. Interact with blocks to view their recorded changes and identify who changed them.
+/grieflogger inspect
+
+Searches recorded activity using the supplied filters. Filters narrow results by player, time, radius, action or item; use command completion for accepted filter formats.
+/grieflogger lookup <filter1>
+/grieflogger lookup <filter1> <filter2>
+/grieflogger lookup <filter1> <filter2> <filter3>
+/grieflogger lookup <filter1> <filter2> <filter3> <filter4>
+/grieflogger lookup <filter1> <filter2> <filter3> <filter4> <filter5>
+
+Displays the requested page of your most recent GriefLogger search results.
+/grieflogger page <page>
+
+/KICK
+=====
+
+Disconnects the selected online player immediately. They can reconnect unless they are also banned. An optional reason is shown to them.
+/kick <targets>
+/kick <targets> <reason>
+
+/LISTHOMES
+==========
+
+Lists another online player's saved homes.
+/listhomes <player>
+
+/MUTE
+=====
+
+Prevents the selected player from sending chat messages. Without a duration, the mute lasts until it is removed with /unmute.
+/mute <player>
+
+Prevents the selected player from sending chat messages. The duration uses s, m, h, d or w, for example 30m or 2h.
+/mute <player> <until>
+
+/NEAR
+=====
+
+Lists nearby players and their distances. A player argument centers the search on that player; a radius argument sets the search distance in blocks.
+/near
+/near <player>
+/near <player> <radius>
+/near <radius>
+
+/PARDON
+=======
+
+Removes an account ban so that player can join again.
+/pardon <targets>
+
+/TP
+===
+
+Teleports you or the selected entities to the specified coordinates or entity. facing sets their view direction toward coordinates or an entity.
+/tp <destination>
+/tp <location>
+/tp <targets> <destination>
+/tp <targets> <location>
+/tp <targets> <location> <rotation>
+/tp <targets> <location> facing <facingLocation>
+/tp <targets> <location> facing entity <facingEntity>
+/tp <targets> <location> facing entity <facingEntity> <facingAnchor>
+
+/UNMUTE
+=======
+
+Restores the selected player's ability to send chat messages.
+/unmute <player>
+
+/VIEW
+=====
+
+Opens the named player's Curios equipment slots.
+/view curios <target>
+
+Opens the named player's cosmetic Curios slots.
+/view curios_cosmetic <target>
+
+Opens the named player's Ender Chest.
+/view echest <target>
+
+Opens the named player's inventory, including supported offline saved inventories.
+/view inv <target>

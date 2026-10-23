@@ -13,10 +13,9 @@ final class StaffModes {
         return source.getEntity() instanceof ServerPlayer player&&RoleBenefits.staff(player.getGameProfile());
     }
     static void register(CommandDispatcher<CommandSourceStack> dispatcher){
-        var root=literal("staffmode").requires(StaffModes::allowed);
+        var root=literal("gm").requires(StaffModes::allowed);
         for(var mode:GameType.values())root.then(literal(mode.getName()).executes(context->change(context.getSource(),mode)));
-        var node=dispatcher.register(root);
-        dispatcher.register(literal("gm").requires(StaffModes::allowed).redirect(node));
+        dispatcher.register(root);
     }
     static int change(CommandSourceStack source,GameType mode) throws com.mojang.brigadier.exceptions.CommandSyntaxException {
         if(!allowed(source)){source.sendFailure(Component.literal("Staff only; game mode changes are self-only."));return 0;}
