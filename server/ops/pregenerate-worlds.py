@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / 'ops/pregeneration-5000.json'
 STOP = ROOT / 'ops/pregeneration-stop.txt'
 WORLDS = ['minecraft:overworld', 'minecraft:the_nether', 'minecraft:the_end']
+PLAN = [(world, 5000) for world in WORLDS] + [('minecraft:overworld', 10000), ('minecraft:overworld', 15000)]
 spec = importlib.util.spec_from_file_location('maintenance', ROOT / 'ops/maintenance-rcon.py')
 rcon = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(rcon)
@@ -41,6 +42,10 @@ def save(state):
 
 
 def step(state):
+    # Migrate the original three-dimension queue without losing its checkpoint.
+    if 'completedTasks' not in state:
+        state['completedTasks'] = [{'world': world, 'radius': 5000} for world in state.get('completed', [])]
+    state['queue'] = [{'world': world, 'radius': radius} for world, radius in PLAN]
     free = shutil.disk_usage(ROOT).free
     state['freeGiB'] = round(free / 1024**3, 2)
     players = console('list')
@@ -98,15 +103,6 @@ def step(state):
     if time.time() < state.get('resumeAfter', 0):
         save(state)
         return True
-    if state.get('paused') and state.get('active'):
-        reply = console('chunky continue ' + state['active'])
-        if 'Task continuing' not in reply:
-            raise RuntimeError('Chunky did not resume: ' + reply)
-        state['paused'] = False
-        state['lastProgressTime'] = time.time()
-        state['status'] = 'generating'
-        save(state)
-        return True
     if state.get('active'):
         # A paused/cancelled task must never be mistaken for completion.
         name = state['active'].split(':')[1]
@@ -117,24 +113,41 @@ def step(state):
         with (ROOT / 'logs/latest.log').open('rb') as log:
             log.seek(max(0, log.seek(0, 2) - 2 * 1024**2))
             tail = log.read().decode(errors='replace')
-        finished = ('Task finished for ' + state['active'] + '.') in tail
-        matching = float(properties.get('radius', 0)) == 5000 and int(properties.get('chunks', 0)) > 300000
+        count = int(properties.get('chunks', 0))
+        radius = state.get('radius', 5000)
+        completion = re.escape('Task finished for ' + state['active'] + '.') + r' Processed: ([\d,]+) chunks \(100(?:\.0+)?%\)'
+        finished = any(int(value.replace(',', '')) == count for value in re.findall(completion, tail))
+        matching = (float(properties.get('radius', 0)) == radius and
+                    properties.get('cancelled') == 'true' and count > (radius / 16)**2)
+        if not (finished and matching) and state.get('paused'):
+            reply = console('chunky continue ' + state['active'])
+            if 'Task continuing' not in reply:
+                raise RuntimeError('Chunky did not resume: ' + reply)
+            state['paused'] = False
+            state['lastProgressTime'] = time.time()
+            state['status'] = 'generating'
+            save(state)
+            return True
         if not (finished and matching):
             state['status'] = 'stopped: task interrupted externally; review before resuming'
             save(state)
             return False
-        state['completed'].append(state['active'])
+        state['completedTasks'].append({'world': state['active'], 'radius': radius})
+        if radius == 5000 and state['active'] not in state['completed']:
+            state['completed'].append(state['active'])
         state['active'] = None
-    pending = [world for world in WORLDS if world not in state['completed']]
+    pending = [(world, radius) for world, radius in PLAN
+               if {'world': world, 'radius': radius} not in state['completedTasks']]
     if not pending:
         state['status'] = 'complete'
         save(state)
         return False
-    world = pending[0]
+    world, radius = pending[0]
     for command in ['chunky world ' + world, 'chunky center 0 0', 'chunky shape circle',
-                    'chunky radius 5000', 'chunky pattern region', 'chunky quiet 60']:
+                    'chunky radius ' + str(radius), 'chunky pattern region', 'chunky quiet 60']:
         console(command)
     state['active'] = world
+    state['radius'] = radius
     state['paused'] = False
     state['lastChunkCount'] = -1
     state['lastProgressTime'] = time.time()
