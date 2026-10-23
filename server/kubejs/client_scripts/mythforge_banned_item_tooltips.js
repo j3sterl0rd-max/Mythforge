@@ -1,6 +1,6 @@
 // Generated from config/mythforge-disabled-items.json. Include in client pack.
 ItemEvents.modifyTooltips(event => {
-  event.add([
+  event.modify([
   "advancedperipherals:chunk_controller",
   "ae2:matter_cannon",
   "ae2:spatial_anchor",
@@ -33,5 +33,7 @@ ItemEvents.modifyTooltips(event => {
   "travelersbackpack:red_sleeping_bag",
   "travelersbackpack:white_sleeping_bag",
   "travelersbackpack:yellow_sleeping_bag"
-], [Text.red('Banned on the Mythforge server')])
+], tooltip => {
+    tooltip.insert(1, [Text.red('Banned on the Mythforge server')])
+  })
 })
