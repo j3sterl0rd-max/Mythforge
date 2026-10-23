@@ -20,5 +20,9 @@ To the explorers who tested early builds and helped us find our footing: thank y
 -   Saku1849
 -   EnderHayes18
 -   iDonnyboy23
+-   Procyonine
+-   tony332211
+-   SealedHorror
+-   YVKVZCO
 
 A lantern illuminates a map, compass, hammer, and worn journal on a stone workbench

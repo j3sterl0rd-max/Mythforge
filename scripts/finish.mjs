@@ -6,6 +6,12 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 const config=JSON.parse(await readFile(path.join(root,'data/site.json'),'utf8'));
 const roster=[['Slenana','3fab6d20-f7c2-4d23-ad65-4503348ace93'],['Regranaas47','48f2f005-71ce-4cfb-bf46-1e750def5ceb'],['kaididit','aa705957-d779-49e1-95d6-ece6ad98216b'],['Winterberry99','d14db3c0-198b-41e4-a7d0-a6d800d31fa4'],['Irenoir','81622cdc-6dc3-4518-b6e0-ecbbc5934a54'],['Saku1849','ed2473cd-addc-4de9-9f3c-a5fed26e09e7'],['EnderHayes18','049f2b50-8c1a-4c0a-b8b8-dfbd7aabec6f'],['iDonnyboy23','1bb4e05a-10a1-46f3-a1a9-c810ad745409']];
+roster.push(
+ ['Procyonine','3b054a0b-7088-4b00-9262-0fbc22a6ef36'],
+ ['tony332211','04fc914c-0584-43ff-af3c-28ee0c05a6b5'],
+ ['SealedHorror','c56f9c59-4c83-4e80-a4ba-2613b7a76974'],
+ ['YVKVZCO','6acd1d1e-b9d5-4dcd-90d1-fa2d4fd659fd']
+);
 const affiliate='<aside class="hosting-card" aria-label="Wabbanode hosting partner"><p class="eyebrow">Host Mythforge with friends</p><a class="hosting-banner" href="https://wabbanode.com/affiliate/mythforgebeyondthehorizon" rel="sponsored noopener noreferrer"><img src="/assets/art/wabbanode-banner.png" alt="Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server." width="850" height="170"></a><p class="small">Affiliate link: Mythforge may earn a commission if you purchase. Discount eligibility and terms are set by Wabbanode.</p></aside>';
 async function files(dir){let out=[];for(const f of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,f.name);out.push(...(f.isDirectory()?await files(p):[p]));}return out;}
 let home=await readFile(path.join(dist,'index.html'),'utf8');
