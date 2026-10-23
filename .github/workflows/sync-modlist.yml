@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: '67dee8ccfa56965f1008df122f50e236' 
+      CLOUDFLARE_ACCOUNT_ID: '67dee8ccfa56965f1008df122f50e236'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
