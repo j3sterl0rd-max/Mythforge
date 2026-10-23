@@ -1,0 +1,20 @@
+{
+  "radius": 5000,
+  "shape": "circle",
+  "center": [
+    0,
+    0
+  ],
+  "completed": [],
+  "active": "minecraft:overworld",
+  "paused": false,
+  "status": "generating",
+  "freeGiB": 132.34,
+  "players": 0,
+  "progress": "[Chunky] Task running for minecraft:overworld. Processed: 7552 chunks (1.92%), ETA: 0:32:48, Rate: 195.9 cps, Current: 7, 63",
+  "updatedUtc": "2026-10-23T14:07:31.934543+00:00",
+  "averageTickMs": 4.4,
+  "resumeAfter": 1792764062.2191079,
+  "lastProgressTime": 1792764451.9115458,
+  "lastChunkCount": 7552
+}
