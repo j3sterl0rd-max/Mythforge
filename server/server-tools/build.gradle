@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.147'
 }
-version = '1.0.8'
+version = '1.0.9'
 group = 'dev.mythforge.server'
 base { archivesName = 'mythforge-server-tools' }
 java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }

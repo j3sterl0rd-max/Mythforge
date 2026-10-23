@@ -11,10 +11,9 @@ import java.util.*;
 final class RoleBenefits {
     static final int HIGHEST_TIER=4;
     static final Set<String> STAFF=Set.of("junior_mod","moderator","admin","owner");
-    // Fixed cohort: every genuine player save on the previous server at migration.
+    // Owner-approved beta cohort, keyed by account UUID.
     static final Map<UUID,String> TESTERS=Map.ofEntries(
         Map.entry(UUID.fromString("049f2b50-8c1a-4c0a-b8b8-dfbd7aabec6f"),"EnderHayes18"),
-        Map.entry(UUID.fromString("04fc914c-0584-43ff-af3c-28ee0c05a6b5"),"tony332211"),
         Map.entry(UUID.fromString("1bb4e05a-10a1-46f3-a1a9-c810ad745409"),"iDonnyboy23"),
         Map.entry(UUID.fromString("3b054a0b-7088-4b00-9262-0fbc22a6ef36"),"Procyonine"),
         Map.entry(UUID.fromString("3fab6d20-f7c2-4d23-ad65-4503348ace93"),"Slenana"),

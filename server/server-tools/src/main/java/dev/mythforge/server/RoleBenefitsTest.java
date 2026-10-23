@@ -29,7 +29,10 @@ final class RoleBenefitsTest {
             SelfTest.check(FTBRanksAPI.manager().getRank("beta_tester").orElseThrow().isAdded(legacy),"Beta assignment survives login reconciliation: "+tester.getValue(),passed);
             SelfTest.check(FTBRanksAPI.getPermissionValue(legacy,"ftbchunks.max_claimed").asInteger().orElse(0)==320,"Beta receives full Mythic claim benefits: "+tester.getValue(),passed);
         }
-        SelfTest.check(RoleBenefits.TESTERS.size()==12 && RoleBenefits.TESTERS.containsKey(UUID.fromString("aa705957-d779-49e1-95d6-ece6ad98216b")),"All twelve previous players, including staff, receive beta entitlement",passed);
+        SelfTest.check(RoleBenefits.TESTERS.size()==11 && RoleBenefits.TESTERS.containsKey(UUID.fromString("aa705957-d779-49e1-95d6-ece6ad98216b")),"The approved beta cohort, including staff, receives beta entitlement",passed);
+        var removed=new SelfTest.TestPlayer(ServerTools.server.overworld(),new GameProfile(UUID.fromString("04fc914c-0584-43ff-af3c-28ee0c05a6b5"),"tony332211"));
+        RoleBenefits.reconcile(removed);ServerTools.reconcile(removed);
+        SelfTest.check(RoleBenefits.tier(removed.getGameProfile())==0 && !FTBRanksAPI.manager().getRank("beta_tester").orElseThrow().isAdded(removed),"Removed beta member does not regain beta rank or honorary paid benefits",passed);
         for(String id:List.of("junior_mod","moderator","admin","owner")) {
             var rank=FTBRanksAPI.manager().getRank(id).orElseThrow();
             try {
