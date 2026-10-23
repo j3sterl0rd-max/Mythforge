@@ -43,6 +43,8 @@ final class RewardMenu extends ChestMenu {
         if(page>0)getContainer().setItem(45,WarpMenu.label(Items.ARROW,"Previous page"));
         getContainer().setItem(47,WarpMenu.label(Items.CHEST,"Unclaimed rewards ("+data.pending.size()+")"));
         getContainer().setItem(48,WarpMenu.label(Items.CLOCK,"Playtime: "+data.activeSeconds/3600+"h "+data.activeSeconds/60%60+"m"));
+        var clock=getContainer().getItem(48);
+        clock.set(DataComponents.LORE,new ItemLore(List.of(Component.literal("Only active playtime earns progress."),Component.literal("Base: 64 claim chunks and 2 force-loadable chunks."),Component.literal("+8 claim chunks every 10 active hours; +1 force-load every 50 hours."),Component.literal("Purchased allowances add to natural limits."))));
         getContainer().setItem(49,WarpMenu.label(Items.BARRIER,"Close"));
         getContainer().setItem(50,WarpMenu.label(Items.BOOK,"All playtime milestones"));
         getContainer().setItem(51,WarpMenu.label(Items.TRIPWIRE_HOOK,"Vote keys: "+data.keys+" - /vote and /crate"));
@@ -50,13 +52,13 @@ final class RewardMenu extends ChestMenu {
     }
     static String unlocks(int h) {return switch(h) {
         case 10 -> "2 natural homes"; case 20 -> "/stonecutter"; case 30 -> "Machinery access; /craft";
-        case 40 -> "/nick; 1 natural public warp"; case 70 -> "3 natural homes"; case 90 -> "/echest";
-        case 100 -> "/ascend; 2 natural public warps"; case 120 -> "/feed";
-        case 150 -> "/grindstone; waypoint teleporting"; case 175 -> "/heal; /effects";
-        case 200 -> "4 natural homes; claim-limited /fly"; case 250 -> "/prefix; /chatcolor; 3 natural public warps";
-        case 300 -> "/rename; /anvil; /smithing; /pwarp icon";
-        case 400 -> "/lore; /joinmessage; /worldtime; /worldweather; /hat; 4 natural public warps";
-        case 500 -> "/repair; priority login; 5 natural homes and public warps";
+        case 40 -> "/nick; 1 natural public warp; Nether RTP at "+RtpUnlocks.NETHER_HOURS+"h"; case 80 -> "End RTP at "+RtpUnlocks.END_HOURS+"h"; case 70 -> "3 natural homes"; case 90 -> "/echest";
+        case 100 -> "/ascend; 2 natural public warps"; case 120 -> "/feed; +1 hands equipment slot";
+        case 150 -> "/grindstone; waypoint teleporting; +1 necklace slot"; case 175 -> "/heal; /effects";
+        case 200 -> "4 natural homes; claim-limited /fly; +1 trinket slot"; case 250 -> "/prefix; /chatcolor; 3 natural public warps";
+        case 300 -> "/rename; /anvil; /smithing; /pwarp icon; /ptime; /pweather; second bonus hands slot";
+        case 400 -> "/lore; /joinmessage; /worldtime; /worldweather; /hat; /particles; 4 natural public warps";
+        case 500 -> "/repair; priority login; prestige title; 5 natural homes and public warps";
         default -> "";
     };}
     static void open(ServerPlayer p,int page){open(p,page,false);}

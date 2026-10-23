@@ -1,4 +1,4 @@
-# Server tools 1.0.6
+# Server tools 1.0.7
 
 Fixes AFK kick iteration crashes. Adds a server-validated playtime reward panel, explicit item claims, login reminders, persistent mutual PvP opt-in and vote reminder integration with Modded Votifier. Travel uses a five-second movement/damage warmup without a combat cooldown or visited-dimension gate.
 
