@@ -13,7 +13,8 @@
     "SimpleAfkConfigMixin",
     "OwnerCommandPermissionMixin",
     "VoteReminderMixin",
-    "TeleportWarmupMixin"
+    "TeleportWarmupMixin",
+    "GalosphereOasisMixin"
   ],
   "injectors": {
     "defaultRequire": 1

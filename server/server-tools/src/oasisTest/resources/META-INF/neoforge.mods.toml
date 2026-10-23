@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="mythforge_oasis_test"
+version="1.0"
+displayName="Isolated oasis regression tests"
+[[mixins]]
+config="oasis-test.mixins.json"
+[[mixins]]
+config="oasis-fix.mixins.json"
