@@ -3,6 +3,7 @@
 // imported schematics, automation, or Java-level block/entity code.
 const MF_DISABLED_SURVIVAL_ITEMS = [
   'create:schematicannon',
+  'cyclic:storage_bag',
   'ae2:matter_cannon',
   'simulated:docking_connector',
   'cataclysm:tidal_claws',
@@ -27,22 +28,23 @@ const MF_DISABLED_SURVIVAL_ITEMS = [
 ]
 
 ServerEvents.recipes(event => {
-  for (const id of MF_DISABLED_SURVIVAL_ITEMS) event.remove({ output: id })
+  for (var id of MF_DISABLED_SURVIVAL_ITEMS) event.remove({ output: id })
 })
 
-for (const id of MF_DISABLED_SURVIVAL_ITEMS) {
+for (var id of MF_DISABLED_SURVIVAL_ITEMS) {
   ItemEvents.rightClicked(id, event => event.cancel())
 }
 
 // Prevent manual placement/use of existing docking connectors and sleeping bags.
 BlockEvents.rightClicked(event => {
-  if (MF_DISABLED_SURVIVAL_ITEMS.indexOf(event.item.id) !== -1) event.cancel()
+  if (MF_DISABLED_SURVIVAL_ITEMS.indexOf(String(event.item.id)) !== -1) event.cancel()
 })
 
 // Reject Create contraption items before manual Capsid insertion, without
 // resetting the Capsid or deleting its contents. Automated insertion needs Java.
 BlockEvents.rightClicked('alexsmobs:capsid', event => {
-  if (event.item.id === 'create:minecart_contraption' ||
-      event.item.id === 'create:chest_minecart_contraption' ||
-      event.item.id === 'create:furnace_minecart_contraption') event.cancel()
+  var itemId = String(event.item.id)
+  if (itemId === 'create:minecart_contraption' ||
+      itemId === 'create:chest_minecart_contraption' ||
+      itemId === 'create:furnace_minecart_contraption') event.cancel()
 })

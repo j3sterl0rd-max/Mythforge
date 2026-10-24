@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="All Rights Reserved"
 [[mods]]
 modId="mythforge_server"
-version="1.0.11"
+version="1.0.12"
 displayName="Mythforge Server Tools"
 description="Server-owned active playtime, rank delivery, vote crates, safe travel and launch controls."
 [[dependencies.mythforge_server]]
@@ -94,5 +94,12 @@ side="SERVER"
 modId="ftbteams"
 type="required"
 versionRange="[2101.1.11,2101.1.12)"
+ordering="AFTER"
+side="SERVER"
+
+[[dependencies.mythforge_server]]
+modId="mythforge_fixes"
+type="required"
+versionRange="[0.2.5]"
 ordering="AFTER"
 side="SERVER"
