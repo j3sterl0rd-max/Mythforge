@@ -8,7 +8,13 @@ Release journal
 
 Pack updates, balance changes, and notes from the public world.
 
-Find a release16 releases shown
+Find a release17 releases shown
+
+VERSION 1.32026-10-24
+
+## Mythforge 1.3
+
+ [Official release notes ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425)
 
 VERSION 1.2.7.12026-10-21
 

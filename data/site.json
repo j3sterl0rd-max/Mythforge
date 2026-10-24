@@ -169,6 +169,12 @@
   ],
   "changelog": [
     {
+      "version": "1.3",
+      "date": "2026-10-24",
+      "title": "Mythforge 1.3",
+      "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425"
+    },
+    {
       "version": "1.2.7.1",
       "date": "2026-10-21",
       "title": "Mythforge 1.2.7.1",
@@ -292,8 +298,8 @@
     ],
     "supportUrl": "mailto:admin@mythforge.win"
   },
-  "latestVersion": "1.2.7.1",
-  "latestReleaseUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379",
+  "latestVersion": "1.3",
+  "latestReleaseUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425",
   "curseforge": {
     "projectId": 1696232,
     "lastChecked": "2026-10-13T19:33:13.31Z",

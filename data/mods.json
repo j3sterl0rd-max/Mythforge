@@ -1,8 +1,8 @@
 {
-  "version": "1.2.7.1",
-  "fileId": 9274379,
-  "publishedAt": "2026-10-21T05:41:05.24Z",
-  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379",
+  "version": "1.3",
+  "fileId": 9311425,
+  "publishedAt": "2026-10-24T17:09:01.09Z",
+  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425",
   "mods": [
     {
       "name": "[EMF] Entity Model Features [Fabric & Forge]",
@@ -14,12 +14,6 @@
       "name": "[ETF] Entity Texture Features - [Fabric & Forge]",
       "author": "Traben",
       "url": "https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric",
-      "bundled": false
-    },
-    {
-      "name": "[Let's Do Addon] EMI Compat",
-      "author": "pandaismyname1",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/lets-do-emi-compat",
       "bundled": false
     },
     {

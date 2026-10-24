@@ -26,7 +26,7 @@ Mythforge modpack icon
 
 Latest CurseForge release
 
-1.2.7.1
+1.3
 
 Recommended allocated RAM
 
@@ -127,15 +127,14 @@ Inside the pack
 
 ## Included mods & packs
 
-433 projects in release 1.2.7.1, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
+432 projects in release 1.3, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
 
- [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379)
+ [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425)
 
-Find a mod or creator433 projects shown
+Find a mod or creator432 projects shown
 
 -    [\[EMF\] Entity Model Features \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-model-features) by Traben · Mod
 -    [\[ETF\] Entity Texture Features - \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric) by Traben · Mod
--    [\[Let's Do Addon\] EMI Compat](https://www.curseforge.com/minecraft/mc-mods/lets-do-emi-compat) by pandaismyname1 · Mod
 -    [\[Let's Do\] Vinery](https://www.curseforge.com/minecraft/mc-mods/lets-do-vinery) by satisfy · Mod
 -    [Aaron](https://www.curseforge.com/minecraft/mc-mods/aaron) by aaronhowser1 · Mod
 -    [Abridged](https://www.curseforge.com/minecraft/mc-mods/abridged) by Apollo · Mod
@@ -601,4 +600,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.2.7.1. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.
