@@ -14,7 +14,8 @@
     "OwnerCommandPermissionMixin",
     "VoteReminderMixin",
     "TeleportWarmupMixin",
-    "GalosphereOasisMixin"
+    "GalosphereOasisMixin",
+    "PlayerListSaveInvoker"
   ],
   "injectors": {
     "defaultRequire": 1

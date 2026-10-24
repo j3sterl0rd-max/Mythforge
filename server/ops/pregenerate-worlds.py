@@ -25,13 +25,39 @@ rcon = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(rcon)
 
 
+_connection = None
+_endpoint = None
+_sequence = 1
+
+
+def close_connection():
+    global _connection, _endpoint
+    if _connection is not None:
+        _connection.close()
+    _connection = None
+    _endpoint = None
+
+
 def console(command):
+    global _connection, _endpoint, _sequence
     props = dict(line.split('=', 1) for line in (ROOT / 'server.properties').read_text(encoding='utf-8-sig').splitlines()
                  if '=' in line and not line.startswith('#'))
-    host = props.get('server-ip', '').strip() or '127.0.0.1'
-    with socket.create_connection((host, int(props['rcon.port'])), timeout=90) as stream:
-        rcon.request(stream, 1, 3, props['rcon.password'])
-        return rcon.request(stream, 2, 2, command).strip()
+    host = props.get('server-ip', '').strip()
+    if host in ('', '0.0.0.0', '::'):
+        host = '127.0.0.1'
+    endpoint = (host, int(props['rcon.port']), props['rcon.password'])
+    try:
+        if _connection is None or _endpoint != endpoint:
+            close_connection()
+            _connection = socket.create_connection(endpoint[:2], timeout=90)
+            rcon.request(_connection, 1, 3, endpoint[2])
+            _endpoint = endpoint
+            _sequence = 1
+        _sequence += 1
+        return rcon.request(_connection, _sequence, 2, command).strip()
+    except Exception:
+        close_connection()
+        raise
 
 
 def save(state):
@@ -59,13 +85,14 @@ def step(state):
     if running and 'Task running for ' not in progress:
         raise RuntimeError('Unrecognized Chunky progress response: ' + progress)
     if running:
+        state.pop('completionPendingSince', None)
         count_match = re.search(r'Processed: ([\d,]+) chunks', progress)
         if count_match:
             count = int(count_match[1].replace(',', ''))
             if count != state.get('lastChunkCount'):
                 state['lastChunkCount'] = count
                 state['lastProgressTime'] = time.time()
-            elif time.time() - state.get('lastProgressTime', time.time()) > 300:
+            elif not state['players'] and not state.get('paused') and time.time() - state.get('lastProgressTime', time.time()) > 300:
                 console('chunky pause')
                 state['paused'] = True
                 state['status'] = 'stopped: no progress for five minutes; inspect generation'
@@ -104,6 +131,13 @@ def step(state):
         save(state)
         return True
     if state.get('active'):
+        # Chunky removes its running task just before logging completion. Allow
+        # that handoff to finish rather than treating the sub-second gap as a cancel.
+        pending_since = state.setdefault('completionPendingSince', time.time())
+        if time.time() - pending_since < 20:
+            state['status'] = 'confirming task completion'
+            save(state)
+            return True
         # A paused/cancelled task must never be mistaken for completion.
         name = state['active'].split(':')[1]
         task = ROOT / f'config/chunky/tasks/minecraft/{name}.properties'
@@ -116,8 +150,13 @@ def step(state):
         count = int(properties.get('chunks', 0))
         radius = state.get('radius', 5000)
         completion = re.escape('Task finished for ' + state['active'] + '.') + r' Processed: ([\d,]+) chunks \(100(?:\.0+)?%\)'
-        finished = any(int(value.replace(',', '')) == count for value in re.findall(completion, tail))
+        # The saved checkpoint can trail the final batch reported in the log.
+        finished = any(int(value.replace(',', '')) >= max(count, state.get('lastChunkCount', 0))
+                       for value in re.findall(completion, tail))
         matching = (float(properties.get('radius', 0)) == radius and
+                    float(properties.get('center-x', 1)) == 0 and
+                    float(properties.get('center-z', 1)) == 0 and
+                    properties.get('shape') == 'circle' and
                     properties.get('cancelled') == 'true' and count > (radius / 16)**2)
         if not (finished and matching) and state.get('paused'):
             reply = console('chunky continue ' + state['active'])
@@ -136,6 +175,7 @@ def step(state):
         if radius == 5000 and state['active'] not in state['completed']:
             state['completed'].append(state['active'])
         state['active'] = None
+        state.pop('completionPendingSince', None)
     pending = [(world, radius) for world, radius in PLAN
                if {'world': world, 'radius': radius} not in state['completedTasks']]
     if not pending:
@@ -179,18 +219,20 @@ if __name__ == '__main__':
                 keep_running = step(state)
                 disconnected_since = None
             except (ConnectionError, TimeoutError, EOFError, OSError) as error:
-                # Normal server restarts preserve Chunky's checkpoint. Wait for
-                # the same backend, then continue only our active dimension.
+                # Wait through long outages too; a later check still enforces the
+                # player, disk-space and saved Chunky-checkpoint safeguards.
                 disconnected_since = disconnected_since or time.time()
                 state['status'] = 'waiting for server: ' + type(error).__name__
                 state['paused'] = bool(state.get('active'))
                 save(state)
-                if time.time() - disconnected_since > 600:
-                    raise
+                if STOP.exists():
+                    state['status'] = 'stopped by request'
+                    save(state)
+                    break
                 keep_running = True
             if not keep_running or '--step' in sys.argv:
                 break
-            time.sleep(10)
+            time.sleep(60 if disconnected_since and time.time() - disconnected_since > 600 else 10)
     except Exception as error:
         # Fail closed: leave Chunky paused if supervision stops unexpectedly.
         try:
@@ -201,3 +243,5 @@ if __name__ == '__main__':
         state['paused'] = True
         save(state)
         raise
+    finally:
+        close_connection()

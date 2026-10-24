@@ -13,9 +13,12 @@ import java.nio.file.*;
 import java.util.*;
 
 final class Rewards {
+    static void saveRecipient(ServerPlayer player) {
+        ((dev.mythforge.server.mixin.PlayerListSaveInvoker)ServerTools.server.getPlayerList()).mythforge$savePlayer(player);
+    }
     static List<String> relicChoices() {return BuiltInRegistries.ITEM.stream().filter(item->item instanceof it.hurts.sskirillss.relics.api.relics.IRelicItem).map(item->BuiltInRegistries.ITEM.getKey(item).toString()).filter(id->!ServerTools.banned(ResourceLocation.parse(id))).sorted().toList();}
     static int choose(ServerPlayer p,String id) {
-        var hand=p.getMainHandItem();var custom=hand.get(DataComponents.CUSTOM_DATA);if(custom==null||!custom.copyTag().getString("mythforge_consumable").equals("relic_choice")||!Rewards.relicChoices().contains(id))return 0;var reward=new com.google.gson.JsonObject();reward.addProperty("id",id);reward.addProperty("count",1);reward.addProperty("maxed",true);Rewards.stack(p,reward);var rewards=new com.google.gson.JsonArray();rewards.add(reward);hand.shrink(1);Rewards.enqueue(p,rewards);ServerTools.state.save();ServerTools.server.getPlayerList().saveAll();Rewards.notifyPending(p);return 1;
+        var hand=p.getMainHandItem();var custom=hand.get(DataComponents.CUSTOM_DATA);if(custom==null||!custom.copyTag().getString("mythforge_consumable").equals("relic_choice")||!Rewards.relicChoices().contains(id))return 0;var reward=new com.google.gson.JsonObject();reward.addProperty("id",id);reward.addProperty("count",1);reward.addProperty("maxed",true);Rewards.stack(p,reward);var rewards=new com.google.gson.JsonArray();rewards.add(reward);hand.shrink(1);Rewards.enqueue(p,rewards);ServerTools.state.save();saveRecipient(p);Rewards.notifyPending(p);return 1;
     }
     static boolean crateValid;
     static List<String> errors=new ArrayList<>();
@@ -99,7 +102,7 @@ final class Rewards {
             var item=stack(p,JsonParser.parseString(pending).getAsJsonObject());
             if(!p.getInventory().add(item))throw new IllegalStateException("Reward insertion failed despite reserved inventory space");
             receipts.putBoolean(grant,true);p.getPersistentData().put("mythforge_delivery_receipts",receipts);
-            ServerTools.server.getPlayerList().saveAll();
+            saveRecipient(p);
         }
         d.pending.remove(pending);ServerTools.state.save();p.inventoryMenu.broadcastChanges();
     }

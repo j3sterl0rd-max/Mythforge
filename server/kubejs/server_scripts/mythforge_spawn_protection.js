@@ -93,46 +93,8 @@ function mfspArrival(event) {
 NativeEvents.onEvent('net.neoforged.neoforge.event.entity.player.PlayerEvent$PlayerLoggedInEvent', mfspArrival);
 NativeEvents.onEvent('net.neoforged.neoforge.event.entity.player.PlayerEvent$PlayerRespawnEvent', mfspArrival);
 var MFSPPurged = false;
-var MFSPTicketsCleaned = false;
-var MFSPTicketType = null, MFSPLoadedChunk = null;
-var MFSPLoadTicks = 0, MFSPLastRequest = '';
-var MFSPChunkPos = Java.loadClass('net.minecraft.world.level.ChunkPos');
-if (MFSPTicketType == null) MFSPTicketType = Java.loadClass('net.minecraft.server.level.TicketType').create('mythforge_spawn_build', Java.loadClass('java.util.Comparator').naturalOrder());
+// Spawn construction is complete; no construction tickets or private chunk-map access.
 ServerEvents.tick(function (event) {
-  if (MFSP.built && !MFSPTicketsCleaned) {
-    MFSPTicketsCleaned = true;
-    var manager = event.server.overworld().getChunkSource().distanceManager;
-    var entries = manager.tickets.long2ObjectEntrySet().iterator(), obsolete = [];
-    while (entries.hasNext()) {
-      var entry = entries.next(), tickets = entry.getValue().iterator();
-      while (tickets.hasNext()) {
-        var ticket = tickets.next();
-        if (String(ticket.getType()) === 'mythforge_spawn_build') obsolete.push([entry.getLongKey(), ticket]);
-      }
-    }
-    obsolete.forEach(function (pair) { manager.removeTicket(pair[0], pair[1]); });
-    Java.loadClass('com.limitedchunks.event.EventHandler').excludedTickets.remove('mythforge_spawn_build');
-    JsonIO.write('ops/evidence/spawn-ticket-cleanup.json', {removed:obsolete.length});
-  }
-  if (MFSP.built && MFSPLoadedChunk != null) {
-    event.server.overworld().getChunkSource().removeRegionTicket(MFSPTicketType, MFSPLoadedChunk, 2, 'spawn');
-    MFSPLoadedChunk = null;
-    Java.loadClass('com.limitedchunks.event.EventHandler').excludedTickets.remove('mythforge_spawn_build');
-  }
-  if (!MFSP.built && ++MFSPLoadTicks % 10 === 0) {
-    var request = JsonIO.read('ops/audit/spawn-20261023/load-request.json');
-    if (request != null && request.nonce !== MFSPLastRequest && request.cx >= -7 && request.cx <= 6 && request.cz >= -7 && request.cz <= 6) {
-      var targetLevel = event.server.overworld();
-      var position = new MFSPChunkPos(request.cx, request.cz);
-      if (MFSPLoadedChunk != null) targetLevel.getChunkSource().removeRegionTicket(MFSPTicketType, MFSPLoadedChunk, 2, 'spawn');
-      Java.loadClass('com.limitedchunks.event.EventHandler').excludedTickets.add('mythforge_spawn_build');
-      targetLevel.getChunkSource().addRegionTicket(MFSPTicketType, position, 2, 'spawn');
-      MFSPLoadedChunk = position;
-      var chunk = targetLevel.getChunk(request.cx, request.cz);
-      MFSPLastRequest = request.nonce;
-      JsonIO.write('ops/audit/spawn-20261023/load-ready.json', {cx:request.cx,cz:request.cz,nonce:request.nonce,dimension:String(targetLevel.dimension),chunkX:chunk.getPos().x,chunkZ:chunk.getPos().z,minY:targetLevel.getMinBuildHeight(),maxY:targetLevel.getMaxBuildHeight(),loaded:targetLevel.hasChunkAt(new (Java.loadClass('net.minecraft.core.BlockPos'))(request.cx*16,128,request.cz*16))});
-    }
-  }
   if (MFSPPurged) return;
   MFSPPurged = true;
   var level = event.server.overworld(), remove = [], entities = level.getAllEntities().iterator();

@@ -2,12 +2,12 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.147'
 }
-version = '1.0.10'
+version = '1.0.11'
 group = 'dev.mythforge.server'
 base { archivesName = 'mythforge-server-tools' }
 java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
 neoForge {
-    version = '21.1.253'
+    version = '21.1.263'
     mods { mythforge_server { sourceSet sourceSets.main } }
 }
 dependencies {
@@ -18,6 +18,18 @@ dependencies {
     compileOnly files('../mods/journeymap-neoforge-1.21.1-6.0.9.jar')
 }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+tasks.register('compilePersistenceCheck', JavaCompile) {
+    dependsOn 'classes'
+    source = fileTree('src/persistenceTest/java')
+    classpath = sourceSets.main.compileClasspath + sourceSets.main.output
+    destinationDirectory = layout.buildDirectory.dir('classes/persistenceTest')
+}
+tasks.register('persistenceCheck', JavaExec) {
+    dependsOn 'compilePersistenceCheck'
+    classpath = sourceSets.main.compileClasspath + sourceSets.main.output + files(layout.buildDirectory.dir('classes/persistenceTest'))
+    mainClass = 'dev.mythforge.server.PersistenceCheck'
+}
 
 tasks.register('compileOasisIntegration', JavaCompile) {
     source = fileTree('src/oasisTest/java')

@@ -15,6 +15,7 @@ final class State {
     Set<String> revokedTransactions = new HashSet<>();
     Map<String, Warp> warps = new LinkedHashMap<>();
     transient Path path;
+    transient String lastSavedJson;
     static final class PlayerData {
         long activeSeconds;
         int keys;
@@ -56,12 +57,15 @@ final class State {
     }
     void save() {
         try {
+            String serialized = JSON.toJson(this);
+            if(serialized.equals(lastSavedJson) && Files.exists(path))return;
             Files.createDirectories(path.getParent());
             Path temp=path.resolveSibling("state.json.tmp");
-            Files.writeString(temp, JSON.toJson(this));
+            Files.writeString(temp, serialized);
             if(Files.exists(path)) Files.copy(path,path.resolveSibling("state.json.previous"),StandardCopyOption.REPLACE_EXISTING);
             try { Files.move(temp,path,StandardCopyOption.ATOMIC_MOVE,StandardCopyOption.REPLACE_EXISTING); }
             catch(AtomicMoveNotSupportedException ex) { Files.move(temp,path,StandardCopyOption.REPLACE_EXISTING); }
+            lastSavedJson = serialized;
         } catch(Exception ex) { throw new IllegalStateException("Mythforge state cannot be saved",ex); }
     }
 }
