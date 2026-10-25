@@ -1,6 +1,10 @@
 (() => {
   const form = document.querySelector('#whitelist-form');
   if (!form) return;
+  const suggestedUsername = new URLSearchParams(window.location.search).get('username');
+  if (suggestedUsername && /^[A-Za-z0-9_]{3,16}$/.test(suggestedUsername)) {
+    form.elements.username.value = suggestedUsername;
+  }
   const button = form.querySelector('button[type="submit"]');
   const status = document.querySelector('#application-status');
   const result = document.querySelector('#application-result');
