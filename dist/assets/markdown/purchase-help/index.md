@@ -10,7 +10,7 @@ A clear path for payment and delivery questions.
 
 Where do I pay?
 
-When the store opens, checkout happens with the external payment provider. Mythforge’s website does not collect card details.
+Checkout happens on the official Mythforge Tebex storefront. Mythforge’s website does not collect card details.
 
 My reward has not arrived
 
@@ -26,6 +26,6 @@ Read the published refund policy and the provider’s purchase terms. Use the pr
 
 Are earned rewards affected by a refund?
 
-Paid supporter rewards and earned gameplay rewards are separate. The planned delivery system must preserve earned unlocks when a paid entitlement ends.
+Paid supporter rewards and earned gameplay rewards are separate. Refunding or reversing a paid entitlement does not remove independently earned gameplay unlocks.
 
  [Get purchase support](https://discord.gg/QQwdEgFMFg)  [Refund policy](https://mythforge.win/refunds/)

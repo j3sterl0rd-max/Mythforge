@@ -26,7 +26,7 @@ for(const f of await files(dist)){
    if(f===path.join(dist,'getting-started/index.html'))s=s.replace(/<li[^>]*>[\s\S]*?<\/li>/g,item=>/Multiplayer|Add Server|play\.mythforge\.win|Connect to the server/i.test(item)?'':item);
    s=s.replaceAll('play.mythforge.win','Server coming soon!').replaceAll('Join the Server','Server coming soon!').replaceAll('Install the pack before joining','Explore the installation guide').replaceAll('The server always follows the latest pack release.','Server coming soon! Watch Discord for launch news.').replaceAll('Connection & server status','Server launch news');
   }
-  s=s.replace('<a href="/terms/">','<a href="/beta-testers/">Beta Testers &amp; Thanks</a><a href="/terms/">');
+  s=s.replace('<nav class="footer-links" aria-label="Footer navigation">','<nav class="footer-links" aria-label="Footer navigation"><a href="/beta-testers/">Beta Testers &amp; Thanks</a>');
   s=s.replaceAll('Check the server’s required version before connecting.','The server always follows the latest pack release.');
   s=s.replaceAll('The server’s required pack version is awaiting publication. Confirm it through the official download or community channel before connecting.','The server always follows the latest pack release. Install the latest Mythforge release before connecting.');
   s=s.replace('<dt>Required modpack version</dt><dd>To be announced</dd>','<dt>Required modpack version</dt><dd>Latest pack release</dd>');

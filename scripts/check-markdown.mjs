@@ -24,7 +24,7 @@ for(const file of await pages(root)){
  const html=await worker.fetch(new Request(url),env);assert.match(html.headers.get('Content-Type'),/text\/html/);assert.match(html.headers.get('Vary'),/Accept-Encoding, Accept/);assert.match(await html.text(),/<!doctype html>/i);
  const md=await worker.fetch(new Request(url,{headers:{Accept:'text/markdown','If-None-Match':'html-validator','Range':'bytes=0-5'}}),env);
  assert.equal(md.status,200);assert.equal(md.headers.get('Content-Type'),'text/markdown; charset=utf-8');assert.equal(md.headers.get('ETag'),null);assert.equal(md.headers.get('Content-Length'),null);assert.equal(md.headers.get('Content-Security-Policy'),"default-src 'self'");
- const text=await md.text();assert.match(text,/^---\ntitle:/);assert.ok(!/<(?:html|head|script|style|nav|footer)\b/i.test(text));assert.ok(!text.includes('Footer navigation'));assert.ok(!text.includes('play.mythforge.win'));assert.ok(!text.includes(String.fromCharCode(8212)));
+ const text=await md.text();assert.match(text,/^---\ntitle:/);assert.ok(!/<(?:html|head|script|style|nav|footer)\b/i.test(text));assert.ok(!text.includes('Footer navigation'));assert.ok(!/coming soon/i.test(text));if(['/','/server/','/getting-started/','/support/'].includes(route))assert.ok(text.includes('play.mythforge.win'));assert.ok(!text.includes(String.fromCharCode(8212)));
  const head=await worker.fetch(new Request(url,{method:'HEAD',headers:{Accept:'text/markdown'}}),env);assert.equal(await head.text(),'');assert.equal(head.headers.get('Content-Type'),'text/markdown; charset=utf-8');
  count++;
 }

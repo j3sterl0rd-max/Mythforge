@@ -8,24 +8,21 @@ Policies & information
 
 Information about refunds for purchases made through the external Mythforge store.
 
-Effective October 13, 2026
+Effective October 24, 2026
 
-Current purchase status  
-The Mythforge supporter store is closed. No supporter packages are offered for purchase on this website, and proposed package names or rewards are not purchasable offers.
-
-Future purchases  
-When the store opens, review the package description and the payment provider’s terms before paying. Those terms must identify the price, duration, recurring billing if any, and applicable cancellation and refund conditions. This page does not establish a blanket “no refunds” rule or promise a discretionary refund window for a store that has not launched. Statutory consumer rights are not excluded.
+Payments through Tebex  
+Mythforge supporter ranks are one-time digital purchases through the Mythforge Tebex storefront. There is no recurring subscription or scheduled rank expiry. Review the package description, final price, taxes, eligible upgrade credit and Tebex purchase terms before paying. Tebex determines checkout availability and handles payment processing.
 
 Delivery problems and duplicate charges  
-If a future purchase is missing, incorrect, or charged twice, contact Mythforge staff privately through the Contact page with your receipt or transaction reference, Minecraft username, package name, and purchase date. Do not send card details or passwords. Staff will investigate delivery issues and coordinate with the checkout provider where appropriate. Do not purchase the package again merely to fix a delivery problem.
+For a missing, incorrect or duplicate purchase, contact Mythforge staff privately at admin@mythforge.win or through the Contact page. Include the Tebex receipt or transaction reference, Minecraft Java username, package name and purchase date. Do not send card details, passwords or security codes. Staff will investigate delivery and coordinate with Tebex where needed. Do not buy the package again to resolve a delivery problem.
 
-Provider support and subscriptions  
-Use the checkout provider’s receipt and support tools for payment or billing questions. If Tebex is selected, its purchase terms and payment-history tools will apply to the relevant checkout. Cancelling a subscription and requesting a refund are different actions; review the terms of the actual offer.
+Refund requests  
+Use the support options on your Tebex receipt and contact Mythforge staff with your transaction reference. Refund eligibility and processing follow the terms disclosed by Tebex for the transaction and applicable consumer law. This page does not remove statutory rights or promise an additional discretionary refund window.
 
-Rewards and reversals  
-Where a payment is refunded or reversed, rewards tied to that payment may be revoked under the applicable offer and provider terms. Separately earned gameplay rewards are not paid purchases and should not be removed solely because a supporter purchase was reversed.
+Rewards and payment reversals  
+Where a payment is refunded, reversed or charged back, supporter permissions tied to that payment may be revoked. Independently earned gameplay rewards and unlocks are preserved. One-time delivered items are not repeatedly issued when delivery is retried or a rank is upgraded.
 
-Before the store opens  
-This page will be updated with the actual provider and package conditions before purchases are enabled. Contact staff if you have any questions.
+Questions  
+Read the full package description at https://mythforge.win/support/ and the terms at checkout. Contact admin@mythforge.win privately for purchase support.
 
  [Contact & support](https://mythforge.win/contact/)  [Community rules](https://mythforge.win/rules/)

@@ -14,7 +14,12 @@ async function check(dir){for(const entry of await readdir(dir,{withFileTypes:tr
  assert(graph['@graph'].some(item=>item['@type']==='WebSite'));
  if(!file.endsWith('404.html'))assert(graph['@graph'].some(item=>item['@type']==='WebPage'&&item.url===canonical),file+' canonical/schema mismatch');
  assert(!html.includes(String.fromCharCode(8212)),file+' contains an em dash');
+ assert(!/coming soon|checkout remains closed|store closed until launch/i.test(html),file+' contains retired launch copy');
+ assert(!/Â©|â†/.test(html),file+' contains broken UTF-8 text');
 }}
 await check(fileURLToPath(dist));
-const server=await readFile(new URL('server/index.html',dist),'utf8');assert(server.includes('<h1>Server coming soon!</h1>'));
+const server=await readFile(new URL('server/index.html',dist),'utf8');assert(server.includes('play.mythforge.win'));assert(server.includes('The server is live'));assert(!/coming soon/i.test(server));
+const support=await readFile(new URL('support/index.html',dist),'utf8');
+for(const term of ['/rewards','/repair','/worldtime','/worldweather','one-time','without paying','12 distinct','30-minute','20 characters'])assert(support.includes(term),'Missing purchase information: '+term);
+for(const rank of ['ember','artisan','runeforged','mythic'])assert(support.includes('id="'+rank+'"'));
 console.log('PASS: unique titles, one H1, valid JSON-LD, canonical agreement, hyphens and server launch status.');

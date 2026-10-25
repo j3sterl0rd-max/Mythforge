@@ -8,7 +8,7 @@ Policies & information
 
 Information about privacy and data handling for Mythforge services.
 
-Effective October 13, 2026
+Effective October 24, 2026
 
 Who operates this service  
 Mythforge is operated under the name Procyonine. For privacy questions or requests, email admin@mythforge.win or contact staff privately through the official Discord on the Contact page. Do not post sensitive information in public chat.
@@ -23,7 +23,7 @@ Minecraft server and support
 Operating a multiplayer server involves Minecraft usernames and UUIDs, connection addresses, gameplay and chat logs, world and claim data, and moderation records. Information you send to staff may include Discord identifiers, messages, screenshots, and technical logs. This information is used to operate the world, investigate problems, enforce rules, and respond to support requests. In-game chat may be visible to other players; information submitted to public Discord channels is visible to their audiences.
 
 Providers and sharing  
-Cloudflare, Discord, Minecraft account services, and CurseForge process information under their own policies when you use their services. Server administrators and relevant hosting providers may have access to operational data. A future checkout provider will handle payment information under the terms shown at checkout. This static website does not collect card numbers. Information may also need to be disclosed when required by law or to address a security incident.
+Cloudflare, Discord, Minecraft account services, and CurseForge process information under their own policies when you use their services. Server administrators and relevant hosting providers may have access to operational data. Tebex handles payments under the terms and privacy information shown at checkout. Mythforge receives the Minecraft account and transaction references needed for delivery and support. This static website does not collect card numbers. Information may also need to be disclosed when required by law or to address a security incident.
 
 Storage and privacy requests  
 Logs, world saves, backups, and support records may persist after a session ends. Contact staff to request access, correction, or deletion of information relating to you. We may need to verify account ownership and may need to keep records for security, moderation, backups, or legal obligations. Removing a record from active systems may not immediately remove it from backups. Applicable privacy rights depend on your location and the circumstances.
@@ -42,6 +42,9 @@ Third-party providers may process requests and records in countries different fr
 
 Updates  
 This policy will be updated if the site adds accounts, analytics, payments, or other material changes in data handling. A new effective date will identify the revised version.
+
+Whitelist applications  
+The application form sends your Minecraft Java username to our private Cloudflare-backed application service. It uses Cloudflare Turnstile to limit automated submissions and processes Minecraft identity/profile information and local server-ban checks to assess the application. Staff receive private review notifications. Do not enter passwords, payment details or a Microsoft email address in the username field. Contact staff for privacy or application-review requests.
 
 ## Whitelist applications
 

@@ -31,13 +31,15 @@ A straightforward guide from a fresh install to your first connection.
     
     Wait until the main menu loads before connecting.
     
-5.  ## Meet us at the horizon
+5.  ## Open Multiplayer
+    
+    From Minecraft’s main menu, select **Multiplayer**, then **Add Server**.
+    
+6.  ## Meet us at the horizon
     
     Enter the address below, save the server, and connect. Take a moment to read the  [community rules](https://mythforge.win/rules/) .
     
-    The public server
-    
-    **Server coming soon!**
+    Minecraft server address
     
 
 Installation checklist
@@ -82,7 +84,7 @@ Use Java 21 and confirm that your launcher is using a 64-bit runtime. Remove cus
 
 Connection errors
 
-Double-check **Server coming soon!**, your internet connection, and the pack version. Restart Minecraft. If other players are also unable to connect, check maintenance announcements.
+Double-check **play.mythforge.win**, your internet connection, and the pack version. Restart Minecraft. If other players are also unable to connect, check maintenance announcements.
 
 Insufficient RAM or native memory allocation errors
 
@@ -104,6 +106,6 @@ Your first launch opens an expansive NeoForge adventure with over 400 integrated
 
 ## Make room for a long journey.
 
-Mythforge combines ambitious content with careful performance tuning. Follow the memory and Java guidance above to give the pack a good start on your machine. The sandbox includes mod guides, while the custom tutorial and discovery quest system is still in development.
+Mythforge combines ambitious content with careful performance tuning. Follow the memory and Java guidance above to give the pack a good start on your machine. The pack includes an Akashic Tome containing guides for its installed mods.
 
 Looking for your next goal? Discover  [the pack’s magic, machinery and adventures](https://mythforge.win/modpack/) . When updating, check  [the release notes](https://mythforge.win/changelog/)  first.

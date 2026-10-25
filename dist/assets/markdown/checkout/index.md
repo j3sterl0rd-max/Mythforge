@@ -1,17 +1,23 @@
 ---
-title: "Secure Checkout | Mythforge"
+title: "Tebex Checkout | Mythforge"
 ---
 
-Support the forge
+Secure external checkout
 
-# Before you continue.
+# Review your rank on Tebex.
 
-Purchases are completed through an external secure checkout.
+Mythforge uses Tebex for payments. Card details are entered on Tebex, never on this website.
 
-## The store is not open yet.
+## Mythforge supporter store
 
-Packages, prices, and automated delivery are being prepared. No payment is being collected here.
+Ranks start at $8 USD. Review your selected package and the final amount on Tebex.
 
- [Supporter ranks →](https://mythforge.win/support/)
+Use the correct Minecraft Java account. The store calculates eligible cumulative upgrade credit and shows applicable taxes, payment terms and current checkout availability. All four ranks are one-time purchases with no recurring billing.
+
+ [Full reward descriptions and commands](https://mythforge.win/support/)  ·  [Terms](https://mythforge.win/terms/)  ·  [Privacy](https://mythforge.win/privacy/)  ·  [Refunds](https://mythforge.win/refunds/)
+
+ [Continue to Tebex ↗](https://mythforge.tebex.store/)
+
+A purchase does not bypass the whitelist.  [Apply to join](https://mythforge.win/apply/)  before playing. Confirmed item rewards are claimed in-game with `/rewards`.
 
 Need help with a purchase?  [See purchase support](https://mythforge.win/purchase-help/) .

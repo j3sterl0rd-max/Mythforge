@@ -8,10 +8,10 @@ Policies & information
 
 The terms for using the Mythforge website, server and supporter services.
 
-Effective October 13, 2026
+Effective October 24, 2026
 
 About Mythforge  
-Mythforge: Beyond the Horizon is an independently operated Minecraft modpack and community server. The operator uses the name Procyonine. Contact the Mythforge team at admin@mythforge.win or through the official Discord linked on the Contact page. These terms cover mythforge.win and Server coming soon!; external services have their own terms.
+Mythforge: Beyond the Horizon is an independently operated Minecraft modpack and community server. The operator uses the name Procyonine. Contact the Mythforge team at admin@mythforge.win or through the official Discord linked on the Contact page. These terms cover mythforge.win and play.mythforge.win; external services have their own terms.
 
 Agreement and eligibility  
 These terms and the published Server Rules apply when you use Mythforge. If you do not agree, do not use the services. Follow the age and account requirements of Minecraft, Microsoft, Discord, and any other provider you use. Where your local law requires a parent or guardian’s permission, obtain that permission before using the service.
@@ -32,7 +32,7 @@ Updates and world data
 The modpack and server change over time. Bugs, interruptions, balancing changes, rollbacks, and world resets may occur. We do not promise uninterrupted access or permanent preservation of every build or item. Where practical, important changes will be announced through community channels. Nothing here removes rights that applicable law requires us to respect.
 
 Supporter services  
-No supporter packages are currently offered for purchase. Listed rewards are not offered for sale until checkout opens. Before paid offers open, their contents, price, duration, billing conditions, delivery process, and applicable purchase terms will be published. Payments will be handled through the external provider identified at checkout; this website does not collect card details.
+Permanent supporter ranks are described on the Support page and sold through Mythforge's Tebex storefront. They are one-time purchases without recurring billing or a scheduled rank expiry. Tebex handles payment and checkout availability; review the final price, taxes, upgrade credit and purchase terms there. Use the correct Minecraft Java account. The server applies confirmed purchases and makes item rewards claimable through /rewards. Higher ranks include lower-tier features; upgrades do not repeat item rewards already delivered. All supporter rewards can also be earned through gameplay. Purchases do not bypass server rules, bans, whitelist approval, item restrictions or required personal progression. World resets, moderation and the service conditions above still apply. This website does not collect card details.
 
 External services and intellectual property  
 Minecraft, mod content, and third-party assets remain subject to their respective owners’ licenses and terms. Discord, CurseForge, hosting, and any future checkout provider operate their own services. Mythforge does not replace their account or purchase agreements.

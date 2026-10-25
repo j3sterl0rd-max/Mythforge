@@ -10,16 +10,14 @@ Beyond the Horizon
 
 Ancient machines. Uncharted dimensions. Power waiting to be earned. A large NeoForge adventure and RPG modpack where exploration, bosses, magic, and technology share one horizon.
 
- [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Server coming soon!](https://mythforge.win/server/)  [Join Discord](https://discord.gg/QQwdEgFMFg)
+ [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Join the Server](https://mythforge.win/server/)  [Join Discord](https://discord.gg/QQwdEgFMFg)
 
 Minecraft 1.21.1NeoForgeAdventure · RPG · Technology
 
-The public server
-
-**Server coming soon!**
+Minecraft server address
 
 Your next chapter starts here.  
- [Explore the installation guide →](https://mythforge.win/getting-started/)
+ [Install the pack before joining →](https://mythforge.win/getting-started/)
 
 Host Mythforge with friends
 
@@ -64,7 +62,7 @@ Explore unfamiliar dimensions, imposing structures, and places that reward curio
 
 ### Choose your path.
 
-Develop your character through equipment, magic, and class-style systems. A custom tutorial and discovery quest book is in development.
+Develop your character through equipment, magic, and class-style systems. Use the included mod guides to explore each system.
 
 03 / BOSSES
 
@@ -105,9 +103,7 @@ Bring the Mythforge experience into a persistent multiplayer world. Build alongs
 
  [Server details & connection guide →](https://mythforge.win/server/)
 
-The public server
-
-**Server coming soon!**
+Minecraft server address
 
 Requires the Mythforge modpack. The server always follows the latest pack release.
 
@@ -135,9 +131,9 @@ Its inventive appeal lies in combining fantasy adventure with engineering freedo
 
 An unofficial spiritual successor to Prominence 2, Mythforge follows its own creative direction: it is better to buff than to nerf. Become powerful and explore a world that rewards that power. Change direction between engineering, magic, combat and building as curiosity leads; sideways progression is part of the appeal.
 
-Mythforge is highly recommended for players seeking a large, feature-rich NeoForge adventure with meaningful player power and long-term freedom. Its carefully tuned combination of technology, magic, decoration and exploration makes it an excellent choice for a personal world or a shared adventure with friends. The official public server is coming soon.
+Mythforge is highly recommended for players seeking a large, feature-rich NeoForge adventure with meaningful player power and long-term freedom. Its carefully tuned combination of technology, magic, decoration and exploration makes it an excellent choice for a personal world or a shared adventure with friends. The official public server is live at play.mythforge.win; apply at https://mythforge.win/apply/ before joining.
 
-Procyonine develops both the pack and its planned public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
+Procyonine develops both the pack and its live public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
 
 ### Early-player feedback
 
@@ -145,4 +141,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3. The custom tutorial and discovery quest system is still in development. The public server is coming soon. Current supporter ranks are listed; checkout remains closed.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.

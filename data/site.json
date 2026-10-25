@@ -5,18 +5,18 @@
   "serverAddress": "play.mythforge.win",
   "minecraftVersion": "1.21.1",
   "loader": "NeoForge",
-  "loaderVersion": "21.1.253",
+  "loaderVersion": "21.1.263",
   "javaVersion": "21",
-  "currentVersion": "1.2.4",
+  "currentVersion": "1.3",
   "recommendedRam": "9-10 GB",
   "links": {
     "curseforge": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon",
     "discord": "https://discord.gg/QQwdEgFMFg",
-    "store": null,
+    "store": "https://mythforge.tebex.store",
     "contact": "mailto:admin@mythforge.win"
   },
   "status": {
-    "endpoint": null,
+    "endpoint": "https://api.mcstatus.io/v2/status/java/play.mythforge.win",
     "timeoutMs": 10000,
     "refreshMs": 60000,
     "provider": "mcstatus.io"
@@ -66,7 +66,7 @@
       "name": "Ember",
       "price": "$8 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "One-time purchase with no subscription or scheduled rank expiry. Higher tiers include the lower-tier features. All supporter rewards can also be earned through gameplay without paying.",
       "features": [
         "Immediate Create machinery and Sable contraption access; banned functionality stays banned",
         "1 Creative Blaze Cake and 1 fully maxed Experience Disperser",
@@ -74,15 +74,67 @@
         "+2 homes, +1 public warps, +32 claim chunks and +1 force-loadable chunk",
         "Matching Discord role after account linking"
       ],
-      "url": null,
-      "active": false
+      "url": "https://mythforge.tebex.store/package/7739191",
+      "active": true,
+      "sections": [
+        {
+          "title": "Machinery access",
+          "paragraphs": [
+            "Immediate access to the server-gated functional Create machinery and Sable contraptions. Normal recipes, progression, claim protection and the banned-item rules still apply; this does not grant creative mode or unrestricted administration."
+          ]
+        },
+        {
+          "title": "Items included",
+          "paragraphs": [
+            "1 Creative Blaze Cake for a compatible Create Blaze Burner.",
+            "1 Experience Disperser from Relics, delivered fully maxed. When equipped, its dispersion ability shares relic experience across your equipped relics; its rank bonuses also interact with player experience. Normal Relics equipment and ability rules still apply."
+          ]
+        },
+        {
+          "title": "Extra building allowances",
+          "paragraphs": [
+            "+2 home slots, +1 player-owned public warp, +32 claim chunks and +1 force-loadable chunk, added to your natural allowances.",
+            "A claim chunk is a 16-by-16 block column protected through FTB Chunks. Force-loading is a separate allowance for selected claimed chunks and remains subject to server chunk-loading rules."
+          ]
+        },
+        {
+          "title": "Using the rewards",
+          "paragraphs": [
+            "Use /rewards to claim the one-time item rewards after delivery. Make room in your inventory before claiming.",
+            "Set personal destinations with /sethome <name> and return with /home <name>. Use /pwarp to browse public destinations or /pwarp create <name> to create one on safe ground in your team's claim.",
+            "The Discord supporter role is handled by staff after linking your identity. Contact staff privately with your Minecraft name and receipt; do not share payment details in public."
+          ]
+        }
+      ],
+      "commands": [
+        {
+          "syntax": "/craft",
+          "description": "Open a portable crafting table; normal crafting ingredients are still required."
+        },
+        {
+          "syntax": "/stonecutter",
+          "description": "Open a portable stonecutter; normal material costs still apply."
+        },
+        {
+          "syntax": "/nick <name>",
+          "description": "Change your in-game nickname within the server's naming rules; your underlying Minecraft account identity is unchanged."
+        },
+        {
+          "syntax": "/rename <text>",
+          "description": "Rename the item held in your main hand. Supports & color codes; text is limited to 48 characters."
+        },
+        {
+          "syntax": "/disposal",
+          "description": "Open a disposal interface to discard unwanted items. Only place items in it that you intend to throw away."
+        }
+      ]
     },
     {
       "id": "artisan",
       "name": "Artisan",
       "price": "$16 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards. Ember owners upgrade for the $8 USD difference.",
+      "description": "One-time purchase with no subscription or scheduled rank expiry. Higher tiers include the lower-tier features. All supporter rewards can also be earned through gameplay without paying.",
       "features": [
         "Everything in Ember",
         "AE2 Infinity Range Card and wireless crafting terminal with network hardware",
@@ -90,15 +142,74 @@
         "Custom public-warp icon with /pwarp icon <name> <item>, priority login and /rtp nether",
         "+3 homes, +2 public warps, +64 claim chunks and +2 force-loadable chunks"
       ],
-      "url": null,
-      "active": false
+      "url": "https://mythforge.tebex.store/package/7739196",
+      "active": true,
+      "sections": [
+        {
+          "title": "Includes Ember",
+          "paragraphs": [
+            "All Ember command access, machinery access and its one-time item rewards are included if they have not already been delivered."
+          ]
+        },
+        {
+          "title": "Wireless AE2 bundle",
+          "paragraphs": [
+            "1 AE2 Infinity Range Card, 1 Wireless Crafting Terminal, 1 Wireless Access Point, 8 Wireless Boosters and 1 Charger.",
+            "The terminal lets you access a linked, powered ME network wirelessly. Configure and power the network and link the terminal as required by AE2. The Infinity Range Card expands supported wireless range; cross-dimension access is the separate Mythic Dimension Card benefit. This bundle does not include a complete ME storage network or stored resources."
+          ]
+        },
+        {
+          "title": "Extra building allowances",
+          "paragraphs": [
+            "+3 home slots, +2 player-owned public warps, +64 claim chunks and +2 force-loadable chunks in total for the Artisan tier, added to your natural allowances. These replace Ember's smaller purchased bonuses rather than stacking a second set of bonuses."
+          ]
+        },
+        {
+          "title": "Travel and priority login",
+          "paragraphs": [
+            "/rtp nether selects a random permitted Nether destination. It shares the 10-minute RTP cooldown and the five-second movement/damage-sensitive warmup. It does not bypass world borders, claims or other destination rules.",
+            "Priority login allows eligible players to use up to two reserved places beyond the normal player cap. It does not evict another player, bypass whitelist/bans, or guarantee access while the server is offline or all reserved places are occupied.",
+            "Use /pwarp icon <name> <item_id> to change the display icon of a public warp you own, for example /pwarp icon workshop minecraft:anvil."
+          ]
+        }
+      ],
+      "commands": [
+        {
+          "syntax": "/echest",
+          "description": "Open your own Ender Chest remotely; this does not open other players' inventories."
+        },
+        {
+          "syntax": "/ascend",
+          "description": "Look for a safe standing space above you in the same dimension and queue a teleport. It fails if no valid space is found."
+        },
+        {
+          "syntax": "/anvil",
+          "description": "Open a portable anvil; vanilla material and experience requirements still apply."
+        },
+        {
+          "syntax": "/smithing",
+          "description": "Open a portable smithing table; templates, equipment and materials are still required."
+        },
+        {
+          "syntax": "/grindstone",
+          "description": "Open a portable grindstone, including its normal repair/disenchant behavior."
+        },
+        {
+          "syntax": "/rtp nether",
+          "description": "Request a random Nether destination under the travel rules above."
+        },
+        {
+          "syntax": "/pwarp icon <name> <item_id>",
+          "description": "Set the menu icon for a public warp you own."
+        }
+      ]
     },
     {
       "id": "runeforged",
       "name": "Runeforged",
       "price": "$32 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "One-time purchase with no subscription or scheduled rank expiry. Higher tiers include the lower-tier features. All supporter rewards can also be earned through gameplay without paying.",
       "features": [
         "Everything in Artisan and Ember",
         "1 fully maxed Relics item of your choice",
@@ -107,15 +218,65 @@
         "Teleporting requires five seconds without movement or damage; /repair uses XP levels based on damage repaired",
         "+4 homes, +3 public warps, +128 claim chunks and +4 force-loadable chunks"
       ],
-      "url": null,
-      "active": false
+      "url": "https://mythforge.tebex.store/package/7739207",
+      "active": true,
+      "sections": [
+        {
+          "title": "Includes Artisan and Ember",
+          "paragraphs": [
+            "All lower-tier command access, machinery access and one-time item bundles are included if they have not already been delivered."
+          ]
+        },
+        {
+          "title": "Relic choice",
+          "paragraphs": [
+            "1 voucher for a fully maxed Relics item from the server-approved selection. Claim the voucher through /rewards, hold it and open /relic to choose your item. Banned items are excluded. The choice is a one-time reward, not an unlimited relic generator."
+          ]
+        },
+        {
+          "title": "Extra building allowances",
+          "paragraphs": [
+            "+4 home slots, +3 player-owned public warps, +128 claim chunks and +4 force-loadable chunks in total for the Runeforged tier, added to your natural allowances."
+          ]
+        },
+        {
+          "title": "Travel and flight limits",
+          "paragraphs": [
+            "/rtp end adds random teleporting in the End. Your personal End-eye progression is still required: you must have discovered the required 12 distinct eyes. Buying a rank does not bypass that progression.",
+            "/waypoint <x> <y> <z> and supported JourneyMap waypoint teleporting move you to an allowed location in your current dimension. Teleporting requires five seconds without moving or taking damage. The normal destination, claim and border rules still apply.",
+            "/fly toggles creative-style flight only within your team's permitted claims. Leaving the permitted claim or entering combat ends that flight. It is not unrestricted flight throughout the world."
+          ]
+        }
+      ],
+      "commands": [
+        {
+          "syntax": "/feed",
+          "description": "Refill your hunger and saturation. Five-minute cooldown; unavailable during combat."
+        },
+        {
+          "syntax": "/fly",
+          "description": "Toggle flight within your team's permitted claims. Combat or leaving the claim removes this flight."
+        },
+        {
+          "syntax": "/waypoint <x> <y> <z>",
+          "description": "Queue a teleport to permitted coordinates in your current dimension; the normal warmup applies."
+        },
+        {
+          "syntax": "/repair",
+          "description": "Repair the damageable item in your main hand while preserving its other components. Costs one XP level per 100 durability repaired, rounded up, with a minimum of one level. Example: 250 damage costs three XP levels."
+        },
+        {
+          "syntax": "/rtp end",
+          "description": "Request a random End destination after meeting personal End-eye requirements."
+        }
+      ]
     },
     {
       "id": "mythic",
       "name": "Mythic",
       "price": "$64 USD",
       "tag": "PERMANENT SUPPORTER RANK",
-      "description": "Permanent and cumulative. Higher ranks include lower-rank features. Item rewards are claimed through /rewards and are one-time; upgrades deliver only newly acquired rewards.",
+      "description": "One-time purchase with no subscription or scheduled rank expiry. Higher tiers include the lower-tier features. All supporter rewards can also be earned through gameplay without paying.",
       "features": [
         "Everything in Runeforged, Artisan and Ember",
         "1 empty infinite item storage cell and 1 AE2 Dimension Card",
@@ -124,8 +285,71 @@
         "/effects <speed|haste|night_vision|water_breathing> grants level-I effects for five minutes with a 15-minute cooldown; /prefix <text> changes your chat prefix",
         "+5 homes, +5 public warps, +256 claim chunks and +6 force-loadable chunks"
       ],
-      "url": null,
-      "active": false
+      "url": "https://mythforge.tebex.store/package/7739216",
+      "active": true,
+      "sections": [
+        {
+          "title": "Includes every lower rank",
+          "paragraphs": [
+            "All Runeforged, Artisan and Ember command access and one-time item bundles are included if they have not already been delivered."
+          ]
+        },
+        {
+          "title": "AE2 storage and dimension items",
+          "paragraphs": [
+            "1 Infinite Item Storage Cell, delivered empty, plus 1 AE2 Dimension Card.",
+            "The storage cell is an item-storage component for a compatible AE2 network; it does not generate items or arrive filled with resources. Install it in compatible network hardware.",
+            "The Dimension Card adds the supported cross-dimension wireless capability to your configured AE2 wireless setup. A powered network, linked terminal and compatible hardware are still required. The card itself does not provide chunk loading."
+          ]
+        },
+        {
+          "title": "Extra building allowances",
+          "paragraphs": [
+            "+5 home slots, +5 player-owned public warps, +256 claim chunks and +6 force-loadable chunks in total for the Mythic tier, added to your natural allowances."
+          ]
+        },
+        {
+          "title": "World-wide controls and cosmetics",
+          "paragraphs": [
+            "World time and weather commands affect everyone in your current dimension, not just your own display. Each has its own 30-minute cooldown. Use them considerately and follow staff instructions.",
+            "Cosmetic text limits apply: /prefix supports up to 20 characters, /lore up to 100, and /joinmessage up to 80. Cosmetic permissions do not grant moderation powers."
+          ]
+        }
+      ],
+      "commands": [
+        {
+          "syntax": "/heal",
+          "description": "Restore your health and extinguish fire. Ten-minute cooldown; unavailable during combat or a boss encounter. This does not clear every status effect."
+        },
+        {
+          "syntax": "/effects <effect>",
+          "description": "Choose speed, haste, night_vision or water_breathing. Gives the chosen level-I effect for five minutes; all choices share a 15-minute cooldown and cannot be used during combat."
+        },
+        {
+          "syntax": "/prefix <text>",
+          "description": "Set your cosmetic chat prefix, subject to staff rank display and naming rules."
+        },
+        {
+          "syntax": "/chatcolor <color>",
+          "description": "Choose a supported chat text color."
+        },
+        {
+          "syntax": "/lore <text>",
+          "description": "Replace the lore of the item in your main hand with your cosmetic text. Does not change the item's actual abilities."
+        },
+        {
+          "syntax": "/joinmessage <text>",
+          "description": "Set your custom join message within the server's chat rules."
+        },
+        {
+          "syntax": "/worldtime <0-23999>",
+          "description": "Change time in your current dimension. Examples: /worldtime 1000 for daytime or /worldtime 13000 for night. Thirty-minute cooldown."
+        },
+        {
+          "syntax": "/worldweather <clear|rain|thunder>",
+          "description": "Change weather in your current dimension. Example: /worldweather clear. Separate 30-minute cooldown; dimensions without normal weather may not show a weather change."
+        }
+      ]
     }
   ],
   "rulesDraft": false,
@@ -284,9 +508,9 @@
     }
   ],
   "policies": {
-    "terms": "Effective October 13, 2026\n\nAbout Mythforge\nMythforge: Beyond the Horizon is an independently operated Minecraft modpack and community server. The operator uses the name Procyonine. Contact the Mythforge team at admin@mythforge.win or through the official Discord linked on the Contact page. These terms cover mythforge.win and play.mythforge.win; external services have their own terms.\n\nAgreement and eligibility\nThese terms and the published Server Rules apply when you use Mythforge. If you do not agree, do not use the services. Follow the age and account requirements of Minecraft, Microsoft, Discord, and any other provider you use. Where your local law requires a parent or guardian’s permission, obtain that permission before using the service.\n\nUsing the service\nUse a legitimately owned Minecraft Java Edition account and the latest published Mythforge release. Follow the Server Rules and applicable laws. Keep your account secure. Do not disrupt the infrastructure, impersonate staff, distribute malware, evade moderation, or exploit other players.\n\nCommunity and moderation\nStaff may investigate reports and restrict access for rule violations or security and performance concerns. Staff may pause, modify, or remove harmful machines, items, or builds. You may appeal through the official Discord and ask staff to review the evidence and context. An appeal does not guarantee that a restriction will be lifted. Sharing a build or playing on the server does not transfer ownership of your original work to Mythforge.\n\nContent you share\nYou retain rights in original content you create. When you share a build, message, screenshot, or technical report through our services, you allow staff to store, display, and review it as needed to operate the community, provide support, or investigate moderation and security issues. This does not grant permission to use your work in unrelated advertising. Share only material you have permission to share, and do not publish another person’s private information.\n\nSecurity reports\nReport suspected vulnerabilities and compromised accounts privately through the Contact page. Do not exploit a vulnerability, access other players’ information, or disrupt services while investigating a problem.\n\nUpdates and world data\nThe modpack and server change over time. Bugs, interruptions, balancing changes, rollbacks, and world resets may occur. We do not promise uninterrupted access or permanent preservation of every build or item. Where practical, important changes will be announced through community channels. Nothing here removes rights that applicable law requires us to respect.\n\nSupporter services\nNo supporter packages are currently offered for purchase. Listed rewards are not offered for sale until checkout opens. Before paid offers open, their contents, price, duration, billing conditions, delivery process, and applicable purchase terms will be published. Payments will be handled through the external provider identified at checkout; this website does not collect card details.\n\nExternal services and intellectual property\nMinecraft, mod content, and third-party assets remain subject to their respective owners’ licenses and terms. Discord, CurseForge, hosting, and any future checkout provider operate their own services. Mythforge does not replace their account or purchase agreements.\n\nChanges and contact\nUpdated terms will show a new effective date. Contact the operator through the Contact page if you have a question or dispute. Any future purchase is also subject to the terms disclosed for that transaction; a later website update does not automatically remove existing consumer rights.\n\nNOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.",
-    "privacy": "Effective October 13, 2026\n\nWho operates this service\nMythforge is operated under the name Procyonine. For privacy questions or requests, email admin@mythforge.win or contact staff privately through the official Discord on the Contact page. Do not post sensitive information in public chat.\n\nWebsite visits\nThis website has no visitor account system, advertising tracker, analytics script, or payment form in its supplied code. Cloudflare hosts the website and may process IP addresses, request timestamps, browser information, and security logs to deliver and protect it. The site does not set advertising or analytics cookies in its own code; infrastructure or external services may have their own practices.\n\nServer status\nThe Server page requests status from mcstatus.io. When your browser makes this request, that provider receives your IP address and normal request information, plus the public server hostname. It queries Minecraft’s public status response. The site displays availability and player totals, not a list of player names. Status results can be cached and may lag behind the server. mcstatus.io has its own service practices.\n\nMinecraft server and support\nOperating a multiplayer server involves Minecraft usernames and UUIDs, connection addresses, gameplay and chat logs, world and claim data, and moderation records. Information you send to staff may include Discord identifiers, messages, screenshots, and technical logs. This information is used to operate the world, investigate problems, enforce rules, and respond to support requests. In-game chat may be visible to other players; information submitted to public Discord channels is visible to their audiences.\n\nProviders and sharing\nCloudflare, Discord, Minecraft account services, and CurseForge process information under their own policies when you use their services. Server administrators and relevant hosting providers may have access to operational data. A future checkout provider will handle payment information under the terms shown at checkout. This static website does not collect card numbers. Information may also need to be disclosed when required by law or to address a security incident.\n\nStorage and privacy requests\nLogs, world saves, backups, and support records may persist after a session ends. Contact staff to request access, correction, or deletion of information relating to you. We may need to verify account ownership and may need to keep records for security, moderation, backups, or legal obligations. Removing a record from active systems may not immediately remove it from backups. Applicable privacy rights depend on your location and the circumstances.\n\nChildren and sensitive information\nDo not send identity documents, payment credentials, or other unnecessary sensitive information to staff. Discord users must meet Discord’s applicable age requirements. A parent or guardian may contact us about information relating to a child. Child-specific data collection or services require a separate review before introduction.\n\nPublic credits and privacy requests\nThe Beta Testers & Thanks page publishes the credited players’ Minecraft names and current head images using public UUIDs. A credited player can contact staff privately to ask for correction or removal from the page. Gameplay and moderation records are handled separately from public credits. Depending on applicable law, you may also request a copy of your information or object to or ask us to restrict particular processing. Explain the request through the Contact page; staff may need to confirm account ownership. If we cannot fulfill all of a request, we will explain the applicable reason and any records that must be retained. You may contact your local privacy regulator where you have that right.\n\nRetention and access\nRecords are kept for service operation, support, security, moderation, backups, and legal obligations as described above. Different records may have different retention needs; this policy does not promise a fixed deletion period that has not been implemented. Operational information is intended for staff and providers who need it for those purposes. Ask staff about the records relating to your account.\n\nInternational services\nThird-party providers may process requests and records in countries different from yours. Their privacy policies explain their own processing and safeguards. Public website credits can be viewed worldwide.\n\nUpdates\nThis policy will be updated if the site adds accounts, analytics, payments, or other material changes in data handling. A new effective date will identify the revised version.",
-    "refunds": "Effective October 13, 2026\n\nCurrent purchase status\nThe Mythforge supporter store is closed. No supporter packages are offered for purchase on this website, and proposed package names or rewards are not purchasable offers.\n\nFuture purchases\nWhen the store opens, review the package description and the payment provider’s terms before paying. Those terms must identify the price, duration, recurring billing if any, and applicable cancellation and refund conditions. This page does not establish a blanket “no refunds” rule or promise a discretionary refund window for a store that has not launched. Statutory consumer rights are not excluded.\n\nDelivery problems and duplicate charges\nIf a future purchase is missing, incorrect, or charged twice, contact Mythforge staff privately through the Contact page with your receipt or transaction reference, Minecraft username, package name, and purchase date. Do not send card details or passwords. Staff will investigate delivery issues and coordinate with the checkout provider where appropriate. Do not purchase the package again merely to fix a delivery problem.\n\nProvider support and subscriptions\nUse the checkout provider’s receipt and support tools for payment or billing questions. If Tebex is selected, its purchase terms and payment-history tools will apply to the relevant checkout. Cancelling a subscription and requesting a refund are different actions; review the terms of the actual offer.\n\nRewards and reversals\nWhere a payment is refunded or reversed, rewards tied to that payment may be revoked under the applicable offer and provider terms. Separately earned gameplay rewards are not paid purchases and should not be removed solely because a supporter purchase was reversed.\n\nBefore the store opens\nThis page will be updated with the actual provider and package conditions before purchases are enabled. Contact staff if you have any questions."
+    "terms": "Effective October 24, 2026\n\nAbout Mythforge\nMythforge: Beyond the Horizon is an independently operated Minecraft modpack and community server. The operator uses the name Procyonine. Contact the Mythforge team at admin@mythforge.win or through the official Discord linked on the Contact page. These terms cover mythforge.win and play.mythforge.win; external services have their own terms.\n\nAgreement and eligibility\nThese terms and the published Server Rules apply when you use Mythforge. If you do not agree, do not use the services. Follow the age and account requirements of Minecraft, Microsoft, Discord, and any other provider you use. Where your local law requires a parent or guardian’s permission, obtain that permission before using the service.\n\nUsing the service\nUse a legitimately owned Minecraft Java Edition account and the latest published Mythforge release. Follow the Server Rules and applicable laws. Keep your account secure. Do not disrupt the infrastructure, impersonate staff, distribute malware, evade moderation, or exploit other players.\n\nCommunity and moderation\nStaff may investigate reports and restrict access for rule violations or security and performance concerns. Staff may pause, modify, or remove harmful machines, items, or builds. You may appeal through the official Discord and ask staff to review the evidence and context. An appeal does not guarantee that a restriction will be lifted. Sharing a build or playing on the server does not transfer ownership of your original work to Mythforge.\n\nContent you share\nYou retain rights in original content you create. When you share a build, message, screenshot, or technical report through our services, you allow staff to store, display, and review it as needed to operate the community, provide support, or investigate moderation and security issues. This does not grant permission to use your work in unrelated advertising. Share only material you have permission to share, and do not publish another person’s private information.\n\nSecurity reports\nReport suspected vulnerabilities and compromised accounts privately through the Contact page. Do not exploit a vulnerability, access other players’ information, or disrupt services while investigating a problem.\n\nUpdates and world data\nThe modpack and server change over time. Bugs, interruptions, balancing changes, rollbacks, and world resets may occur. We do not promise uninterrupted access or permanent preservation of every build or item. Where practical, important changes will be announced through community channels. Nothing here removes rights that applicable law requires us to respect.\n\nSupporter services\nPermanent supporter ranks are described on the Support page and sold through Mythforge's Tebex storefront. They are one-time purchases without recurring billing or a scheduled rank expiry. Tebex handles payment and checkout availability; review the final price, taxes, upgrade credit and purchase terms there. Use the correct Minecraft Java account. The server applies confirmed purchases and makes item rewards claimable through /rewards. Higher ranks include lower-tier features; upgrades do not repeat item rewards already delivered. All supporter rewards can also be earned through gameplay. Purchases do not bypass server rules, bans, whitelist approval, item restrictions or required personal progression. World resets, moderation and the service conditions above still apply. This website does not collect card details.\n\nExternal services and intellectual property\nMinecraft, mod content, and third-party assets remain subject to their respective owners’ licenses and terms. Discord, CurseForge, hosting, and any future checkout provider operate their own services. Mythforge does not replace their account or purchase agreements.\n\nChanges and contact\nUpdated terms will show a new effective date. Contact the operator through the Contact page if you have a question or dispute. Any future purchase is also subject to the terms disclosed for that transaction; a later website update does not automatically remove existing consumer rights.\n\nNOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.",
+    "privacy": "Effective October 24, 2026\n\nWho operates this service\nMythforge is operated under the name Procyonine. For privacy questions or requests, email admin@mythforge.win or contact staff privately through the official Discord on the Contact page. Do not post sensitive information in public chat.\n\nWebsite visits\nThis website has no visitor account system, advertising tracker, analytics script, or payment form in its supplied code. Cloudflare hosts the website and may process IP addresses, request timestamps, browser information, and security logs to deliver and protect it. The site does not set advertising or analytics cookies in its own code; infrastructure or external services may have their own practices.\n\nServer status\nThe Server page requests status from mcstatus.io. When your browser makes this request, that provider receives your IP address and normal request information, plus the public server hostname. It queries Minecraft’s public status response. The site displays availability and player totals, not a list of player names. Status results can be cached and may lag behind the server. mcstatus.io has its own service practices.\n\nMinecraft server and support\nOperating a multiplayer server involves Minecraft usernames and UUIDs, connection addresses, gameplay and chat logs, world and claim data, and moderation records. Information you send to staff may include Discord identifiers, messages, screenshots, and technical logs. This information is used to operate the world, investigate problems, enforce rules, and respond to support requests. In-game chat may be visible to other players; information submitted to public Discord channels is visible to their audiences.\n\nProviders and sharing\nCloudflare, Discord, Minecraft account services, and CurseForge process information under their own policies when you use their services. Server administrators and relevant hosting providers may have access to operational data. Tebex handles payments under the terms and privacy information shown at checkout. Mythforge receives the Minecraft account and transaction references needed for delivery and support. This static website does not collect card numbers. Information may also need to be disclosed when required by law or to address a security incident.\n\nStorage and privacy requests\nLogs, world saves, backups, and support records may persist after a session ends. Contact staff to request access, correction, or deletion of information relating to you. We may need to verify account ownership and may need to keep records for security, moderation, backups, or legal obligations. Removing a record from active systems may not immediately remove it from backups. Applicable privacy rights depend on your location and the circumstances.\n\nChildren and sensitive information\nDo not send identity documents, payment credentials, or other unnecessary sensitive information to staff. Discord users must meet Discord’s applicable age requirements. A parent or guardian may contact us about information relating to a child. Child-specific data collection or services require a separate review before introduction.\n\nPublic credits and privacy requests\nThe Beta Testers & Thanks page publishes the credited players’ Minecraft names and current head images using public UUIDs. A credited player can contact staff privately to ask for correction or removal from the page. Gameplay and moderation records are handled separately from public credits. Depending on applicable law, you may also request a copy of your information or object to or ask us to restrict particular processing. Explain the request through the Contact page; staff may need to confirm account ownership. If we cannot fulfill all of a request, we will explain the applicable reason and any records that must be retained. You may contact your local privacy regulator where you have that right.\n\nRetention and access\nRecords are kept for service operation, support, security, moderation, backups, and legal obligations as described above. Different records may have different retention needs; this policy does not promise a fixed deletion period that has not been implemented. Operational information is intended for staff and providers who need it for those purposes. Ask staff about the records relating to your account.\n\nInternational services\nThird-party providers may process requests and records in countries different from yours. Their privacy policies explain their own processing and safeguards. Public website credits can be viewed worldwide.\n\nUpdates\nThis policy will be updated if the site adds accounts, analytics, payments, or other material changes in data handling. A new effective date will identify the revised version.\n\nWhitelist applications\nThe application form sends your Minecraft Java username to our private Cloudflare-backed application service. It uses Cloudflare Turnstile to limit automated submissions and processes Minecraft identity/profile information and local server-ban checks to assess the application. Staff receive private review notifications. Do not enter passwords, payment details or a Microsoft email address in the username field. Contact staff for privacy or application-review requests.",
+    "refunds": "Effective October 24, 2026\n\nPayments through Tebex\nMythforge supporter ranks are one-time digital purchases through the Mythforge Tebex storefront. There is no recurring subscription or scheduled rank expiry. Review the package description, final price, taxes, eligible upgrade credit and Tebex purchase terms before paying. Tebex determines checkout availability and handles payment processing.\n\nDelivery problems and duplicate charges\nFor a missing, incorrect or duplicate purchase, contact Mythforge staff privately at admin@mythforge.win or through the Contact page. Include the Tebex receipt or transaction reference, Minecraft Java username, package name and purchase date. Do not send card details, passwords or security codes. Staff will investigate delivery and coordinate with Tebex where needed. Do not buy the package again to resolve a delivery problem.\n\nRefund requests\nUse the support options on your Tebex receipt and contact Mythforge staff with your transaction reference. Refund eligibility and processing follow the terms disclosed by Tebex for the transaction and applicable consumer law. This page does not remove statutory rights or promise an additional discretionary refund window.\n\nRewards and payment reversals\nWhere a payment is refunded, reversed or charged back, supporter permissions tied to that payment may be revoked. Independently earned gameplay rewards and unlocks are preserved. One-time delivered items are not repeatedly issued when delivery is retried or a rank is upgraded.\n\nQuestions\nRead the full package description at https://mythforge.win/support/ and the terms at checkout. Contact admin@mythforge.win privately for purchase support."
   },
   "commerce": {
     "provider": "Tebex",
@@ -296,7 +520,8 @@
     "storeHosts": [
       "mythforge.tebex.store"
     ],
-    "supportUrl": "mailto:admin@mythforge.win"
+    "supportUrl": "mailto:admin@mythforge.win",
+    "catalogEnabled": true
   },
   "latestVersion": "1.3",
   "latestReleaseUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425",
@@ -306,5 +531,5 @@
     "source": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon"
   },
   "serverTracksLatest": true,
-  "serverComingSoon": true
+  "serverComingSoon": false
 }

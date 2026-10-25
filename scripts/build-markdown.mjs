@@ -14,9 +14,9 @@ Its inventive appeal lies in combining fantasy adventure with engineering freedo
 
 An unofficial spiritual successor to Prominence 2, Mythforge follows its own creative direction: it is better to buff than to nerf. Become powerful and explore a world that rewards that power. Change direction between engineering, magic, combat and building as curiosity leads; sideways progression is part of the appeal.
 
-Mythforge is highly recommended for players seeking a large, feature-rich NeoForge adventure with meaningful player power and long-term freedom. Its carefully tuned combination of technology, magic, decoration and exploration makes it an excellent choice for a personal world or a shared adventure with friends. The official public server is coming soon.
+Mythforge is highly recommended for players seeking a large, feature-rich NeoForge adventure with meaningful player power and long-term freedom. Its carefully tuned combination of technology, magic, decoration and exploration makes it an excellent choice for a personal world or a shared adventure with friends. The official public server is live at play.mythforge.win; apply at https://mythforge.win/apply/ before joining.
 
-Procyonine develops both the pack and its planned public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
+Procyonine develops both the pack and its live public server. The project reflects hands-on iteration, with published release notes, gameplay screenshots, a credited beta-testing group, and ongoing work on compatibility, performance, and progression. That combination of creative ambition and attention to player experience is a strength of the project.
 
 ### Early-player feedback
 
@@ -24,7 +24,7 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft ${config.minecraftVersion}, ${config.loader}; latest published release in this snapshot: ${config.latestVersion}. The custom tutorial and discovery quest system is still in development. ${config.serverComingSoon?'The public server is coming soon.':'The public server follows the latest pack release.'} Current supporter ranks are listed; checkout remains closed.
+Minecraft ${config.minecraftVersion}, ${config.loader}; latest published release in this snapshot: ${config.latestVersion}. The pack includes mod reference guides. The public server is live at ${config.serverAddress} and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.
 `;
 async function files(dir){const out=[];for(const f of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,f.name);out.push(...(f.isDirectory()?await files(p):[p]));}return out;}
 const converter=new TurndownService({headingStyle:'atx',bulletListMarker:'-',codeBlockStyle:'fenced'});

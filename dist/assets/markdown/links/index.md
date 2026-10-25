@@ -8,7 +8,7 @@ Official destinations
 
 Download the pack, find the community, or get help through the official Mythforge channels.
 
-Download and community links are available below. The supporter store will open when packages and delivery are ready.
+Download and community links are available below. Use the official destinations below for the modpack, live server community and Tebex supporter store.
 
 ## Modpack download
 
@@ -20,7 +20,7 @@ Download and community links are available below. The supporter store will open 
 
 ## Supporter store
 
-Official link coming soon. Please check back before downloading, joining, or purchasing.
+ [Open Supporter store ↗](https://mythforge.tebex.store/)
 
 ## Contact
 

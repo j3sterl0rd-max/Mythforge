@@ -1,44 +1,25 @@
-# Mythforge payment setup
+# Mythforge purchases and delivery
 
-The website is ready for hosted external checkout. It does not create a Tebex account, collect payment details, or deliver Minecraft commands. These steps complete the account and server side.
+The live Minecraft address is play.mythforge.win. The public reward reference is https://mythforge.win/support/ and the provider storefront is https://mythforge.tebex.store.
 
-## Connect Tebex
+## Installed integration
 
-1. Create a creator store at https://www.tebex.io/ for Minecraft Java Edition. Complete its operator, verification and payout setup. Keep the store unpublished while configuring it.
-2. Use Tebex's current RCON Adapter for the NeoForge server: https://docs.tebex.io/creators/tebex-control-panel/game-servers/rcon-adapter . Official plugin lists do not establish NeoForge support; do not install a Bukkit or Fabric plugin in this pack.
-3. Enable RCON in server.properties, choose a strong unique password, and restart the server. Run the adapter on the server machine and use 127.0.0.1 where possible. Restrict the RCON port to the adapter through the firewall; do not publish it as a website endpoint or expose it to players.
-4. Follow the adapter's guided setup with the Tebex store secret and RCON connection. Keep every secret out of Git, site.json, static files and browser JavaScript.
-5. Configure actual reward commands for the server's installed permission system. Verify command syntax on a test player before using it in Tebex. No guessed permission commands are supplied here.
+Production uses the official Tebex NeoForge 1.21.1 plugin, version 2.4.6. Its private configuration is mods/tebex/config.yml on the host; do not commit or distribute that file. The plugin authenticates successfully to the Mythforge Tebex account. No separate RCON adapter or custom payment poller is used. Public RCON is not required.
 
-## Separate paid and earned rewards
+Four permanent one-time packages are configured: Ember ($8), Artisan ($16), Runeforged ($32), Mythic ($64), in a cumulative rank category. Eligible upgrades use the price difference, including Ember to Artisan for $8 before applicable taxes. Final totals and eligible credit are shown by Tebex.
 
-Use separate supporter and playtime entitlements. A paid grant, expiration, refund or chargeback must change only paid entitlements. It must never remove earned playtime permissions. /fly and AE2 kit ideas remain proposals; hours, contents, cooldowns and progression restrictions are not finalized. Cosmetic supporter packages can be prepared independently. Do not sell queue priority or publish an unimplemented lobby/fallback promise from earlier brainstorming.
+The purchase command is `mythforge purchase {id} <rank> {transaction}_<rank>`. The removal, refund and chargeback commands are `mythforge revoke {transaction}_<rank>`. Those transaction keys are rank-specific, so a cumulative purchase containing multiple tiers cannot collide. The server accepts dashed and undashed Minecraft UUIDs and records repeat-safe entitlements. One-time items are claimed through /rewards. Offline entitlements reconcile on login. Paid reversals preserve earned progression; item grants are tracked to prevent replay or duplicate upgrade delivery.
 
-Use repeat-safe permission grants rather than direct item-give commands. For any future kits, a server-side claim ledger should identify transaction, player UUID and reward; retries must not issue duplicate items. A status page, return URL or browser query is never proof of payment. The adapter transports commands; it is not a custom entitlement ledger.
+## Provider review and verification
 
-Test paid grant, offline player delivery, reconnect/restart, repeated delivery, expiration, refund and chargeback. Verify that earned permissions survive revocation. Keep transaction logs and a staff support path. Do not activate untested rewards.
+The package descriptions, category description and storefront banner have been rewritten for the live server. They explain quantities, commands, costs, cooldowns, travel/flight limits, additive allowances, free gameplay alternatives, permanent one-time billing and private support.
 
-## Website activation
+Tebex controls store approval and checkout availability. A catalog link is not evidence that payments are enabled or that a test transaction succeeded. The website can publish full package information and link to Tebex while the provider reviews the account. The legacy `commerce.deliveryVerified` and `commerce.policyReviewComplete` flags must not be set true merely to remove launch messaging; record actual verification before using them to enable any additional checkout functionality.
 
-Edit data/site.json:
+Once Tebex permits it, use its free test/manual payment facility to verify the official plugin roundtrip, offline delivery, repeat delivery, upgrade credit and revocation. Do not use a real-money payment as a test. If the account still refuses test payments, retain that limitation and wait for provider review rather than simulating success or installing another checkout system.
 
-- links.store: the actual hosted HTTPS store URL.
-- commerce.storeHosts: replace the example mythforge.tebex.io with your actual approved hostname. It is an allowlist, not an existing store.
-- supporterPackages: edit names, contents, displayed prices, provider package URLs and stable unique IDs. Set active only for completed offers.
-- policies.terms, policies.privacy, policies.refunds: publish operator-reviewed policies appropriate to your actual operation and provider terms. No legal policy is fabricated by this project.
-- links.contact: currently Discord; set a dedicated contact if desired.
-- commerce.deliveryVerified and commerce.policyReviewComplete: set true only after the relevant work is complete.
-- commerce.enabled: true when opening the store.
+## Website source and publication
 
-Run npm run build and npm run check. The build refuses enabled commerce if policies, contact, delivery verification, approved store URLs or active package prices are missing. The flags record operator verification; they cannot perform it. /checkout/ explains the handoff and selects only configured packages. /purchase-help/ gives a private receipt-based support path.
+Package content lives in data/site.json and scripts/support-page.mjs. Changes are made in source and built into dist; npm run build and npm run check are required before push. Cloudflare deploys main automatically. Preserve the fixed beta roster, Markdown negotiation, Content Signals and API catalog.
 
-## Publish an update
-
-Run npm run package:upload to generate Mythforge-Direct-Upload.zip from dist/ only. Upload that ZIP as a new version of the existing Cloudflare Worker. Do not upload the source repository ZIP to the drag-and-drop uploader. Domain and Minecraft DNS records do not need changing.
-
-## Sources
-
-- https://docs.tebex.io/creators/tebex-control-panel/game-servers/rcon-adapter
-- https://docs.tebex.io/creators/tebex-control-panel/game-servers/minecraft-java-edition
-
-Provider fees, terms and account availability are determined by Tebex at setup; no fee promise is made here.
+Private server credentials, transaction ledgers and whitelist application data must never be copied into website files or public Git history.
