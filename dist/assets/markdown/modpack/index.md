@@ -26,7 +26,7 @@ Mythforge modpack icon
 
 Latest CurseForge release
 
-1.3
+1.3.1
 
 Recommended allocated RAM
 
@@ -127,11 +127,11 @@ Inside the pack
 
 ## Included mods & packs
 
-432 projects in release 1.3, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
+431 projects in release 1.3.1, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
 
- [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425)
+ [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9333841)
 
-Find a mod or creator432 projects shown
+Find a mod or creator431 projects shown
 
 -    [\[EMF\] Entity Model Features \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-model-features) by Traben · Mod
 -    [\[ETF\] Entity Texture Features - \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric) by Traben · Mod
@@ -202,7 +202,6 @@ Find a mod or creator432 projects shown
 -    [Bundle API](https://www.curseforge.com/minecraft/mc-mods/bundle-api) by TheRedBrain · Mod
 -    [Caelus API](https://www.curseforge.com/minecraft/mc-mods/caelus) by TheIllusiveC4 · Mod
 -    [Cardinal Components API](https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api) by UpcraftLP · Mod
--    [Cataclysm Compat](https://www.curseforge.com/minecraft/data-packs/cataclysm-compat) by CyberRat2 · Data pack
 -    [Cataclysm x YUNG's Better Nether Fortresses Compat](https://www.curseforge.com/minecraft/mc-mods/cataclysm-x-yungs) by GamesOfLife · Mod
 -    [Cataclysm: Spellbooks](https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks) by StarOcean · Mod
 -    [Cataclysm: Spellbooks & BetterCombat - Compatibility](https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks-bettercombat-compatibility) by rymusov · Mod
@@ -280,6 +279,8 @@ Find a mod or creator432 projects shown
 -    [Diagonal Fences](https://www.curseforge.com/minecraft/mc-mods/diagonal-fences) by Fuzs · Mod
 -    [Diagonal Walls](https://www.curseforge.com/minecraft/mc-mods/diagonal-walls) by Fuzs · Mod
 -    [Diagonal Windows](https://www.curseforge.com/minecraft/mc-mods/diagonal-windows) by Fuzs · Mod
+-    [Drippy Early Loading Module](https://www.curseforge.com/minecraft/mc-mods/drippy-early-loading-module) by Keksuccino · Mod
+-    [Drippy Loading Screen](https://www.curseforge.com/minecraft/mc-mods/drippy-loading-screen) by Keksuccino · Mod
 -    [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl) by xiroc\_ · Mod
 -    [Dungeons and Taverns](https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns) by Nova\_Wostra · Mod
 -    [Easier Sleeping](https://www.curseforge.com/minecraft/mc-mods/easier-sleeping) by GeheimagentNr1 · Mod
@@ -346,7 +347,6 @@ Find a mod or creator432 projects shown
 -    [Hazen 'N Stuff](https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff) by HazentouvelPrime · Mod
 -    [HazentouveLib](https://www.curseforge.com/minecraft/mc-mods/hazentouvelib) by HazentouvelPrime · Mod
 -    [Hostile Neural Networks](https://www.curseforge.com/minecraft/mc-mods/hostile-neural-networks) by Shadows\_of\_Fire · Mod
--    [Hostile Neural Networks: Extra Data Models](https://www.curseforge.com/minecraft/data-packs/extra-data-models) by vizthex · Data pack
 -    [I'm Fast](https://www.curseforge.com/minecraft/mc-mods/im-fast) by Bielhiss · Mod
 -    [Ice and Fire Dragons X Better Combat](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons-x-better-combat) by jslament · Mod
 -    [IceAndFire Community Edition](https://www.curseforge.com/minecraft/mc-mods/iceandfire-ce) by IAFEnvoy · Mod
@@ -518,7 +518,6 @@ Find a mod or creator432 projects shown
 -    [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) by SuperMartijn642 · Mod
 -    [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) by SuperMartijn642 · Mod
 -    [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) by MehVahdJukaar · Mod
--    [Supplementaries Compat](https://www.curseforge.com/minecraft/data-packs/supplementaries-compat) by CyberRat2 · Data pack
 -    [Tavern Brawl (RPG Series Plus)](https://www.curseforge.com/minecraft/mc-mods/tavern-brawl) by cleannrooster · Mod
 -    [Tectonic](https://www.curseforge.com/minecraft/mc-mods/tectonic) by Apollo · Mod
 -    [TerraBlender (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge) by TheAdubbz · Mod
@@ -600,4 +599,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3.1. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.

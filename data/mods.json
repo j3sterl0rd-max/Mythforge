@@ -1,8 +1,8 @@
 {
-  "version": "1.3",
-  "fileId": 9311425,
-  "publishedAt": "2026-10-24T17:09:01.09Z",
-  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425",
+  "version": "1.3.1",
+  "fileId": 9333841,
+  "publishedAt": "2026-10-26T14:30:50.34Z",
+  "sourceUrl": "https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9333841",
   "mods": [
     {
       "name": "[EMF] Entity Model Features [Fabric & Forge]",
@@ -416,12 +416,6 @@
       "name": "Cardinal Components API",
       "author": "UpcraftLP",
       "url": "https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api",
-      "bundled": false
-    },
-    {
-      "name": "Cataclysm Compat",
-      "author": "CyberRat2",
-      "url": "https://www.curseforge.com/minecraft/data-packs/cataclysm-compat",
       "bundled": false
     },
     {
@@ -887,6 +881,18 @@
       "bundled": false
     },
     {
+      "name": "Drippy Early Loading Module",
+      "author": "Keksuccino",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drippy-early-loading-module",
+      "bundled": false
+    },
+    {
+      "name": "Drippy Loading Screen",
+      "author": "Keksuccino",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drippy-loading-screen",
+      "bundled": false
+    },
+    {
       "name": "Dungeon Crawl",
       "author": "xiroc_",
       "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl",
@@ -1280,12 +1286,6 @@
       "name": "Hostile Neural Networks",
       "author": "Shadows_of_Fire",
       "url": "https://www.curseforge.com/minecraft/mc-mods/hostile-neural-networks",
-      "bundled": false
-    },
-    {
-      "name": "Hostile Neural Networks: Extra Data Models",
-      "author": "vizthex",
-      "url": "https://www.curseforge.com/minecraft/data-packs/extra-data-models",
       "bundled": false
     },
     {
@@ -2312,12 +2312,6 @@
       "name": "Supplementaries",
       "author": "MehVahdJukaar",
       "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
-      "bundled": false
-    },
-    {
-      "name": "Supplementaries Compat",
-      "author": "CyberRat2",
-      "url": "https://www.curseforge.com/minecraft/data-packs/supplementaries-compat",
       "bundled": false
     },
     {
