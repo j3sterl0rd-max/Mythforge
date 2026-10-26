@@ -13,7 +13,7 @@ for(const p of await pages(dist)){
  paths[route]={get:{summary:'Read '+(route==='/'?'the Mythforge homepage':route.replaceAll('/',' ').trim()+' page'),parameters:[{name:'Accept',in:'header',required:false,description:'Use text/markdown for clean main content; HTML is the default.',schema:{type:'string',default:'text/html'},example:'text/markdown'}],responses:{'200':response}},head:{summary:'Read representation headers without a response body',responses:{'200':{description:'Same representation headers as GET; no body.'}}}};
 }
 await mkdir(path.join(dist,'api'),{recursive:true});
-const spec={openapi:'3.1.0',info:{title:'Mythforge public content API',version:'1.0.0',description:'Read-only access to published website pages as HTML or Markdown. No accounts, payments, server administration, or live game-status API is provided.',contact:{email:'admin@mythforge.win'}},servers:[{url:site}],paths};
+const spec={openapi:'3.1.0',info:{title:'Mythforge public content API',version:'1.0.0',description:'Read-only access to published website pages as HTML or Markdown. This catalog excludes the separate whitelist application service, external Tebex checkout, server administration and live game-status provider.',contact:{email:'admin@mythforge.win'}},servers:[{url:site}],paths};
 const catalog={linkset:[{anchor:site+'/',item:[{href:site+'/'}],'service-desc':[{href:site+'/api/openapi.json',type:'application/vnd.oai.openapi+json',title:'Mythforge content API OpenAPI specification'}],'service-doc':[{href:site+'/api/docs.md',type:'text/markdown',title:'Mythforge content API documentation'}]}]};
 await writeFile(path.join(dist,'api/catalog.json'),JSON.stringify(catalog,null,2)+'\n');
 await writeFile(path.join(dist,'api/openapi.json'),JSON.stringify(spec,null,2)+'\n');
@@ -37,7 +37,7 @@ ${Object.keys(paths).map(p=>'- '+site+p).join('\n')}
 
 Successful pages return HTTP 200. Missing pages return HTTP 404 and an HTML or Markdown error page according to Accept. Canonical page routes may redirect to a trailing slash. Vary: Accept separates cache representations. Static images and other files retain their usual media types. Markdown and HTML reflect the latest deployed website snapshot, rather than a live query to CurseForge or Minecraft.
 
-The site publishes Content-Signal: ai-train=no, search=yes, ai-input=yes. Respect these preferences, cache responses where practical, and avoid excessive requests. There are no write operations, checkout endpoints, private player records, or game-server control endpoints. Contact admin@mythforge.win for questions.
+The site publishes Content-Signal: ai-train=no, search=yes, ai-input=yes. Respect these preferences, cache responses where practical, and avoid excessive requests. This public content catalog has no write operations, checkout endpoints, private player records or game-server control endpoints. The separate whitelist application service is outside this catalog. Contact admin@mythforge.win for questions.
 `);
 console.log('Generated RFC 9727 catalog, OpenAPI specification, and public API documentation.');
 await writeFile(path.join(dist,'_headers'),(await readFile(path.join(dist,'_headers'),'utf8'))+'\n/api/docs.md\n  Content-Type: text/markdown; charset=utf-8\n/api/openapi.json\n  Content-Type: application/vnd.oai.openapi+json\n');

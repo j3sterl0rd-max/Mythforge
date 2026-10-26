@@ -17,7 +17,7 @@ Agreement and eligibility
 These terms and the published Server Rules apply when you use Mythforge. If you do not agree, do not use the services. Follow the age and account requirements of Minecraft, Microsoft, Discord, and any other provider you use. Where your local law requires a parent or guardian’s permission, obtain that permission before using the service.
 
 Using the service  
-Use a legitimately owned Minecraft Java Edition account and the latest published Mythforge release. Follow the Server Rules and applicable laws. Keep your account secure. Do not disrupt the infrastructure, impersonate staff, distribute malware, evade moderation, or exploit other players.
+Use a legitimately owned Minecraft Java Edition account and the matching Mythforge release shown on the Server page. Follow the Server Rules and applicable laws. Keep your account secure. Do not disrupt the infrastructure, impersonate staff, distribute malware, evade moderation, or exploit other players.
 
 Community and moderation  
 Staff may investigate reports and restrict access for rule violations or security and performance concerns. Staff may pause, modify, or remove harmful machines, items, or builds. You may appeal through the official Discord and ask staff to review the evidence and context. An appeal does not guarantee that a restriction will be lifted. Sharing a build or playing on the server does not transfer ownership of your original work to Mythforge.

@@ -26,7 +26,7 @@ NeoForge
 
 Required modpack version
 
-1.3
+1.3.1
 
 Use the matching pack version when joining. Check release announcements before updating.
 
@@ -35,7 +35,7 @@ Use the matching pack version when joining. Check release announcements before u
 1.  Install the Mythforge pack using the  [Getting Started guide](https://mythforge.win/getting-started/) .
 2.  Launch the matching version and open **Multiplayer**.
 3.  Apply through the  [whitelist form](https://mythforge.win/apply/)  and wait for server-confirmed approval.
-4.  Select **Add Server**, enter **play.mythforge.win**, and join.
+4.  Select **Mythforge Official Server** if it is already listed, or add **play.mythforge.win** manually, and join.
 
  [Discord support](https://discord.gg/QQwdEgFMFg)  [Get the modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
 
@@ -51,7 +51,7 @@ Unavailable
 
 Server version
 
-1.3
+1.3.1
 
 Status is supplied by mcstatus.io and can be briefly cached.
 
@@ -65,7 +65,7 @@ No. Install Mythforge and use the same pack version as the server.
 
 Which version should I use?
 
-The required version is **1.3**. Install the latest published release; the server follows the latest version.
+The required version is **1.3.1**. Install the latest published release; the server follows the latest version.
 
 What happens if I cannot connect?
 

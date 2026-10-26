@@ -3,7 +3,7 @@
   "info": {
     "title": "Mythforge public content API",
     "version": "1.0.0",
-    "description": "Read-only access to published website pages as HTML or Markdown. No accounts, payments, server administration, or live game-status API is provided.",
+    "description": "Read-only access to published website pages as HTML or Markdown. This catalog excludes the separate whitelist application service, external Tebex checkout, server administration and live game-status provider.",
     "contact": {
       "email": "admin@mythforge.win"
     }

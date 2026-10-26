@@ -22,7 +22,7 @@ Do not use unauthorized cheats, duplication bugs, or exploits that bypass progre
 
 ## PvP requires consent
 
-PvP requires agreement from everyone involved. Consent to one fight is not permission for repeated attacks, spawn camping, trapping, or taking someone’s belongings. Respect a player’s request to stop.
+PvP is off by default. Use /pvp true to opt in or /pvp false to turn it off; both players must opt in for direct player damage. Consent to one fight is not permission for repeated attacks, spawn camping, trapping, or taking belongings. Indirect damage and traps do not bypass the consent rule.
 
 ## Claims and abandoned bases
 
@@ -34,7 +34,7 @@ Do not intentionally cause lag or crashes. Keep farms, entities, machines, and c
 
 ## Playtime and AFK systems
 
-Do not use macros, movement loops, or other tricks to evade AFK detection or inflate rewards. Follow the published conditions of any reward system when it is enabled.
+Playtime progresses while you are connected. Standing still to chat does not pause rewards. The server kicks idle players after 15 minutes, subject to staff exemptions. Do not use macros, movement loops or other tricks to evade the AFK kick or inflate rewards.
 
 ## Chat and community conduct
 

@@ -9,7 +9,7 @@ const metadata={
  '/':['Mythforge - 400+ Mods, Create & Magic on NeoForge 1.21.1','Discover an ambitious NeoForge 1.21.1 adventure with over 400 integrated mods, optimized gameplay, Create, magic and bosses that reward player power.'],
  '/modpack/':['Mythforge Modpack - Create, Magic & RPG Adventure','Explore Mythforge’s player-power philosophy, Create automation, distinct magic systems, bosses and open-ended Minecraft 1.21.1 NeoForge progression.'],
  '/getting-started/':['Install Mythforge - Minecraft 1.21.1 NeoForge Guide','Install Mythforge with a compatible launcher, Java 21 and recommended memory. Follow the setup guide and troubleshoot your first Minecraft adventure.'],
- '/server/':['Mythforge Server - Live at play.mythforge.win','Join the live Mythforge Minecraft server at play.mythforge.win. Apply for the whitelist, install the latest pack and explore our shared NeoForge world.'],
+ '/server/':['Mythforge Server - Live at play.mythforge.win','Join the live Mythforge Minecraft server at play.mythforge.win. Apply for the whitelist, install the matching pack and explore our shared NeoForge world.'],
  '/beta-testers/':['Mythforge Beta Testers & Thanks','Meet the fixed beta-testing group credited for exploring early Mythforge builds, reporting problems and helping shape Beyond the Horizon.']
 };
 const copy={

@@ -8,13 +8,13 @@ Policies & information
 
 Information about privacy and data handling for Mythforge services.
 
-Effective October 24, 2026
+Effective October 26, 2026
 
 Who operates this service  
 Mythforge is operated under the name Procyonine. For privacy questions or requests, email admin@mythforge.win or contact staff privately through the official Discord on the Contact page. Do not post sensitive information in public chat.
 
 Website visits  
-This website has no visitor account system, advertising tracker, analytics script, or payment form in its supplied code. Cloudflare hosts the website and may process IP addresses, request timestamps, browser information, and security logs to deliver and protect it. The site does not set advertising or analytics cookies in its own code; infrastructure or external services may have their own practices.
+This website has no visitor account system or payment form. Cloudflare hosts and protects the website and may process IP addresses, request timestamps, browser information and security logs. Cloudflare may also inject a performance analytics script to collect page-loading and browser performance measurements. The site does not set advertising cookies in its own code; Cloudflare and external providers have their own data-handling practices.
 
 Server status  
 The Server page requests status from mcstatus.io. When your browser makes this request, that provider receives your IP address and normal request information, plus the public server hostname. It queries Minecraft’s public status response. The site displays availability and player totals, not a list of player names. Status results can be cached and may lag behind the server. mcstatus.io has its own service practices.

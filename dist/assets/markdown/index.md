@@ -105,7 +105,7 @@ Bring the Mythforge experience into a persistent multiplayer world. Build alongs
 
 Minecraft server address
 
-Requires the Mythforge modpack. The server always follows the latest pack release.
+Requires the Mythforge modpack. Install the matching server pack version shown on the Server page.
 
  [Start your journey →](https://mythforge.win/getting-started/)
 

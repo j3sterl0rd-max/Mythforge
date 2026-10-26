@@ -45,7 +45,7 @@ for(const file of await files(dist)){
  const output=path.join(dist,'assets/markdown',relative.replace(/\.html$/,'.md'));
  // Drop incidental single trailing spaces from inline-link conversion; retain
  // Markdown's deliberate two-space hard line breaks.
- await mkdir(path.dirname(output),{recursive:true});await writeFile(output,markdown.replace(/(?<![ \t])[ \t]$/gm,''));count++;
+ await mkdir(path.dirname(output),{recursive:true});await writeFile(output,markdown.replace(/^[ \t]+$/gm,'').replace(/(?<![ \t])[ \t]$/gm,''));count++;
 }
 console.log(`Generated ${count} Markdown page representations.`);
 await writeFile(path.join(dist,'llms.txt'),`# Mythforge: Beyond the Horizon

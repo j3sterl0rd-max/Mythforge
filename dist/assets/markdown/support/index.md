@@ -130,7 +130,7 @@ All lower-tier command access, machinery access and one-time item bundles are in
 
 ### Relic choice
 
-1 voucher for a fully maxed Relics item from the server-approved selection. Claim the voucher through /rewards, hold it and open /relic to choose your item. Banned items are excluded. The choice is a one-time reward, not an unlimited relic generator.
+1 voucher for a fully maxed Relics item from the server-approved selection. Claim the voucher through /rewards, hold it in your main hand and open /relic to choose your item. Then claim the selected relic through /rewards. Banned items are excluded. The choice is a one-time reward, not an unlimited relic generator.
 
 ### Extra building allowances
 
@@ -142,7 +142,7 @@ All lower-tier command access, machinery access and one-time item bundles are in
 
 /waypoint <x> <y> <z> and supported JourneyMap waypoint teleporting move you to an allowed location in your current dimension. Teleporting requires five seconds without moving or taking damage. The normal destination, claim and border rules still apply.
 
-/fly toggles creative-style flight only within your team's permitted claims. Leaving the permitted claim or entering combat ends that flight. It is not unrestricted flight throughout the world.
+/fly toggles creative flight anywhere in the world. You can fly in unclaimed areas and across claim boundaries; a claim is not required. Entering combat disables flight, and flight does not bypass block protection or other server rules.
 
 ### Additional commands
 
@@ -152,11 +152,11 @@ Refill your hunger and saturation. Five-minute cooldown; unavailable during comb
 
 `/fly`
 
-Toggle flight within your team's permitted claims. Combat or leaving the claim removes this flight.
+Toggle creative flight on or off anywhere, without needing a claim. Double-tap jump to start or stop flying while enabled. Combat disables flight. This grants flight, not Creative mode or unlimited items.
 
 `/waypoint <x> <y> <z>`
 
-Queue a teleport to permitted coordinates in your current dimension; the normal warmup applies.
+Queue a teleport to permitted coordinates in your current dimension. Five-second warmup; two-minute cooldown. Stay still and avoid damage during the warmup.
 
 `/repair`
 

@@ -9,38 +9,42 @@ Getting started
 A straightforward guide from a fresh install to your first connection.
 
 1.  ## Choose your launcher
-    
+
     Install CurseForge or a compatible launcher that can import a CurseForge modpack. Sign in with a Minecraft account that owns Java Edition.
-    
+
     Use the launcher’s official distribution and let it manage the pack’s mod loader.
-    
+
 2.  ## Install Mythforge
-    
+
     Open the official pack listing, choose the version required by the server, and install it into a fresh profile.
-    
+
      [Open the modpack download](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
 3.  ## Set your memory allocation
-    
+
     Recommended allocated client RAM: **9-10 GB**.
-    
+
     In your launcher’s profile or Minecraft settings, adjust the memory allocation. Leave enough RAM for your operating system and other programs; allocating all available memory can cause launch failures.
-    
+
 4.  ## Launch the pack once
-    
+
     Start Mythforge and let the initial setup finish. Use Java 21 for Minecraft 1.21.1; a supported launcher can usually manage this runtime for you.
-    
+
     Wait until the main menu loads before connecting.
-    
-5.  ## Open Multiplayer
-    
-    From Minecraft’s main menu, select **Multiplayer**, then **Add Server**.
-    
-6.  ## Meet us at the horizon
-    
+
+5.  ## Apply for the whitelist
+
+    Open  [Whitelist](https://mythforge.win/apply/)  and submit your Minecraft Java username. In 1.3.1, the multiplayer screen also has an application button that opens this page and fills in your username; you still review and submit the form yourself.
+
+6.  ## Open Multiplayer
+
+    Select **Mythforge Official Server** if it is already listed. Otherwise, choose **Add Server** and enter the address below. Whitelist approval is required before you can join.
+
+7.  ## Meet us at the horizon
+
     Enter the address below, save the server, and connect. Take a moment to read the  [community rules](https://mythforge.win/rules/) .
-    
+
     Minecraft server address
-    
+
 
 Installation checklist
 
@@ -60,7 +64,7 @@ Java
 
 Required pack version
 
-1.3
+1.3.1
 
 Allocated client RAM
 
