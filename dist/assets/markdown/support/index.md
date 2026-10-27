@@ -4,23 +4,92 @@ title: "Supporter Ranks & Rewards | Mythforge"
 
 Support the forge
 
-# Know exactly what you unlock.
+# Keep the adventure going.
 
-Support Mythforge with a one-time rank purchase. Every supporter reward can also be earned through gameplay without spending money.
+Help keep our shared world running. Choose a permanent supporter rank, with rewards that can also be earned through gameplay.
 
- [Ember - $8 USD](https://mythforge.win/#ember)  [Artisan - $16 USD](https://mythforge.win/#artisan)  [Runeforged - $32 USD](https://mythforge.win/#runeforged)  [Mythic - $64 USD](https://mythforge.win/#mythic)
+One-time purchasesEarnable through playCheckout by Tebex
 
-## How ranks and upgrades work
+Choose your contribution
 
-The Minecraft server is live at **play.mythforge.win**. Apply for the  [server whitelist](https://mythforge.win/apply/)  and install the  [matching Mythforge pack](https://mythforge.win/getting-started/)  before joining. A rank purchase does not replace whitelist approval.
+## A place at the forge.
 
-Ranks are permanent one-time purchases with no subscription or scheduled expiry. Higher ranks include lower-tier features. Tebex handles payment, final prices, applicable taxes and checkout availability. These are server rewards, not a purchase of Minecraft, the modpack, a mod licence or staff powers.
+Higher ranks include lower-tier features. Eligible upgrades charge the price difference; review taxes and the final amount on Tebex.
 
-**Upgrades charge the eligible price difference.** Ember is $8, Artisan $16, Runeforged $32 and Mythic $64 USD. An Ember owner upgrading to Artisan pays $8 before applicable taxes. Sign in using the same Minecraft account so Tebex can calculate eligible credit; review the final amount before paying.
+PERMANENT SUPPORTER RANK
 
-**Your natural home, public-warp, claim and force-load allowances are increased by your purchased rank's bonuses.** The highest purchased tier supplies one set of bonuses. For example, Artisan adds three homes in total; it does not add Ember's two again. Separately earned allowances remain yours.
+### Ember
 
-Confirmed purchases are processed automatically through the official Tebex server integration. Permissions apply to your account, and one-time items wait in `/rewards` for you to claim. Offline purchases are reconciled when you next join. Delivery retries and upgrades do not duplicate item rewards already delivered.
+$8 USDOne-time payment
+
+-   Immediate Create machinery and Sable contraption access; banned functionality stays banned
+-   1 Creative Blaze Cake and 1 fully maxed Experience Disperser
+-   /craft, /stonecutter, /nick, /rename <text> (supports & color codes) and /disposal
+
+ [Full rewards & commands](https://mythforge.win/#ember)
+
+PERMANENT SUPPORTER RANK
+
+### Artisan
+
+$16 USDOne-time payment
+
+-   Everything in Ember
+-   AE2 Infinity Range Card and wireless crafting terminal with network hardware
+-   /echest, /ascend, /anvil, /smithing and /grindstone
+
+ [Full rewards & commands](https://mythforge.win/#artisan)
+
+PERMANENT SUPPORTER RANK
+
+### Runeforged
+
+$32 USDOne-time payment
+
+-   Everything in Artisan and Ember
+-   1 fully maxed Relics item of your choice
+-   /feed, creative flight with /fly, JourneyMap waypoint teleporting or /waypoint <x> <y> <z> and XP-based /repair
+
+ [Full rewards & commands](https://mythforge.win/#runeforged)
+
+PERMANENT SUPPORTER RANK
+
+### Mythic
+
+$64 USDOne-time payment
+
+-   Everything in Runeforged, Artisan and Ember
+-   1 empty infinite item storage cell and 1 AE2 Dimension Card
+-   /heal, limited /effects, /prefix, /lore <text> and /joinmessage <text>
+
+ [Full rewards & commands](https://mythforge.win/#mythic)
+
+Purchasing a rank does not replace whitelist approval.  [Apply to join the server →](https://mythforge.win/apply/)
+
+Before you choose
+
+## Clear terms.  
+A shared world.
+
+ [Purchase help](https://mythforge.win/purchase-help/)
+
+### Permanent ranks, straightforward upgrades
+
+Ranks have no subscription or scheduled expiry. Ember is $8, Artisan $16, Runeforged $32 and Mythic $64 USD. An Ember owner upgrading to Artisan pays $8 before applicable taxes. Use the same Minecraft account so Tebex can calculate eligible credit, then review the final amount before paying.
+
+### Your rewards, ready when you are
+
+Confirmed purchases are processed automatically through the official Tebex server integration. Permissions apply to your account; one-time items wait in `/rewards`. Offline purchases are reconciled when you next join. Delivery retries and upgrades do not duplicate previously delivered items.
+
+The server is live at **play.mythforge.win**. Install the  [matching pack](https://mythforge.win/getting-started/)  and receive  [whitelist approval](https://mythforge.win/apply/)  before playing.
+
+Tebex handles payments, final prices, taxes, and availability. These rewards do not include Minecraft, the modpack, a mod licence, or staff powers.
+
+The full details
+
+## Know what comes with it.
+
+Items, commands, allowances, and restrictions for every rank.
 
 ### Machinery access
 
@@ -46,7 +115,7 @@ Set personal destinations with /sethome <name> and return with /home <name>. Use
 
 The Discord supporter role is handled by staff after linking your identity. Contact staff privately with your Minecraft name and receipt; do not share payment details in public.
 
-### Commands included
+Commands included5 commands
 
 `/craft`
 
@@ -67,8 +136,6 @@ Rename the item held in your main hand. Supports & color codes; text is limited 
 `/disposal`
 
 Open a disposal interface to discard unwanted items. Only place items in it that you intend to throw away.
-
- [Review Ember at the Tebex store →](https://mythforge.win/checkout/?package=ember)
 
 ### Includes Ember
 
@@ -92,7 +159,7 @@ Priority login allows eligible players to use up to two reserved places beyond t
 
 Use /pwarp icon <name> <item\_id> to change the display icon of a public warp you own, for example /pwarp icon workshop minecraft:anvil.
 
-### Additional commands
+Additional commands7 commands
 
 `/echest`
 
@@ -122,8 +189,6 @@ Request a random Nether destination under the travel rules above.
 
 Set the menu icon for a public warp you own.
 
- [Review Artisan at the Tebex store →](https://mythforge.win/checkout/?package=artisan)
-
 ### Includes Artisan and Ember
 
 All lower-tier command access, machinery access and one-time item bundles are included if they have not already been delivered.
@@ -144,7 +209,7 @@ All lower-tier command access, machinery access and one-time item bundles are in
 
 /fly toggles creative flight anywhere in the world. You can fly in unclaimed areas and across claim boundaries; a claim is not required. Entering combat disables flight, and flight does not bypass block protection or other server rules.
 
-### Additional commands
+Additional commands5 commands
 
 `/feed`
 
@@ -165,8 +230,6 @@ Repair the damageable item in your main hand while preserving its other componen
 `/rtp end`
 
 Request a random End destination after meeting personal End-eye requirements.
-
- [Review Runeforged at the Tebex store →](https://mythforge.win/checkout/?package=runeforged)
 
 ### Includes every lower rank
 
@@ -190,7 +253,7 @@ World time and weather commands affect everyone in your current dimension, not j
 
 Cosmetic text limits apply: /prefix supports up to 20 characters, /lore up to 100, and /joinmessage up to 80. Cosmetic permissions do not grant moderation powers.
 
-### Additional commands
+Additional commands8 commands
 
 `/heal`
 
@@ -224,17 +287,28 @@ Change time in your current dimension. Examples: /worldtime 1000 for daytime or 
 
 Change weather in your current dimension. Example: /worldweather clear. Separate 30-minute cooldown; dimensions without normal weather may not show a weather change.
 
- [Review Mythic at the Tebex store →](https://mythforge.win/checkout/?package=mythic)
+The same world for everyone
 
-## Restrictions that apply to every rank
+## Every rank follows  
+the same rules.
 
-Server rules, banned-item restrictions, claim protection, personal progression and staff moderation apply to everyone. Most player teleports have a five-second warmup that cancels if you move or take damage. Random teleports share a ten-minute cooldown. Entering the End still requires your own 12 distinct eye discoveries.
+Server rules, banned items, claim protection, personal progression, and moderation apply to everyone. Most player teleports have a five-second warmup that cancels if you move or take damage. Random teleports share a ten-minute cooldown. The End requires your own 12 distinct eye discoveries.
 
-World resets and service changes can affect builds, items and gameplay; a permanent rank has no scheduled expiry but is not a promise of an unchanged world or indefinite hosting. Read the  [terms](https://mythforge.win/terms/) ,  [refund information](https://mythforge.win/refunds/)  and  [privacy policy](https://mythforge.win/privacy/)  before purchasing.
+Your natural home, public-warp, claim, and force-load allowances receive the purchased rank’s bonuses. The highest tier supplies one set of bonuses: Artisan adds three homes in total, without adding Ember’s two again. Separately earned allowances remain yours.
 
-## Claiming items and getting help
+World resets and service changes can affect builds, items, and gameplay. A permanent rank has no scheduled expiry; it is not a promise of an unchanged world or indefinite hosting. Read the  [terms](https://mythforge.win/terms/) ,  [refund information](https://mythforge.win/refunds/) , and  [privacy policy](https://mythforge.win/privacy/)  before purchasing.
 
-Join with the Minecraft Java account used at checkout and run `/rewards`. Keep inventory space available. For the Runeforged relic choice, claim the voucher and use `/relic` while holding it. If something is missing, keep your receipt and  [contact purchase support](https://mythforge.win/purchase-help/) ; do not purchase again to fix delivery.
+Claiming your items
+
+## Meet us in-game.
+
+Join with the Minecraft Java account used at checkout and run `/rewards`. Keep inventory space available.
+
+For the Runeforged relic choice, claim the voucher and use `/relic` while holding it.
+
+If something is missing, keep your receipt and contact purchase support. Please don’t purchase again to fix delivery.
+
+ [Get purchase help](https://mythforge.win/purchase-help/)
 
 Host Mythforge with friends
 

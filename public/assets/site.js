@@ -24,7 +24,6 @@ for (const head of document.querySelectorAll('[data-player-head]')) {
 }
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#site-nav');
-const more = document.querySelector('.nav-more');
 menu?.addEventListener('click', () => {
   const open = menu.getAttribute('aria-expanded') !== 'true';
   menu.setAttribute('aria-expanded', String(open));
@@ -32,10 +31,6 @@ menu?.addEventListener('click', () => {
   menu.textContent = open ? 'Close menu' : 'Menu';
 });
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && more?.open) {
-    more.open = false;
-    more.querySelector('summary')?.focus();
-  }
   if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
     menu.click(); menu.focus();
   }

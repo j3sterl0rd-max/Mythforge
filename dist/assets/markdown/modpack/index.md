@@ -2,47 +2,45 @@
 title: "Mythforge Modpack - Create, Magic & RPG Adventure"
 ---
 
-The modpack
-
-# A world with room for ambition.
-
-Beyond the Horizon brings fantasy, machinery, and dimensional discovery together in one large Minecraft adventure.
-
 Mythforge / Beyond the Horizon
 
-## Find your next obsession.
+# Follow your curiosity.
 
-A workshop that runs itself. A class you want to master. A boss that makes you rethink your equipment. A distant place that becomes home.
+From a first shelter to a workshop that runs itself. Explore, learn, build, and become powerful in your own way.
 
-The current pack is a sandbox with mod guides. Use the included mod guides to explore each system.
-
-Minecraft 1.21.1NeoForgeJava 21
-
- [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
+ [Download the modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Browse included mods](https://mythforge.win/#included-mods)
 
 Mythforge modpack icon
 
-### Before you launch
+Your next adventure
 
-Latest CurseForge release
+## Mythforge
 
-1.3.1
+Beyond the Horizon
 
-Recommended allocated RAM
+Minecraft
 
-9-10 GB
+1.21.1
 
 Loader
 
-NeoForge 21.1.263
+NeoForge
 
-Use the installer’s bundled profile and dependencies. Follow the installation guide for your first launch.
+Latest release
 
- [Installation & troubleshooting →](https://mythforge.win/getting-started/)
+1.3.1
 
-The pillars of Mythforge
+Allocated RAM
 
-## Follow what calls to you.
+9-10 GB
+
+ [Installation guide](https://mythforge.win/getting-started/)
+
+One pack. Your direction.
+
+## Find your next obsession.
+
+Mythforge is an open-ended sandbox with mod guides. Follow an interest, master a system, then discover what connects to it.
 
 01 / ADVENTURE
 
@@ -86,42 +84,48 @@ Bring ambitious builds to life with an extensive selection of building and decor
 
 Play the full modpack on your own, with friends, or in a persistent public multiplayer world.
 
-Encounters beyond the ordinary
+A fiery boss waits inside a lava-lit Minecraft fortress
 
-## Preparation is part  
-of the adventure.
+Power with a purpose
 
-Boss progression stretches across the game and its dimensions. Equipment, mod guides, and the systems you master give you ways to prepare.
+## Bring more than  
+a sharp sword.
 
-Mythforge boss artwork
+Bosses across the game and its dimensions give your equipment, magical discoveries, and preparation a purpose. Learn what your tools can do, then take on the next encounter.
 
-From inside the world
+Use the included mod guides to explore each system. There is no single prescribed path through the pack.
 
-## A glimpse beyond.
+ [Start your adventure](https://mythforge.win/getting-started/)
 
-Cozy Decorations.png
+From the official pack gallery
 
-Cozy Decorations.png
+## A little of what awaits.
 
-Creative Applications.png
+Places to explore, things to build, and details that make a world feel like yours.
 
-Creative Applications.png
+A cozy room with colorful decorations, books, and a bubbling potion
 
-Epic Enemies.jfif
+01A little room for character
 
-Epic Enemies.jfif
+An illuminated Minecraft cinema under a starry sky
 
-Ponderous.jfif
+02Build something worth coming home to
 
-Ponderous.jfif
+A towering fiery boss inside a lava-lit fortress
 
-Varied Decorations.png
+03Prepare for a bigger fight
 
-Varied Decorations.png
+An enormous suspended sphere above a stone platform
 
-Wonderful Rivers.jfif
+04Think a little bigger
 
-Wonderful Rivers.jfif
+A detailed Minecraft interior with vending machines and warm lanterns
+
+05Make every corner your own
+
+Sunlight over a wide waterfall in a forested valley
+
+06Follow the river
 
 Inside the pack
 
@@ -566,20 +570,6 @@ Find a mod or creator431 projects shown
 -    [Zeta](https://www.curseforge.com/minecraft/mc-mods/zeta) by Vazkii · Mod
 
 No matching projects. Try another name or creator.
-
-## A world that rewards ambition.
-
-Mythforge follows its own philosophy: embrace player power and give that power a purpose. Bosses, dimensions and progression make strength feel earned and useful. This is a world for ambitious players who want their possibilities to grow.
-
-## Depth without a single prescribed path.
-
-Create turns technology into a creative adventure. Multiple distinct magic systems offer rewarding ways to develop, while extensive decoration and building content make the journey feel personal. Move between combat, engineering, exploration and building without giving up the rest of the pack.
-
-## Scale with care.
-
-Over 400 integrated mods bring remarkable breadth to NeoForge 1.21.1. Careful tuning, optimization and quality-of-life connect that breadth into a considered experience. Mythforge is highly recommended for players who want the depth of a major kitchen-sink pack, a clear sense of adventure and the freedom to become powerful.
-
-Ready to explore? Our  [installation guide](https://mythforge.win/getting-started/)  walks you through setup. See  [what changed in the latest releases](https://mythforge.win/changelog/)  before updating an existing world.
 
 ## What makes Mythforge distinctive
 

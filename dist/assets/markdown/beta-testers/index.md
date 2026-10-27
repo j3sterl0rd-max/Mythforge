@@ -4,23 +4,48 @@ title: "Mythforge Beta Testers & Thanks"
 
 The people behind the journey
 
-# Beta Testers & Thanks
+# Every horizon starts  
+with a few explorers.
 
-Thank you for exploring early builds, finding problems, and helping Mythforge grow.
+To the people who stepped into early builds, found the rough edges, and helped shape Mythforge: thank you.
 
-## Our beta testers
+ [Meet our beta testers](https://mythforge.win/#beta-roster)
 
-To the explorers who tested early builds and helped us find our footing: thank you.
+Beta testers & thanks
 
--   Slenana
--   Regranaas47
--   kaididit
--   Winterberry99
--   Irenoir
--   Saku1849
--   EnderHayes18
--   iDonnyboy23
--   SealedHorror
--   YVKVZCO
+## The first through the portal.
 
-A lantern illuminates a map, compass, hammer, and worn journal on a stone workbench
+Early adventures. Patient bug reports. Ideas that made the pack better. These are the players who helped us get here.
+
+-   SlenanaBeta tester
+
+-   Regranaas47Beta tester
+
+-   kaididitBeta tester
+
+-   Winterberry99Beta tester
+
+-   IrenoirBeta tester
+
+-   Saku1849Beta tester
+
+-   EnderHayes18Beta tester
+
+-   iDonnyboy23Beta tester
+
+-   SealedHorrorBeta tester
+
+-   YVKVZCOBeta tester
+
+
+Every report, test run, and shared discovery helped make Beyond the Horizon what it is today.
+
+ [See how far we’ve come](https://mythforge.win/changelog/)
+
+There’s room for your next adventure
+
+## Come be part of the story.
+
+Meet the community, share what you’re building, and help shape what comes next.
+
+ [Join the community](https://discord.gg/QQwdEgFMFg)

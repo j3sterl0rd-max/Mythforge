@@ -2,9 +2,9 @@
 title: "Mythforge Server - Live at play.mythforge.win"
 ---
 
-The public world
+The official server
 
-# Same horizon. Shared adventures.
+# Your next adventure, together.
 
 The server is live at play.mythforge.win. Apply for the whitelist, install Mythforge, and make your mark in a persistent multiplayer world.
 
@@ -65,7 +65,7 @@ No. Install Mythforge and use the same pack version as the server.
 
 Which version should I use?
 
-The required version is **1.3.1**. Install the latest published release; the server follows the latest version.
+The required version is **1.3.1**. Use the matching server version shown here. The latest CurseForge release may be newer than the server.
 
 What happens if I cannot connect?
 
@@ -82,13 +82,3 @@ Built for the long journey
 Support goes toward keeping a shared world running. Supporter rewards are also available through gameplay.
 
  [Supporter ranks →](https://mythforge.win/support/)
-
-## The shared horizon is open.
-
-Mythforge’s engineering, magic, building and adventure are designed with multiplayer in mind. Build a workshop together, compare magical discoveries or prepare for the next boss as a group. The live official server at play.mythforge.win gives that freedom a shared home.
-
-## An adventure worth sharing.
-
-Careful integration, quality-of-life and a strong sense of discovery make Mythforge an inviting choice for friends seeking a long-term NeoForge world. Apply for the whitelist, install the matching pack and join the community.
-
-Before joining,  [get to know Mythforge](https://mythforge.win/modpack/)  and  [install the pack](https://mythforge.win/getting-started/)  and apply for the whitelist.

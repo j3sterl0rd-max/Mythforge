@@ -2,7 +2,7 @@
 title: "Install Mythforge - Minecraft 1.21.1 NeoForge Guide"
 ---
 
-Getting started
+Installation guide
 
 # Your first step beyond.
 
@@ -70,7 +70,7 @@ Allocated client RAM
 
 9-10 GB
 
-Check these requirements before updating your launcher profile.
+Check these requirements before updating your launcher profile. The pack includes an Akashic Tome with guides for its installed mods.
 
  [Troubleshooting ↓](https://mythforge.win/#troubleshooting)
 
@@ -103,13 +103,3 @@ Still need help?
 Provide your modpack version, launcher, allocated RAM, and the relevant crash report or latest log. Remove personal information before sharing logs.
 
  [Ask in Discord](https://discord.gg/QQwdEgFMFg)
-
-## Choose your first adventure.
-
-Your first launch opens an expansive NeoForge adventure with over 400 integrated mods. Start with what draws you in: exploration, decoration, magic or Create engineering. You can discover another path tomorrow without leaving today’s achievements behind.
-
-## Make room for a long journey.
-
-Mythforge combines ambitious content with careful performance tuning. Follow the memory and Java guidance above to give the pack a good start on your machine. The pack includes an Akashic Tome containing guides for its installed mods.
-
-Looking for your next goal? Discover  [the pack’s magic, machinery and adventures](https://mythforge.win/modpack/) . When updating, check  [the release notes](https://mythforge.win/changelog/)  first.

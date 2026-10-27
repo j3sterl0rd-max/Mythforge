@@ -5,6 +5,9 @@ The October 27, 2026 redesign keeps the existing static generator, Cloudflare Wo
 ## Where changes belong
 
 - `scripts/homepage.mjs`: homepage sections and small inline SVG icons.
+- `scripts/community-page.mjs`: beta tester credits and the fixed ten-player roster.
+- `scripts/modpack-page.mjs`: modpack overview, requirements, encounters, and gallery captions.
+- `scripts/supporter-layout.mjs`: rank comparisons and the full reward/command layouts; checkout remains in `scripts/support-page.mjs`.
 - `public/assets/site.css`: shared styles; the readable redesign section follows the legacy page styles.
 - `scripts/build.mjs`: shared navigation, existing page templates, and generated release snapshot.
 - `public/assets/site.js`: navigation, clipboard, filtering, server status, and visitor-time release checks.
@@ -37,3 +40,13 @@ The local static preview uses the same release handler but does not proxy produc
 - Browser review: 36 page/viewport combinations at 320, 768, and 1024 pixels, with one H1 per page and no horizontal overflow. Homepage also visually reviewed at 390 pixels and the default desktop viewport.
 - Browser interactions: mobile menu, Escape dismissal, address copying with visible feedback, mod search, and real server status. No real whitelist application or purchase was submitted.
 - Review captures: `docs/redesign-desktop.png` and `docs/redesign-mobile.png`.
+
+## Site-wide refinement
+
+The follow-up polish removes the desktop More menu: Overview, Modpack, Getting Started, Server, Whitelist, Rules, Support, and Changelog are direct navigation links. Mobile navigation shows these same links without a second submenu. Footer links are grouped by purpose.
+
+Beta credits are now generated as a normal page with their own canonical URL, rather than copying the homepage and replacing its metadata. The old green workbench artwork is replaced by the pack's violet title artwork, and the original ten testers remain credited with player heads and local initial fallbacks.
+
+The modpack overview now has a compact requirements bar, readable gameplay cards, a dedicated encounter section, and descriptive gallery captions. The supporter page adds four comparison cards, a sticky rank index, two-column reward details, and keyboard-operable command disclosures. Prices, reward definitions, upgrade rules, gameplay access, checkout URLs, and service bindings remain unchanged. Repeated marketing sections previously appended by the SEO build were removed while preserving metadata, structured data, and public routes.
+
+Typography, page headings, numbered setup steps, rules, search fields, release cards, anchor offsets, and mobile layouts are consistent throughout the site. All 18 routes were checked at 320, 390, 768, 901, 1024, and 1440 pixels: 108 combinations, with one main heading and no horizontal overflow. Direct navigation, the complete tester roster, mobile menu/Escape, rank anchors, and command disclosures were also checked in the browser.
