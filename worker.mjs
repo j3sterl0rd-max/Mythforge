@@ -1,3 +1,4 @@
+import {releaseResponse} from './release-service.mjs';
 // Serve build-time Markdown from the same URL while retaining static HTML.
 export function prefersMarkdown(accept='') {
  let markdown=0,html=0;
@@ -13,8 +14,9 @@ export function prefersMarkdown(accept='') {
 }
 function varyAccept(headers){const vary=headers.get('Vary');if(vary==='*')return;if(!vary?.split(',').some(v=>v.trim().toLowerCase()==='accept'))headers.set('Vary',vary?`${vary}, Accept`:'Accept');}
 export default {
- async fetch(request,env) {
+ async fetch(request,env,context) {
   const resource=new URL(request.url);
+  if(resource.pathname==='/api/release')return releaseResponse(request,env,context);
   if(resource.pathname==='/api/applications'||resource.pathname.startsWith('/api/applications/')||resource.pathname.startsWith('/api/whitelist-connector/')||resource.pathname.startsWith('/api/whitelist-staff/')) {
    const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'};
    try {

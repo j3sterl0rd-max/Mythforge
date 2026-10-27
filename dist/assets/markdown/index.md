@@ -4,124 +4,158 @@ title: "Mythforge - 400+ Mods, Create & Magic on NeoForge 1.21.1"
 
 A Minecraft adventure beyond the familiar
 
-# MYTHFORGE
+# Beyond  
+the Horizon.
 
-Beyond the Horizon
+Ancient machines. Uncharted dimensions.  
+Power waiting to be earned.
 
-Ancient machines. Uncharted dimensions. Power waiting to be earned. A large NeoForge adventure and RPG modpack where exploration, bosses, magic, and technology share one horizon.
+A world of exploration, magic, and machinery.  
+Pick a direction. Make it your own.
 
- [Download Modpack](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Join the Server](https://mythforge.win/server/)  [Join Discord](https://discord.gg/QQwdEgFMFg)
+ [Download on CurseForge](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Explore the modpack](https://mythforge.win/modpack/)
 
-Minecraft 1.21.1NeoForgeAdventure · RPG · Technology
+ [Latest release **1.3.1**](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9333841)
 
-Minecraft server address
+The official server
 
-Your next chapter starts here.  
- [Install the pack before joining →](https://mythforge.win/getting-started/)
+## A world worth sharing.
+
+Checking server status…
+
+Server pack **1.3.1**Whitelist required
+
+ [Apply for the whitelist](https://mythforge.win/apply/)
+
+Checking with mcstatus.io. Status may be cached.
+
+Minecraft
+
+1.21.1
+
+Mod loader
+
+NeoForge
+
+Latest version
+
+1.3.1
+
+Included mods
+
+429in 1.3.1
+
+Allocated RAM
+
+9-10 GB
+
+Explore · Create · Make it yours
+
+## A world without a script.
+
+Chase a discovery. Build an unlikely machine. Take on something bigger. There’s room for all of it here.
+
+ [Sunlight over a broad waterfall in a forested Minecraft valley
+
+Exploration & dimensions
+
+### Take the long way home.
+
+New biomes, distant dimensions, and structures worth getting lost in.
+
+Explore this path](https://mythforge.win/modpack/#adventure)  [A towering fiery boss inside a lava-lit Minecraft fortress
+
+Magic & progression
+
+### Find your kind of power.
+
+Learn magical systems, develop your character, and prepare for the next boss.
+
+Explore this path](https://mythforge.win/modpack/#magic)  [An illuminated cinema built in Minecraft beneath a starry purple sky
+
+Engineering & building
+
+### Make something of it.
+
+Build with Create, automate your workshop, and give your next big idea a home.
+
+Explore this path](https://mythforge.win/modpack/#technology)
+
+From the official Mythforge gallery [Explore all 431 included projects](https://mythforge.win/modpack/#included-mods)
+
+Your first steps
+
+## Less setup. More adventure.
+
+ [Full installation guide](https://mythforge.win/getting-started/)
+
+1.  01
+
+    ### Get the pack.
+
+    Install Mythforge from CurseForge into a fresh launcher profile.
+
+     [Download Mythforge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
+
+2.  02
+
+    ### Give it some room.
+
+    Allocate 9-10 GB of RAM. Use Java 21 and let your launcher handle NeoForge.
+
+     [Check your setup →](https://mythforge.win/getting-started/)
+
+3.  03
+
+    ### Find your people.
+
+    Apply for the whitelist, install the server’s matching pack version, and join us.
+
+     [Apply to join →](https://mythforge.win/apply/)
+
+
+From the forge
+
+## The next chapter  
+is taking shape.
+
+Release history, fixes, and the latest from Mythforge.
+
+ [Read the changelog](https://mythforge.win/changelog/)
+
+ [1.3.1Latest release
+
+### Mythforge 1.3.1
+
+Oct 26, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9333841)  [1.3
+
+### Mythforge 1.3
+
+Oct 24, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425)  [1.2.7.1
+
+### Mythforge 1.2.7.1
+
+Oct 21, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379)
+
+Showing the last verified release. Checking for updates…
+
+Meet us beyond the horizon
+
+## Good adventures deserve good company.
+
+Share a build, ask a question, or find your next adventuring party.
+
+ [Join the Discord](https://discord.gg/QQwdEgFMFg)
+
+Built with a little help from our explorers.  [Meet the beta testers →](https://mythforge.win/beta-testers/)
+
+ [Support the server →](https://mythforge.win/support/)
 
 Host Mythforge with friends
 
  [Wabbanode partner hosting - use code MYTHFORGE for 25% off. Create your server.](https://wabbanode.com/affiliate/mythforgebeyondthehorizon)
 
 Affiliate link: Mythforge may earn a commission if you purchase. Discount eligibility and terms are set by Wabbanode.
-
-One pack. Many paths.
-
-## For the curious.  
-For the ambitious.  
-For the unprepared.
-
-Set out with a backpack and a little courage. Find a class that fits your playstyle, master unfamiliar systems, and build something worth coming home to.
-
-From brass workshops to distant dimensions, Mythforge brings its many systems into an adventure you can make your own.
-
- [Discover the modpack →](https://mythforge.win/modpack/)
-
-Built together
-
-### Every horizon starts with a few brave explorers.
-
-Meet the beta testers who helped shape the journey.
-
- [Beta Testers & Thanks →](https://mythforge.win/beta-testers/)
-
-Forge your own story
-
-## More than one way  
-to find your horizon.
-
-Explore. Build. Study. Fight. Each path gives you a different reason to take the next step.
-
-01 / ADVENTURE
-
-### Follow the horizon.
-
-Explore unfamiliar dimensions, imposing structures, and places that reward curiosity.
-
-02 / RPG PROGRESSION
-
-### Choose your path.
-
-Develop your character through equipment, magic, and class-style systems. Use the included mod guides to explore each system.
-
-03 / BOSSES
-
-### Earn every victory.
-
-Face substantial encounters across the game and its dimensions. Prepare, improve your equipment, and return stronger.
-
-04 / TECHNOLOGY
-
-### Turn ideas into industry.
-
-Build with Create and other technology systems. Connect machinery, automate resources, and make your workshop work for you.
-
-05 / MAGIC
-
-### Learn another kind of power.
-
-Explore multiple magical progression systems, each offering its own tools, discoveries, and way to shape the world.
-
-06 / BUILDING & CREATIVITY
-
-### Leave something behind.
-
-Bring ambitious builds to life with an extensive selection of building and decorative content.
-
-07 / MULTIPLAYER
-
-### A world worth sharing.
-
-Play the full modpack on your own, with friends, or in a persistent public multiplayer world.
-
-The public server
-
-## A shared world.  
-Your own adventure.
-
-Bring the Mythforge experience into a persistent multiplayer world. Build alongside others, discover new places, and find help when you need it.
-
- [Server details & connection guide →](https://mythforge.win/server/)
-
-Minecraft server address
-
-Requires the Mythforge modpack. Install the matching server pack version shown on the Server page.
-
- [Start your journey →](https://mythforge.win/getting-started/)
-
-## Power with a purpose.
-
-Over 400 carefully integrated mods. One ambitious adventure. Mythforge brings the depth of standout Forge content to NeoForge 1.21.1, with careful optimization and a world that makes growing powerful feel worthwhile. Build extraordinary machines, master unfamiliar magic and face bosses that give preparation a purpose.
-
-## A destination for many playstyles.
-
-A proper destination pack starts with freedom. Switch from Create workshops to magical discoveries, expressive building or distant dimensions whenever inspiration strikes. Mythforge rewards curiosity and sideways progression, giving each new interest a place in the same adventure.
-
-## Built to go beyond.
-
-For players who love a large, feature-rich pack, Mythforge is an excellent choice: an expansive combination of technology, magic, decoration and adventure, shaped into a cohesive world worth returning to. It is better to buff than to nerf - become powerful, and discover why that power matters.
-
-Find out what awaits in  [the modpack](https://mythforge.win/modpack/) , or follow our  [installation guide](https://mythforge.win/getting-started/)  to begin your adventure.
 
 ## What makes Mythforge distinctive
 

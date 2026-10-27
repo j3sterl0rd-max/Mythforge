@@ -22,9 +22,9 @@
     "provider": "mcstatus.io"
   },
   "art": {
-    "logo": null,
+    "logo": "assets/art/logo.png",
     "icon": "assets/art/modpack-icon.png",
-    "hero": "assets/art/orrery-ravine.webp",
+    "hero": "assets/art/background.webp",
     "boss": "assets/art/epic-enemies.jpg",
     "screenshots": [
       {

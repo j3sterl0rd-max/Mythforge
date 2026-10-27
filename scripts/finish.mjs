@@ -30,9 +30,7 @@ for(const f of await files(dist)){
   s=s.replaceAll('Check the server’s required version before connecting.','Install the matching server pack version shown on the Server page.');
   s=s.replaceAll('The server’s required pack version is awaiting publication. Confirm it through the official download or community channel before connecting.','Install the server pack version shown on the Server page before connecting.');
   if(f===path.join(dist,'index.html')){
-   s=s.replace('src="/assets/art/background.webp"','src="/assets/art/orrery-ravine.webp"');
-   s=s.replace(/<figure class="art-figure">[\s\S]*?<\/figure>/,'<div class="intro-note"><p class="eyebrow">Built together</p><h3>Every horizon starts with a few brave explorers.</h3><p>Meet the beta testers who helped shape the journey.</p><a class="text-link" href="/beta-testers/">Beta Testers &amp; Thanks →</a></div>');
-   s=s.replace('<section class="section">','<section class="hosting-section"><div class="container">'+affiliate+'</div></section><section class="section">');
+   s=s.replace('</main>','<section class="hosting-section"><div class="container">'+affiliate+'</div></section></main>');
   }
   if(f===path.join(dist,'support/index.html'))s=s.replace('</main>','<section class="section"><div class="container">'+affiliate+'</div></section></main>');
   if(f===path.join(dist,'privacy/index.html'))s=s.replace('<div class="actions">','<h2>Whitelist applications</h2><p>When you apply, we process your Minecraft username, public account identifier and profile information, application history, and relevant moderation records to assess access and operate the whitelist. Cloudflare Turnstile processes browser and network information to prevent abuse. Staff can access application records and receive private review alerts. We retain application records for up to 90 days, short-lived request identifiers for up to 24 hours, and necessary staff decisions while they remain applicable. Contact admin@mythforge.win for access, correction or deletion requests. Applying does not verify account ownership; Minecraft sign-in is required to join.</p><div class="actions">');

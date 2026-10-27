@@ -1,5 +1,7 @@
 # Mythforge: Beyond the Horizon
 
+For the October 2026 redesign, live release checks, current GitHub/Cloudflare deployment, and verification results, see [docs/REDESIGN.md](docs/REDESIGN.md).
+
 The complete official website project for **mythforge.win**, with a public-server address of **play.mythforge.win**. Thirteen statically generated HTML pages, plain CSS, and a small progressive-enhancement JavaScript file. No framework, external fonts, analytics, runtime libraries, or payment forms.
 
 ## Start here

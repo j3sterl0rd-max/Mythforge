@@ -24,6 +24,7 @@ for (const head of document.querySelectorAll('[data-player-head]')) {
 }
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#site-nav');
+const more = document.querySelector('.nav-more');
 menu?.addEventListener('click', () => {
   const open = menu.getAttribute('aria-expanded') !== 'true';
   menu.setAttribute('aria-expanded', String(open));
@@ -31,6 +32,10 @@ menu?.addEventListener('click', () => {
   menu.textContent = open ? 'Close menu' : 'Menu';
 });
 document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && more?.open) {
+    more.open = false;
+    more.querySelector('summary')?.focus();
+  }
   if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
     menu.click(); menu.focus();
   }
@@ -88,7 +93,7 @@ if (component) {
   let pending = false;
   async function refresh() {
     if (!endpoint || pending) return;
-    pending = true; button.disabled = true;
+    pending = true; if (button) button.disabled = true;
     write('note', 'Checking server status…');
     try {
       const response = await fetch(endpoint, {cache:'no-store', signal:AbortSignal.timeout(Number(component.dataset.timeout))});
@@ -107,13 +112,65 @@ if (component) {
       write('state', 'Status unavailable');
       component.querySelector('.status-dot').className = 'status-dot';
       write('note', 'Status could not be checked. This does not mean the server is offline. Try connecting or check maintenance updates.');
-    } finally { pending = false; button.disabled = false; }
+    } finally { pending = false; if (button) button.disabled = false; }
   }
   button?.addEventListener('click', refresh);
   if (endpoint) {
     refresh();
     setInterval(() => { if (!document.hidden) refresh(); }, Math.max(30000, Number(component.dataset.interval)));
   }
+}
+
+// Check on each visit and when a background tab returns. Static content remains
+// useful without JavaScript or when the release provider is unavailable.
+if (document.querySelector('[data-latest-version]')) {
+  let lastReleaseCheck = 0;
+  let releasePending = false;
+  const checkLabel = document.querySelector('[data-release-check]');
+  async function checkRelease() {
+    if (releasePending) return;
+    releasePending = true;
+    lastReleaseCheck = Date.now();
+    try {
+      const response = await fetch('/api/release', {signal:AbortSignal.timeout(8000)});
+      if (!response.ok) throw Error('Release unavailable');
+      const data = await response.json();
+      const target = new URL(data.url);
+      if (!/^\d+(?:\.\d+){1,3}$/.test(data.version)
+        || !Number.isSafeInteger(data.fileId)
+        || data.fileId < Number(document.querySelector('[data-latest-version]')?.dataset?.fileId || 0)
+        || target.origin !== 'https://www.curseforge.com'
+        || !/^\/minecraft\/modpacks\/mythforge-beyond-the-horizon\/files\/\d+$/.test(target.pathname)
+        || !target.pathname.endsWith('/' + data.fileId)
+        || !Number.isFinite(Date.parse(data.publishedAt))) throw Error('Invalid release');
+      for (const node of document.querySelectorAll('[data-latest-version]')) {
+        node.textContent = data.version;
+        node.dataset.fileId = String(data.fileId);
+      }
+      for (const node of document.querySelectorAll('[data-release-link]')) node.href = target.href;
+      for (const node of document.querySelectorAll('[data-latest-title]')) node.textContent = 'Mythforge ' + data.version;
+      for (const node of document.querySelectorAll('[data-latest-date]')) {
+        node.dateTime = data.publishedAt;
+        node.textContent = new Date(data.publishedAt).toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
+      }
+      // The game server version is independently managed, unless explicitly linked.
+      const serverVersion = data.serverTracksLatest ? data.version : data.serverVersion;
+      if (component && typeof serverVersion === 'string' && /^\d+(?:\.\d+){1,3}$/.test(serverVersion)) {
+        component.dataset.packVersion = serverVersion;
+        const field = component.querySelector('[data-field="version"]');
+        if (field) field.textContent = serverVersion;
+      }
+      if (checkLabel) checkLabel.textContent = data.source === 'snapshot'
+        ? 'Showing the last verified release. Check CurseForge for the newest files.'
+        : 'Checked against the CurseForge release feed. Newly published files may take a little time to appear.';
+    } catch {
+      if (checkLabel) checkLabel.textContent = 'Showing the last verified release. Check CurseForge for the newest files.';
+    } finally { releasePending = false; }
+  }
+  checkRelease();
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && Date.now() - lastReleaseCheck > 300000) checkRelease();
+  });
 }
 
 // Package IDs select only preconfigured URLs; query strings never supply checkout URLs.
