@@ -21,6 +21,7 @@ const request=new Request('https://mythforge.win/api/release');
 let calls=0;
 const live=await releaseResponse(request,env,null,{cache:null,fetch:async()=>{calls++;return Response.json(feed(file));}});
 assert.equal(live.headers.get('content-type'),'application/json; charset=utf-8');
+assert.equal(live.headers.get('cache-control'),'no-store');
 assert.equal((await live.json()).version,'1.3.2');
 for(const fetchFeed of [async()=>{throw Error('offline')},async()=>new Response('',{status:503}),async()=>Response.json({id:0})]) {
   const fallback=await releaseResponse(request,env,null,{cache:null,fetch:fetchFeed});
@@ -29,6 +30,7 @@ for(const fetchFeed of [async()=>{throw Error('offline')},async()=>new Response(
 const cached=Response.json({version:'1.3.2'});
 const hit=await releaseResponse(request,env,null,{cache:{match:async()=>cached},fetch:async()=>{throw Error('Cache must prevent upstream calls');}});
 assert.equal((await hit.json()).version,'1.3.2');
+assert.equal(hit.headers.get('cache-control'),'no-store');
 let stored,storage;
 await releaseResponse(request,env,{waitUntil:promise=>{storage=promise;}},{cache:{match:async()=>null,put:async(key,response)=>{stored=await response.json();}},fetch:async()=>Response.json(feed(file))});
 await storage;assert.equal(stored.version,'1.3.2');

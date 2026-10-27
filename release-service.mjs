@@ -24,7 +24,11 @@ export async function releaseResponse(request, env, context, dependencies = {}) 
   const cache = dependencies.cache === null ? null : dependencies.cache || globalThis.caches?.default;
   const key = new Request(new URL('/api/release', request.url), {method:'GET'});
   const cached = await cache?.match(key);
-  if (cached) return new Response(request.method === 'HEAD' ? null : cached.body, cached);
+  if (cached) {
+    const headers = new Headers(cached.headers);
+    headers.set('Cache-Control','no-store');
+    return new Response(request.method === 'HEAD' ? null : cached.body, {headers});
+  }
   const snapshotRequest = new Request(new URL('/assets/release.json', request.url));
   const asset = await env.ASSETS.fetch(snapshotRequest);
   if (!asset.ok) return new Response('Release information unavailable', {status:503});
@@ -44,8 +48,14 @@ export async function releaseResponse(request, env, context, dependencies = {}) 
     publishedAt:latest.publishedAt, source, checkedAt:new Date().toISOString(),
     serverVersion:snapshot.serverVersion, serverTracksLatest:snapshot.serverTracksLatest};
   const headers = {'Content-Type':'application/json; charset=utf-8','X-Content-Type-Options':'nosniff',
-    'Cache-Control':source === 'snapshot' ? 'public, max-age=30' : 'public, max-age=60, s-maxage=300'};
+    'Cache-Control':'no-store'};
   const result = Response.json(data, {headers});
-  if (cache && source !== 'snapshot' && context?.waitUntil) context.waitUntil(cache.put(key,result.clone()));
+  // Cache only inside the Worker. The zone's long browser TTL must not delay
+  // checks on returning visits, even when it overrides short public max-ages.
+  if (cache && source !== 'snapshot' && context?.waitUntil) {
+    const cachedHeaders = new Headers(headers);
+    cachedHeaders.set('Cache-Control','public, max-age=300');
+    context.waitUntil(cache.put(key,new Response(JSON.stringify(data),{headers:cachedHeaders})));
+  }
   return new Response(request.method === 'HEAD' ? null : result.body, result);
 }

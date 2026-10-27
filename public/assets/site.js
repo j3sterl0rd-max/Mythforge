@@ -132,7 +132,7 @@ if (document.querySelector('[data-latest-version]')) {
     releasePending = true;
     lastReleaseCheck = Date.now();
     try {
-      const response = await fetch('/api/release', {signal:AbortSignal.timeout(8000)});
+      const response = await fetch('/api/release', {cache:'no-store',signal:AbortSignal.timeout(8000)});
       if (!response.ok) throw Error('Release unavailable');
       const data = await response.json();
       const target = new URL(data.url);
