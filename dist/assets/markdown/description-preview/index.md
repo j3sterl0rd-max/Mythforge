@@ -12,29 +12,29 @@ Copy the formatted description below, then paste it into CurseForge's visual edi
 
 This preview does not change your CurseForge listing.
 
-Mythforge: Beyond the Horizon
+Mythforge: Beyond the Horizon - Minecraft adventure and RPG modpack
 
-Build a factory. Turn it into an airship. Learn magic, hunt bosses, or head out and see what you find. Mythforge: Beyond the Horizon brings engineering, adventure, and character progression into one open-ended Minecraft pack.
+**Your next Minecraft adventure doesn't have to stay on the ground.** Build and pilot an airship, master magic, or hunt bosses for your next great piece of gear. **Mythforge: Beyond the Horizon** is a Minecraft 1.21.1 NeoForge adventure and RPG modpack where exploration, technology, and character progression share one world.
 
-Build it. Make it fly.
+Build factories, moving contraptions, and flyable airships
 
-Build machines, connect production lines, and design moving contraptions. Then take your engineering into the sky with physics-driven airships you can build and pilot.
+Start with a workshop. Build it into a factory. Connect machines, design moving contraptions, and take your own physics-driven airship across the world. Engineering is something you can get behind the controls of.
 
-Find your fighting style.
+Magic, relics, RPG character builds, and boss battles
 
-Mix spells, weapons, armor, and relics into a build that suits you. Develop your character through the skill tree and put your equipment to the test against powerful bosses.
+Become a spellcaster, swing something oversized, or mix magic with melee. Shape your character through the skill tree, discover powerful relics, and take on bosses that give your next upgrade a purpose.
 
-Go beyond the familiar.
+Explore caves, dungeons, and new dimensions
 
-Explore towering landscapes, unusual caves, hidden dungeons, and other dimensions. Bring a backpack, follow your curiosity, and make the journey part of the adventure.
+Follow a strange cave, uncover a dungeon, or step into another dimension. There are towering landscapes, unusual creatures, and discoveries waiting beyond your base. Pack for a short trip. See where it takes you.
 
-Make it work for you.
+Technology, storage, and resource automation
 
-Generate power, organize your storage, and automate the jobs you would rather not do by hand. Build a workshop that grows with your ambitions.
+Spend less time sorting chests and more time building what you imagined. Generate power, connect your storage, and automate resources into a workshop that keeps working while you plan your next project.
 
-Your next adventure.
+Play Mythforge solo, with friends, or on the official server
 
-Play solo, bring friends, or join the official server. Build a home, take on a challenge, or change direction whenever you feel like it.
+Build a home, chase a boss, or spend the evening making something fly. Play solo or with friends, and follow whichever part of the pack catches your curiosity. There is no single required playstyle.
 
 **Official server:** play.mythforge.win -  [apply for the whitelist](https://mythforge.win/apply/) .
 
