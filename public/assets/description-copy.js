@@ -8,6 +8,10 @@
   // Include only the description, never the preview controls or website navigation.
   const html=content.innerHTML;
   const plain=content.innerText;
+  select();
+  // A user-gesture selection copy preserves images in visual editors without
+  // requiring an additional asynchronous clipboard permission prompt.
+  if(document.execCommand('copy')){status.textContent='Copied with banners and formatting. Paste into CurseForge\'s visual editor.';return;}
   try {
    if(!navigator.clipboard?.write||typeof ClipboardItem==='undefined')throw new Error('Rich clipboard unavailable');
    await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([plain],{type:'text/plain'})})]);
