@@ -40,7 +40,7 @@ Build a home, chase a boss, or spend the evening making something fly. Play solo
 
  [Join the Discord](https://discord.gg/QQwdEgFMFg)  for help, updates, and sharing your builds. Videos and streams are welcome.
 
-**Before you play:** Minecraft Java 1.21.1, NeoForge, Java 21. Recommended memory allocation: 9-10 GB. The pack is a sandbox; a guided quest book is still in development.
+**Before you play:** Minecraft Java 1.21.1, NeoForge, Java 21. Recommended memory allocation: 8-10 GB. The pack is a sandbox; a guided quest book is still in development.
 
  [Wabbanode hosting](https://wabbanode.com/affiliate/mythforgebeyondthehorizon)
 

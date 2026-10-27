@@ -43,7 +43,7 @@ The local static preview uses the same release handler but does not proxy produc
 
 ## Site-wide refinement
 
-The follow-up polish removes the desktop More menu: Overview, Modpack, Getting Started, Server, Whitelist, Rules, Support, and Changelog are direct navigation links. Mobile navigation shows these same links without a second submenu. Footer links are grouped by purpose.
+The follow-up polish removes the desktop More menu: Overview, Modpack, Getting Started, Server, Whitelist, Rules, Support the Server, and Changelog are direct navigation links. Mobile navigation shows these same links without a second submenu. Footer links are grouped by purpose. The owner-confirmed client RAM recommendation is 8–10 GB, shared through `recommendedRam` in `data/site.json`.
 
 Beta credits are now generated as a normal page with their own canonical URL, rather than copying the homepage and replacing its metadata. The old green workbench artwork is replaced by the pack's violet title artwork, and the original ten testers remain credited with player heads and local initial fallbacks.
 

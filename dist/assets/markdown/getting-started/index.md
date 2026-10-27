@@ -21,7 +21,7 @@ A straightforward guide from a fresh install to your first connection.
      [Open the modpack download](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)
 3.  ## Set your memory allocation
 
-    Recommended allocated client RAM: **9-10 GB**.
+    Recommended allocated client RAM: **8-10 GB**.
 
     In your launcher’s profile or Minecraft settings, adjust the memory allocation. Leave enough RAM for your operating system and other programs; allocating all available memory can cause launch failures.
 
@@ -68,7 +68,7 @@ Required pack version
 
 Allocated client RAM
 
-9-10 GB
+8-10 GB
 
 Check these requirements before updating your launcher profile. The pack includes an Akashic Tome with guides for its installed mods.
 

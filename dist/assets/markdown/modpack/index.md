@@ -32,7 +32,7 @@ Latest release
 
 Allocated RAM
 
-9-10 GB
+8-10 GB
 
  [Installation guide](https://mythforge.win/getting-started/)
 

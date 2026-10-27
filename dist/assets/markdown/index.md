@@ -47,7 +47,7 @@ Included mods
 
 Allocated RAM
 
-9-10 GB
+8-10 GB
 
 Explore · Create · Make it yours
 
@@ -101,7 +101,7 @@ Your first steps
 
     ### Give it some room.
 
-    Allocate 9-10 GB of RAM. Use Java 21 and let your launcher handle NeoForge.
+    Allocate 8-10 GB of RAM. Use Java 21 and let your launcher handle NeoForge.
 
      [Check your setup →](https://mythforge.win/getting-started/)
 

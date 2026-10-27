@@ -35,7 +35,7 @@ mythforge-site/
   docs/                        Editing reference and validation notes
 ```
 
-Pages: Home, Modpack, Server, Getting Started, Support / Store, Rules, Changelog, Official Links, Contact, Terms, Privacy, Refunds, and the custom 404.
+Pages: Home, Modpack, Server, Getting Started, Support the Server, Rules, Changelog, Official Links, Contact, Terms, Privacy, Refunds, and the custom 404.
 
 ## Configure the site
 
