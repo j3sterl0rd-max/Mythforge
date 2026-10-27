@@ -17,6 +17,7 @@ Example: curl -H "Accept: text/markdown" https://mythforge.win/modpack/
 - https://mythforge.win/changelog/
 - https://mythforge.win/checkout/
 - https://mythforge.win/contact/
+- https://mythforge.win/description-preview/
 - https://mythforge.win/getting-started/
 - https://mythforge.win/
 - https://mythforge.win/links/

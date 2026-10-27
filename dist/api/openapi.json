@@ -269,6 +269,57 @@
         }
       }
     },
+    "/description-preview/": {
+      "get": {
+        "summary": "Read description-preview page",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "description": "Use text/markdown for clean main content; HTML is the default.",
+            "schema": {
+              "type": "string",
+              "default": "text/html"
+            },
+            "example": "text/markdown"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Published page in the requested representation.",
+            "headers": {
+              "Vary": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Includes Accept to separate HTML and Markdown cache variants."
+              }
+            },
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Read representation headers without a response body",
+        "responses": {
+          "200": {
+            "description": "Same representation headers as GET; no body."
+          }
+        }
+      }
+    },
     "/getting-started/": {
       "get": {
         "summary": "Read getting-started page",

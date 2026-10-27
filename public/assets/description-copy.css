@@ -1,0 +1,6 @@
+.description-copy-content{max-width:850px;margin:0 auto;color:#eee8df;font:17px/1.7 system-ui,sans-serif}
+.description-copy-content p{margin:0 0 24px}
+.description-copy-content img{display:block;width:100%;max-width:850px;height:auto}
+.description-copy-content a{color:#dfbb7e}
+#copy-description-status{font-size:15px;max-width:70ch}
+@media(max-width:600px){.description-copy-content{font-size:16px}}
