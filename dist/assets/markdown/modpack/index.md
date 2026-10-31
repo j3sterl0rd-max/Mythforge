@@ -28,7 +28,7 @@ NeoForge
 
 Latest release
 
-1.3.1
+1.3.2
 
 Allocated RAM
 
@@ -131,11 +131,11 @@ Inside the pack
 
 ## Included mods & packs
 
-431 projects in release 1.3.1, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
+433 projects in release 1.3.2, including libraries, resource packs, data packs and bundled mods. Updated automatically from the published client pack.
 
- [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9333841)
+ [View this release on CurseForge ↗](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9388079)
 
-Find a mod or creator431 projects shown
+Find a mod or creator433 projects shown
 
 -    [\[EMF\] Entity Model Features \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-model-features) by Traben · Mod
 -    [\[ETF\] Entity Texture Features - \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric) by Traben · Mod
@@ -202,6 +202,7 @@ Find a mod or creator431 projects shown
 -    [Bosses of Mass Destruction \[Forge | NeoForge\]](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge) by Cerbon · Mod
 -    [Bosses'Rise - Epic Souls like boss fights](https://www.curseforge.com/minecraft/mc-mods/bossesrise) by blockfactorystudio · Mod
 -    [Botany Pots](https://www.curseforge.com/minecraft/mc-mods/botany-pots) by DarkhaxDev · Mod
+-    [Build Guide](https://www.curseforge.com/minecraft/mc-mods/build-guide) by brentmaas · Mod
 -    [Building Gadgets](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) by Direwolf20 · Mod
 -    [Bundle API](https://www.curseforge.com/minecraft/mc-mods/bundle-api) by TheRedBrain · Mod
 -    [Caelus API](https://www.curseforge.com/minecraft/mc-mods/caelus) by TheIllusiveC4 · Mod
@@ -497,6 +498,7 @@ Find a mod or creator431 projects shown
 -    [ServerCore](https://www.curseforge.com/minecraft/mc-mods/servercore) by Wesley8081 · Mod
 -    [ShatterLib | OctoLib](https://www.curseforge.com/minecraft/mc-mods/shatterbyte-lib) by SSKirillSS · Mod
 -    [Shield API](https://www.curseforge.com/minecraft/mc-mods/shield-api) by TheRedBrain · Mod
+-    [Shulker Box Tooltip \[Fabric/Forge/NeoForge\]](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip) by MisterPeModder · Mod
 -    [Simply More](https://www.curseforge.com/minecraft/mc-mods/simply-more) by Rosemary\_\_Thyme · Mod
 -    [Simply Swords \[Fabric & Forge\]](https://www.curseforge.com/minecraft/mc-mods/simply-swords) by sweenuss · Mod
 -    [Simply Swords: Cataclysm](https://www.curseforge.com/minecraft/mc-mods/simplycataclysm) by Cephelo\_ · Mod
@@ -589,4 +591,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3.1. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3.2. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.

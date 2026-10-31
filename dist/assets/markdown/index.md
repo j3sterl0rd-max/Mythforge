@@ -15,7 +15,7 @@ Pick a direction. Make it your own.
 
  [Download on CurseForge](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon)  [Explore the modpack](https://mythforge.win/modpack/)
 
- [Latest release **1.3.1**](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9333841)
+ [Latest release **1.3.2**](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9388079)
 
 The official server
 
@@ -39,11 +39,11 @@ NeoForge
 
 Latest version
 
-1.3.1
+1.3.2
 
 Included mods
 
-429in 1.3.1
+431in 1.3.2
 
 Allocated RAM
 
@@ -81,7 +81,7 @@ Build with Create, automate your workshop, and give your next big idea a home.
 
 Explore this path](https://mythforge.win/modpack/#technology)
 
-From the official Mythforge gallery [Explore all 431 included projects](https://mythforge.win/modpack/#included-mods)
+From the official Mythforge gallery [Explore all 433 included projects](https://mythforge.win/modpack/#included-mods)
 
 Your first steps
 
@@ -123,7 +123,11 @@ Release history, fixes, and the latest from Mythforge.
 
  [Read the changelog](https://mythforge.win/changelog/)
 
- [1.3.1Latest release
+ [1.3.2Latest release
+
+### Mythforge 1.3.2
+
+Oct 31, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9388079)  [1.3.1
 
 ### Mythforge 1.3.1
 
@@ -131,11 +135,7 @@ Oct 26, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the
 
 ### Mythforge 1.3
 
-Oct 24, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425)  [1.2.7.1
-
-### Mythforge 1.2.7.1
-
-Oct 21, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9274379)
+Oct 24, 2026](https://www.curseforge.com/minecraft/modpacks/mythforge-beyond-the-horizon/files/9311425)
 
 Showing the last verified release. Checking for updates…
 
@@ -175,4 +175,4 @@ The creator reports that early players have described Mythforge as the best Mine
 
 ### Current scope
 
-Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3.1. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.
+Minecraft 1.21.1, NeoForge; latest published release in this snapshot: 1.3.2. The pack includes mod reference guides. The public server is live at play.mythforge.win and follows the latest pack release. Detailed supporter rewards and gameplay alternatives are explained on the Support page; payments and checkout availability are managed by Tebex.
